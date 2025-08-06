@@ -386,8 +386,8 @@ class Sam2695Midi {
    * @param channel Designated channel (0-15).
    * @param midi_note MIDI notes (0-127), please refer to sam2695_midi_note.h for reference; Among them, for the notes of channel 9, please
    * refer to sam2695_midi_percussion_note.h.
-   * @param note_velocity Note velocity (0-127), controls the volume and tone brightness of notes, on a keyboard this corresponds to how hard the key.
-   * was struck0: silent (equivalent to noteOff), 1-126: from weak to strong, 127: maximum strength.
+   * @param note_velocity Note velocity (0-127), controls the volume and tone brightness of notes, on a keyboard this corresponds to how hard the
+   * key,0: silent (equivalent to noteOff), 1-126: from weak to strong, 127: maximum strength.
    */
   void NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity);
 
