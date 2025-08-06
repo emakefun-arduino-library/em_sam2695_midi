@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAM2695 MIDI Arduino 库: Sam2695Midi类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAM2695 MIDI Arduino 库<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_sam2695_midi.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_sam2695_midi-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Sam2695Midi类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sam2695Midi是一个用于SAM2695 MIDI模块的驱动类，用于合成音乐。  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afbd615ff5f64fa5d333e07476d70ee76" id="r_afbd615ff5f64fa5d333e07476d70ee76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbd615ff5f64fa5d333e07476d70ee76">Sam2695Midi</a> (uint8_t tx_pin)</td></tr>
+<tr class="memdesc:afbd615ff5f64fa5d333e07476d70ee76"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。  <br /></td></tr>
+<tr class="separator:afbd615ff5f64fa5d333e07476d70ee76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c99ef622f1c6c03182ff7714ad814e3" id="r_a6c99ef622f1c6c03182ff7714ad814e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c99ef622f1c6c03182ff7714ad814e3">NoteOn</a> (const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity)</td></tr>
+<tr class="memdesc:a6c99ef622f1c6c03182ff7714ad814e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定通道（0-15）上发出给定的MIDI音符。  <br /></td></tr>
+<tr class="separator:a6c99ef622f1c6c03182ff7714ad814e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5f90ba6c454bb67a0127aad47f8fe4" id="r_a2b5f90ba6c454bb67a0127aad47f8fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b5f90ba6c454bb67a0127aad47f8fe4">NoteOff</a> (const uint8_t channel, const uint8_t midi_note)</td></tr>
+<tr class="memdesc:a2b5f90ba6c454bb67a0127aad47f8fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭指定通道中的音符，该通道之前使用noteOn（）命令以给定的音高打开。  <br /></td></tr>
+<tr class="separator:a2b5f90ba6c454bb67a0127aad47f8fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1686d6e272c60e006e98a16a6d98ee" id="r_a1b1686d6e272c60e006e98a16a6d98ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b1686d6e272c60e006e98a16a6d98ee">SetChannelTimbre</a> (const uint8_t channel, const uint8_t bank, const uint8_t timbre)</td></tr>
+<tr class="memdesc:a1b1686d6e272c60e006e98a16a6d98ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">更改指定通道的音色。其中通道9是一个专用的鼓组通道，通道9的音色和音符请查阅参考sam2695_midi_percussion_note.h。  <br /></td></tr>
+<tr class="separator:a1b1686d6e272c60e006e98a16a6d98ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c29a991d0759321aa61476c843336e" id="r_a48c29a991d0759321aa61476c843336e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48c29a991d0759321aa61476c843336e">PitchBend</a> (const uint8_t channel, uint16_t pitch_bend_value)</td></tr>
+<tr class="memdesc:a48c29a991d0759321aa61476c843336e"><td class="mdescLeft">&#160;</td><td class="mdescRight">向上或向下弯曲音高，默认摆动+/-1半音。  <br /></td></tr>
+<tr class="separator:a48c29a991d0759321aa61476c843336e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c356e4771a931aa991458a93c638b1" id="r_a20c356e4771a931aa991458a93c638b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20c356e4771a931aa991458a93c638b1">PitchBendRange</a> (const uint8_t channel, const uint8_t pitch_bend_range_value)</td></tr>
+<tr class="memdesc:a20c356e4771a931aa991458a93c638b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置弯音范围（灵敏度）。  <br /></td></tr>
+<tr class="separator:a20c356e4771a931aa991458a93c638b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19bdaf2fe5e72ffe4420bd0d9cf86cc" id="r_af19bdaf2fe5e72ffe4420bd0d9cf86cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af19bdaf2fe5e72ffe4420bd0d9cf86cc">MidiReset</a> ()</td></tr>
+<tr class="memdesc:af19bdaf2fe5e72ffe4420bd0d9cf86cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI系统重置发送MIDI系统重置命令（0xFF），将所有连接的MIDI设备重置为初始状态。  <br /></td></tr>
+<tr class="separator:af19bdaf2fe5e72ffe4420bd0d9cf86cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dda1625a5c4016e7fab648be339406" id="r_ab0dda1625a5c4016e7fab648be339406"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0dda1625a5c4016e7fab648be339406">ChannelAllNotesOff</a> (const uint8_t channel)</td></tr>
+<tr class="memdesc:ab0dda1625a5c4016e7fab648be339406"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定通道上为每个音符发送一个noteOff（）。  <br /></td></tr>
+<tr class="separator:ab0dda1625a5c4016e7fab648be339406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2d5354ae915f6cdbefa4ced3845efc" id="r_a7e2d5354ae915f6cdbefa4ced3845efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e2d5354ae915f6cdbefa4ced3845efc">SetChannelVolume</a> (const uint8_t channel, const uint8_t volume)</td></tr>
+<tr class="memdesc:a7e2d5354ae915f6cdbefa4ced3845efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定通道音量。  <br /></td></tr>
+<tr class="separator:a7e2d5354ae915f6cdbefa4ced3845efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66646309cf6fcfdcbc42e8a3855b5f99" id="r_a66646309cf6fcfdcbc42e8a3855b5f99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66646309cf6fcfdcbc42e8a3855b5f99">SetAllChannelVolume</a> (const uint8_t volume)</td></tr>
+<tr class="memdesc:a66646309cf6fcfdcbc42e8a3855b5f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置所有通道的音量。  <br /></td></tr>
+<tr class="separator:a66646309cf6fcfdcbc42e8a3855b5f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42356a4d5779c1fc7b4772b7da1d563e" id="r_a42356a4d5779c1fc7b4772b7da1d563e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42356a4d5779c1fc7b4772b7da1d563e">SetReverberation</a> (const uint8_t channel, const uint8_t reverberation_type, const uint8_t reverberation_volume, const uint8_t delay_feedback)</td></tr>
+<tr class="memdesc:a42356a4d5779c1fc7b4772b7da1d563e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将混响效果应用于指定通道。  <br /></td></tr>
+<tr class="separator:a42356a4d5779c1fc7b4772b7da1d563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f999483f7fd0916bf8a14a60a6b2150" id="r_a2f999483f7fd0916bf8a14a60a6b2150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f999483f7fd0916bf8a14a60a6b2150">SetChorus</a> (const uint8_t channel, const uint8_t chorus_effect_type, const uint8_t chorus_effect_volume, const uint8_t chorus_effect_feedback, const uint8_t chorus_delay_time)</td></tr>
+<tr class="memdesc:a2f999483f7fd0916bf8a14a60a6b2150"><td class="mdescLeft">&#160;</td><td class="mdescRight">将合唱效果应用于指定通道。  <br /></td></tr>
+<tr class="separator:a2f999483f7fd0916bf8a14a60a6b2150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395e647050c91fca56f3e481140473fd" id="r_a395e647050c91fca56f3e481140473fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a395e647050c91fca56f3e481140473fd">SetPanPosition</a> (const uint8_t channel, const uint8_t pan_position_value)</td></tr>
+<tr class="memdesc:a395e647050c91fca56f3e481140473fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置声相位置。  <br /></td></tr>
+<tr class="separator:a395e647050c91fca56f3e481140473fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5bdeb23946cc217f8a2eec54aa20d2" id="r_aca5bdeb23946cc217f8a2eec54aa20d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca5bdeb23946cc217f8a2eec54aa20d2">SetEqualizer</a> (const uint8_t channel, const <a class="el" href="struct_equalizer_parameter.html">EqualizerParameter</a> equalizer_parameter)</td></tr>
+<tr class="memdesc:aca5bdeb23946cc217f8a2eec54aa20d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置四段均衡器。  <br /></td></tr>
+<tr class="separator:aca5bdeb23946cc217f8a2eec54aa20d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ba379621c409cb46872b3e3a10b3b1" id="r_a75ba379621c409cb46872b3e3a10b3b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75ba379621c409cb46872b3e3a10b3b1">SetTuning</a> (const uint8_t channel, const uint8_t fine_tuning, const uint8_t coarse_tuning)</td></tr>
+<tr class="memdesc:a75ba379621c409cb46872b3e3a10b3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">定调（粗调/细调）。  <br /></td></tr>
+<tr class="separator:a75ba379621c409cb46872b3e3a10b3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8ab46e7a687fa9b1037f20a401e59e" id="r_adb8ab46e7a687fa9b1037f20a401e59e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb8ab46e7a687fa9b1037f20a401e59e">SetVibrato</a> (const uint8_t channel, const uint8_t vibrato_rate, const uint8_t vibrato_depth, const uint8_t vibrato_delay_modify)</td></tr>
+<tr class="memdesc:adb8ab46e7a687fa9b1037f20a401e59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置颤音参数。  <br /></td></tr>
+<tr class="separator:adb8ab46e7a687fa9b1037f20a401e59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802009a73125e7990b8761fcbcf68660" id="r_a802009a73125e7990b8761fcbcf68660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a802009a73125e7990b8761fcbcf68660">SetTimeVaryingFilter</a> (const uint8_t channel, const uint8_t cutoff, const uint8_t resonance)</td></tr>
+<tr class="memdesc:a802009a73125e7990b8761fcbcf68660"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置时变滤波器（TVF）。  <br /></td></tr>
+<tr class="separator:a802009a73125e7990b8761fcbcf68660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425bb1e6466f36448d8d5266de398d5f" id="r_a425bb1e6466f36448d8d5266de398d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a425bb1e6466f36448d8d5266de398d5f">SetEnvelope</a> (const uint8_t channel, const uint8_t attack_time, const uint8_t attenuation_time, const uint8_t release_time)</td></tr>
+<tr class="memdesc:a425bb1e6466f36448d8d5266de398d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置包络参数。  <br /></td></tr>
+<tr class="separator:a425bb1e6466f36448d8d5266de398d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af178759d91e3935c430775461e01516a" id="r_af178759d91e3935c430775461e01516a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af178759d91e3935c430775461e01516a">SetScaleTuning</a> (const uint8_t channel, const <a class="el" href="struct_scale_tuning_parameter.html">ScaleTuningParameter</a> scale_tuning_parameter)</td></tr>
+<tr class="memdesc:af178759d91e3935c430775461e01516a"><td class="mdescLeft">&#160;</td><td class="mdescRight">为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。  <br /></td></tr>
+<tr class="separator:af178759d91e3935c430775461e01516a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9410bcd06eefdd6dc8348925f51f906f" id="r_a9410bcd06eefdd6dc8348925f51f906f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9410bcd06eefdd6dc8348925f51f906f">SetModulationWheel</a> (const uint8_t channel, const <a class="el" href="struct_modulation_wheel_parameter.html">ModulationWheelParameter</a> modulation_wheel_parameter)</td></tr>
+<tr class="memdesc:a9410bcd06eefdd6dc8348925f51f906f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置调制轮参数，配置调制轮声音的多种控制效果。  <br /></td></tr>
+<tr class="separator:a9410bcd06eefdd6dc8348925f51f906f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf24a89dabf6f03fe3ad55c50088626" id="r_afcf24a89dabf6f03fe3ad55c50088626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf24a89dabf6f03fe3ad55c50088626">AllDrums</a> ()</td></tr>
+<tr class="memdesc:afcf24a89dabf6f03fe3ad55c50088626"><td class="mdescLeft">&#160;</td><td class="mdescRight">激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。  <br /></td></tr>
+<tr class="separator:afcf24a89dabf6f03fe3ad55c50088626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Sam2695Midi是一个用于SAM2695 MIDI模块的驱动类，用于合成音乐。 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#_a0">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#_a0">play_music.ino</a>.</dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a> 第 <a class="el" href="sam2695__midi_8h_source.html#l00349">349</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="afbd615ff5f64fa5d333e07476d70ee76" name="afbd615ff5f64fa5d333e07476d70ee76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd615ff5f64fa5d333e07476d70ee76">&#9670;&#160;</a></span>Sam2695Midi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sam2695Midi::Sam2695Midi </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>tx_pin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tx_pin</td><td>SAM2695 MIDI信号引脚。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00006">6</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="afcf24a89dabf6f03fe3ad55c50088626" name="afcf24a89dabf6f03fe3ad55c50088626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf24a89dabf6f03fe3ad55c50088626">&#9670;&#160;</a></span>AllDrums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::AllDrums </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。 </p>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00269">269</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0dda1625a5c4016e7fab648be339406" name="ab0dda1625a5c4016e7fab648be339406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0dda1625a5c4016e7fab648be339406">&#9670;&#160;</a></span>ChannelAllNotesOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::ChannelAllNotesOff </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定通道上为每个音符发送一个noteOff（）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af19bdaf2fe5e72ffe4420bd0d9cf86cc" name="af19bdaf2fe5e72ffe4420bd0d9cf86cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19bdaf2fe5e72ffe4420bd0d9cf86cc">&#9670;&#160;</a></span>MidiReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::MidiReset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MIDI系统重置发送MIDI系统重置命令（0xFF），将所有连接的MIDI设备重置为初始状态。 </p>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b5f90ba6c454bb67a0127aad47f8fe4" name="a2b5f90ba6c454bb67a0127aad47f8fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5f90ba6c454bb67a0127aad47f8fe4">&#9670;&#160;</a></span>NoteOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::NoteOff </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>midi_note</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭指定通道中的音符，该通道之前使用noteOn（）命令以给定的音高打开。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">midi_note</td><td>MIDI 音符（0-127），请查阅参考sam2695_midi_note.h；其中，通道9的音符请查阅参考sam2695_midi_percussion_note.h。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a2">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#a2">play_music.ino</a>.</dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c99ef622f1c6c03182ff7714ad814e3" name="a6c99ef622f1c6c03182ff7714ad814e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c99ef622f1c6c03182ff7714ad814e3">&#9670;&#160;</a></span>NoteOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::NoteOn </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>midi_note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>note_velocity</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定通道（0-15）上发出给定的MIDI音符。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">midi_note</td><td>MIDI 音符（0-127），请查阅参考sam2695_midi_note.h；其中，通道9的音符请查阅参考sam2695_midi_percussion_note.h。 </td></tr>
+    <tr><td class="paramname">note_velocity</td><td>音符力度（0-127），控制音符的音量和音调亮度，在键盘上，这对应于按键的力度，0：无声（相当于noteOff），1-126：从弱到强，127：最大强度. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a1">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#a1">play_music.ino</a>.</dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48c29a991d0759321aa61476c843336e" name="a48c29a991d0759321aa61476c843336e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c29a991d0759321aa61476c843336e">&#9670;&#160;</a></span>PitchBend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::PitchBend </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>pitch_bend_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向上或向下弯曲音高，默认摆动+/-1半音。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">pitch_bend_value</td><td>弯音值（0-1023），0：最大向下弯曲，512：中心位置（无弯曲），1023：最大向上弯曲。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a20c356e4771a931aa991458a93c638b1" name="a20c356e4771a931aa991458a93c638b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c356e4771a931aa991458a93c638b1">&#9670;&#160;</a></span>PitchBendRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::PitchBendRange </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>pitch_bend_range_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置弯音范围（灵敏度）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">pitch_bend_range_value</td><td>弯音范围值（半音数，0-127），典型值：1-24（半音），默认值：2（±2半音）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00073">73</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a66646309cf6fcfdcbc42e8a3855b5f99" name="a66646309cf6fcfdcbc42e8a3855b5f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66646309cf6fcfdcbc42e8a3855b5f99">&#9670;&#160;</a></span>SetAllChannelVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetAllChannelVolume </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置所有通道的音量。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音量级别（0-127），0：静音，127：最大音量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1b1686d6e272c60e006e98a16a6d98ee" name="a1b1686d6e272c60e006e98a16a6d98ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1686d6e272c60e006e98a16a6d98ee">&#9670;&#160;</a></span>SetChannelTimbre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetChannelTimbre </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>bank</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>timbre</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更改指定通道的音色。其中通道9是一个专用的鼓组通道，通道9的音色和音符请查阅参考sam2695_midi_percussion_note.h。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15），其中通道9是专用鼓组通道。 </td></tr>
+    <tr><td class="paramname">bank</td><td>音色库选择，参数值为MIDI_bank_0或MIDI_bank_127。 </td></tr>
+    <tr><td class="paramname">timbre</td><td>音色编号（0-127），请查阅参考sam2695_midi_timbre.h中的宏（例如BANK_0_GRAND_PIANO）;其中，通道9的音色请查阅参考sam2695_midi_percussion_note.h。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7e2d5354ae915f6cdbefa4ced3845efc" name="a7e2d5354ae915f6cdbefa4ced3845efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2d5354ae915f6cdbefa4ced3845efc">&#9670;&#160;</a></span>SetChannelVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetChannelVolume </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置特定通道音量。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">volume</td><td>音量级别（0-127），0：静音，127：最大音量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2f999483f7fd0916bf8a14a60a6b2150" name="a2f999483f7fd0916bf8a14a60a6b2150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f999483f7fd0916bf8a14a60a6b2150">&#9670;&#160;</a></span>SetChorus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetChorus </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_effect_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_effect_volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_effect_feedback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_delay_time</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将合唱效果应用于指定通道。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">chorus_effect_type</td><td>合唱效果类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，CHORUS_1）。 </td></tr>
+    <tr><td class="paramname">chorus_effect_volume</td><td>合唱效果量（0-127），0：无，127：最大发送音量。 </td></tr>
+    <tr><td class="paramname">chorus_effect_feedback</td><td>效果反馈量（0-127，0表示未设置）。 </td></tr>
+    <tr><td class="paramname">chorus_delay_time</td><td>合唱延迟时间（0-127，0表示未设置），单位:ms。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00112">112</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a425bb1e6466f36448d8d5266de398d5f" name="a425bb1e6466f36448d8d5266de398d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425bb1e6466f36448d8d5266de398d5f">&#9670;&#160;</a></span>SetEnvelope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetEnvelope </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>attack_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>attenuation_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>release_time</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置包络参数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">attack_time</td><td>开始时间（0-127）-控制声音从零开始达到最大振幅的时间，单位:ms。 </td></tr>
+    <tr><td class="paramname">attenuation_time</td><td>衰减时间（0-127）-控制声音从最大振幅衰减到保持水平的时间，单位:ms。 </td></tr>
+    <tr><td class="paramname">release_time</td><td>释放时间（0-127）-控制钞票释放后音量衰减到零所需的时间，单位:ms。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00200">200</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aca5bdeb23946cc217f8a2eec54aa20d2" name="aca5bdeb23946cc217f8a2eec54aa20d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5bdeb23946cc217f8a2eec54aa20d2">&#9670;&#160;</a></span>SetEqualizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetEqualizer </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_equalizer_parameter.html">EqualizerParameter</a></td>          <td class="paramname"><span class="paramname"><em>equalizer_parameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置四段均衡器。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">equalizer_parameter</td><td>均衡器参数结构体。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00136">136</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9410bcd06eefdd6dc8348925f51f906f" name="a9410bcd06eefdd6dc8348925f51f906f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9410bcd06eefdd6dc8348925f51f906f">&#9670;&#160;</a></span>SetModulationWheel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetModulationWheel </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_modulation_wheel_parameter.html">ModulationWheelParameter</a></td>          <td class="paramname"><span class="paramname"><em>modulation_wheel_parameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置调制轮参数，配置调制轮声音的多种控制效果。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">modulation_wheel_parameter</td><td>调制轮参数结构体。 /** </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00239">239</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a395e647050c91fca56f3e481140473fd" name="a395e647050c91fca56f3e481140473fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395e647050c91fca56f3e481140473fd">&#9670;&#160;</a></span>SetPanPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetPanPosition </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>pan_position_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置声相位置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">pan_position_value</td><td>声相位置值（0-127），0：最左侧（完全左侧通道），64：中心位置（左右平衡通道），127：最右侧（完全右侧通道）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a42356a4d5779c1fc7b4772b7da1d563e" name="a42356a4d5779c1fc7b4772b7da1d563e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42356a4d5779c1fc7b4772b7da1d563e">&#9670;&#160;</a></span>SetReverberation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetReverberation </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>reverberation_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>reverberation_volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>delay_feedback</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将混响效果应用于指定通道。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">reverberation_type</td><td>混响类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，REVERBERATION_ROOM_1）。 </td></tr>
+    <tr><td class="paramname">reverberation_volume</td><td>混响量（0-127），0：无混响，127：最大混响量。 </td></tr>
+    <tr><td class="paramname">delay_feedback</td><td>延迟反馈量（0-127），0：无反馈，127：最大反馈。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af178759d91e3935c430775461e01516a" name="af178759d91e3935c430775461e01516a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af178759d91e3935c430775461e01516a">&#9670;&#160;</a></span>SetScaleTuning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetScaleTuning </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_scale_tuning_parameter.html">ScaleTuningParameter</a></td>          <td class="paramname"><span class="paramname"><em>scale_tuning_parameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">scale_tuning_parameter</td><td>为指定通道设置12个音符调谐参数（C、C#、D、D#、E、F、F#、G、G#、A、A#、B），（每个半音的独立间距偏移）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00213">213</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a802009a73125e7990b8761fcbcf68660" name="a802009a73125e7990b8761fcbcf68660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802009a73125e7990b8761fcbcf68660">&#9670;&#160;</a></span>SetTimeVaryingFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetTimeVaryingFilter </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>cutoff</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>resonance</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置时变滤波器（TVF）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">cutoff</td><td>截止频率值（0-127）-控制滤波器通过的频率范围。 </td></tr>
+    <tr><td class="paramname">resonance</td><td>共鸣强度/共鸣值（0-127）-在截止频率附近控制滤波器的增益。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00191">191</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a75ba379621c409cb46872b3e3a10b3b1" name="a75ba379621c409cb46872b3e3a10b3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ba379621c409cb46872b3e3a10b3b1">&#9670;&#160;</a></span>SetTuning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetTuning </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>fine_tuning</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>coarse_tuning</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定调（粗调/细调）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">fine_tuning</td><td>微调值（0-127），影响音调的细微变化。 </td></tr>
+    <tr><td class="paramname">coarse_tuning</td><td>粗调值（0-127），影响音高的八度变化。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adb8ab46e7a687fa9b1037f20a401e59e" name="adb8ab46e7a687fa9b1037f20a401e59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8ab46e7a687fa9b1037f20a401e59e">&#9670;&#160;</a></span>SetVibrato()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sam2695Midi::SetVibrato </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>vibrato_rate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>vibrato_depth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>vibrato_delay_modify</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置颤音参数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">vibrato_rate</td><td>振动频率（0-127）-控制振动的速度。 </td></tr>
+    <tr><td class="paramname">vibrato_depth</td><td>振动深度（0-127）-控制振动振幅。 </td></tr>
+    <tr><td class="paramname">vibrato_delay_modify</td><td>振动延迟修改（0-127）-控制振动开始前的延迟时间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00178">178</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>src/<a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a></li>
+<li>src/<a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_sam2695_midi.html">Sam2695Midi</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
+  </ul>
+</div>
+</body>
+</html>
