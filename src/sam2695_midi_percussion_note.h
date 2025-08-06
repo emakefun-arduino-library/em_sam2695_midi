@@ -12,7 +12,7 @@
  */
 /**
  * @~English
- * @brief Define the note constants for the channel 9 timbre library MIDI_BANK-0.
+ * @brief Define the note constants for the channel 9 timbre library MIDI_BANK_0.
  */
 #define PERCUSSION_TIMBRE_1 0
 #define PERCUSSION_TIMBRE_2 16

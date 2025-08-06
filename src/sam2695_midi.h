@@ -343,7 +343,7 @@ struct ModulationWheelParameter {
  * @class Sam2695Midi
  * @brief Sam2695Midi is a driver class for the SAM2695 MIDI module, used for synthesizing music.
  * @example drum_pattern_player.ino Drum pattern player.
- * @example play_music.ino Play music using the BANK_0_ACOUSTIC_GUITAR-STEEL_STRING tone.
+ * @example play_music.ino Play music using the BANK_0_ACOUSTIC_GUITAR_STEEL_STRING tone.
  */
 
 class Sam2695Midi {

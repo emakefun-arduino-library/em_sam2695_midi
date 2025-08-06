@@ -23,7 +23,7 @@
  */
 /**
  * @~English
- * @brief Define the note constants for the channel timbre library MIDI_BANK-0.
+ * @brief Define the note constants for the channel timbre library MIDI_BANK_0.
  */
 #define BANK_0_GRAND_PIANO 0
 #define BANK_0_BRIGHT_PIANO 1
@@ -161,7 +161,7 @@
  */
 /**
  * @~English
- * @brief Define the note constants for the channel timbre library MIDI_BANK-127.
+ * @brief Define the note constants for the channel timbre library MIDI_BANK_127.
  */
 #define BANK_127_PIANO_1 0
 #define BANK_127_PIANO_2 1
