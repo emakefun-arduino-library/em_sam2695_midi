@@ -1,15 +1,15 @@
 var struct_scale_tuning_parameter =
 [
-    [ "a", "struct_scale_tuning_parameter.html#a53a5474cd523c92faba5018816b8e9c2", null ],
-    [ "a_sharp", "struct_scale_tuning_parameter.html#a44058102ae1a567093d4496f1bd4b069", null ],
-    [ "b", "struct_scale_tuning_parameter.html#a5a2184910e183da0d06105c790ba5f94", null ],
-    [ "c", "struct_scale_tuning_parameter.html#a9cacb70892dd5c25e5e299442ba7610d", null ],
-    [ "c_sharp", "struct_scale_tuning_parameter.html#ac917de475f2f9401d68efb5179523300", null ],
-    [ "d", "struct_scale_tuning_parameter.html#af039396dd0e08af80a05aee18c8690d8", null ],
-    [ "d_sharp", "struct_scale_tuning_parameter.html#adea3ca8261de270a5133f545190e214e", null ],
-    [ "e", "struct_scale_tuning_parameter.html#af90a6f8c6f0f7a3bb49739e270e7c6dc", null ],
-    [ "f", "struct_scale_tuning_parameter.html#a463f993d455a0984a214945d882a1d84", null ],
-    [ "f_sharp", "struct_scale_tuning_parameter.html#ab2c036bd8fd949fad6aa20c6b3880abf", null ],
-    [ "g", "struct_scale_tuning_parameter.html#ab1ae0dbf01782f28865124b4940e0b3e", null ],
-    [ "g_sharp", "struct_scale_tuning_parameter.html#a35aa39bf8664127b0af077558f166b6d", null ]
+    [ "note_a", "struct_scale_tuning_parameter.html#a020f2216f56c9805dd85dd05d6440d24", null ],
+    [ "note_a_sharp", "struct_scale_tuning_parameter.html#a3369098a82bc893aec3f58a96e49e27d", null ],
+    [ "note_b", "struct_scale_tuning_parameter.html#a73be3713b30de68c5ac25d54ca61fb39", null ],
+    [ "note_c", "struct_scale_tuning_parameter.html#aa18781d087850ba35b680cd23f711eae", null ],
+    [ "note_c_sharp", "struct_scale_tuning_parameter.html#a70be88681fc4a415a61b5585eda471d5", null ],
+    [ "note_d", "struct_scale_tuning_parameter.html#ab4dd3873201064db77764b42e0fb47eb", null ],
+    [ "note_d_sharp", "struct_scale_tuning_parameter.html#a234d55c1b59fe759daf0c6ccfb440194", null ],
+    [ "note_e", "struct_scale_tuning_parameter.html#a026ee09938bd711c8c4f6ead78bcc684", null ],
+    [ "note_f", "struct_scale_tuning_parameter.html#afca6a3c297531fe70734c0fb48ad78c7", null ],
+    [ "note_f_sharp", "struct_scale_tuning_parameter.html#a33760a40fdcae4ec19cb85a737337929", null ],
+    [ "note_g", "struct_scale_tuning_parameter.html#a329bb9d4ef2fc38fb0f564c566177640", null ],
+    [ "note_g_sharp", "struct_scale_tuning_parameter.html#a57f9dfc21edbac06485fff9406a6658e", null ]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['c_0',['c',['../struct_scale_tuning_parameter.html#a9cacb70892dd5c25e5e299442ba7610d',1,'ScaleTuningParameter']]],
-  ['c_5fsharp_1',['c_sharp',['../struct_scale_tuning_parameter.html#ac917de475f2f9401d68efb5179523300',1,'ScaleTuningParameter']]]
+  ['low_5ffrequency_0',['low_frequency',['../struct_equalizer_parameter.html#a2b58f8ffad75314799d102f9c0c72327',1,'EqualizerParameter']]],
+  ['low_5ffrequency_5fgain_1',['low_frequency_gain',['../struct_equalizer_parameter.html#aa4b7bb84c1a88fe358686c944bd15458',1,'EqualizerParameter']]],
+  ['low_5ffrequency_5foscillator_5frate_2',['low_frequency_oscillator_rate',['../struct_modulation_wheel_parameter.html#af1fe4baf6d167a0ee78298aee61b48db',1,'ModulationWheelParameter']]]
 ];

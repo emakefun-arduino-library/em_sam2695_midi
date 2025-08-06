@@ -138,7 +138,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief C note fine-tuning value (0-127)
    */
-  uint8_t c;
+  uint8_t note_c;
 
   /**
    * @~Chinese
@@ -148,7 +148,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief C# note fine-tuning value (0-127)
    */
-  uint8_t c_sharp;
+  uint8_t note_c_sharp;
 
   /**
    * @~Chinese
@@ -158,7 +158,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief D note fine-tuning value (0-127).
    */
-  uint8_t d;
+  uint8_t note_d;
 
   /**
    * @~Chinese
@@ -168,7 +168,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief D# note fine-tuning value (0-127).
    */
-  uint8_t d_sharp;
+  uint8_t note_d_sharp;
 
   /**
    * @~Chinese
@@ -178,7 +178,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief E note fine-tuning value (0-127).
    */
-  uint8_t e;
+  uint8_t note_e;
 
   /**
    * @~Chinese
@@ -188,7 +188,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief F note fine-tuning value (0-127).
    */
-  uint8_t f;
+  uint8_t note_f;
 
   /**
    * @~Chinese
@@ -198,7 +198,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief F# note fine-tuning value (0-127).
    */
-  uint8_t f_sharp;
+  uint8_t note_f_sharp;
 
   /**
    * @~Chinese
@@ -208,7 +208,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief G note fine-tuning value (0-127).
    */
-  uint8_t g;
+  uint8_t note_g;
 
   /**
    * @~Chinese
@@ -218,7 +218,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief G# note fine-tuning value (0-127).
    */
-  uint8_t g_sharp;
+  uint8_t note_g_sharp;
 
   /**
    * @~Chinese
@@ -228,7 +228,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief A note fine-tuning value (0-127).
    */
-  uint8_t a;
+  uint8_t note_a;
 
   /**
    * @~Chinese
@@ -238,7 +238,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief A# note fine-tuning value (0-127).
    */
-  uint8_t a_sharp;
+  uint8_t note_a_sharp;
 
   /**
    * @~Chinese
@@ -248,7 +248,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief B note fine-tuning value (0-127).
    */
-  uint8_t b;
+  uint8_t note_b;
 };
 
 /**
@@ -627,7 +627,7 @@ class Sam2695Midi {
    * @~Chinese
    * @brief 设置包络参数。
    * @param channel 指定通道（0-15）。
-   * @param attack_time 开始时间（0-127）-控制声音从零开始达到最大振幅的时间，单位:ms。
+   * @param attack_time 触发时间（0-127）-控制声音从零开始达到最大振幅的时间，单位:ms。
    * @param attenuation_time 衰减时间（0-127）-控制声音从最大振幅衰减到保持水平的时间，单位:ms。
    * @param release_time 释放时间（0-127）-控制钞票释放后音量衰减到零所需的时间，单位:ms。
    */
@@ -635,7 +635,7 @@ class Sam2695Midi {
    * @~English
    * @brief Set envelope parameters.
    * @param channel Designated channel (0-15).
-   * @param attack_time Start time (0-127) - controls the time for the sound to reach its maximum amplitude from zero, unit: ms.
+   * @param attack_time Attack time (0-127) - controls the time for the sound to reach its maximum amplitude from zero, unit: ms.
    * @param attenuation_time Attenuation time (0-127) - controls the time for sound to decay from maximum amplitude to maintain a level, unit: ms.
    * @param release_time Release time (0-127) - controls the time it takes for the volume to decay to zero after the note is released, unit: ms.
    */
