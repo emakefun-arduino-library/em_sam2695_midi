@@ -44,21 +44,21 @@ static_assert(sizeof(kHiHatPedalTick) / sizeof(kHiHatPedalTick[0]) == kTickSize,
 
 int32_t g_tempo = 120;
 
-Sam2695Midi g_synth(SAM2695_MIDI_PIN);
+em::Sam2695Midi g_sam2695_midi(SAM2695_MIDI_PIN);
 
 void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
   if (note_velocity > 0) {
-    g_synth.NoteOn(kChannel, midi_note, note_velocity);
-    g_synth.NoteOff(kChannel, midi_note);
+    g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
+    g_sam2695_midi.NoteOff(kChannel, midi_note);
   }
 }
 }  // namespace
 
 void setup() {
-  g_synth.MidiReset();
-  g_synth.SetChannelTimbre(kChannel, MIDI_BANK_0, PERCUSSION_TIMBRE_1);
-  g_synth.SetReverberation(kChannel, REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
-  g_synth.SetChannelVolume(kChannel, kChannelVolume);
+  g_sam2695_midi.MidiReset();
+  g_sam2695_midi.SetChannelTimbre(kChannel, MIDI_BANK_0, PERCUSSION_TIMBRE_1);
+  g_sam2695_midi.SetReverberation(kChannel, REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
+  g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);
 }
 
 void loop() {

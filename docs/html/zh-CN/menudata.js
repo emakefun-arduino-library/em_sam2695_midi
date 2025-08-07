@@ -24,6 +24,8 @@
 */
 var menudata={children:[
 {text:"首页",url:"index.html"},
+{text:"命名空间",url:"namespaces.html",children:[
+{text:"命名空间列表",url:"namespaces.html"}]},
 {text:"类",url:"annotated.html",children:[
 {text:"类列表",url:"annotated.html"},
 {text:"类索引",url:"classes.html"},
@@ -47,4 +49,4 @@ var menudata={children:[
 {text:"宏定义",url:"globals_defs.html"}]}]},
 {text:"示例",url:"examples.html"},
 {text:"下载",url:"usergroup0.html",children:[
-{text:"下载库: SAM2695_MIDI_v1.0.0.zip",url:"../../download/SAM2695_MIDI_v1.0.0.zip"}]}]}
+{text:"SAM2695_MIDI_v1.0.0.zip: https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip",url:"^https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip"}]}]}

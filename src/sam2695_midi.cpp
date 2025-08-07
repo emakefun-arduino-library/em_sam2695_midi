@@ -2,6 +2,8 @@
 
 #include "sam2695_midi.h"
 
+namespace em {
+
 #if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ARDUINO)
 Sam2695Midi::Sam2695Midi(uint8_t tx_pin) : software_serial(-1, tx_pin) {
   software_serial.begin(31250);
@@ -33,10 +35,35 @@ void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
     printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
     return;
   }
-
   hardware_serial.write(buffer, size);
 }
 #endif
+
+void Sam2695Midi::SendNrpnOrRpnParameter(const uint8_t channel,
+                                         const uint8_t most_significant_byte_controller,
+                                         const uint8_t most_significant_byte,
+                                         const uint8_t least_significant_byte_controller,
+                                         const uint8_t least_significant_byte,
+                                         const uint8_t value) {
+  const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, most_significant_byte};
+  Write(command_most_significant_byte, sizeof(command_most_significant_byte) / sizeof(command_most_significant_byte[0]));
+
+  const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, least_significant_byte};
+  Write(command_least_significant_byte, sizeof(command_least_significant_byte) / sizeof(command_least_significant_byte[0]));
+
+  const uint8_t command_set_value[] = {0xB0 | (channel & 0x0F), 0x06, value & 0x7F};
+  Write(command_set_value, sizeof(command_set_value) / sizeof(command_set_value[0]));
+}
+
+void Sam2695Midi::NullNrpnOrRpn(const uint8_t channel,
+                                const uint8_t most_significant_byte_controller,
+                                const uint8_t least_significant_byte_controller) {
+  const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, 0x7F};
+  Write(command_most_significant_byte, sizeof(command_most_significant_byte));
+
+  const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, 0x7F};
+  Write(command_least_significant_byte, sizeof(command_least_significant_byte));
+}
 
 void Sam2695Midi::NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity) {
   const uint8_t command[] = {0x90 | (channel & 0x0F), midi_note & 0x7F, note_velocity & 0x7F};
@@ -71,8 +98,9 @@ void Sam2695Midi::PitchBend(const uint8_t channel, uint16_t pitch_bend_value) {
 }
 
 void Sam2695Midi::PitchBendRange(const uint8_t channel, const uint8_t pitch_bend_range_value) {
-  const uint8_t command[] = {0xB0 | (channel & 0x0F), 0x65, 0x00, 0x64, 0x00, 0x06, pitch_bend_range_value};
-  Write(command, sizeof(command) / sizeof(command[0]));
+  SendNrpnOrRpnParameter(channel, 0x65, 0x00, 0x64, 0x00, pitch_bend_range_value);
+
+  NullNrpnOrRpn(channel, 0x65, 0x64);
 }
 
 void Sam2695Midi::MidiReset() {
@@ -105,7 +133,7 @@ void Sam2695Midi::SetReverberation(const uint8_t channel,
   command[2] = reverberation_volume & 0x7F;
   Write(command, sizeof(command) / sizeof(command[0]));
 
-  const uint8_t command_delay_feedback[] = {0xF0, 0x41, 0x00, 0x42, 0x12, 0x40, 0x01, 0x35, delay_feedback & 0x7F, 0x00, 0xF7};
+  const uint8_t command_delay_feedback[] = {0xF0, 0x41, 0x10, 0x42, 0x12, 0x40, 0x01, 0x35, delay_feedback & 0x7F, 0x00, 0xF7};
   Write(command_delay_feedback, sizeof(command_delay_feedback) / sizeof(command_delay_feedback[0]));
 }
 
@@ -121,10 +149,10 @@ void Sam2695Midi::SetChorus(const uint8_t channel,
   command[2] = chorus_effect_volume & 0x7F;
   Write(command, sizeof(command) / sizeof(command[0]));
 
-  const uint8_t command_feedback[] = {0xF0, 0x41, 0x00, 0x42, 0x12, 0x40, 0x01, 0x3B, chorus_effect_feedback & 0x7F, 0x00, 0xF7};
+  const uint8_t command_feedback[] = {0xF0, 0x41, 0x10, 0x42, 0x12, 0x40, 0x01, 0x3B, chorus_effect_feedback & 0x7F, 0x00, 0xF7};
   Write(command_feedback, sizeof(command_feedback) / sizeof(command_feedback[0]));
 
-  const uint8_t command_chorus_delay[] = {0xF0, 0x41, 0x00, 0x42, 0x12, 0x40, 0x01, 0x3C, chorus_delay_time & 0x7F, 0x00, 0xF7};
+  const uint8_t command_chorus_delay[] = {0xF0, 0x41, 0x10, 0x42, 0x12, 0x40, 0x01, 0x3C, chorus_delay_time & 0x7F, 0x00, 0xF7};
   Write(command_chorus_delay, sizeof(command_chorus_delay) / sizeof(command_chorus_delay[0]));
 }
 
@@ -134,86 +162,52 @@ void Sam2695Midi::SetPanPosition(const uint8_t channel, const uint8_t pan_positi
 }
 
 void Sam2695Midi::SetEqualizer(const uint8_t channel, const EqualizerParameter equalizer_parameter) {
-  uint8_t command[] = {0xB0 | (channel & 0x0F), 0x63, 0x37, 0x62, 0x00, 0x06, equalizer_parameter.low_frequency_gain & 0x7F};
-  Write(command, sizeof(command) / sizeof(command[0]));
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x00, equalizer_parameter.low_frequency_gain);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x01, equalizer_parameter.medium_low_frequency_gain);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x02, equalizer_parameter.medium_high_frequency_gain);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x03, equalizer_parameter.high_frequency_gain);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x08, equalizer_parameter.low_frequency);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x09, equalizer_parameter.medium_low_frequency);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x0A, equalizer_parameter.medium_high_frequency);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x0B, equalizer_parameter.high_frequency);
 
-  command[4] = 0x01;
-  command[6] = equalizer_parameter.medium_low_frequency_gain & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x02;
-  command[6] = equalizer_parameter.medium_high_frequency_gain & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x03;
-  command[6] = equalizer_parameter.high_frequency_gain & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x08;
-  command[6] = equalizer_parameter.low_frequency & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x09;
-  command[6] = equalizer_parameter.medium_low_frequency & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x0A;
-  command[6] = equalizer_parameter.medium_high_frequency & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x0B;
-  command[6] = equalizer_parameter.high_frequency & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
+  NullNrpnOrRpn(channel, 0x63, 0x62);
 }
 
 void Sam2695Midi::SetTuning(const uint8_t channel, const uint8_t fine_tuning, const uint8_t coarse_tuning) {
-  uint8_t command[] = {0xB0 | (channel & 0x0F), 0x65, 0x00, 0x64, 0x01, 0x06, fine_tuning & 0x7F};
-  Write(command, sizeof(command) / sizeof(command[0]));
+  SendNrpnOrRpnParameter(channel, 0x65, 0x00, 0x64, 0x01, fine_tuning);
+  SendNrpnOrRpnParameter(channel, 0x65, 0x00, 0x64, 0x02, coarse_tuning);
 
-  command[4] = 0x02;
-  command[6] = coarse_tuning & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
+  NullNrpnOrRpn(channel, 0x65, 0x64);
 }
 
 void Sam2695Midi::SetVibrato(const uint8_t channel, const uint8_t vibrato_rate, const uint8_t vibrato_depth, const uint8_t vibrato_delay_modify) {
-  uint8_t command[] = {0xB0 | (channel & 0x0F), 0x63, 0x01, 0x62, 0x08, 0x06, vibrato_rate & 0x7F};
-  Write(command, sizeof(command) / sizeof(command[0]));
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x08, vibrato_rate);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x09, vibrato_depth);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x0A, vibrato_delay_modify);
 
-  command[4] = 0x09;
-  command[6] = vibrato_depth & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x0A;
-  command[6] = vibrato_delay_modify & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
+  NullNrpnOrRpn(channel, 0x63, 0x62);
 }
 
 void Sam2695Midi::SetTimeVaryingFilter(const uint8_t channel, const uint8_t cutoff, const uint8_t resonance) {
-  uint8_t command[] = {0xB0 | (channel & 0x0F), 0x63, 0x01, 0x62, 0x20, 0x06, cutoff & 0x7F};
-  Write(command, sizeof(command) / sizeof(command[0]));
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x20, cutoff);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x21, resonance);
 
-  command[4] = 0x21;
-  command[6] = resonance & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
+  NullNrpnOrRpn(channel, 0x63, 0x62);
 }
 
 void Sam2695Midi::SetEnvelope(const uint8_t channel, const uint8_t attack_time, const uint8_t attenuation_time, const uint8_t release_time) {
-  uint8_t command[] = {0xB0 | (channel & 0x0F), 0x63, 0x01, 0x62, 0x63, 0x06, attack_time & 0x7F};
-  Write(command, sizeof(command) / sizeof(command[0]));
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x63, attack_time);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x64, attenuation_time);
+  SendNrpnOrRpnParameter(channel, 0x63, 0x01, 0x62, 0x66, release_time);
 
-  command[4] = 0x64;
-  command[6] = attenuation_time & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
-
-  command[4] = 0x66;
-  command[6] = release_time & 0x7F;
-  Write(command, sizeof(command) / sizeof(command[0]));
+  NullNrpnOrRpn(channel, 0x63, 0x62);
 }
 
 void Sam2695Midi::SetScaleTuning(const uint8_t channel, const ScaleTuningParameter scale_tuning_parameter) {
   const uint8_t command[] = {0xF0,
                              0x41,
-                             0x00,
+                             0x10,
                              0x42,
                              0x12,
                              0x40,
@@ -238,7 +232,7 @@ void Sam2695Midi::SetScaleTuning(const uint8_t channel, const ScaleTuningParamet
 
 void Sam2695Midi::SetModulationWheel(const uint8_t channel, const ModulationWheelParameter modulation_wheel_parameter) {
   uint8_t command[] = {
-      0xF0, 0x41, 0x00, 0x42, 0x12, 0x40, 0x20 | (channel & 0x0F), 0x00, modulation_wheel_parameter.high_pitch_volume & 0x7F, 0x00, 0xF7};
+      0xF0, 0x41, 0x10, 0x42, 0x12, 0x40, 0x20 | (channel & 0x0F), 0x00, modulation_wheel_parameter.high_pitch_volume & 0x7F, 0x00, 0xF7};
   Write(command, sizeof(command) / sizeof(command[0]));
 
   command[8] = 0x01;
@@ -267,9 +261,10 @@ void Sam2695Midi::SetModulationWheel(const uint8_t channel, const ModulationWhee
 }
 
 void Sam2695Midi::AllDrums() {
-  uint8_t command[] = {0xF0, 0x41, 0x00, 0x42, 0x12, 0x40, 0x00, 0x15, 0x01, 0x00, 0xF7};
+  uint8_t command[] = {0xF0, 0x41, 0x10, 0x42, 0x12, 0x40, 0x00, 0x15, 0x01, 0x00, 0xF7};
   for (uint8_t i = 0; i <= 15; i++) {
     command[6] = 0x10 | (i & 0x0F);
     Write(command, sizeof(command) / sizeof(command[0]));
   }
 }
+}  // namespace em

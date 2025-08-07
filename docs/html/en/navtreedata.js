@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "SAM2695 MIDI Arduino Lib", "index.html", [
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -43,14 +46,14 @@ var NAVTREE =
     ] ],
     [ "Examples", "examples.html", "examples" ],
     [ "Downloads", "usergroup0.html", [
-      [ "Download Library: SAM2695_MIDI_v1.0.0.zip", "../../download/SAM2695_MIDI_v1.0.0.zip", null ]
+      [ "SAM2695_MIDI_v1.0.0.zip: https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", "^https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", null ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"../../download/SAM2695_MIDI_v1.0.0.zip"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

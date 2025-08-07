@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "SAM2695 MIDI Arduino 库", "index.html", [
+    [ "命名空间", "namespaces.html", [
+      [ "命名空间列表", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -43,14 +46,14 @@ var NAVTREE =
     ] ],
     [ "示例", "examples.html", "examples" ],
     [ "下载", "usergroup0.html", [
-      [ "下载库: SAM2695_MIDI_v1.0.0.zip", "../../download/SAM2695_MIDI_v1.0.0.zip", null ]
+      [ "SAM2695_MIDI_v1.0.0.zip: https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", "^https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", null ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"../../download/SAM2695_MIDI_v1.0.0.zip"
+"annotated.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

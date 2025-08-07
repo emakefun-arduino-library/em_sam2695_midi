@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['amplitude_0',['amplitude',['../struct_modulation_wheel_parameter.html#a9061f545fd1c2942202b2fdbd247faeb',1,'ModulationWheelParameter']]]
+  ['amplitude_0',['amplitude',['../structem_1_1_modulation_wheel_parameter.html#a83f76f00e2ec699ad33133e83642c069',1,'em::ModulationWheelParameter']]]
 ];

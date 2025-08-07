@@ -1,10 +1,12 @@
 #pragma once
+
+#ifndef _EM_SAM2695_MIDI_NOTE_H_
+#define _EM_SAM2695_MIDI_NOTE_H_
 /**
  * @file sam2695_midi_note.h
  */
-#ifndef _SAM2695_MIDI_NOTE_H_
-#define _SAM2695_MIDI_NOTE_H_
 
+namespace em {
 /**
  * @~Chinese
  * @brief 定义通道音符常量，八度 -1。
@@ -231,5 +233,5 @@
 #define MIDI_NOTE_F_9 125
 #define MIDI_NOTE_F_SHARP_9 126
 #define MIDI_NOTE_G_9 127
-
+}  // namespace em
 #endif

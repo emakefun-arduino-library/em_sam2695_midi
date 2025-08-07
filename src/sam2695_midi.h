@@ -1,8 +1,12 @@
+
 #pragma once
 
-#ifndef _SAM2695_MIDI_H_
-#define _SAM2695_MIDI_H_
+#ifndef _EM_SAM2695_MIDI_H_
+#define _EM_SAM2695_MIDI_H_
 
+/**
+ * @file sam2695_midi.h
+ */
 #include <Arduino.h>
 
 #include "sam2695_midi_chorus_reverberation.h"
@@ -10,25 +14,45 @@
 #include "sam2695_midi_percussion_note.h"
 #include "sam2695_midi_timbre.h"
 
-#define SAM2695MIDI_ESP32 1
-#define SAM2695MIDI_ARDUINO 2
-
-#if defined(ESP_PLATFORM)
-#define SAM2695MIDI_PLATFORM SAM2695MIDI_ESP32
-#elif defined(ARDUINO)
-#define SAM2695MIDI_PLATFORM SAM2695MIDI_ARDUINO
-#endif
-
-#ifndef SAM2695MIDI_PLATFORM
-#define SAM2695MIDI_PLATFORM SAM2695MIDI_ARDUINO
-#endif
-
-#if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ARDUINO)
+/**
+ * @~Chinese
+ * @brief 根据当前开发环境选择串行库。
+ */
+/**
+ * @~English
+ * @brief Choose a serial library based on the current development environment.
+ */
+#if defined(ESP32)
+#include <HardwareSerial.h>
+#else
 #include <SoftwareSerial.h>
 #endif
 
-#if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ESP32)
-#include <HardwareSerial.h>
+namespace em {
+/**
+ * @~Chinese
+ * @brief 定义开发环境常量。
+ */
+/**
+ * @~English
+ * @brief Define development environment constants.
+ */
+#define SAM2695MIDI_ESP32 1
+#define SAM2695MIDI_ARDUINO 2
+
+/**
+ * @~Chinese
+ * @brief 判断当前开发环境是AVR还是ESP32,默认设置当前开发环境是AVR。
+ */
+/**
+ * @~English
+ * @brief Determine whether the current development environment is AVR or ESP32, with the default setting being AVR.
+ */
+
+#if defined(ESP32)
+#define SAM2695MIDI_PLATFORM SAM2695MIDI_ESP32
+#else
+#define SAM2695MIDI_PLATFORM SAM2695MIDI_ARDUINO
 #endif
 
 /**
@@ -351,6 +375,15 @@ class Sam2695Midi {
   void Write(const uint8_t data);
 
   void Write(const uint8_t *buffer, const size_t size);
+
+  void SendNrpnOrRpnParameter(const uint8_t channel,
+                              const uint8_t most_significant_byte_controller,
+                              const uint8_t most_significant_byte,
+                              const uint8_t least_significant_byte_controller,
+                              const uint8_t least_significant_byte,
+                              const uint8_t value);
+
+  void NullNrpnOrRpn(const uint8_t channel, const uint8_t most_significant_byte_controller, const uint8_t least_significant_byte_controller);
 
 #if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ARDUINO)
   SoftwareSerial software_serial;
@@ -680,4 +713,5 @@ class Sam2695Midi {
    */
   void AllDrums();
 };
+}  // namespace em
 #endif

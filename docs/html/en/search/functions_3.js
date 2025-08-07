@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['noteoff_0',['NoteOff',['../class_sam2695_midi.html#a2b5f90ba6c454bb67a0127aad47f8fe4',1,'Sam2695Midi']]],
-  ['noteon_1',['NoteOn',['../class_sam2695_midi.html#a6c99ef622f1c6c03182ff7714ad814e3',1,'Sam2695Midi']]]
+  ['noteoff_0',['NoteOff',['../classem_1_1_sam2695_midi.html#aa91a8c548c8bfb2300d800991fb4b66e',1,'em::Sam2695Midi']]],
+  ['noteon_1',['NoteOn',['../classem_1_1_sam2695_midi.html#a03540eebeee02d50f0f12a7b94a5ae16',1,'em::Sam2695Midi']]]
 ];

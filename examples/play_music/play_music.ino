@@ -26,20 +26,20 @@ constexpr uint16_t kQuarterNoteDuration = 300;
 constexpr uint16_t kEighthNoteDuration = 150;
 constexpr uint16_t kDottedQuarterNoteDuration = 450;
 
-Sam2695Midi g_synth(SAM2695_MIDI_PIN);
+em::Sam2695Midi g_sam2695_midi(SAM2695_MIDI_PIN);
 
 void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t note_velocity = 90) {
-  g_synth.NoteOn(kChannel, midi_note, note_velocity);
+  g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
   delay(duration);
-  g_synth.NoteOff(kChannel, midi_note);
+  g_sam2695_midi.NoteOff(kChannel, midi_note);
   delay(30);
 }
 }  // namespace
 
 void setup() {
-  g_synth.SetChannelTimbre(kChannel, MIDI_BANK_0, BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);
-  g_synth.SetChannelVolume(kChannel, kChannelVolume);
-  g_synth.SetReverberation(kChannel, REVERBERATION_ROOM_2, kReverberationVolume, kReverberationDelayFeedback);
+  g_sam2695_midi.SetChannelTimbre(kChannel, MIDI_BANK_0, BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);
+  g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);
+  g_sam2695_midi.SetReverberation(kChannel, REVERBERATION_ROOM_2, kReverberationVolume, kReverberationDelayFeedback);
 }
 
 void loop() {

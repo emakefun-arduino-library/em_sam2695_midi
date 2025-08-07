@@ -2,9 +2,9 @@ name: Arduino AVR Build
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "v*"]
   pull_request:
-    branches: ["main"]
+    branches: ["main", "v*"]
 
 jobs:
   get_lib_info:
@@ -67,9 +67,16 @@ jobs:
           ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} config set library.enable_unsafe_install true
           ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} config dump
           ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} core install arduino:avr
-      - name: install lib
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: ${{github.event.repository.name}}
+      - name: Zip
         run: |
-          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} lib install --git-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
+          zip -r ${{github.event.repository.name}}.zip ${{github.event.repository.name}}
+      - name: Arduino Lib Install
+        run: |
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} lib install --zip-path ${{github.event.repository.name}}.zip
       - name: compile
         run: |
           echo "compile ${ARDUINO_USER_DIR}/libraries/${LIB_DIR_NAME}/examples/${{matrix.example}}/${{matrix.example}}.ino"

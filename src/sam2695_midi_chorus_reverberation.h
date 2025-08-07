@@ -1,10 +1,11 @@
 #pragma once
+
+#ifndef _EM_SAM2695_MIDI_CHORUS_REVERBERATION_H_
+#define _EM_SAM2695_MIDI_CHORUS_REVERBERATION_H_
 /**
  * @file sam2695_midi_chorus_reverberation.h
  */
-#ifndef _SAM2695_MIDI_CHORUS_REVERBERATION_H_
-#define _SAM2695_MIDI_CHORUS_REVERBERATION_H_
-
+namespace em {
 /**
  * @~Chinese
  * @brief 定义混响类型常量。
@@ -38,5 +39,5 @@
 #define CHORUS_FLANGER 5
 #define CHORUS_SHORT_DELAY 6
 #define CHORUS_FEEDBACK_DELAY 7
-
+}  // namespace em
 #endif

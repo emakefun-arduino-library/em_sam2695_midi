@@ -1,11 +1,13 @@
 #pragma once
+
+#ifndef _EM_SAM2695_MIDI_TIMBRE_H_
+#define _EM_SAM2695_MIDI_TIMBRE_H_
+
 /**
  * @file sam2695_midi_timbre.h
  */
 
-#ifndef _SAM2695_MIDI_TIMBRE_H_
-#define _SAM2695_MIDI_TIMBRE_H_
-
+namespace em {
 /**
  * @~Chinese
  * @brief 定义通道音色库常量。
@@ -292,4 +294,5 @@
 #define BANK_127_BOWED_GLASS_2 126
 #define BANK_127_ICE_RAIN_2 127
 
+}  // namespace em
 #endif

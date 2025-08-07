@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['midireset_0',['MidiReset',['../class_sam2695_midi.html#af19bdaf2fe5e72ffe4420bd0d9cf86cc',1,'Sam2695Midi']]]
+  ['midireset_0',['MidiReset',['../classem_1_1_sam2695_midi.html#ab3f5ef62dac53b40c0fc28de23be1048',1,'em::Sam2695Midi']]]
 ];

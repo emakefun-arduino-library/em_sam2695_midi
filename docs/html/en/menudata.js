@@ -24,6 +24,8 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -47,4 +49,4 @@ var menudata={children:[
 {text:"Macros",url:"globals_defs.html"}]}]},
 {text:"Examples",url:"examples.html"},
 {text:"Downloads",url:"usergroup0.html",children:[
-{text:"Download Library: SAM2695_MIDI_v1.0.0.zip",url:"../../download/SAM2695_MIDI_v1.0.0.zip"}]}]}
+{text:"SAM2695_MIDI_v1.0.0.zip: https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip",url:"^https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip"}]}]}

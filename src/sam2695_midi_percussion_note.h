@@ -1,11 +1,13 @@
 #pragma once
+
+#ifndef _EM_SAM2695_MIDI_PERCUSSION_NOTE_H_
+#define _EM_SAM2695_MIDI_PERCUSSION_NOTE_H_
+
 /**
  * @file sam2695_midi_percussion_note.h
  */
 
-#ifndef _SAM2695_MIDI_PERCUSSION_NOTE_H_
-#define _SAM2695_MIDI_PERCUSSION_NOTE_H_
-
+namespace em {
 /**
  * @~Chinese
  * @brief 定义通道9音色库MIDI_BANK_0的音色常量。
@@ -424,4 +426,5 @@
 #define TIMBRE_5_NOTE_F_SHARP_7_BIRDS 102
 #define TIMBRE_5_NOTE_A_SHARP_7_SEASHORE 106
 
+}  // namespace em
 #endif
