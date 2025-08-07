@@ -163,10 +163,10 @@ $(function(){initNavTree('sam2695__midi_8cpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                <span class="keyword">const</span> uint8_t most_significant_byte_controller,</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                <span class="keyword">const</span> uint8_t least_significant_byte_controller) {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">const</span> uint8_t command_most_significant_byte[] = {0xB0 | (channel &amp; 0x0F), most_significant_byte_controller, 0x7F};</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  Write(command_most_significant_byte, <span class="keyword">sizeof</span>(command_most_significant_byte));</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  Write(command_most_significant_byte, <span class="keyword">sizeof</span>(command_most_significant_byte) / <span class="keyword">sizeof</span>(command_most_significant_byte[0]));</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">const</span> uint8_t command_least_significant_byte[] = {0xB0 | (channel &amp; 0x0F), least_significant_byte_controller, 0x7F};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  Write(command_least_significant_byte, <span class="keyword">sizeof</span>(command_least_significant_byte));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  Write(command_least_significant_byte, <span class="keyword">sizeof</span>(command_least_significant_byte) / <span class="keyword">sizeof</span>(command_least_significant_byte[0]));</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">

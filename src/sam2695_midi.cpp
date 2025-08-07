@@ -59,10 +59,10 @@ void Sam2695Midi::NullNrpnOrRpn(const uint8_t channel,
                                 const uint8_t most_significant_byte_controller,
                                 const uint8_t least_significant_byte_controller) {
   const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, 0x7F};
-  Write(command_most_significant_byte, sizeof(command_most_significant_byte));
+  Write(command_most_significant_byte, sizeof(command_most_significant_byte) / sizeof(command_most_significant_byte[0]));
 
   const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, 0x7F};
-  Write(command_least_significant_byte, sizeof(command_least_significant_byte));
+  Write(command_least_significant_byte, sizeof(command_least_significant_byte) / sizeof(command_least_significant_byte[0]));
 }
 
 void Sam2695Midi::NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity) {
