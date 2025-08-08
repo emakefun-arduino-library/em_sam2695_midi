@@ -25,9 +25,6 @@
 var NAVTREE =
 [
   [ "SAM2695 MIDI Arduino 库", "index.html", [
-    [ "命名空间", "namespaces.html", [
-      [ "命名空间列表", "namespaces.html", "namespaces_dup" ]
-    ] ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -40,8 +37,8 @@ var NAVTREE =
     [ "文件", "files.html", [
       [ "文件列表", "files.html", "files_dup" ],
       [ "文件成员", "globals.html", [
-        [ "全部", "globals.html", null ],
-        [ "宏定义", "globals_defs.html", null ]
+        [ "全部", "globals.html", "globals_dup" ],
+        [ "宏定义", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ],
     [ "示例", "examples.html", "examples" ],
@@ -53,7 +50,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"sam2695__midi__percussion__note_8h.html#a70e5c242d906c2600dc848bc3cc365b7",
+"sam2695__midi__timbre_8h.html#ab7d0e376ef6b79b052b74bf324e71278"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

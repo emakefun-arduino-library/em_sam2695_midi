@@ -42,7 +42,7 @@ static_assert(sizeof(kHiHatOpenTick) / sizeof(kHiHatOpenTick[0]) == kTickSize, "
 static_assert(sizeof(kHiHatCloseTick) / sizeof(kHiHatCloseTick[0]) == kTickSize, "kHiHatCloseTick size must be 15");
 static_assert(sizeof(kHiHatPedalTick) / sizeof(kHiHatPedalTick[0]) == kTickSize, "kHiHatPedalTick size must be 15");
 
-int32_t g_tempo = 120;
+uint16_t g_tempo = 120;
 
 em::Sam2695Midi g_sam2695_midi(SAM2695_MIDI_PIN);
 

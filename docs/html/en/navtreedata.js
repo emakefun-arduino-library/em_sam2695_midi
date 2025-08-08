@@ -25,9 +25,6 @@
 var NAVTREE =
 [
   [ "SAM2695 MIDI Arduino Lib", "index.html", [
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -40,8 +37,8 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ],
     [ "Examples", "examples.html", "examples" ],
@@ -53,7 +50,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"sam2695__midi__percussion__note_8h.html#a70e5c242d906c2600dc848bc3cc365b7",
+"sam2695__midi__timbre_8h.html#ab7d0e376ef6b79b052b74bf324e71278"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa91a8c548c8bfb2300d800991fb4b66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the note in the specified channel, which was previously opened at a given pitch using the noteOn() command.  <br /></td></tr>
 <tr class="separator:aa91a8c548c8bfb2300d800991fb4b66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeed6c73ecd88278f19a0b8cf0057596" id="r_aaeed6c73ecd88278f19a0b8cf0057596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeed6c73ecd88278f19a0b8cf0057596">SetChannelTimbre</a> (const uint8_t channel, const uint8_t bank, const uint8_t timbre)</td></tr>
-<tr class="memdesc:aaeed6c73ecd88278f19a0b8cf0057596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the tone of the specified channel. Among them, channel 9 is a dedicated drum channel, and the timbre and notes of channel 9 can be found in reference <a class="el" href="sam2695__midi__percussion__note_8h.html">sam2695_midi_percussion_note.h</a> .  <br /></td></tr>
+<tr class="memdesc:aaeed6c73ecd88278f19a0b8cf0057596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the tone of the specified channel. Among them, channel 9 is a dedicated drum channel, and the timbre and notes of channel 9 can be found in reference <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a> .  <br /></td></tr>
 <tr class="separator:aaeed6c73ecd88278f19a0b8cf0057596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1be45ffd473116681d2b77ac659853d" id="r_aa1be45ffd473116681d2b77ac659853d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1be45ffd473116681d2b77ac659853d">PitchBend</a> (const uint8_t channel, uint16_t pitch_bend_value)</td></tr>
 <tr class="memdesc:aa1be45ffd473116681d2b77ac659853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bend the pitch upwards or downwards, with a default swing of+/-1 semitone.  <br /></td></tr>
@@ -179,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#_a0">drum_pattern_player.ino</a>, and <a class="el" href="play_music_8ino-example.html#_a0">play_music.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8h_source.html#l00373">373</a> of file <a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8h_source.html#l00340">340</a> of file <a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3d5844b4bc5e9aa3f4d7f974a7e615e1" name="a3d5844b4bc5e9aa3f4d7f974a7e615e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d5844b4bc5e9aa3f4d7f974a7e615e1">&#9670;&#160;</a></span>Sam2695Midi()</h2>
@@ -226,7 +226,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Activate all drum channels and set all 16 MIDI channels (0-15) as drum channels. </p>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00263">263</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00260">260</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00110">110</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00107">107</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
 
 <p>MIDI system reset sends MIDI system reset command (0xFF) to reset all connected MIDI devices to their initial state. </p>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00106">106</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00103">103</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -301,14 +301,14 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channel (0-15). </td></tr>
-    <tr><td class="paramname">midi_note</td><td>MIDI notes (0-127), please refer to <a class="el" href="sam2695__midi__note_8h.html">sam2695_midi_note.h</a> for reference; Among them, for the notes of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html">sam2695_midi_percussion_note.h</a>. </td></tr>
+    <tr><td class="paramname">midi_note</td><td>MIDI notes (0-127), please refer to <a class="el" href="sam2695__midi__note_8h.html" title="MIDI note numbering definition (0-127), including all MIDI note numbering from C-1 (0) to G9 (127).">sam2695_midi_note.h</a> for reference; Among them, for the notes of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a2">drum_pattern_player.ino</a>, and <a class="el" href="play_music_8ino-example.html#a2">play_music.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00073">73</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00070">70</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channel (0-15). </td></tr>
-    <tr><td class="paramname">midi_note</td><td>MIDI notes (0-127), please refer to <a class="el" href="sam2695__midi__note_8h.html">sam2695_midi_note.h</a> for reference; Among them, for the notes of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html">sam2695_midi_percussion_note.h</a>. </td></tr>
+    <tr><td class="paramname">midi_note</td><td>MIDI notes (0-127), please refer to <a class="el" href="sam2695__midi__note_8h.html" title="MIDI note numbering definition (0-127), including all MIDI note numbering from C-1 (0) to G9 (127).">sam2695_midi_note.h</a> for reference; Among them, for the notes of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a>. </td></tr>
     <tr><td class="paramname">note_velocity</td><td>Note velocity (0-127), controls the volume and tone brightness of notes, on a keyboard this corresponds to how hard the key,0: silent (equivalent to noteOff), 1-126: from weak to strong, 127: maximum strength. </td></tr>
   </table>
   </dd>
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a1">drum_pattern_player.ino</a>, and <a class="el" href="play_music_8ino-example.html#a1">play_music.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00068">68</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00065">65</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00091">91</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00088">88</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00100">100</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00097">97</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00120">120</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00117">117</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -467,17 +467,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change the tone of the specified channel. Among them, channel 9 is a dedicated drum channel, and the timbre and notes of channel 9 can be found in reference <a class="el" href="sam2695__midi__percussion__note_8h.html">sam2695_midi_percussion_note.h</a> . </p>
+<p>Change the tone of the specified channel. Among them, channel 9 is a dedicated drum channel, and the timbre and notes of channel 9 can be found in reference <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channels (0-15), where channel 9 is a dedicated drum group channel. </td></tr>
     <tr><td class="paramname">bank</td><td>Selection of timbre library, with parameter values of MIDI_BANK_0 or MIDI_BANK_127. </td></tr>
-    <tr><td class="paramname">timbre</td><td>Timbre number (0-127), please refer to the macro in reference <a class="el" href="sam2695__midi__timbre_8h.html">sam2695_midi_timbre.h</a> (e.g. BANK_0_GRAND_PIANO); Among them, for the timbre of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html">sam2695_midi_percussion_note.h</a> . </td></tr>
+    <tr><td class="paramname">timbre</td><td>Timbre number (0-127), please refer to the macro in reference <a class="el" href="sam2695__midi__timbre_8h.html" title="Define channel timbre library constants and timbre constants.">sam2695_midi_timbre.h</a> (e.g. BANK_0_GRAND_PIANO); Among them, for the timbre of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a> . </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00078">78</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00075">75</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00115">115</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00112">112</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channel (0-15). </td></tr>
-    <tr><td class="paramname">chorus_effect_type</td><td>chorus effect type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html">sam2695_midi_chorus_reverberation.h</a> (e.g., CHORUS_1). </td></tr>
+    <tr><td class="paramname">chorus_effect_type</td><td>chorus effect type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html" title="Define constants for reverberation effect types and chorus effect types.">sam2695_midi_chorus_reverberation.h</a> (e.g., CHORUS_1). </td></tr>
     <tr><td class="paramname">chorus_effect_volume</td><td>chorus effect sending volume (0-127), 0: none, 127: maximum sending volume. </td></tr>
     <tr><td class="paramname">chorus_effect_feedback</td><td>Effect feedback amount (0-127, 0 means not set). </td></tr>
     <tr><td class="paramname">chorus_delay_time</td><td>chorus delay time (0-127, 0 indicates not set), unit: ms. </td></tr>
@@ -559,7 +559,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00140">140</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00137">137</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00199">199</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00196">196</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +635,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00164">164</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00161">161</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -667,7 +667,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00233">233</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00230">230</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -699,7 +699,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00159">159</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00156">156</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -736,14 +736,14 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channel (0-15). </td></tr>
-    <tr><td class="paramname">reverberation_type</td><td>Reverberation type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html">sam2695_midi_chorus_reverberation.h</a> (e.g., REVERBERATION_ROOM_1). </td></tr>
+    <tr><td class="paramname">reverberation_type</td><td>Reverberation type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html" title="Define constants for reverberation effect types and chorus effect types.">sam2695_midi_chorus_reverberation.h</a> (e.g., REVERBERATION_ROOM_1). </td></tr>
     <tr><td class="paramname">reverberation_volume</td><td>Reverberation transmission amount (0-127), 0: no reverberation, 127: maximum reverberation amount. </td></tr>
     <tr><td class="paramname">delay_feedback</td><td>Delayed feedback quantity (0-127), 0: no feedback, 127: maximum feedback. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00125">125</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00122">122</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -775,7 +775,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00207">207</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00204">204</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -813,7 +813,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00192">192</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00189">189</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00177">177</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00174">174</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -895,7 +895,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00184">184</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sam2695__midi_8cpp_source.html#l00181">181</a> of file <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a>.</p>
 
 </div>
 </div>
@@ -908,7 +908,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceem.html">em</a></li><li class="navelem"><a class="el" href="classem_1_1_sam2695_midi.html">Sam2695Midi</a></li>
+    <li class="navelem"><b>em</b></li><li class="navelem"><a class="el" href="classem_1_1_sam2695_midi.html">Sam2695Midi</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

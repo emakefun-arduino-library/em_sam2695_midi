@@ -14,14 +14,6 @@
 #include "sam2695_midi_percussion_note.h"
 #include "sam2695_midi_timbre.h"
 
-/**
- * @~Chinese
- * @brief 根据当前开发环境选择串行库。
- */
-/**
- * @~English
- * @brief Choose a serial library based on the current development environment.
- */
 #if defined(ESP32)
 #include <HardwareSerial.h>
 #else
@@ -29,31 +21,6 @@
 #endif
 
 namespace em {
-/**
- * @~Chinese
- * @brief 定义开发环境常量。
- */
-/**
- * @~English
- * @brief Define development environment constants.
- */
-#define SAM2695MIDI_ESP32 1
-#define SAM2695MIDI_ARDUINO 2
-
-/**
- * @~Chinese
- * @brief 判断当前开发环境是AVR还是ESP32,默认设置当前开发环境是AVR。
- */
-/**
- * @~English
- * @brief Determine whether the current development environment is AVR or ESP32, with the default setting being AVR.
- */
-
-#if defined(ESP32)
-#define SAM2695MIDI_PLATFORM SAM2695MIDI_ESP32
-#else
-#define SAM2695MIDI_PLATFORM SAM2695MIDI_ARDUINO
-#endif
 
 /**
  * @~Chinese
@@ -72,7 +39,7 @@ struct EqualizerParameter {
    * @~English
    * @brief Low frequency gain value (0-127).
    */
-  uint8_t low_frequency_gain;
+  uint8_t low_frequency_gain = 64;
 
   /**
    * @~Chinese
@@ -82,7 +49,7 @@ struct EqualizerParameter {
    * @~English
    * @brief Medium-low frequency gain value (0-127).
    */
-  uint8_t medium_low_frequency_gain;
+  uint8_t medium_low_frequency_gain = 64;
 
   /**
    * @~Chinese
@@ -92,7 +59,7 @@ struct EqualizerParameter {
    * @~English
    * @brief Medium-high frequency gain value (0-127).
    */
-  uint8_t medium_high_frequency_gain;
+  uint8_t medium_high_frequency_gain = 64;
 
   /**
    * @~Chinese
@@ -102,7 +69,7 @@ struct EqualizerParameter {
    * @~English
    * @brief High frequency gain value (0-127).
    */
-  uint8_t high_frequency_gain;
+  uint8_t high_frequency_gain = 64;
 
   /**
    * @~Chinese
@@ -112,7 +79,7 @@ struct EqualizerParameter {
    * @~English
    * @brief Low frequency center value (0-127).
    */
-  uint8_t low_frequency;
+  uint8_t low_frequency = 64;
 
   /**
    * @~Chinese
@@ -122,7 +89,7 @@ struct EqualizerParameter {
    * @~English
    * @brief Medium-low frequency center value (0-127).
    */
-  uint8_t medium_low_frequency;
+  uint8_t medium_low_frequency = 64;
 
   /**
    * @~Chinese
@@ -132,7 +99,7 @@ struct EqualizerParameter {
    * @~English
    * @brief Medium-high frequency center value (0-127).
    */
-  uint8_t medium_high_frequency;
+  uint8_t medium_high_frequency = 64;
 
   /**
    * @~Chinese
@@ -142,7 +109,7 @@ struct EqualizerParameter {
    * @~English
    * @brief High frequency center value (0-127).
    */
-  uint8_t high_frequency;
+  uint8_t high_frequency = 64;
 };
 
 /**
@@ -162,7 +129,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief C note fine-tuning value (0-127)
    */
-  uint8_t note_c;
+  uint8_t note_c = 64;
 
   /**
    * @~Chinese
@@ -172,7 +139,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief C# note fine-tuning value (0-127)
    */
-  uint8_t note_c_sharp;
+  uint8_t note_c_sharp = 64;
 
   /**
    * @~Chinese
@@ -182,7 +149,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief D note fine-tuning value (0-127).
    */
-  uint8_t note_d;
+  uint8_t note_d = 64;
 
   /**
    * @~Chinese
@@ -192,7 +159,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief D# note fine-tuning value (0-127).
    */
-  uint8_t note_d_sharp;
+  uint8_t note_d_sharp = 64;
 
   /**
    * @~Chinese
@@ -202,7 +169,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief E note fine-tuning value (0-127).
    */
-  uint8_t note_e;
+  uint8_t note_e = 64;
 
   /**
    * @~Chinese
@@ -212,7 +179,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief F note fine-tuning value (0-127).
    */
-  uint8_t note_f;
+  uint8_t note_f = 64;
 
   /**
    * @~Chinese
@@ -222,7 +189,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief F# note fine-tuning value (0-127).
    */
-  uint8_t note_f_sharp;
+  uint8_t note_f_sharp = 64;
 
   /**
    * @~Chinese
@@ -232,7 +199,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief G note fine-tuning value (0-127).
    */
-  uint8_t note_g;
+  uint8_t note_g = 64;
 
   /**
    * @~Chinese
@@ -242,7 +209,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief G# note fine-tuning value (0-127).
    */
-  uint8_t note_g_sharp;
+  uint8_t note_g_sharp = 64;
 
   /**
    * @~Chinese
@@ -252,7 +219,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief A note fine-tuning value (0-127).
    */
-  uint8_t note_a;
+  uint8_t note_a = 64;
 
   /**
    * @~Chinese
@@ -262,7 +229,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief A# note fine-tuning value (0-127).
    */
-  uint8_t note_a_sharp;
+  uint8_t note_a_sharp = 64;
 
   /**
    * @~Chinese
@@ -272,7 +239,7 @@ struct ScaleTuningParameter {
    * @~English
    * @brief B note fine-tuning value (0-127).
    */
-  uint8_t note_b;
+  uint8_t note_b = 64;
 };
 
 /**
@@ -292,7 +259,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief High pitch volume intensity (0-127).
    */
-  uint8_t high_pitch_volume;
+  uint8_t high_pitch_volume = 64;
 
   /**
    * @~Chinese
@@ -302,7 +269,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief Time-varying timbre cutoff frequency (0-127).
    */
-  uint8_t time_varying_timbre_cutoff;
+  uint8_t time_varying_timbre_cutoff = 64;
 
   /**
    * @~Chinese
@@ -312,7 +279,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief Amplitude modulation depth (0-127).
    */
-  uint8_t amplitude;
+  uint8_t amplitude = 64;
 
   /**
    * @~Chinese
@@ -322,7 +289,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief Low-frequency oscillator rate (0-127).
    */
-  uint8_t low_frequency_oscillator_rate;
+  uint8_t low_frequency_oscillator_rate = 64;
 
   /**
    * @~Chinese
@@ -332,7 +299,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief Pitch modulation depth (0-127).
    */
-  uint8_t pitch_depth;
+  uint8_t pitch_depth = 64;
 
   /**
    * @~Chinese
@@ -342,7 +309,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief Time-varying filter depth (0-127).
    */
-  uint8_t time_varying_filter_depth;
+  uint8_t time_varying_filter_depth = 64;
 
   /**
    * @~Chinese
@@ -352,7 +319,7 @@ struct ModulationWheelParameter {
    * @~English
    * @brief Time-varying amplifier depth (0-127).
    */
-  uint8_t time_varying_amplifier_depth;
+  uint8_t time_varying_amplifier_depth = 64;
 };
 
 /**
@@ -371,27 +338,6 @@ struct ModulationWheelParameter {
  */
 
 class Sam2695Midi {
- private:
-  void Write(const uint8_t data);
-
-  void Write(const uint8_t *buffer, const size_t size);
-
-  void SendNrpnOrRpnParameter(const uint8_t channel,
-                              const uint8_t most_significant_byte_controller,
-                              const uint8_t most_significant_byte,
-                              const uint8_t least_significant_byte_controller,
-                              const uint8_t least_significant_byte,
-                              const uint8_t value);
-
-  void NullNrpnOrRpn(const uint8_t channel, const uint8_t most_significant_byte_controller, const uint8_t least_significant_byte_controller);
-
-#if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ARDUINO)
-  SoftwareSerial software_serial;
-#endif
-#if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ESP32)
-  HardwareSerial hardware_serial{2};
-#endif
-
  public:
   /**
    * @~Chinese
@@ -712,6 +658,26 @@ class Sam2695Midi {
    * @brief Activate all drum channels and set all 16 MIDI channels (0-15) as drum channels.
    */
   void AllDrums();
+
+ private:
+  void Write(const uint8_t data);
+
+  void Write(const uint8_t *buffer, const size_t size);
+
+  void SendNrpnOrRpnParameter(const uint8_t channel,
+                              const uint8_t most_significant_byte_controller,
+                              const uint8_t most_significant_byte,
+                              const uint8_t least_significant_byte_controller,
+                              const uint8_t least_significant_byte,
+                              const uint8_t value);
+
+  void NullNrpnOrRpn(const uint8_t channel, const uint8_t most_significant_byte_controller, const uint8_t least_significant_byte_controller);
+
+#if defined(ESP32)
+  HardwareSerial hardware_serial{2};
+#else
+  SoftwareSerial software_serial;
+#endif
 };
 }  // namespace em
 #endif

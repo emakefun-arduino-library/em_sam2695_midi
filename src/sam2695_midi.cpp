@@ -4,25 +4,7 @@
 
 namespace em {
 
-#if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ARDUINO)
-Sam2695Midi::Sam2695Midi(uint8_t tx_pin) : software_serial(-1, tx_pin) {
-  software_serial.begin(31250);
-}
-void Sam2695Midi::Write(const uint8_t data) {
-  software_serial.write(data);
-}
-void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
-  if (buffer == nullptr || size == 0) {
-    printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
-    return;
-  }
-
-  software_serial.write(buffer, size);
-}
-
-#endif
-
-#if (SAM2695MIDI_PLATFORM == SAM2695MIDI_ESP32)
+#if defined(ESP32)
 Sam2695Midi::Sam2695Midi(uint8_t tx_pin) {
   hardware_serial.begin(31250, SERIAL_8N1, -1, tx_pin);
 }
@@ -36,6 +18,21 @@ void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
     return;
   }
   hardware_serial.write(buffer, size);
+}
+#else
+Sam2695Midi::Sam2695Midi(uint8_t tx_pin) : software_serial(-1, tx_pin) {
+  software_serial.begin(31250);
+}
+void Sam2695Midi::Write(const uint8_t data) {
+  software_serial.write(data);
+}
+void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
+  if (buffer == nullptr || size == 0) {
+    printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
+    return;
+  }
+
+  software_serial.write(buffer, size);
 }
 #endif
 

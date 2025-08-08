@@ -139,52 +139,61 @@ $(function(){initNavTree('play_music_8ino-example.html',''); initResizable(true)
 <div class="line">}  <span class="comment">// namespace</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  g_sam2695_midi.SetChannelTimbre(kChannel, <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a45d4063c2fd331ce37c72d8d605230bf">MIDI_BANK_0</a>, BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);</div>
+<div class="line">  g_sam2695_midi.SetChannelTimbre(kChannel, <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a45d4063c2fd331ce37c72d8d605230bf">MIDI_BANK_0</a>, <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a78d846609e863e112250f4c57808874a">BANK_0_ACOUSTIC_GUITAR_STEEL_STRING</a>);</div>
 <div class="line">  g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);</div>
-<div class="line">  g_sam2695_midi.SetReverberation(kChannel, REVERBERATION_ROOM_2, kReverberationVolume, kReverberationDelayFeedback);</div>
+<div class="line">  g_sam2695_midi.SetReverberation(kChannel, <a class="code hl_define" href="sam2695__midi__chorus__reverberation_8h.html#a042da02575e33162860b7cc4b1859598">REVERBERATION_ROOM_2</a>, kReverberationVolume, kReverberationDelayFeedback);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_A_4, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a5f58e5299f25bd98f1068f661f996d9b">MIDI_NOTE_A_4</a>, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kQuarterNoteDuration);</div>
 <div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a>, kDottedQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_B_4, kDottedQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#af4a85aa7fc130f4507635fa060fe81bc">MIDI_NOTE_B_4</a>, kDottedQuarterNoteDuration);</div>
 <div class="line">  delay(kQuarterNoteDuration);</div>
 <div class="line"> </div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_A_4, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_D_5, kDottedQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a5f58e5299f25bd98f1068f661f996d9b">MIDI_NOTE_A_4</a>, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a49d6f1ce6ac8a151a6c021dedc67885c">MIDI_NOTE_D_5</a>, kDottedQuarterNoteDuration);</div>
 <div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a>, kDottedQuarterNoteDuration);</div>
 <div class="line">  delay(kQuarterNoteDuration);</div>
 <div class="line"> </div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_4, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_G_5, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_E_5, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a33edad3c8fcd2bca39d156e113e34f6b">MIDI_NOTE_G_5</a>, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab14e8717a471e9872b9a3ae21feba46f">MIDI_NOTE_E_5</a>, kQuarterNoteDuration);</div>
 <div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a>, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_B_4, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_A_4, kDottedQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#af4a85aa7fc130f4507635fa060fe81bc">MIDI_NOTE_B_4</a>, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a5f58e5299f25bd98f1068f661f996d9b">MIDI_NOTE_A_4</a>, kDottedQuarterNoteDuration);</div>
 <div class="line">  delay(kQuarterNoteDuration);</div>
 <div class="line"> </div>
-<div class="line">  PlayNote(MIDI_NOTE_F_5, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_F_5, kEighthNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_E_5, kQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a0178e914c66f0230d5d6d863e57d8fff">MIDI_NOTE_F_5</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a0178e914c66f0230d5d6d863e57d8fff">MIDI_NOTE_F_5</a>, kEighthNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#ab14e8717a471e9872b9a3ae21feba46f">MIDI_NOTE_E_5</a>, kQuarterNoteDuration);</div>
 <div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a>, kQuarterNoteDuration);</div>
-<div class="line">  PlayNote(MIDI_NOTE_D_5, kDottedQuarterNoteDuration);</div>
+<div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a49d6f1ce6ac8a151a6c021dedc67885c">MIDI_NOTE_D_5</a>, kDottedQuarterNoteDuration);</div>
 <div class="line">  PlayNote(<a class="code hl_define" href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a>, kDottedQuarterNoteDuration);</div>
 <div class="line"> </div>
 <div class="line">  delay(5000);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassem_1_1_sam2695_midi_html"><div class="ttname"><a href="classem_1_1_sam2695_midi.html">em::Sam2695Midi</a></div><div class="ttdoc">Sam2695Midi是一个用于SAM2695 MIDI模块的驱动类，用于合成音乐。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8h_source.html#l00373">sam2695_midi.h:373</a></div></div>
-<div class="ttc" id="aclassem_1_1_sam2695_midi_html_a03540eebeee02d50f0f12a7b94a5ae16"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#a03540eebeee02d50f0f12a7b94a5ae16">em::Sam2695Midi::NoteOn</a></div><div class="ttdeci">void NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity)</div><div class="ttdoc">在指定通道（0-15）上发出给定的MIDI音符。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8cpp_source.html#l00068">sam2695_midi.cpp:68</a></div></div>
-<div class="ttc" id="aclassem_1_1_sam2695_midi_html_aa91a8c548c8bfb2300d800991fb4b66e"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#aa91a8c548c8bfb2300d800991fb4b66e">em::Sam2695Midi::NoteOff</a></div><div class="ttdeci">void NoteOff(const uint8_t channel, const uint8_t midi_note)</div><div class="ttdoc">关闭指定通道中的音符，该通道之前使用noteOn（）命令以给定的音高打开。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8cpp_source.html#l00073">sam2695_midi.cpp:73</a></div></div>
+<div class="ttc" id="aclassem_1_1_sam2695_midi_html"><div class="ttname"><a href="classem_1_1_sam2695_midi.html">em::Sam2695Midi</a></div><div class="ttdoc">Sam2695Midi是一个用于SAM2695 MIDI模块的驱动类，用于合成音乐。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8h_source.html#l00340">sam2695_midi.h:340</a></div></div>
+<div class="ttc" id="aclassem_1_1_sam2695_midi_html_a03540eebeee02d50f0f12a7b94a5ae16"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#a03540eebeee02d50f0f12a7b94a5ae16">em::Sam2695Midi::NoteOn</a></div><div class="ttdeci">void NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity)</div><div class="ttdoc">在指定通道（0-15）上发出给定的MIDI音符。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8cpp_source.html#l00065">sam2695_midi.cpp:65</a></div></div>
+<div class="ttc" id="aclassem_1_1_sam2695_midi_html_aa91a8c548c8bfb2300d800991fb4b66e"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#aa91a8c548c8bfb2300d800991fb4b66e">em::Sam2695Midi::NoteOff</a></div><div class="ttdeci">void NoteOff(const uint8_t channel, const uint8_t midi_note)</div><div class="ttdoc">关闭指定通道中的音符，该通道之前使用noteOn（）命令以给定的音高打开。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8cpp_source.html#l00070">sam2695_midi.cpp:70</a></div></div>
 <div class="ttc" id="asam2695__midi_8h_html"><div class="ttname"><a href="sam2695__midi_8h.html">sam2695_midi.h</a></div></div>
-<div class="ttc" id="asam2695__midi__note_8h_html_a27af243c70ca3b0c8859114f1a5f5f9d"><div class="ttname"><a href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a></div><div class="ttdeci">#define MIDI_NOTE_C_5</div><div class="ttdoc">定义通道音符常量，八度 5。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00144">sam2695_midi_note.h:144</a></div></div>
-<div class="ttc" id="asam2695__midi__timbre_8h_html_a45d4063c2fd331ce37c72d8d605230bf"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a45d4063c2fd331ce37c72d8d605230bf">MIDI_BANK_0</a></div><div class="ttdeci">#define MIDI_BANK_0</div><div class="ttdoc">定义通道音色库常量。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l00019">sam2695_midi_timbre.h:19</a></div></div>
+<div class="ttc" id="asam2695__midi__chorus__reverberation_8h_html_a042da02575e33162860b7cc4b1859598"><div class="ttname"><a href="sam2695__midi__chorus__reverberation_8h.html#a042da02575e33162860b7cc4b1859598">REVERBERATION_ROOM_2</a></div><div class="ttdeci">#define REVERBERATION_ROOM_2</div><div class="ttdoc">房间混响类型2</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__chorus__reverberation_8h_source.html#l00042">sam2695_midi_chorus_reverberation.h:42</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_a0178e914c66f0230d5d6d863e57d8fff"><div class="ttname"><a href="sam2695__midi__note_8h.html#a0178e914c66f0230d5d6d863e57d8fff">MIDI_NOTE_F_5</a></div><div class="ttdeci">#define MIDI_NOTE_F_5</div><div class="ttdoc">F5 (八度5的F音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00794">sam2695_midi_note.h:794</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_a27af243c70ca3b0c8859114f1a5f5f9d"><div class="ttname"><a href="sam2695__midi__note_8h.html#a27af243c70ca3b0c8859114f1a5f5f9d">MIDI_NOTE_C_5</a></div><div class="ttdeci">#define MIDI_NOTE_C_5</div><div class="ttdoc">C5 (八度5的C音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00744">sam2695_midi_note.h:744</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_a33edad3c8fcd2bca39d156e113e34f6b"><div class="ttname"><a href="sam2695__midi__note_8h.html#a33edad3c8fcd2bca39d156e113e34f6b">MIDI_NOTE_G_5</a></div><div class="ttdeci">#define MIDI_NOTE_G_5</div><div class="ttdoc">G5 (八度5的G音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00814">sam2695_midi_note.h:814</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_a49d6f1ce6ac8a151a6c021dedc67885c"><div class="ttname"><a href="sam2695__midi__note_8h.html#a49d6f1ce6ac8a151a6c021dedc67885c">MIDI_NOTE_D_5</a></div><div class="ttdeci">#define MIDI_NOTE_D_5</div><div class="ttdoc">D5 (八度5的D音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00764">sam2695_midi_note.h:764</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_a5f58e5299f25bd98f1068f661f996d9b"><div class="ttname"><a href="sam2695__midi__note_8h.html#a5f58e5299f25bd98f1068f661f996d9b">MIDI_NOTE_A_4</a></div><div class="ttdeci">#define MIDI_NOTE_A_4</div><div class="ttdoc">A4 (八度4的A音，标准音高440Hz)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00714">sam2695_midi_note.h:714</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_ab14e8717a471e9872b9a3ae21feba46f"><div class="ttname"><a href="sam2695__midi__note_8h.html#ab14e8717a471e9872b9a3ae21feba46f">MIDI_NOTE_E_5</a></div><div class="ttdeci">#define MIDI_NOTE_E_5</div><div class="ttdoc">E5 (八度5的E音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00784">sam2695_midi_note.h:784</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_ab169cf4b5543d5c659bab2ada5f1c4de"><div class="ttname"><a href="sam2695__midi__note_8h.html#ab169cf4b5543d5c659bab2ada5f1c4de">MIDI_NOTE_G_4</a></div><div class="ttdeci">#define MIDI_NOTE_G_4</div><div class="ttdoc">G4 (八度4的G音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00694">sam2695_midi_note.h:694</a></div></div>
+<div class="ttc" id="asam2695__midi__note_8h_html_af4a85aa7fc130f4507635fa060fe81bc"><div class="ttname"><a href="sam2695__midi__note_8h.html#af4a85aa7fc130f4507635fa060fe81bc">MIDI_NOTE_B_4</a></div><div class="ttdeci">#define MIDI_NOTE_B_4</div><div class="ttdoc">B4 (八度4的B音)</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__note_8h_source.html#l00734">sam2695_midi_note.h:734</a></div></div>
+<div class="ttc" id="asam2695__midi__timbre_8h_html_a45d4063c2fd331ce37c72d8d605230bf"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a45d4063c2fd331ce37c72d8d605230bf">MIDI_BANK_0</a></div><div class="ttdeci">#define MIDI_BANK_0</div><div class="ttdoc">标准GM音色库</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l00022">sam2695_midi_timbre.h:22</a></div></div>
+<div class="ttc" id="asam2695__midi__timbre_8h_html_a78d846609e863e112250f4c57808874a"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a78d846609e863e112250f4c57808874a">BANK_0_ACOUSTIC_GUITAR_STEEL_STRING</a></div><div class="ttdeci">#define BANK_0_ACOUSTIC_GUITAR_STEEL_STRING</div><div class="ttdoc">钢弦吉他</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l00301">sam2695_midi_timbre.h:301</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
