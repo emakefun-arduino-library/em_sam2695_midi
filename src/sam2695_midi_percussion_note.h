@@ -4,13 +4,14 @@
 #define _EM_SAM2695_MIDI_PERCUSSION_NOTE_H_
 
 /**
- * @file sam2695_midi_percussion_note.h
  * @~Chinese
+ * @file sam2695_midi_percussion_note.h
  * @brief 定义通道9的打击乐音色和音符常量。
  * @note 为简化文档，音符说明仅对特殊音符（非标准集）添加说明。
  *       宏定义后缀为"STANDARD_SET"的音符使用默认的“标准集”声音。
  *
  * @~English
+ * @file sam2695_midi_percussion_note.h
  * @brief Define the percussion timbre and note constants for channel 9.
  * @note To simplify the document, note descriptions are only added for special notes (non-standard sets).
  *       The macro defines notes with the suffix "STANDARD_SET" to use the default "standard set" sound.

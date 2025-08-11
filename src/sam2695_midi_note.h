@@ -4,12 +4,12 @@
 #define _EM_SAM2695_MIDI_NOTE_H_
 
 /**
- * @file sam2695_midi_note.h
- *
  * @~Chinese
+ * @file sam2695_midi_note.h
  * @brief MIDI 音符编号定义 (0-127)，包含从 C-1 (0) 到 G9 (127) 的所有 MIDI 音符编号。
  *
  * @~English
+ * @file sam2695_midi_note.h
  * @brief MIDI note numbering definition (0-127), including all MIDI note numbering from C-1 (0) to G9 (127).
  */
 

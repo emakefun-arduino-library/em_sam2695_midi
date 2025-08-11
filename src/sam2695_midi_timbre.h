@@ -3,11 +3,12 @@
 #ifndef _EM_SAM2695_MIDI_TIMBRE_H_
 #define _EM_SAM2695_MIDI_TIMBRE_H_
 /**
- * @file sam2695_midi_timbre.h
  * @~Chinese
+ * @file sam2695_midi_timbre.h
  * @brief 定义通道音色库常量和音色常量。
  *
  * @~English
+ * @file sam2695_midi_timbre.h
  * @brief Define channel timbre library constants and timbre constants.
  */
 

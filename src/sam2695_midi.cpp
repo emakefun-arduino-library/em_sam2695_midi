@@ -5,13 +5,14 @@
 namespace em {
 
 #if defined(ESP32)
-Sam2695Midi::Sam2695Midi(uint8_t tx_pin) {
+Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) {
   hardware_serial.begin(31250, SERIAL_8N1, -1, tx_pin);
 }
 
 void Sam2695Midi::Write(const uint8_t data) {
   hardware_serial.write(data);
 }
+
 void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
   if (buffer == nullptr || size == 0) {
     printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
@@ -19,13 +20,16 @@ void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
   }
   hardware_serial.write(buffer, size);
 }
+
 #else
-Sam2695Midi::Sam2695Midi(uint8_t tx_pin) : software_serial(-1, tx_pin) {
+Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) : software_serial(-1, tx_pin) {
   software_serial.begin(31250);
 }
+
 void Sam2695Midi::Write(const uint8_t data) {
   software_serial.write(data);
 }
+
 void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
   if (buffer == nullptr || size == 0) {
     printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
@@ -34,33 +38,8 @@ void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
 
   software_serial.write(buffer, size);
 }
+
 #endif
-
-void Sam2695Midi::SendNrpnOrRpnParameter(const uint8_t channel,
-                                         const uint8_t most_significant_byte_controller,
-                                         const uint8_t most_significant_byte,
-                                         const uint8_t least_significant_byte_controller,
-                                         const uint8_t least_significant_byte,
-                                         const uint8_t value) {
-  const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, most_significant_byte};
-  Write(command_most_significant_byte, sizeof(command_most_significant_byte) / sizeof(command_most_significant_byte[0]));
-
-  const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, least_significant_byte};
-  Write(command_least_significant_byte, sizeof(command_least_significant_byte) / sizeof(command_least_significant_byte[0]));
-
-  const uint8_t command_set_value[] = {0xB0 | (channel & 0x0F), 0x06, value & 0x7F};
-  Write(command_set_value, sizeof(command_set_value) / sizeof(command_set_value[0]));
-}
-
-void Sam2695Midi::NullNrpnOrRpn(const uint8_t channel,
-                                const uint8_t most_significant_byte_controller,
-                                const uint8_t least_significant_byte_controller) {
-  const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, 0x7F};
-  Write(command_most_significant_byte, sizeof(command_most_significant_byte) / sizeof(command_most_significant_byte[0]));
-
-  const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, 0x7F};
-  Write(command_least_significant_byte, sizeof(command_least_significant_byte) / sizeof(command_least_significant_byte[0]));
-}
 
 void Sam2695Midi::NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity) {
   const uint8_t command[] = {0x90 | (channel & 0x0F), midi_note & 0x7F, note_velocity & 0x7F};
@@ -264,4 +243,31 @@ void Sam2695Midi::AllDrums() {
     Write(command, sizeof(command) / sizeof(command[0]));
   }
 }
+
+void Sam2695Midi::SendNrpnOrRpnParameter(const uint8_t channel,
+                                         const uint8_t most_significant_byte_controller,
+                                         const uint8_t most_significant_byte,
+                                         const uint8_t least_significant_byte_controller,
+                                         const uint8_t least_significant_byte,
+                                         const uint8_t value) {
+  const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, most_significant_byte};
+  Write(command_most_significant_byte, sizeof(command_most_significant_byte) / sizeof(command_most_significant_byte[0]));
+
+  const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, least_significant_byte};
+  Write(command_least_significant_byte, sizeof(command_least_significant_byte) / sizeof(command_least_significant_byte[0]));
+
+  const uint8_t command_set_value[] = {0xB0 | (channel & 0x0F), 0x06, value & 0x7F};
+  Write(command_set_value, sizeof(command_set_value) / sizeof(command_set_value[0]));
+}
+
+void Sam2695Midi::NullNrpnOrRpn(const uint8_t channel,
+                                const uint8_t most_significant_byte_controller,
+                                const uint8_t least_significant_byte_controller) {
+  const uint8_t command_most_significant_byte[] = {0xB0 | (channel & 0x0F), most_significant_byte_controller, 0x7F};
+  Write(command_most_significant_byte, sizeof(command_most_significant_byte) / sizeof(command_most_significant_byte[0]));
+
+  const uint8_t command_least_significant_byte[] = {0xB0 | (channel & 0x0F), least_significant_byte_controller, 0x7F};
+  Write(command_least_significant_byte, sizeof(command_least_significant_byte) / sizeof(command_least_significant_byte[0]));
+}
+
 }  // namespace em

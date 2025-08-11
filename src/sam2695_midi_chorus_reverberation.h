@@ -3,11 +3,12 @@
 #ifndef _EM_SAM2695_MIDI_CHORUS_REVERBERATION_H_
 #define _EM_SAM2695_MIDI_CHORUS_REVERBERATION_H_
 /**
- * @file sam2695_midi_chorus_reverberation.h
  * @~Chinese
+ * @file sam2695_midi_chorus_reverberation.h
  * @brief 定义混响效果类型和合唱效果类型常量。
  *
  * @~English
+ * @file sam2695_midi_chorus_reverberation.h
  * @brief Define constants for reverberation effect types and chorus effect types.
  */
 
