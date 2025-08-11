@@ -21,7 +21,7 @@
  * @~English
  * @brief C-1 (note C at octave -1)
  */
-#define MIDI_NOTE_C_M1 0
+#define MIDI_NOTE_C_M1 (0)
 
 /**
  * @~Chinese
@@ -31,7 +31,7 @@
  * @~English
  * @brief C#-1 (note C sharp at octave -1)
  */
-#define MIDI_NOTE_C_SHARP_M1 1
+#define MIDI_NOTE_C_SHARP_M1 (1)
 
 /**
  * @~Chinese
@@ -41,7 +41,7 @@
  * @~English
  * @brief D-1 (note D at octave -1)
  */
-#define MIDI_NOTE_D_M1 2
+#define MIDI_NOTE_D_M1 (2)
 
 /**
  * @~Chinese
@@ -51,7 +51,7 @@
  * @~English
  * @brief D#-1 (note D sharp at octave -1)
  */
-#define MIDI_NOTE_D_SHARP_M1 3
+#define MIDI_NOTE_D_SHARP_M1 (3)
 
 /**
  * @~Chinese
@@ -61,7 +61,7 @@
  * @~English
  * @brief E-1 (note E at octave -1)
  */
-#define MIDI_NOTE_E_M1 4
+#define MIDI_NOTE_E_M1 (4)
 
 /**
  * @~Chinese
@@ -71,7 +71,7 @@
  * @~English
  * @brief F-1 (note F at octave -1)
  */
-#define MIDI_NOTE_F_M1 5
+#define MIDI_NOTE_F_M1 (5)
 
 /**
  * @~Chinese
@@ -81,7 +81,7 @@
  * @~English
  * @brief F#-1 (note F sharp at octave -1)
  */
-#define MIDI_NOTE_F_SHARP_M1 6
+#define MIDI_NOTE_F_SHARP_M1 (6)
 
 /**
  * @~Chinese
@@ -91,7 +91,7 @@
  * @~English
  * @brief G-1 (note G at octave -1)
  */
-#define MIDI_NOTE_G_M1 7
+#define MIDI_NOTE_G_M1 (7)
 
 /**
  * @~Chinese
@@ -101,7 +101,7 @@
  * @~English
  * @brief G#-1 (note G sharp at octave -1)
  */
-#define MIDI_NOTE_G_SHARP_M1 8
+#define MIDI_NOTE_G_SHARP_M1 (8)
 
 /**
  * @~Chinese
@@ -111,7 +111,7 @@
  * @~English
  * @brief A-1 (note A at octave -1)
  */
-#define MIDI_NOTE_A_M1 9
+#define MIDI_NOTE_A_M1 (9)
 
 /**
  * @~Chinese
@@ -121,7 +121,7 @@
  * @~English
  * @brief A#-1 (note A sharp at octave -1)
  */
-#define MIDI_NOTE_A_SHARP_M1 10
+#define MIDI_NOTE_A_SHARP_M1 (10)
 
 /**
  * @~Chinese
@@ -131,7 +131,7 @@
  * @~English
  * @brief B-1 (note B at octave -1)
  */
-#define MIDI_NOTE_B_M1 11
+#define MIDI_NOTE_B_M1 (11)
 
 /**
  * @~Chinese
@@ -141,7 +141,7 @@
  * @~English
  * @brief C0 (note C at octave 0)
  */
-#define MIDI_NOTE_C_0 12
+#define MIDI_NOTE_C_0 (12)
 
 /**
  * @~Chinese
@@ -151,7 +151,7 @@
  * @~English
  * @brief C#0 (note C sharp at octave 0)
  */
-#define MIDI_NOTE_C_SHARP_0 13
+#define MIDI_NOTE_C_SHARP_0 (13)
 
 /**
  * @~Chinese
@@ -161,7 +161,7 @@
  * @~English
  * @brief D0 (note D at octave 0)
  */
-#define MIDI_NOTE_D_0 14
+#define MIDI_NOTE_D_0 (14)
 
 /**
  * @~Chinese
@@ -171,7 +171,7 @@
  * @~English
  * @brief D#0 (note D sharp at octave 0)
  */
-#define MIDI_NOTE_D_SHARP_0 15
+#define MIDI_NOTE_D_SHARP_0 (15)
 
 /**
  * @~Chinese
@@ -181,7 +181,7 @@
  * @~English
  * @brief E0 (note E at octave 0)
  */
-#define MIDI_NOTE_E_0 16
+#define MIDI_NOTE_E_0 (16)
 
 /**
  * @~Chinese
@@ -191,7 +191,7 @@
  * @~English
  * @brief F0 (note F at octave 0)
  */
-#define MIDI_NOTE_F_0 17
+#define MIDI_NOTE_F_0 (17)
 
 /**
  * @~Chinese
@@ -201,7 +201,7 @@
  * @~English
  * @brief F#0 (note F sharp at octave 0)
  */
-#define MIDI_NOTE_F_SHARP_0 18
+#define MIDI_NOTE_F_SHARP_0 (18)
 
 /**
  * @~Chinese
@@ -211,7 +211,7 @@
  * @~English
  * @brief G0 (note G at octave 0)
  */
-#define MIDI_NOTE_G_0 19
+#define MIDI_NOTE_G_0 (19)
 
 /**
  * @~Chinese
@@ -221,7 +221,7 @@
  * @~English
  * @brief G#0 (note G sharp at octave 0)
  */
-#define MIDI_NOTE_G_SHARP_0 20
+#define MIDI_NOTE_G_SHARP_0 (20)
 
 /**
  * @~Chinese
@@ -231,7 +231,7 @@
  * @~English
  * @brief A0 (note A at octave 0)
  */
-#define MIDI_NOTE_A_0 21
+#define MIDI_NOTE_A_0 (21)
 
 /**
  * @~Chinese
@@ -241,7 +241,7 @@
  * @~English
  * @brief A#0 (note A sharp at octave 0)
  */
-#define MIDI_NOTE_A_SHARP_0 22
+#define MIDI_NOTE_A_SHARP_0 (22)
 
 /**
  * @~Chinese
@@ -251,7 +251,7 @@
  * @~English
  * @brief B0 (note B at octave 0)
  */
-#define MIDI_NOTE_B_0 23
+#define MIDI_NOTE_B_0 (23)
 
 /**
  * @~Chinese
@@ -261,7 +261,7 @@
  * @~English
  * @brief C1 (note C at octave 1)
  */
-#define MIDI_NOTE_C_1 24
+#define MIDI_NOTE_C_1 (24)
 
 /**
  * @~Chinese
@@ -271,7 +271,7 @@
  * @~English
  * @brief C#1 (note C sharp at octave 1)
  */
-#define MIDI_NOTE_C_SHARP_1 25
+#define MIDI_NOTE_C_SHARP_1 (25)
 
 /**
  * @~Chinese
@@ -281,7 +281,7 @@
  * @~English
  * @brief D1 (note D at octave 1)
  */
-#define MIDI_NOTE_D_1 26
+#define MIDI_NOTE_D_1 (26)
 
 /**
  * @~Chinese
@@ -291,7 +291,7 @@
  * @~English
  * @brief D#1 (note D sharp at octave 1)
  */
-#define MIDI_NOTE_D_SHARP_1 27
+#define MIDI_NOTE_D_SHARP_1 (27)
 
 /**
  * @~Chinese
@@ -301,7 +301,7 @@
  * @~English
  * @brief E1 (note E at octave 1)
  */
-#define MIDI_NOTE_E_1 28
+#define MIDI_NOTE_E_1 (28)
 
 /**
  * @~Chinese
@@ -311,7 +311,7 @@
  * @~English
  * @brief F1 (note F at octave 1)
  */
-#define MIDI_NOTE_F_1 29
+#define MIDI_NOTE_F_1 (29)
 
 /**
  * @~Chinese
@@ -321,7 +321,7 @@
  * @~English
  * @brief F#1 (note F sharp at octave 1)
  */
-#define MIDI_NOTE_F_SHARP_1 30
+#define MIDI_NOTE_F_SHARP_1 (30)
 
 /**
  * @~Chinese
@@ -331,7 +331,7 @@
  * @~English
  * @brief G1 (note G at octave 1)
  */
-#define MIDI_NOTE_G_1 31
+#define MIDI_NOTE_G_1 (31)
 
 /**
  * @~Chinese
@@ -341,7 +341,7 @@
  * @~English
  * @brief G#1 (note G sharp at octave 1)
  */
-#define MIDI_NOTE_G_SHARP_1 32
+#define MIDI_NOTE_G_SHARP_1 (32)
 
 /**
  * @~Chinese
@@ -351,7 +351,7 @@
  * @~English
  * @brief A1 (note A at octave 1)
  */
-#define MIDI_NOTE_A_1 33
+#define MIDI_NOTE_A_1 (33)
 
 /**
  * @~Chinese
@@ -361,7 +361,7 @@
  * @~English
  * @brief A#1 (note A sharp at octave 1)
  */
-#define MIDI_NOTE_A_SHARP_1 34
+#define MIDI_NOTE_A_SHARP_1 (34)
 
 /**
  * @~Chinese
@@ -371,7 +371,7 @@
  * @~English
  * @brief B1 (note B at octave 1)
  */
-#define MIDI_NOTE_B_1 35
+#define MIDI_NOTE_B_1 (35)
 
 /**
  * @~Chinese
@@ -381,7 +381,7 @@
  * @~English
  * @brief C2 (note C at octave 2)
  */
-#define MIDI_NOTE_C_2 36
+#define MIDI_NOTE_C_2 (36)
 
 /**
  * @~Chinese
@@ -391,7 +391,7 @@
  * @~English
  * @brief C#2 (note C sharp at octave 2)
  */
-#define MIDI_NOTE_C_SHARP_2 37
+#define MIDI_NOTE_C_SHARP_2 (37)
 
 /**
  * @~Chinese
@@ -401,7 +401,7 @@
  * @~English
  * @brief D2 (note D at octave 2)
  */
-#define MIDI_NOTE_D_2 38
+#define MIDI_NOTE_D_2 (38)
 
 /**
  * @~Chinese
@@ -411,7 +411,7 @@
  * @~English
  * @brief D#2 (note D sharp at octave 2)
  */
-#define MIDI_NOTE_D_SHARP_2 39
+#define MIDI_NOTE_D_SHARP_2 (39)
 
 /**
  * @~Chinese
@@ -421,7 +421,7 @@
  * @~English
  * @brief E2 (note E at octave 2)
  */
-#define MIDI_NOTE_E_2 40
+#define MIDI_NOTE_E_2 (40)
 
 /**
  * @~Chinese
@@ -431,7 +431,7 @@
  * @~English
  * @brief F2 (note F at octave 2)
  */
-#define MIDI_NOTE_F_2 41
+#define MIDI_NOTE_F_2 (41)
 
 /**
  * @~Chinese
@@ -441,7 +441,7 @@
  * @~English
  * @brief F#2 (note F sharp at octave 2)
  */
-#define MIDI_NOTE_F_SHARP_2 42
+#define MIDI_NOTE_F_SHARP_2 (42)
 
 /**
  * @~Chinese
@@ -451,7 +451,7 @@
  * @~English
  * @brief G2 (note G at octave 2)
  */
-#define MIDI_NOTE_G_2 43
+#define MIDI_NOTE_G_2 (43)
 
 /**
  * @~Chinese
@@ -461,7 +461,7 @@
  * @~English
  * @brief G#2 (note G sharp at octave 2)
  */
-#define MIDI_NOTE_G_SHARP_2 44
+#define MIDI_NOTE_G_SHARP_2 (44)
 
 /**
  * @~Chinese
@@ -471,7 +471,7 @@
  * @~English
  * @brief A2 (note A at octave 2)
  */
-#define MIDI_NOTE_A_2 45
+#define MIDI_NOTE_A_2 (45)
 
 /**
  * @~Chinese
@@ -481,7 +481,7 @@
  * @~English
  * @brief A#2 (note A sharp at octave 2)
  */
-#define MIDI_NOTE_A_SHARP_2 46
+#define MIDI_NOTE_A_SHARP_2 (46)
 
 /**
  * @~Chinese
@@ -491,7 +491,7 @@
  * @~English
  * @brief B2 (note B at octave 2)
  */
-#define MIDI_NOTE_B_2 47
+#define MIDI_NOTE_B_2 (47)
 
 /**
  * @~Chinese
@@ -501,7 +501,7 @@
  * @~English
  * @brief C3 (note C at octave 3)
  */
-#define MIDI_NOTE_C_3 48
+#define MIDI_NOTE_C_3 (48)
 
 /**
  * @~Chinese
@@ -511,7 +511,7 @@
  * @~English
  * @brief C#3 (note C sharp at octave 3)
  */
-#define MIDI_NOTE_C_SHARP_3 49
+#define MIDI_NOTE_C_SHARP_3 (49)
 
 /**
  * @~Chinese
@@ -521,7 +521,7 @@
  * @~English
  * @brief D3 (note D at octave 3)
  */
-#define MIDI_NOTE_D_3 50
+#define MIDI_NOTE_D_3 (50)
 
 /**
  * @~Chinese
@@ -531,7 +531,7 @@
  * @~English
  * @brief D#3 (note D sharp at octave 3)
  */
-#define MIDI_NOTE_D_SHARP_3 51
+#define MIDI_NOTE_D_SHARP_3 (51)
 
 /**
  * @~Chinese
@@ -541,7 +541,7 @@
  * @~English
  * @brief E3 (note E at octave 3)
  */
-#define MIDI_NOTE_E_3 52
+#define MIDI_NOTE_E_3 (52)
 
 /**
  * @~Chinese
@@ -551,7 +551,7 @@
  * @~English
  * @brief F3 (note F at octave 3)
  */
-#define MIDI_NOTE_F_3 53
+#define MIDI_NOTE_F_3 (53)
 
 /**
  * @~Chinese
@@ -561,7 +561,7 @@
  * @~English
  * @brief F#3 (note F sharp at octave 3)
  */
-#define MIDI_NOTE_F_SHARP_3 54
+#define MIDI_NOTE_F_SHARP_3 (54)
 
 /**
  * @~Chinese
@@ -571,7 +571,7 @@
  * @~English
  * @brief G3 (note G at octave 3)
  */
-#define MIDI_NOTE_G_3 55
+#define MIDI_NOTE_G_3 (55)
 
 /**
  * @~Chinese
@@ -581,7 +581,7 @@
  * @~English
  * @brief G#3 (note G sharp at octave 3)
  */
-#define MIDI_NOTE_G_SHARP_3 56
+#define MIDI_NOTE_G_SHARP_3 (56)
 
 /**
  * @~Chinese
@@ -591,7 +591,7 @@
  * @~English
  * @brief A3 (note A at octave 3)
  */
-#define MIDI_NOTE_A_3 57
+#define MIDI_NOTE_A_3 (57)
 
 /**
  * @~Chinese
@@ -601,7 +601,7 @@
  * @~English
  * @brief A#3 (note A sharp at octave 3)
  */
-#define MIDI_NOTE_A_SHARP_3 58
+#define MIDI_NOTE_A_SHARP_3 (58)
 
 /**
  * @~Chinese
@@ -611,7 +611,7 @@
  * @~English
  * @brief B3 (note B at octave 3)
  */
-#define MIDI_NOTE_B_3 59
+#define MIDI_NOTE_B_3 (59)
 
 /**
  * @~Chinese
@@ -621,7 +621,7 @@
  * @~English
  * @brief C4 (note C at octave 4, Middle C)
  */
-#define MIDI_NOTE_C_4 60
+#define MIDI_NOTE_C_4 (60)
 
 /**
  * @~Chinese
@@ -631,7 +631,7 @@
  * @~English
  * @brief C#4 (note C sharp at octave 4)
  */
-#define MIDI_NOTE_C_SHARP_4 61
+#define MIDI_NOTE_C_SHARP_4 (61)
 
 /**
  * @~Chinese
@@ -641,7 +641,7 @@
  * @~English
  * @brief D4 (note D at octave 4)
  */
-#define MIDI_NOTE_D_4 62
+#define MIDI_NOTE_D_4 (62)
 
 /**
  * @~Chinese
@@ -651,7 +651,7 @@
  * @~English
  * @brief D#4 (note D sharp at octave 4)
  */
-#define MIDI_NOTE_D_SHARP_4 63
+#define MIDI_NOTE_D_SHARP_4 (63)
 
 /**
  * @~Chinese
@@ -661,7 +661,7 @@
  * @~English
  * @brief E4 (note E at octave 4)
  */
-#define MIDI_NOTE_E_4 64
+#define MIDI_NOTE_E_4 (64)
 
 /**
  * @~Chinese
@@ -671,7 +671,7 @@
  * @~English
  * @brief F4 (note F at octave 4)
  */
-#define MIDI_NOTE_F_4 65
+#define MIDI_NOTE_F_4 (65)
 
 /**
  * @~Chinese
@@ -681,7 +681,7 @@
  * @~English
  * @brief F#4 (note F sharp at octave 4)
  */
-#define MIDI_NOTE_F_SHARP_4 66
+#define MIDI_NOTE_F_SHARP_4 (66)
 
 /**
  * @~Chinese
@@ -691,7 +691,7 @@
  * @~English
  * @brief G4 (note G at octave 4)
  */
-#define MIDI_NOTE_G_4 67
+#define MIDI_NOTE_G_4 (67)
 
 /**
  * @~Chinese
@@ -701,7 +701,7 @@
  * @~English
  * @brief G#4 (note G sharp at octave 4)
  */
-#define MIDI_NOTE_G_SHARP_4 68
+#define MIDI_NOTE_G_SHARP_4 (68)
 
 /**
  * @~Chinese
@@ -711,7 +711,7 @@
  * @~English
  * @brief A4 (note A at octave 4, standard pitch 440Hz)
  */
-#define MIDI_NOTE_A_4 69
+#define MIDI_NOTE_A_4 (69)
 
 /**
  * @~Chinese
@@ -721,7 +721,7 @@
  * @~English
  * @brief A#4 (note A sharp at octave 4)
  */
-#define MIDI_NOTE_A_SHARP_4 70
+#define MIDI_NOTE_A_SHARP_4 (70)
 
 /**
  * @~Chinese
@@ -731,7 +731,7 @@
  * @~English
  * @brief B4 (note B at octave 4)
  */
-#define MIDI_NOTE_B_4 71
+#define MIDI_NOTE_B_4 (71)
 
 /**
  * @~Chinese
@@ -741,7 +741,7 @@
  * @~English
  * @brief C5 (note C at octave 5)
  */
-#define MIDI_NOTE_C_5 72
+#define MIDI_NOTE_C_5 (72)
 
 /**
  * @~Chinese
@@ -751,7 +751,7 @@
  * @~English
  * @brief C#5 (note C sharp at octave 5)
  */
-#define MIDI_NOTE_C_SHARP_5 73
+#define MIDI_NOTE_C_SHARP_5 (73)
 
 /**
  * @~Chinese
@@ -761,7 +761,7 @@
  * @~English
  * @brief D5 (note D at octave 5)
  */
-#define MIDI_NOTE_D_5 74
+#define MIDI_NOTE_D_5 (74)
 
 /**
  * @~Chinese
@@ -771,7 +771,7 @@
  * @~English
  * @brief D#5 (note D sharp at octave 5)
  */
-#define MIDI_NOTE_D_SHARP_5 75
+#define MIDI_NOTE_D_SHARP_5 (75)
 
 /**
  * @~Chinese
@@ -781,7 +781,7 @@
  * @~English
  * @brief E5 (note E at octave 5)
  */
-#define MIDI_NOTE_E_5 76
+#define MIDI_NOTE_E_5 (76)
 
 /**
  * @~Chinese
@@ -791,7 +791,7 @@
  * @~English
  * @brief F5 (note F at octave 5)
  */
-#define MIDI_NOTE_F_5 77
+#define MIDI_NOTE_F_5 (77)
 
 /**
  * @~Chinese
@@ -801,7 +801,7 @@
  * @~English
  * @brief F#5 (note F sharp at octave 5)
  */
-#define MIDI_NOTE_F_SHARP_5 78
+#define MIDI_NOTE_F_SHARP_5 (78)
 
 /**
  * @~Chinese
@@ -811,7 +811,7 @@
  * @~English
  * @brief G5 (note G at octave 5)
  */
-#define MIDI_NOTE_G_5 79
+#define MIDI_NOTE_G_5 (79)
 
 /**
  * @~Chinese
@@ -821,7 +821,7 @@
  * @~English
  * @brief G#5 (note G sharp at octave 5)
  */
-#define MIDI_NOTE_G_SHARP_5 80
+#define MIDI_NOTE_G_SHARP_5 (80)
 
 /**
  * @~Chinese
@@ -831,7 +831,7 @@
  * @~English
  * @brief A5 (note A at octave 5)
  */
-#define MIDI_NOTE_A_5 81
+#define MIDI_NOTE_A_5 (81)
 
 /**
  * @~Chinese
@@ -841,7 +841,7 @@
  * @~English
  * @brief A#5 (note A sharp at octave 5)
  */
-#define MIDI_NOTE_A_SHARP_5 82
+#define MIDI_NOTE_A_SHARP_5 (82)
 
 /**
  * @~Chinese
@@ -851,7 +851,7 @@
  * @~English
  * @brief B5 (note B at octave 5)
  */
-#define MIDI_NOTE_B_5 83
+#define MIDI_NOTE_B_5 (83)
 
 /**
  * @~Chinese
@@ -861,7 +861,7 @@
  * @~English
  * @brief C6 (note C at octave 6)
  */
-#define MIDI_NOTE_C_6 84
+#define MIDI_NOTE_C_6 (84)
 
 /**
  * @~Chinese
@@ -871,7 +871,7 @@
  * @~English
  * @brief C#6 (note C sharp at octave 6)
  */
-#define MIDI_NOTE_C_SHARP_6 85
+#define MIDI_NOTE_C_SHARP_6 (85)
 
 /**
  * @~Chinese
@@ -881,7 +881,7 @@
  * @~English
  * @brief D6 (note D at octave 6)
  */
-#define MIDI_NOTE_D_6 86
+#define MIDI_NOTE_D_6 (86)
 
 /**
  * @~Chinese
@@ -891,7 +891,7 @@
  * @~English
  * @brief D#6 (note D sharp at octave 6)
  */
-#define MIDI_NOTE_D_SHARP_6 87
+#define MIDI_NOTE_D_SHARP_6 (87)
 
 /**
  * @~Chinese
@@ -901,7 +901,7 @@
  * @~English
  * @brief E6 (note E at octave 6)
  */
-#define MIDI_NOTE_E_6 88
+#define MIDI_NOTE_E_6 (88)
 
 /**
  * @~Chinese
@@ -911,7 +911,7 @@
  * @~English
  * @brief F6 (note F at octave 6)
  */
-#define MIDI_NOTE_F_6 89
+#define MIDI_NOTE_F_6 (89)
 
 /**
  * @~Chinese
@@ -921,7 +921,7 @@
  * @~English
  * @brief F#6 (note F sharp at octave 6)
  */
-#define MIDI_NOTE_F_SHARP_6 90
+#define MIDI_NOTE_F_SHARP_6 (90)
 
 /**
  * @~Chinese
@@ -931,7 +931,7 @@
  * @~English
  * @brief G6 (note G at octave 6)
  */
-#define MIDI_NOTE_G_6 91
+#define MIDI_NOTE_G_6 (91)
 
 /**
  * @~Chinese
@@ -941,7 +941,7 @@
  * @~English
  * @brief G#6 (note G sharp at octave 6)
  */
-#define MIDI_NOTE_G_SHARP_6 92
+#define MIDI_NOTE_G_SHARP_6 (92)
 
 /**
  * @~Chinese
@@ -951,7 +951,7 @@
  * @~English
  * @brief A6 (note A at octave 6)
  */
-#define MIDI_NOTE_A_6 93
+#define MIDI_NOTE_A_6 (93)
 
 /**
  * @~Chinese
@@ -961,7 +961,7 @@
  * @~English
  * @brief A#6 (note A sharp at octave 6)
  */
-#define MIDI_NOTE_A_SHARP_6 94
+#define MIDI_NOTE_A_SHARP_6 (94)
 
 /**
  * @~Chinese
@@ -971,7 +971,7 @@
  * @~English
  * @brief B6 (note B at octave 6)
  */
-#define MIDI_NOTE_B_6 95
+#define MIDI_NOTE_B_6 (95)
 
 /**
  * @~Chinese
@@ -981,7 +981,7 @@
  * @~English
  * @brief C7 (note C at octave 7)
  */
-#define MIDI_NOTE_C_7 96
+#define MIDI_NOTE_C_7 (96)
 
 /**
  * @~Chinese
@@ -991,7 +991,7 @@
  * @~English
  * @brief C#7 (note C sharp at octave 7)
  */
-#define MIDI_NOTE_C_SHARP_7 97
+#define MIDI_NOTE_C_SHARP_7 (97)
 
 /**
  * @~Chinese
@@ -1001,7 +1001,7 @@
  * @~English
  * @brief D7 (note D at octave 7)
  */
-#define MIDI_NOTE_D_7 98
+#define MIDI_NOTE_D_7 (98)
 
 /**
  * @~Chinese
@@ -1011,7 +1011,7 @@
  * @~English
  * @brief D#7 (note D sharp at octave 7)
  */
-#define MIDI_NOTE_D_SHARP_7 99
+#define MIDI_NOTE_D_SHARP_7 (99)
 
 /**
  * @~Chinese
@@ -1021,7 +1021,7 @@
  * @~English
  * @brief E7 (note E at octave 7)
  */
-#define MIDI_NOTE_E_7 100
+#define MIDI_NOTE_E_7 (100)
 
 /**
  * @~Chinese
@@ -1031,7 +1031,7 @@
  * @~English
  * @brief F7 (note F at octave 7)
  */
-#define MIDI_NOTE_F_7 101
+#define MIDI_NOTE_F_7 (101)
 
 /**
  * @~Chinese
@@ -1041,7 +1041,7 @@
  * @~English
  * @brief F#7 (note F sharp at octave 7)
  */
-#define MIDI_NOTE_F_SHARP_7 102
+#define MIDI_NOTE_F_SHARP_7 (102)
 
 /**
  * @~Chinese
@@ -1051,7 +1051,7 @@
  * @~English
  * @brief G7 (note G at octave 7)
  */
-#define MIDI_NOTE_G_7 103
+#define MIDI_NOTE_G_7 (103)
 
 /**
  * @~Chinese
@@ -1061,7 +1061,7 @@
  * @~English
  * @brief G#7 (note G sharp at octave 7)
  */
-#define MIDI_NOTE_G_SHARP_7 104
+#define MIDI_NOTE_G_SHARP_7 (104)
 
 /**
  * @~Chinese
@@ -1071,7 +1071,7 @@
  * @~English
  * @brief A7 (note A at octave 7)
  */
-#define MIDI_NOTE_A_7 105
+#define MIDI_NOTE_A_7 (105)
 
 /**
  * @~Chinese
@@ -1081,7 +1081,7 @@
  * @~English
  * @brief A#7 (note A sharp at octave 7)
  */
-#define MIDI_NOTE_A_SHARP_7 106
+#define MIDI_NOTE_A_SHARP_7 (106)
 
 /**
  * @~Chinese
@@ -1091,7 +1091,7 @@
  * @~English
  * @brief B7 (note B at octave 7)
  */
-#define MIDI_NOTE_B_7 107
+#define MIDI_NOTE_B_7 (107)
 
 /**
  * @~Chinese
@@ -1101,7 +1101,7 @@
  * @~English
  * @brief C8 (note C at octave 8)
  */
-#define MIDI_NOTE_C_8 108
+#define MIDI_NOTE_C_8 (108)
 
 /**
  * @~Chinese
@@ -1111,7 +1111,7 @@
  * @~English
  * @brief C#8 (note C sharp at octave 8)
  */
-#define MIDI_NOTE_C_SHARP_8 109
+#define MIDI_NOTE_C_SHARP_8 (109)
 
 /**
  * @~Chinese
@@ -1121,7 +1121,7 @@
  * @~English
  * @brief D8 (note D at octave 8)
  */
-#define MIDI_NOTE_D_8 110
+#define MIDI_NOTE_D_8 (110)
 
 /**
  * @~Chinese
@@ -1131,7 +1131,7 @@
  * @~English
  * @brief D#8 (note D sharp at octave 8)
  */
-#define MIDI_NOTE_D_SHARP_8 111
+#define MIDI_NOTE_D_SHARP_8 (111)
 
 /**
  * @~Chinese
@@ -1141,7 +1141,7 @@
  * @~English
  * @brief E8 (note E at octave 8)
  */
-#define MIDI_NOTE_E_8 112
+#define MIDI_NOTE_E_8 (112)
 
 /**
  * @~Chinese
@@ -1151,7 +1151,7 @@
  * @~English
  * @brief F8 (note F at octave 8)
  */
-#define MIDI_NOTE_F_8 113
+#define MIDI_NOTE_F_8 (113)
 
 /**
  * @~Chinese
@@ -1161,7 +1161,7 @@
  * @~English
  * @brief F#8 (note F sharp at octave 8)
  */
-#define MIDI_NOTE_F_SHARP_8 114
+#define MIDI_NOTE_F_SHARP_8 (114)
 
 /**
  * @~Chinese
@@ -1171,7 +1171,7 @@
  * @~English
  * @brief G8 (note G at octave 8)
  */
-#define MIDI_NOTE_G_8 115
+#define MIDI_NOTE_G_8 (115)
 
 /**
  * @~Chinese
@@ -1181,7 +1181,7 @@
  * @~English
  * @brief G#8 (note G sharp at octave 8)
  */
-#define MIDI_NOTE_G_SHARP_8 116
+#define MIDI_NOTE_G_SHARP_8 (116)
 
 /**
  * @~Chinese
@@ -1191,7 +1191,7 @@
  * @~English
  * @brief A8 (note A at octave 8)
  */
-#define MIDI_NOTE_A_8 117
+#define MIDI_NOTE_A_8 (117)
 
 /**
  * @~Chinese
@@ -1201,7 +1201,7 @@
  * @~English
  * @brief A#8 (note A sharp at octave 8)
  */
-#define MIDI_NOTE_A_SHARP_8 118
+#define MIDI_NOTE_A_SHARP_8 (118)
 
 /**
  * @~Chinese
@@ -1211,7 +1211,7 @@
  * @~English
  * @brief B8 (note B at octave 8)
  */
-#define MIDI_NOTE_B_8 119
+#define MIDI_NOTE_B_8 (119)
 
 /**
  * @~Chinese
@@ -1221,7 +1221,7 @@
  * @~English
  * @brief C9 (note C at octave 9)
  */
-#define MIDI_NOTE_C_9 120
+#define MIDI_NOTE_C_9 (120)
 
 /**
  * @~Chinese
@@ -1231,7 +1231,7 @@
  * @~English
  * @brief C#9 (note C sharp at octave 9)
  */
-#define MIDI_NOTE_C_SHARP_9 121
+#define MIDI_NOTE_C_SHARP_9 (121)
 
 /**
  * @~Chinese
@@ -1241,7 +1241,7 @@
  * @~English
  * @brief D9 (note D at octave 9)
  */
-#define MIDI_NOTE_D_9 122
+#define MIDI_NOTE_D_9 (122)
 
 /**
  * @~Chinese
@@ -1251,7 +1251,7 @@
  * @~English
  * @brief D#9 (note D sharp at octave 9)
  */
-#define MIDI_NOTE_D_SHARP_9 123
+#define MIDI_NOTE_D_SHARP_9 (123)
 
 /**
  * @~Chinese
@@ -1261,7 +1261,7 @@
  * @~English
  * @brief E9 (note E at octave 9)
  */
-#define MIDI_NOTE_E_9 124
+#define MIDI_NOTE_E_9 (124)
 
 /**
  * @~Chinese
@@ -1271,7 +1271,7 @@
  * @~English
  * @brief F9 (note F at octave 9)
  */
-#define MIDI_NOTE_F_9 125
+#define MIDI_NOTE_F_9 (125)
 
 /**
  * @~Chinese
@@ -1281,7 +1281,7 @@
  * @~English
  * @brief F#9 (note F sharp at octave 9)
  */
-#define MIDI_NOTE_F_SHARP_9 126
+#define MIDI_NOTE_F_SHARP_9 (126)
 
 /**
  * @~Chinese
@@ -1291,6 +1291,6 @@
  * @~English
  * @brief G9 (note G at octave 9, highest MIDI note)
  */
-#define MIDI_NOTE_G_9 127
+#define MIDI_NOTE_G_9 (127)
 
 #endif

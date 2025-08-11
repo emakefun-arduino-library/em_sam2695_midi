@@ -117,18 +117,20 @@ $(function(){initNavTree('play_music_8ino-example.html',''); initResizable(true)
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="sam2695__midi_8h.html">sam2695_midi.h</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define SAM2695_MIDI_PIN 4</span></div>
-<div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>{</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t kSam2695MidiPin = 4;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kChannel = 0;</div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kChannelVolume = 110;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kReverberationVolume = 80;</div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kReverberationDelayFeedback = 0;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint16_t kQuarterNoteDuration = 300;</div>
 <div class="line"><span class="keyword">constexpr</span> uint16_t kEighthNoteDuration = 150;</div>
 <div class="line"><span class="keyword">constexpr</span> uint16_t kDottedQuarterNoteDuration = 450;</div>
 <div class="line"> </div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="classem_1_1_sam2695_midi.html">em::Sam2695Midi</a> g_sam2695_midi(SAM2695_MIDI_PIN);</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="classem_1_1_sam2695_midi.html">em::Sam2695Midi</a> g_sam2695_midi(kSam2695MidiPin);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> PlayNote(<span class="keyword">const</span> uint8_t midi_note, <span class="keyword">const</span> uint16_t duration, <span class="keyword">const</span> uint8_t note_velocity = 90) {</div>
 <div class="line">  g_sam2695_midi.<a id="a1" name="a1"></a><a class="code hl_function" href="classem_1_1_sam2695_midi.html#a03540eebeee02d50f0f12a7b94a5ae16">NoteOn</a>(kChannel, midi_note, note_velocity);</div>

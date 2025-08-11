@@ -15,18 +15,20 @@
 
 #include "sam2695_midi.h"
 
-#define SAM2695_MIDI_PIN 4
-
 namespace {
+constexpr uint8_t kSam2695MidiPin = 4;
+
 constexpr uint8_t kChannel = 0;
 constexpr uint8_t kChannelVolume = 110;
+
 constexpr uint8_t kReverberationVolume = 80;
 constexpr uint8_t kReverberationDelayFeedback = 0;
+
 constexpr uint16_t kQuarterNoteDuration = 300;
 constexpr uint16_t kEighthNoteDuration = 150;
 constexpr uint16_t kDottedQuarterNoteDuration = 450;
 
-em::Sam2695Midi g_sam2695_midi(SAM2695_MIDI_PIN);
+em::Sam2695Midi g_sam2695_midi(kSam2695MidiPin);
 
 void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t note_velocity = 90) {
   g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);

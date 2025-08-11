@@ -15,17 +15,21 @@
 
 #include "sam2695_midi.h"
 
-#define SAM2695_MIDI_PIN 4
-
 namespace {
+constexpr uint8_t kSam2695MidiPin = 4;
+
 constexpr uint8_t kChannel = 9;
 constexpr uint8_t kChannelVolume = 100;
+
 constexpr uint8_t kReverberationVolume = 127;
 constexpr uint8_t kReverberationDelayFeedback = 100;
+
 constexpr uint8_t kTempoRandomRange = 5;
 constexpr uint8_t kTempoRandomOffset = 2;
+
 constexpr uint8_t kMinTempo = 40;
 constexpr uint8_t kMaxTempo = 250;
+
 constexpr uint8_t kTickSize = 15;
 
 // Every array cell is the velocity of the note played
@@ -44,7 +48,7 @@ static_assert(sizeof(kHiHatPedalTick) / sizeof(kHiHatPedalTick[0]) == kTickSize,
 
 uint16_t g_tempo = 120;
 
-em::Sam2695Midi g_sam2695_midi(SAM2695_MIDI_PIN);
+em::Sam2695Midi g_sam2695_midi(kSam2695MidiPin);
 
 void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
   if (note_velocity > 0) {

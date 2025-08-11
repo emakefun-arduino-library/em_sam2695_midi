@@ -20,7 +20,7 @@
  * @~English
  * @brief Standard GM Sound Bank
  */
-#define MIDI_BANK_0 0
+#define MIDI_BANK_0 (0)
 
 /**
  * @~Chinese
@@ -30,7 +30,7 @@
  * @~English
  * @brief Extended Sound Bank
  */
-#define MIDI_BANK_127 127
+#define MIDI_BANK_127 (127)
 
 /**
  * @~Chinese
@@ -49,7 +49,7 @@
  * @~English
  * @brief Grand Piano
  */
-#define BANK_0_GRAND_PIANO 0
+#define BANK_0_GRAND_PIANO (0)
 
 /**
  * @~Chinese
@@ -59,7 +59,7 @@
  * @~English
  * @brief Bright Piano
  */
-#define BANK_0_BRIGHT_PIANO 1
+#define BANK_0_BRIGHT_PIANO (1)
 
 /**
  * @~Chinese
@@ -69,7 +69,7 @@
  * @~English
  * @brief Electric Grand Piano 3
  */
-#define BANK_0_ELECTRIC_GRAND_PIANO_3 2
+#define BANK_0_ELECTRIC_GRAND_PIANO_3 (2)
 
 /**
  * @~Chinese
@@ -79,7 +79,7 @@
  * @~English
  * @brief Honky Tonk Piano
  */
-#define BANK_0_HONKY_TONK_PIANO 3
+#define BANK_0_HONKY_TONK_PIANO (3)
 
 /**
  * @~Chinese
@@ -89,7 +89,7 @@
  * @~English
  * @brief Electric Piano 1
  */
-#define BANK_0_ELECTRIC_PIANO_1 4
+#define BANK_0_ELECTRIC_PIANO_1 (4)
 
 /**
  * @~Chinese
@@ -99,7 +99,7 @@
  * @~English
  * @brief Electric Piano 2
  */
-#define BANK_0_ELECTRIC_PIANO_2 5
+#define BANK_0_ELECTRIC_PIANO_2 (5)
 
 /**
  * @~Chinese
@@ -109,7 +109,7 @@
  * @~English
  * @brief Harpsichord
  */
-#define BANK_0_HARPSICHORD 6
+#define BANK_0_HARPSICHORD (6)
 
 /**
  * @~Chinese
@@ -119,7 +119,7 @@
  * @~English
  * @brief Clavi
  */
-#define BANK_0_CLAVI 7
+#define BANK_0_CLAVI (7)
 
 /**
  * @~Chinese
@@ -129,7 +129,7 @@
  * @~English
  * @brief Celesta
  */
-#define BANK_0_CELESTA 8
+#define BANK_0_CELESTA (8)
 
 /**
  * @~Chinese
@@ -139,7 +139,7 @@
  * @~English
  * @brief Glockenspiel
  */
-#define BANK_0_GLOCKENSPIEL 9
+#define BANK_0_GLOCKENSPIEL (9)
 
 /**
  * @~Chinese
@@ -149,7 +149,7 @@
  * @~English
  * @brief Music Box
  */
-#define BANK_0_MUSIC_BOX 10
+#define BANK_0_MUSIC_BOX (10)
 
 /**
  * @~Chinese
@@ -159,7 +159,7 @@
  * @~English
  * @brief Vibraphone
  */
-#define BANK_0_VIBRAPHONE 11
+#define BANK_0_VIBRAPHONE (11)
 
 /**
  * @~Chinese
@@ -169,7 +169,7 @@
  * @~English
  * @brief Marimba
  */
-#define BANK_0_MARIMBA 12
+#define BANK_0_MARIMBA (12)
 
 /**
  * @~Chinese
@@ -179,7 +179,7 @@
  * @~English
  * @brief Xylophone
  */
-#define BANK_0_XYLOPHONE 13
+#define BANK_0_XYLOPHONE (13)
 
 /**
  * @~Chinese
@@ -189,7 +189,7 @@
  * @~English
  * @brief Tubular Bells
  */
-#define BANK_0_TUBULAR_BELLS 14
+#define BANK_0_TUBULAR_BELLS (14)
 
 /**
  * @~Chinese
@@ -199,7 +199,7 @@
  * @~English
  * @brief Dulcimer
  */
-#define BANK_0_DULCIMER 15
+#define BANK_0_DULCIMER (15)
 
 /**
  * @~Chinese
@@ -209,7 +209,7 @@
  * @~English
  * @brief Drawbar Organ
  */
-#define BANK_0_DRAWBAR_ORGAN 16
+#define BANK_0_DRAWBAR_ORGAN (16)
 
 /**
  * @~Chinese
@@ -219,7 +219,7 @@
  * @~English
  * @brief Percussive Organ
  */
-#define BANK_0_PERCUSSIVE_ORGAN 17
+#define BANK_0_PERCUSSIVE_ORGAN (17)
 
 /**
  * @~Chinese
@@ -229,7 +229,7 @@
  * @~English
  * @brief Rock Organ
  */
-#define BANK_0_ROCK_ORGAN 18
+#define BANK_0_ROCK_ORGAN (18)
 
 /**
  * @~Chinese
@@ -239,7 +239,7 @@
  * @~English
  * @brief Church Organ
  */
-#define BANK_0_CHURCH_ORGAN 19
+#define BANK_0_CHURCH_ORGAN (19)
 
 /**
  * @~Chinese
@@ -249,7 +249,7 @@
  * @~English
  * @brief Reed Organ
  */
-#define BANK_0_REED_ORGAN 20
+#define BANK_0_REED_ORGAN (20)
 
 /**
  * @~Chinese
@@ -259,7 +259,7 @@
  * @~English
  * @brief Accordion French
  */
-#define BANK_0_ACCORDION_FRENCH 21
+#define BANK_0_ACCORDION_FRENCH (21)
 
 /**
  * @~Chinese
@@ -269,7 +269,7 @@
  * @~English
  * @brief Harmonica
  */
-#define BANK_0_HARMONICA 22
+#define BANK_0_HARMONICA (22)
 
 /**
  * @~Chinese
@@ -279,7 +279,7 @@
  * @~English
  * @brief Tango Accordion
  */
-#define BANK_0_TANGO_ACCORDION 23
+#define BANK_0_TANGO_ACCORDION (23)
 
 /**
  * @~Chinese
@@ -289,7 +289,7 @@
  * @~English
  * @brief Acoustic Guitar Nylon String
  */
-#define BANK_0_ACOUSTIC_GUITAR_NYLON_STRING 24
+#define BANK_0_ACOUSTIC_GUITAR_NYLON_STRING (24)
 
 /**
  * @~Chinese
@@ -299,7 +299,7 @@
  * @~English
  * @brief Acoustic Guitar Steel String
  */
-#define BANK_0_ACOUSTIC_GUITAR_STEEL_STRING 25
+#define BANK_0_ACOUSTIC_GUITAR_STEEL_STRING (25)
 
 /**
  * @~Chinese
@@ -309,7 +309,7 @@
  * @~English
  * @brief Electric Guitar Jazz
  */
-#define BANK_0_ELECTRIC_GUITAR_JAZZ 26
+#define BANK_0_ELECTRIC_GUITAR_JAZZ (26)
 
 /**
  * @~Chinese
@@ -319,7 +319,7 @@
  * @~English
  * @brief Electric Guitar Clean
  */
-#define BANK_0_ELECTRIC_GUITAR_CLEAN 27
+#define BANK_0_ELECTRIC_GUITAR_CLEAN (27)
 
 /**
  * @~Chinese
@@ -329,7 +329,7 @@
  * @~English
  * @brief Electric Guitar Muted
  */
-#define BANK_0_ELECTRIC_GUITAR_MUTED 28
+#define BANK_0_ELECTRIC_GUITAR_MUTED (28)
 
 /**
  * @~Chinese
@@ -339,7 +339,7 @@
  * @~English
  * @brief Electric Guitar Drive
  */
-#define BANK_0_ELECTRIC_GUITAR_DRIVE 29
+#define BANK_0_ELECTRIC_GUITAR_DRIVE (29)
 
 /**
  * @~Chinese
@@ -349,7 +349,7 @@
  * @~English
  * @brief Electric Guitar Distortion
  */
-#define BANK_0_ELECTRIC_GUITAR_DISTORTION 30
+#define BANK_0_ELECTRIC_GUITAR_DISTORTION (30)
 
 /**
  * @~Chinese
@@ -359,7 +359,7 @@
  * @~English
  * @brief Guitar Harmonics
  */
-#define BANK_0_GUITAR_HARMONICS 31
+#define BANK_0_GUITAR_HARMONICS (31)
 
 /**
  * @~Chinese
@@ -369,7 +369,7 @@
  * @~English
  * @brief Acoustic Bass
  */
-#define BANK_0_ACOUSTIC_BASS 32
+#define BANK_0_ACOUSTIC_BASS (32)
 
 /**
  * @~Chinese
@@ -379,7 +379,7 @@
  * @~English
  * @brief Finger Bass
  */
-#define BANK_0_FINGER_BASS 33
+#define BANK_0_FINGER_BASS (33)
 
 /**
  * @~Chinese
@@ -389,7 +389,7 @@
  * @~English
  * @brief Picked Bass
  */
-#define BANK_0_PICKED_BASS 34
+#define BANK_0_PICKED_BASS (34)
 
 /**
  * @~Chinese
@@ -399,7 +399,7 @@
  * @~English
  * @brief Fretless Bass
  */
-#define BANK_0_FRETLESS_BASS 35
+#define BANK_0_FRETLESS_BASS (35)
 
 /**
  * @~Chinese
@@ -409,7 +409,7 @@
  * @~English
  * @brief Slap Bass 1
  */
-#define BANK_0_SLAP_BASS_1 36
+#define BANK_0_SLAP_BASS_1 (36)
 
 /**
  * @~Chinese
@@ -419,7 +419,7 @@
  * @~English
  * @brief Slap Bass 2
  */
-#define BANK_0_SLAP_BASS_2 37
+#define BANK_0_SLAP_BASS_2 (37)
 
 /**
  * @~Chinese
@@ -429,7 +429,7 @@
  * @~English
  * @brief Synth Bass 1
  */
-#define BANK_0_SYNTH_BASS_1 38
+#define BANK_0_SYNTH_BASS_1 (38)
 
 /**
  * @~Chinese
@@ -439,7 +439,7 @@
  * @~English
  * @brief Synth Bass 2
  */
-#define BANK_0_SYNTH_BASS_2 39
+#define BANK_0_SYNTH_BASS_2 (39)
 
 /**
  * @~Chinese
@@ -449,7 +449,7 @@
  * @~English
  * @brief Violin
  */
-#define BANK_0_VIOLIN 40
+#define BANK_0_VIOLIN (40)
 
 /**
  * @~Chinese
@@ -459,7 +459,7 @@
  * @~English
  * @brief Viola
  */
-#define BANK_0_VIOLA 41
+#define BANK_0_VIOLA (41)
 
 /**
  * @~Chinese
@@ -469,7 +469,7 @@
  * @~English
  * @brief Cello
  */
-#define BANK_0_CELLO 42
+#define BANK_0_CELLO (42)
 
 /**
  * @~Chinese
@@ -479,7 +479,7 @@
  * @~English
  * @brief Contrabass
  */
-#define BANK_0_CONTRABASS 43
+#define BANK_0_CONTRABASS (43)
 
 /**
  * @~Chinese
@@ -489,7 +489,7 @@
  * @~English
  * @brief Tremolo Strings
  */
-#define BANK_0_TREMOLO_STRINGS 44
+#define BANK_0_TREMOLO_STRINGS (44)
 
 /**
  * @~Chinese
@@ -499,7 +499,7 @@
  * @~English
  * @brief Pizzicato Strings
  */
-#define BANK_0_PIZZICATO_STRINGS 45
+#define BANK_0_PIZZICATO_STRINGS (45)
 
 /**
  * @~Chinese
@@ -509,7 +509,7 @@
  * @~English
  * @brief Orchestral Harp
  */
-#define BANK_0_ORCHESTRAL_HARP 46
+#define BANK_0_ORCHESTRAL_HARP (46)
 
 /**
  * @~Chinese
@@ -519,7 +519,7 @@
  * @~English
  * @brief Timpani
  */
-#define BANK_0_TIMPANI 47
+#define BANK_0_TIMPANI (47)
 
 /**
  * @~Chinese
@@ -529,7 +529,7 @@
  * @~English
  * @brief String Ensemble 1
  */
-#define BANK_0_STRING_ENSEMBLE_1 48
+#define BANK_0_STRING_ENSEMBLE_1 (48)
 
 /**
  * @~Chinese
@@ -539,7 +539,7 @@
  * @~English
  * @brief String Ensemble 2
  */
-#define BANK_0_STRING_ENSEMBLE_2 49
+#define BANK_0_STRING_ENSEMBLE_2 (49)
 
 /**
  * @~Chinese
@@ -549,7 +549,7 @@
  * @~English
  * @brief Synth Strings 1
  */
-#define BANK_0_SYNTH_STRINGS_1 50
+#define BANK_0_SYNTH_STRINGS_1 (50)
 
 /**
  * @~Chinese
@@ -559,7 +559,7 @@
  * @~English
  * @brief Synth Strings 2
  */
-#define BANK_0_SYNTH_STRINGS_2 51
+#define BANK_0_SYNTH_STRINGS_2 (51)
 
 /**
  * @~Chinese
@@ -569,7 +569,7 @@
  * @~English
  * @brief Choir Aahs
  */
-#define BANK_0_CHOIR_AAHS 52
+#define BANK_0_CHOIR_AAHS (52)
 
 /**
  * @~Chinese
@@ -579,7 +579,7 @@
  * @~English
  * @brief Voice Oohs
  */
-#define BANK_0_VOICE_OOHS 53
+#define BANK_0_VOICE_OOHS (53)
 
 /**
  * @~Chinese
@@ -589,7 +589,7 @@
  * @~English
  * @brief Synth Voice
  */
-#define BANK_0_SYNTH_VOICE 54
+#define BANK_0_SYNTH_VOICE (54)
 
 /**
  * @~Chinese
@@ -599,7 +599,7 @@
  * @~English
  * @brief Orchestra Hit
  */
-#define BANK_0_ORCHESTRA_HIT 55
+#define BANK_0_ORCHESTRA_HIT (55)
 
 /**
  * @~Chinese
@@ -609,7 +609,7 @@
  * @~English
  * @brief Trumpet
  */
-#define BANK_0_TRUMPET 56
+#define BANK_0_TRUMPET (56)
 
 /**
  * @~Chinese
@@ -619,7 +619,7 @@
  * @~English
  * @brief Trombone
  */
-#define BANK_0_TROMBONE 57
+#define BANK_0_TROMBONE (57)
 
 /**
  * @~Chinese
@@ -629,7 +629,7 @@
  * @~English
  * @brief Tuba
  */
-#define BANK_0_TUBA 58
+#define BANK_0_TUBA (58)
 
 /**
  * @~Chinese
@@ -639,7 +639,7 @@
  * @~English
  * @brief Muted Trumpet
  */
-#define BANK_0_MUTED_TRUMPET 59
+#define BANK_0_MUTED_TRUMPET (59)
 
 /**
  * @~Chinese
@@ -649,7 +649,7 @@
  * @~English
  * @brief French Horn
  */
-#define BANK_0_FRENCH_HORN 60
+#define BANK_0_FRENCH_HORN (60)
 
 /**
  * @~Chinese
@@ -659,7 +659,7 @@
  * @~English
  * @brief Brass Section
  */
-#define BANK_0_BRASS_SECTION 61
+#define BANK_0_BRASS_SECTION (61)
 
 /**
  * @~Chinese
@@ -669,7 +669,7 @@
  * @~English
  * @brief Synth Brass 1
  */
-#define BANK_0_SYNTH_BRASS_1 62
+#define BANK_0_SYNTH_BRASS_1 (62)
 
 /**
  * @~Chinese
@@ -679,7 +679,7 @@
  * @~English
  * @brief Synth Brass 2
  */
-#define BANK_0_SYNTH_BRASS_2 63
+#define BANK_0_SYNTH_BRASS_2 (63)
 
 /**
  * @~Chinese
@@ -689,7 +689,7 @@
  * @~English
  * @brief Soprano Sax
  */
-#define BANK_0_SOPRANO_SAX 64
+#define BANK_0_SOPRANO_SAX (64)
 
 /**
  * @~Chinese
@@ -699,7 +699,7 @@
  * @~English
  * @brief Alto Sax
  */
-#define BANK_0_ALTO_SAX 65
+#define BANK_0_ALTO_SAX (65)
 
 /**
  * @~Chinese
@@ -709,7 +709,7 @@
  * @~English
  * @brief Tenor Sax
  */
-#define BANK_0_TENOR_SAX 66
+#define BANK_0_TENOR_SAX (66)
 
 /**
  * @~Chinese
@@ -719,7 +719,7 @@
  * @~English
  * @brief Baritone Sax
  */
-#define BANK_0_BARITONE_SAX 67
+#define BANK_0_BARITONE_SAX (67)
 
 /**
  * @~Chinese
@@ -729,7 +729,7 @@
  * @~English
  * @brief Oboe
  */
-#define BANK_0_OBOE 68
+#define BANK_0_OBOE (68)
 
 /**
  * @~Chinese
@@ -739,7 +739,7 @@
  * @~English
  * @brief English Horn
  */
-#define BANK_0_ENGLISH_HORN 69
+#define BANK_0_ENGLISH_HORN (69)
 
 /**
  * @~Chinese
@@ -749,7 +749,7 @@
  * @~English
  * @brief Bassoon
  */
-#define BANK_0_BASSOON 70
+#define BANK_0_BASSOON (70)
 
 /**
  * @~Chinese
@@ -759,7 +759,7 @@
  * @~English
  * @brief Clarinet
  */
-#define BANK_0_CLARINET 71
+#define BANK_0_CLARINET (71)
 
 /**
  * @~Chinese
@@ -769,7 +769,7 @@
  * @~English
  * @brief Piccolo
  */
-#define BANK_0_PICCOLO 72
+#define BANK_0_PICCOLO (72)
 
 /**
  * @~Chinese
@@ -779,7 +779,7 @@
  * @~English
  * @brief Flute
  */
-#define BANK_0_FLUTE 73
+#define BANK_0_FLUTE (73)
 
 /**
  * @~Chinese
@@ -789,7 +789,7 @@
  * @~English
  * @brief Recorder
  */
-#define BANK_0_RECORDER 74
+#define BANK_0_RECORDER (74)
 
 /**
  * @~Chinese
@@ -799,7 +799,7 @@
  * @~English
  * @brief Pan Flute
  */
-#define BANK_0_PAN_FLUTE 75
+#define BANK_0_PAN_FLUTE (75)
 
 /**
  * @~Chinese
@@ -809,7 +809,7 @@
  * @~English
  * @brief Blown Bottle
  */
-#define BANK_0_BLOWN_BOTTLE 76
+#define BANK_0_BLOWN_BOTTLE (76)
 
 /**
  * @~Chinese
@@ -819,7 +819,7 @@
  * @~English
  * @brief Shakuhachi
  */
-#define BANK_0_SHAKUHACHI 77
+#define BANK_0_SHAKUHACHI (77)
 
 /**
  * @~Chinese
@@ -829,7 +829,7 @@
  * @~English
  * @brief Whistle
  */
-#define BANK_0_WHISTLE 78
+#define BANK_0_WHISTLE (78)
 
 /**
  * @~Chinese
@@ -839,7 +839,7 @@
  * @~English
  * @brief Ocarina
  */
-#define BANK_0_OCARINA 79
+#define BANK_0_OCARINA (79)
 
 /**
  * @~Chinese
@@ -849,7 +849,7 @@
  * @~English
  * @brief Square Lead
  */
-#define BANK_0_SQUARE_LEAD 80
+#define BANK_0_SQUARE_LEAD (80)
 
 /**
  * @~Chinese
@@ -859,7 +859,7 @@
  * @~English
  * @brief Sawtooth Lead
  */
-#define BANK_0_SAWTOOTH_LEAD 81
+#define BANK_0_SAWTOOTH_LEAD (81)
 
 /**
  * @~Chinese
@@ -869,7 +869,7 @@
  * @~English
  * @brief Calliope Lead
  */
-#define BANK_0_CALLIOPE_LEAD 82
+#define BANK_0_CALLIOPE_LEAD (82)
 
 /**
  * @~Chinese
@@ -879,7 +879,7 @@
  * @~English
  * @brief Chiff Lead
  */
-#define BANK_0_CHIFF_LEAD 83
+#define BANK_0_CHIFF_LEAD (83)
 
 /**
  * @~Chinese
@@ -889,7 +889,7 @@
  * @~English
  * @brief Charang Lead
  */
-#define BANK_0_CHARANG_LEAD 84
+#define BANK_0_CHARANG_LEAD (84)
 
 /**
  * @~Chinese
@@ -899,7 +899,7 @@
  * @~English
  * @brief Voice Lead
  */
-#define BANK_0_VOICE_LEAD 85
+#define BANK_0_VOICE_LEAD (85)
 
 /**
  * @~Chinese
@@ -909,7 +909,7 @@
  * @~English
  * @brief Fifths Lead
  */
-#define BANK_0_FIFTHS_LEAD 86
+#define BANK_0_FIFTHS_LEAD (86)
 
 /**
  * @~Chinese
@@ -919,7 +919,7 @@
  * @~English
  * @brief Bass Guitar Lead
  */
-#define BANK_0_BASS_GUITAR_LEAD 87
+#define BANK_0_BASS_GUITAR_LEAD (87)
 
 /**
  * @~Chinese
@@ -929,7 +929,7 @@
  * @~English
  * @brief Fantasia Pad
  */
-#define BANK_0_FANTASIA_PAD 88
+#define BANK_0_FANTASIA_PAD (88)
 
 /**
  * @~Chinese
@@ -939,7 +939,7 @@
  * @~English
  * @brief Warm Pad
  */
-#define BANK_0_WARM_PAD 89
+#define BANK_0_WARM_PAD (89)
 
 /**
  * @~Chinese
@@ -949,7 +949,7 @@
  * @~English
  * @brief Poly Synth Pad
  */
-#define BANK_0_POLY_SYNTH_PAD 90
+#define BANK_0_POLY_SYNTH_PAD (90)
 
 /**
  * @~Chinese
@@ -959,7 +959,7 @@
  * @~English
  * @brief Choir Pad
  */
-#define BANK_0_CHOIR_PAD 91
+#define BANK_0_CHOIR_PAD (91)
 
 /**
  * @~Chinese
@@ -969,7 +969,7 @@
  * @~English
  * @brief Bowed Pad
  */
-#define BANK_0_BOWED_PAD 92
+#define BANK_0_BOWED_PAD (92)
 
 /**
  * @~Chinese
@@ -979,7 +979,7 @@
  * @~English
  * @brief Metallic Pad
  */
-#define BANK_0_METALLIC_PAD 93
+#define BANK_0_METALLIC_PAD (93)
 
 /**
  * @~Chinese
@@ -989,7 +989,7 @@
  * @~English
  * @brief Halo Pad
  */
-#define BANK_0_HALO_PAD 94
+#define BANK_0_HALO_PAD (94)
 
 /**
  * @~Chinese
@@ -999,7 +999,7 @@
  * @~English
  * @brief Sweep Pad
  */
-#define BANK_0_SWEEP_PAD 95
+#define BANK_0_SWEEP_PAD (95)
 
 /**
  * @~Chinese
@@ -1009,7 +1009,7 @@
  * @~English
  * @brief Rain FX
  */
-#define BANK_0_RAIN_FX 96
+#define BANK_0_RAIN_FX (96)
 
 /**
  * @~Chinese
@@ -1019,7 +1019,7 @@
  * @~English
  * @brief Sound Track FX
  */
-#define BANK_0_SOUND_TRACK_FX 97
+#define BANK_0_SOUND_TRACK_FX (97)
 
 /**
  * @~Chinese
@@ -1029,7 +1029,7 @@
  * @~English
  * @brief Crystal FX
  */
-#define BANK_0_CRYSTAL_FX 98
+#define BANK_0_CRYSTAL_FX (98)
 
 /**
  * @~Chinese
@@ -1039,7 +1039,7 @@
  * @~English
  * @brief Atmosphere FX
  */
-#define BANK_0_ATMOSPHERE_FX 99
+#define BANK_0_ATMOSPHERE_FX (99)
 
 /**
  * @~Chinese
@@ -1049,7 +1049,7 @@
  * @~English
  * @brief Brightness FX
  */
-#define BANK_0_BRIGHTNESS_FX 100
+#define BANK_0_BRIGHTNESS_FX (100)
 
 /**
  * @~Chinese
@@ -1059,7 +1059,7 @@
  * @~English
  * @brief Goblins FX
  */
-#define BANK_0_GOBLINS_FX 101
+#define BANK_0_GOBLINS_FX (101)
 
 /**
  * @~Chinese
@@ -1069,7 +1069,7 @@
  * @~English
  * @brief Echoes FX
  */
-#define BANK_0_ECHOES_FX 102
+#define BANK_0_ECHOES_FX (102)
 
 /**
  * @~Chinese
@@ -1079,7 +1079,7 @@
  * @~English
  * @brief Sci Fi FX
  */
-#define BANK_0_SCI_FI_FX 103
+#define BANK_0_SCI_FI_FX (103)
 
 /**
  * @~Chinese
@@ -1089,7 +1089,7 @@
  * @~English
  * @brief Sitar
  */
-#define BANK_0_SITAR 104
+#define BANK_0_SITAR (104)
 
 /**
  * @~Chinese
@@ -1099,7 +1099,7 @@
  * @~English
  * @brief Banjo
  */
-#define BANK_0_BANJO 105
+#define BANK_0_BANJO (105)
 
 /**
  * @~Chinese
@@ -1109,7 +1109,7 @@
  * @~English
  * @brief Shamisen
  */
-#define BANK_0_SHAMISEN 106
+#define BANK_0_SHAMISEN (106)
 
 /**
  * @~Chinese
@@ -1119,7 +1119,7 @@
  * @~English
  * @brief Koto
  */
-#define BANK_0_KOTO 107
+#define BANK_0_KOTO (107)
 
 /**
  * @~Chinese
@@ -1129,7 +1129,7 @@
  * @~English
  * @brief Kalimba
  */
-#define BANK_0_KALIMBA 108
+#define BANK_0_KALIMBA (108)
 
 /**
  * @~Chinese
@@ -1139,7 +1139,7 @@
  * @~English
  * @brief Bagpipe
  */
-#define BANK_0_BAGPIPE 109
+#define BANK_0_BAGPIPE (109)
 
 /**
  * @~Chinese
@@ -1149,7 +1149,7 @@
  * @~English
  * @brief Fiddle
  */
-#define BANK_0_FIDDLE 110
+#define BANK_0_FIDDLE (110)
 
 /**
  * @~Chinese
@@ -1159,7 +1159,7 @@
  * @~English
  * @brief Shanai
  */
-#define BANK_0_SHANAI 111
+#define BANK_0_SHANAI (111)
 
 /**
  * @~Chinese
@@ -1169,7 +1169,7 @@
  * @~English
  * @brief Tinkle Bell
  */
-#define BANK_0_TINKLE_BELL 112
+#define BANK_0_TINKLE_BELL (112)
 
 /**
  * @~Chinese
@@ -1179,7 +1179,7 @@
  * @~English
  * @brief Agogo
  */
-#define BANK_0_AGOGO 113
+#define BANK_0_AGOGO (113)
 
 /**
  * @~Chinese
@@ -1189,7 +1189,7 @@
  * @~English
  * @brief Steel Drums
  */
-#define BANK_0_STEEL_DRUMS 114
+#define BANK_0_STEEL_DRUMS (114)
 
 /**
  * @~Chinese
@@ -1199,7 +1199,7 @@
  * @~English
  * @brief Woodblock
  */
-#define BANK_0_WOODBLOCK 115
+#define BANK_0_WOODBLOCK (115)
 
 /**
  * @~Chinese
@@ -1209,7 +1209,7 @@
  * @~English
  * @brief Taiko Drum
  */
-#define BANK_0_TAIKO_DRUM 116
+#define BANK_0_TAIKO_DRUM (116)
 
 /**
  * @~Chinese
@@ -1219,7 +1219,7 @@
  * @~English
  * @brief Melodic Tom
  */
-#define BANK_0_MELODIC_TOM 117
+#define BANK_0_MELODIC_TOM (117)
 
 /**
  * @~Chinese
@@ -1229,7 +1229,7 @@
  * @~English
  * @brief Synth Drum
  */
-#define BANK_0_SYNTH_DRUM 118
+#define BANK_0_SYNTH_DRUM (118)
 
 /**
  * @~Chinese
@@ -1239,7 +1239,7 @@
  * @~English
  * @brief Reverse Cymbal
  */
-#define BANK_0_REVERSE_CYMBAL 119
+#define BANK_0_REVERSE_CYMBAL (119)
 
 /**
  * @~Chinese
@@ -1249,7 +1249,7 @@
  * @~English
  * @brief Guitar Fret Noise
  */
-#define BANK_0_GUITAR_FRET_NOISE 120
+#define BANK_0_GUITAR_FRET_NOISE (120)
 
 /**
  * @~Chinese
@@ -1259,7 +1259,7 @@
  * @~English
  * @brief Breath Noise
  */
-#define BANK_0_BREATH_NOISE 121
+#define BANK_0_BREATH_NOISE (121)
 
 /**
  * @~Chinese
@@ -1269,7 +1269,7 @@
  * @~English
  * @brief Seashore
  */
-#define BANK_0_SEASHORE 122
+#define BANK_0_SEASHORE (122)
 
 /**
  * @~Chinese
@@ -1279,7 +1279,7 @@
  * @~English
  * @brief Bird Tweet
  */
-#define BANK_0_BIRD_TWEET 123
+#define BANK_0_BIRD_TWEET (123)
 
 /**
  * @~Chinese
@@ -1289,7 +1289,7 @@
  * @~English
  * @brief Telephone Ring
  */
-#define BANK_0_TELEPHONE_RING 124
+#define BANK_0_TELEPHONE_RING (124)
 
 /**
  * @~Chinese
@@ -1299,7 +1299,7 @@
  * @~English
  * @brief Helicopter
  */
-#define BANK_0_HELICOPTER 125
+#define BANK_0_HELICOPTER (125)
 
 /**
  * @~Chinese
@@ -1309,7 +1309,7 @@
  * @~English
  * @brief Applause
  */
-#define BANK_0_APPLAUSE 126
+#define BANK_0_APPLAUSE (126)
 
 /**
  * @~Chinese
@@ -1319,7 +1319,7 @@
  * @~English
  * @brief Gun Shot
  */
-#define BANK_0_GUN_SHOT 127
+#define BANK_0_GUN_SHOT (127)
 
 /*Set Channel Timbre: Bank 0 */
 /**
@@ -1339,7 +1339,7 @@
  * @~English
  * @brief Piano 1
  */
-#define BANK_127_PIANO_1 0
+#define BANK_127_PIANO_1 (0)
 
 /**
  * @~Chinese
@@ -1349,7 +1349,7 @@
  * @~English
  * @brief Piano 2
  */
-#define BANK_127_PIANO_2 1
+#define BANK_127_PIANO_2 (1)
 
 /**
  * @~Chinese
@@ -1359,7 +1359,7 @@
  * @~English
  * @brief Piano 3
  */
-#define BANK_127_PIANO_3 2
+#define BANK_127_PIANO_3 (2)
 
 /**
  * @~Chinese
@@ -1369,7 +1369,7 @@
  * @~English
  * @brief Detuned Electric Piano 1
  */
-#define BANK_127_DETUNED_ELECTRIC_PIANO_1 3
+#define BANK_127_DETUNED_ELECTRIC_PIANO_1 (3)
 
 /**
  * @~Chinese
@@ -1379,7 +1379,7 @@
  * @~English
  * @brief Electric Piano 1
  */
-#define BANK_127_ELECTRIC_PIANO_1 4
+#define BANK_127_ELECTRIC_PIANO_1 (4)
 
 /**
  * @~Chinese
@@ -1389,7 +1389,7 @@
  * @~English
  * @brief Electric Piano 2
  */
-#define BANK_127_ELECTRIC_PIANO_2 5
+#define BANK_127_ELECTRIC_PIANO_2 (5)
 
 /**
  * @~Chinese
@@ -1399,7 +1399,7 @@
  * @~English
  * @brief Detuned Electric Piano 2
  */
-#define BANK_127_DETUNED_ELECTRIC_PIANO_2 6
+#define BANK_127_DETUNED_ELECTRIC_PIANO_2 (6)
 
 /**
  * @~Chinese
@@ -1409,7 +1409,7 @@
  * @~English
  * @brief Honky Tonk Piano
  */
-#define BANK_127_HONKY_TONK_PIANO 7
+#define BANK_127_HONKY_TONK_PIANO (7)
 
 /**
  * @~Chinese
@@ -1419,7 +1419,7 @@
  * @~English
  * @brief Organ 1
  */
-#define BANK_127_ORGAN_1 8
+#define BANK_127_ORGAN_1 (8)
 
 /**
  * @~Chinese
@@ -1429,7 +1429,7 @@
  * @~English
  * @brief Organ 2
  */
-#define BANK_127_ORGAN_2 9
+#define BANK_127_ORGAN_2 (9)
 
 /**
  * @~Chinese
@@ -1439,7 +1439,7 @@
  * @~English
  * @brief Organ 3
  */
-#define BANK_127_ORGAN_3 10
+#define BANK_127_ORGAN_3 (10)
 
 /**
  * @~Chinese
@@ -1449,7 +1449,7 @@
  * @~English
  * @brief Detuned Organ 1
  */
-#define BANK_127_DETUNED_ORGAN_1 11
+#define BANK_127_DETUNED_ORGAN_1 (11)
 
 /**
  * @~Chinese
@@ -1459,7 +1459,7 @@
  * @~English
  * @brief Church Organ 2
  */
-#define BANK_127_CHURCH_ORGAN_2 12
+#define BANK_127_CHURCH_ORGAN_2 (12)
 
 /**
  * @~Chinese
@@ -1469,7 +1469,7 @@
  * @~English
  * @brief Church Organ 1
  */
-#define BANK_127_CHURCH_ORGAN_1 13
+#define BANK_127_CHURCH_ORGAN_1 (13)
 
 /**
  * @~Chinese
@@ -1479,7 +1479,7 @@
  * @~English
  * @brief Church Organ 3
  */
-#define BANK_127_CHURCH_ORGAN_3 14
+#define BANK_127_CHURCH_ORGAN_3 (14)
 
 /**
  * @~Chinese
@@ -1489,7 +1489,7 @@
  * @~English
  * @brief Accordion French
  */
-#define BANK_127_ACCORDION_FRENCH 15
+#define BANK_127_ACCORDION_FRENCH (15)
 
 /**
  * @~Chinese
@@ -1499,7 +1499,7 @@
  * @~English
  * @brief Harpsichord
  */
-#define BANK_127_HARPSICHORD 16
+#define BANK_127_HARPSICHORD (16)
 
 /**
  * @~Chinese
@@ -1509,7 +1509,7 @@
  * @~English
  * @brief Coupled Harpsichord 1
  */
-#define BANK_127_COUPLED_HARPSICHORD_1 17
+#define BANK_127_COUPLED_HARPSICHORD_1 (17)
 
 /**
  * @~Chinese
@@ -1519,7 +1519,7 @@
  * @~English
  * @brief Coupled Harpsichord 2
  */
-#define BANK_127_COUPLED_HARPSICHORD_2 18
+#define BANK_127_COUPLED_HARPSICHORD_2 (18)
 
 /**
  * @~Chinese
@@ -1529,7 +1529,7 @@
  * @~English
  * @brief Clavichord 1
  */
-#define BANK_127_CLAVICHORD_1 19
+#define BANK_127_CLAVICHORD_1 (19)
 
 /**
  * @~Chinese
@@ -1539,7 +1539,7 @@
  * @~English
  * @brief Clavichord 2
  */
-#define BANK_127_CLAVICHORD_2 20
+#define BANK_127_CLAVICHORD_2 (20)
 
 /**
  * @~Chinese
@@ -1549,7 +1549,7 @@
  * @~English
  * @brief Clavichord 3
  */
-#define BANK_127_CLAVICHORD_3 21
+#define BANK_127_CLAVICHORD_3 (21)
 
 /**
  * @~Chinese
@@ -1559,7 +1559,7 @@
  * @~English
  * @brief Celesta 1
  */
-#define BANK_127_CELESTA_1 22
+#define BANK_127_CELESTA_1 (22)
 
 /**
  * @~Chinese
@@ -1569,7 +1569,7 @@
  * @~English
  * @brief Celesta 2
  */
-#define BANK_127_CELESTA_2 23
+#define BANK_127_CELESTA_2 (23)
 
 /**
  * @~Chinese
@@ -1579,7 +1579,7 @@
  * @~English
  * @brief Synth Brass 1
  */
-#define BANK_127_SYNTH_BRASS_1 24
+#define BANK_127_SYNTH_BRASS_1 (24)
 
 /**
  * @~Chinese
@@ -1589,7 +1589,7 @@
  * @~English
  * @brief Synth Brass 2
  */
-#define BANK_127_SYNTH_BRASS_2 25
+#define BANK_127_SYNTH_BRASS_2 (25)
 
 /**
  * @~Chinese
@@ -1599,7 +1599,7 @@
  * @~English
  * @brief Synth Brass 3
  */
-#define BANK_127_SYNTH_BRASS_3 26
+#define BANK_127_SYNTH_BRASS_3 (26)
 
 /**
  * @~Chinese
@@ -1609,7 +1609,7 @@
  * @~English
  * @brief Synth Brass 4
  */
-#define BANK_127_SYNTH_BRASS_4 27
+#define BANK_127_SYNTH_BRASS_4 (27)
 
 /**
  * @~Chinese
@@ -1619,7 +1619,7 @@
  * @~English
  * @brief Synth Bass 1
  */
-#define BANK_127_SYNTH_BASS_1 28
+#define BANK_127_SYNTH_BASS_1 (28)
 
 /**
  * @~Chinese
@@ -1629,7 +1629,7 @@
  * @~English
  * @brief Synth Bass 2
  */
-#define BANK_127_SYNTH_BASS_2 29
+#define BANK_127_SYNTH_BASS_2 (29)
 
 /**
  * @~Chinese
@@ -1639,7 +1639,7 @@
  * @~English
  * @brief Synth Bass 3
  */
-#define BANK_127_SYNTH_BASS_3 30
+#define BANK_127_SYNTH_BASS_3 (30)
 
 /**
  * @~Chinese
@@ -1649,7 +1649,7 @@
  * @~English
  * @brief Synth Bass 4
  */
-#define BANK_127_SYNTH_BASS_4 31
+#define BANK_127_SYNTH_BASS_4 (31)
 
 /**
  * @~Chinese
@@ -1659,7 +1659,7 @@
  * @~English
  * @brief Fantasia
  */
-#define BANK_127_FANTASIA 32
+#define BANK_127_FANTASIA (32)
 
 /**
  * @~Chinese
@@ -1669,7 +1669,7 @@
  * @~English
  * @brief Synth Calliope
  */
-#define BANK_127_SYNTH_CALLIOPE 33
+#define BANK_127_SYNTH_CALLIOPE (33)
 
 /**
  * @~Chinese
@@ -1679,7 +1679,7 @@
  * @~English
  * @brief Choir Aahs
  */
-#define BANK_127_CHOIR_AAHS 34
+#define BANK_127_CHOIR_AAHS (34)
 
 /**
  * @~Chinese
@@ -1689,7 +1689,7 @@
  * @~English
  * @brief Bowed Glass 1
  */
-#define BANK_127_BOWED_GLASS_1 35
+#define BANK_127_BOWED_GLASS_1 (35)
 
 /**
  * @~Chinese
@@ -1699,7 +1699,7 @@
  * @~English
  * @brief Soundtrack
  */
-#define BANK_127_SOUNDTRACK 36
+#define BANK_127_SOUNDTRACK (36)
 
 /**
  * @~Chinese
@@ -1709,7 +1709,7 @@
  * @~English
  * @brief Atmosphere
  */
-#define BANK_127_ATMOSPHERE 37
+#define BANK_127_ATMOSPHERE (37)
 
 /**
  * @~Chinese
@@ -1719,7 +1719,7 @@
  * @~English
  * @brief Crystal
  */
-#define BANK_127_CRYSTAL 38
+#define BANK_127_CRYSTAL (38)
 
 /**
  * @~Chinese
@@ -1729,7 +1729,7 @@
  * @~English
  * @brief Bag Pipe
  */
-#define BANK_127_BAG_PIPE 39
+#define BANK_127_BAG_PIPE (39)
 
 /**
  * @~Chinese
@@ -1739,7 +1739,7 @@
  * @~English
  * @brief Tinkle Bell 1
  */
-#define BANK_127_TINKLE_BELL_1 40
+#define BANK_127_TINKLE_BELL_1 (40)
 
 /**
  * @~Chinese
@@ -1749,7 +1749,7 @@
  * @~English
  * @brief Ice Rain 1
  */
-#define BANK_127_ICE_RAIN_1 41
+#define BANK_127_ICE_RAIN_1 (41)
 
 /**
  * @~Chinese
@@ -1759,7 +1759,7 @@
  * @~English
  * @brief Oboe 1
  */
-#define BANK_127_OBOE_1 42
+#define BANK_127_OBOE_1 (42)
 
 /**
  * @~Chinese
@@ -1769,7 +1769,7 @@
  * @~English
  * @brief Pan Flute 1
  */
-#define BANK_127_PAN_FLUTE_1 43
+#define BANK_127_PAN_FLUTE_1 (43)
 
 /**
  * @~Chinese
@@ -1779,7 +1779,7 @@
  * @~English
  * @brief Saw Wave
  */
-#define BANK_127_SAW_WAVE 44
+#define BANK_127_SAW_WAVE (44)
 
 /**
  * @~Chinese
@@ -1789,7 +1789,7 @@
  * @~English
  * @brief Charang
  */
-#define BANK_127_CHARANG 45
+#define BANK_127_CHARANG (45)
 
 /**
  * @~Chinese
@@ -1799,7 +1799,7 @@
  * @~English
  * @brief Tubular Bells
  */
-#define BANK_127_TUBULAR_BELLS 46
+#define BANK_127_TUBULAR_BELLS (46)
 
 /**
  * @~Chinese
@@ -1809,7 +1809,7 @@
  * @~English
  * @brief Square Wave
  */
-#define BANK_127_SQUARE_WAVE 47
+#define BANK_127_SQUARE_WAVE (47)
 
 /**
  * @~Chinese
@@ -1819,7 +1819,7 @@
  * @~English
  * @brief Strings
  */
-#define BANK_127_STRINGS 48
+#define BANK_127_STRINGS (48)
 
 /**
  * @~Chinese
@@ -1829,7 +1829,7 @@
  * @~English
  * @brief Tremolo String
  */
-#define BANK_127_TREMOLO_STRING 49
+#define BANK_127_TREMOLO_STRING (49)
 
 /**
  * @~Chinese
@@ -1839,7 +1839,7 @@
  * @~English
  * @brief Slow Strings
  */
-#define BANK_127_SLOW_STRINGS 50
+#define BANK_127_SLOW_STRINGS (50)
 
 /**
  * @~Chinese
@@ -1849,7 +1849,7 @@
  * @~English
  * @brief Pizzicato String
  */
-#define BANK_127_PIZZICATO_STRING 51
+#define BANK_127_PIZZICATO_STRING (51)
 
 /**
  * @~Chinese
@@ -1859,7 +1859,7 @@
  * @~English
  * @brief Violin
  */
-#define BANK_127_VIOLIN 52
+#define BANK_127_VIOLIN (52)
 
 /**
  * @~Chinese
@@ -1869,7 +1869,7 @@
  * @~English
  * @brief Viola
  */
-#define BANK_127_VIOLA 53
+#define BANK_127_VIOLA (53)
 
 /**
  * @~Chinese
@@ -1879,7 +1879,7 @@
  * @~English
  * @brief Cello 1
  */
-#define BANK_127_CELLO_1 54
+#define BANK_127_CELLO_1 (54)
 
 /**
  * @~Chinese
@@ -1889,7 +1889,7 @@
  * @~English
  * @brief Cello 2
  */
-#define BANK_127_CELLO_2 55
+#define BANK_127_CELLO_2 (55)
 
 /**
  * @~Chinese
@@ -1899,7 +1899,7 @@
  * @~English
  * @brief Contrabass
  */
-#define BANK_127_CONTRABASS 56
+#define BANK_127_CONTRABASS (56)
 
 /**
  * @~Chinese
@@ -1909,7 +1909,7 @@
  * @~English
  * @brief Harp 1
  */
-#define BANK_127_HARP_1 57
+#define BANK_127_HARP_1 (57)
 
 /**
  * @~Chinese
@@ -1919,7 +1919,7 @@
  * @~English
  * @brief Harp 2
  */
-#define BANK_127_HARP_2 58
+#define BANK_127_HARP_2 (58)
 
 /**
  * @~Chinese
@@ -1929,7 +1929,7 @@
  * @~English
  * @brief Nylon String Guitar
  */
-#define BANK_127_NYLON_STRING_GUITAR 59
+#define BANK_127_NYLON_STRING_GUITAR (59)
 
 /**
  * @~Chinese
@@ -1939,7 +1939,7 @@
  * @~English
  * @brief Steel String Guitar
  */
-#define BANK_127_STEEL_STRING_GUITAR 60
+#define BANK_127_STEEL_STRING_GUITAR (60)
 
 /**
  * @~Chinese
@@ -1949,7 +1949,7 @@
  * @~English
  * @brief Chorus Guitar
  */
-#define BANK_127_CHORUS_GUITAR 61
+#define BANK_127_CHORUS_GUITAR (61)
 
 /**
  * @~Chinese
@@ -1959,7 +1959,7 @@
  * @~English
  * @brief Funk Guitar
  */
-#define BANK_127_FUNK_GUITAR 62
+#define BANK_127_FUNK_GUITAR (62)
 
 /**
  * @~Chinese
@@ -1969,7 +1969,7 @@
  * @~English
  * @brief Sitar
  */
-#define BANK_127_SITAR 63
+#define BANK_127_SITAR (63)
 
 /**
  * @~Chinese
@@ -1979,7 +1979,7 @@
  * @~English
  * @brief Accordion Bass
  */
-#define BANK_127_ACCORDION_BASS 64
+#define BANK_127_ACCORDION_BASS (64)
 
 /**
  * @~Chinese
@@ -1989,7 +1989,7 @@
  * @~English
  * @brief Fingered Bass
  */
-#define BANK_127_FINGERED_BASS 65
+#define BANK_127_FINGERED_BASS (65)
 
 /**
  * @~Chinese
@@ -1999,7 +1999,7 @@
  * @~English
  * @brief Picked Bass
  */
-#define BANK_127_PICKED_BASS 66
+#define BANK_127_PICKED_BASS (66)
 
 /**
  * @~Chinese
@@ -2009,7 +2009,7 @@
  * @~English
  * @brief Fretless Bass 1
  */
-#define BANK_127_FRETLESS_BASS_1 67
+#define BANK_127_FRETLESS_BASS_1 (67)
 
 /**
  * @~Chinese
@@ -2019,7 +2019,7 @@
  * @~English
  * @brief Slap Bass 1
  */
-#define BANK_127_SLAP_BASS_1 68
+#define BANK_127_SLAP_BASS_1 (68)
 
 /**
  * @~Chinese
@@ -2029,7 +2029,7 @@
  * @~English
  * @brief Slap Bass 2
  */
-#define BANK_127_SLAP_BASS_2 69
+#define BANK_127_SLAP_BASS_2 (69)
 
 /**
  * @~Chinese
@@ -2039,7 +2039,7 @@
  * @~English
  * @brief Fretless Bass 2
  */
-#define BANK_127_FRETLESS_BASS_2 70
+#define BANK_127_FRETLESS_BASS_2 (70)
 
 /**
  * @~Chinese
@@ -2049,7 +2049,7 @@
  * @~English
  * @brief Fretless Bass 3
  */
-#define BANK_127_FRETLESS_BASS_3 71
+#define BANK_127_FRETLESS_BASS_3 (71)
 
 /**
  * @~Chinese
@@ -2059,7 +2059,7 @@
  * @~English
  * @brief Flute 1
  */
-#define BANK_127_FLUTE_1 72
+#define BANK_127_FLUTE_1 (72)
 
 /**
  * @~Chinese
@@ -2069,7 +2069,7 @@
  * @~English
  * @brief Flute 2
  */
-#define BANK_127_FLUTE_2 73
+#define BANK_127_FLUTE_2 (73)
 
 /**
  * @~Chinese
@@ -2079,7 +2079,7 @@
  * @~English
  * @brief Piccolo 1
  */
-#define BANK_127_PICCOLO_1 74
+#define BANK_127_PICCOLO_1 (74)
 
 /**
  * @~Chinese
@@ -2089,7 +2089,7 @@
  * @~English
  * @brief Piccolo 2
  */
-#define BANK_127_PICCOLO_2 75
+#define BANK_127_PICCOLO_2 (75)
 
 /**
  * @~Chinese
@@ -2099,7 +2099,7 @@
  * @~English
  * @brief Recorder
  */
-#define BANK_127_RECORDER 76
+#define BANK_127_RECORDER (76)
 
 /**
  * @~Chinese
@@ -2109,7 +2109,7 @@
  * @~English
  * @brief Pan Flute 2
  */
-#define BANK_127_PAN_FLUTE_2 77
+#define BANK_127_PAN_FLUTE_2 (77)
 
 /**
  * @~Chinese
@@ -2119,7 +2119,7 @@
  * @~English
  * @brief Soprano Sax
  */
-#define BANK_127_SOPRANO_SAX 78
+#define BANK_127_SOPRANO_SAX (78)
 
 /**
  * @~Chinese
@@ -2129,7 +2129,7 @@
  * @~English
  * @brief Alto Sax
  */
-#define BANK_127_ALTO_SAX 79
+#define BANK_127_ALTO_SAX (79)
 
 /**
  * @~Chinese
@@ -2139,7 +2139,7 @@
  * @~English
  * @brief Tenor Sax
  */
-#define BANK_127_TENOR_SAX 80
+#define BANK_127_TENOR_SAX (80)
 
 /**
  * @~Chinese
@@ -2149,7 +2149,7 @@
  * @~English
  * @brief Baritone Sax
  */
-#define BANK_127_BARITONE_SAX 81
+#define BANK_127_BARITONE_SAX (81)
 
 /**
  * @~Chinese
@@ -2159,7 +2159,7 @@
  * @~English
  * @brief Clarinet 1
  */
-#define BANK_127_CLARINET_1 82
+#define BANK_127_CLARINET_1 (82)
 
 /**
  * @~Chinese
@@ -2169,7 +2169,7 @@
  * @~English
  * @brief Clarinet 2
  */
-#define BANK_127_CLARINET_2 83
+#define BANK_127_CLARINET_2 (83)
 
 /**
  * @~Chinese
@@ -2179,7 +2179,7 @@
  * @~English
  * @brief Oboe 2
  */
-#define BANK_127_OBOE_2 84
+#define BANK_127_OBOE_2 (84)
 
 /**
  * @~Chinese
@@ -2189,7 +2189,7 @@
  * @~English
  * @brief English Horn
  */
-#define BANK_127_ENGLISH_HORN 85
+#define BANK_127_ENGLISH_HORN (85)
 
 /**
  * @~Chinese
@@ -2199,7 +2199,7 @@
  * @~English
  * @brief Bassoon
  */
-#define BANK_127_BASSOON 86
+#define BANK_127_BASSOON (86)
 
 /**
  * @~Chinese
@@ -2209,7 +2209,7 @@
  * @~English
  * @brief Harmonica
  */
-#define BANK_127_HARMONICA 87
+#define BANK_127_HARMONICA (87)
 
 /**
  * @~Chinese
@@ -2219,7 +2219,7 @@
  * @~English
  * @brief Trumpet
  */
-#define BANK_127_TRUMPET 88
+#define BANK_127_TRUMPET (88)
 
 /**
  * @~Chinese
@@ -2229,7 +2229,7 @@
  * @~English
  * @brief Muted Trumpet
  */
-#define BANK_127_MUTED_TRUMPET 89
+#define BANK_127_MUTED_TRUMPET (89)
 
 /**
  * @~Chinese
@@ -2239,7 +2239,7 @@
  * @~English
  * @brief Trombone 1
  */
-#define BANK_127_TROMBONE_1 90
+#define BANK_127_TROMBONE_1 (90)
 
 /**
  * @~Chinese
@@ -2249,7 +2249,7 @@
  * @~English
  * @brief Trombone 2
  */
-#define BANK_127_TROMBONE_2 91
+#define BANK_127_TROMBONE_2 (91)
 
 /**
  * @~Chinese
@@ -2259,7 +2259,7 @@
  * @~English
  * @brief French Horn 1
  */
-#define BANK_127_FRENCH_HORN_1 92
+#define BANK_127_FRENCH_HORN_1 (92)
 
 /**
  * @~Chinese
@@ -2269,7 +2269,7 @@
  * @~English
  * @brief French Horn 2
  */
-#define BANK_127_FRENCH_HORN_2 93
+#define BANK_127_FRENCH_HORN_2 (93)
 
 /**
  * @~Chinese
@@ -2279,7 +2279,7 @@
  * @~English
  * @brief Tuba
  */
-#define BANK_127_TUBA 94
+#define BANK_127_TUBA (94)
 
 /**
  * @~Chinese
@@ -2289,7 +2289,7 @@
  * @~English
  * @brief Brass 1
  */
-#define BANK_127_BRASS_1 95
+#define BANK_127_BRASS_1 (95)
 
 /**
  * @~Chinese
@@ -2299,7 +2299,7 @@
  * @~English
  * @brief Brass 2
  */
-#define BANK_127_BRASS_2 96
+#define BANK_127_BRASS_2 (96)
 
 /**
  * @~Chinese
@@ -2309,7 +2309,7 @@
  * @~English
  * @brief Vibraphone 1
  */
-#define BANK_127_VIBRAPHONE_1 97
+#define BANK_127_VIBRAPHONE_1 (97)
 
 /**
  * @~Chinese
@@ -2319,7 +2319,7 @@
  * @~English
  * @brief Vibraphone 2
  */
-#define BANK_127_VIBRAPHONE_2 98
+#define BANK_127_VIBRAPHONE_2 (98)
 
 /**
  * @~Chinese
@@ -2329,7 +2329,7 @@
  * @~English
  * @brief Kalimba
  */
-#define BANK_127_KALIMBA 99
+#define BANK_127_KALIMBA (99)
 
 /**
  * @~Chinese
@@ -2339,7 +2339,7 @@
  * @~English
  * @brief Tinkle Bell 2
  */
-#define BANK_127_TINKLE_BELL_2 100
+#define BANK_127_TINKLE_BELL_2 (100)
 
 /**
  * @~Chinese
@@ -2349,7 +2349,7 @@
  * @~English
  * @brief Glockenspiel
  */
-#define BANK_127_GLOCKENSPIEL 101
+#define BANK_127_GLOCKENSPIEL (101)
 
 /**
  * @~Chinese
@@ -2359,7 +2359,7 @@
  * @~English
  * @brief Tubular Bell 2
  */
-#define BANK_127_TUBULAR_BELL_2 102
+#define BANK_127_TUBULAR_BELL_2 (102)
 
 /**
  * @~Chinese
@@ -2369,7 +2369,7 @@
  * @~English
  * @brief Xylophone
  */
-#define BANK_127_XYLOPHONE 103
+#define BANK_127_XYLOPHONE (103)
 
 /**
  * @~Chinese
@@ -2379,7 +2379,7 @@
  * @~English
  * @brief Marimba
  */
-#define BANK_127_MARIMBA 104
+#define BANK_127_MARIMBA (104)
 
 /**
  * @~Chinese
@@ -2389,7 +2389,7 @@
  * @~English
  * @brief Koto
  */
-#define BANK_127_KOTO 105
+#define BANK_127_KOTO (105)
 
 /**
  * @~Chinese
@@ -2399,7 +2399,7 @@
  * @~English
  * @brief Taisho Koto
  */
-#define BANK_127_TAISHO_KOTO 106
+#define BANK_127_TAISHO_KOTO (106)
 
 /**
  * @~Chinese
@@ -2409,7 +2409,7 @@
  * @~English
  * @brief Shakuhachi
  */
-#define BANK_127_SHAKUHACHI 107
+#define BANK_127_SHAKUHACHI (107)
 
 /**
  * @~Chinese
@@ -2419,7 +2419,7 @@
  * @~English
  * @brief Whistle 1
  */
-#define BANK_127_WHISTLE_1 108
+#define BANK_127_WHISTLE_1 (108)
 
 /**
  * @~Chinese
@@ -2429,7 +2429,7 @@
  * @~English
  * @brief Whistle 2
  */
-#define BANK_127_WHISTLE_2 109
+#define BANK_127_WHISTLE_2 (109)
 
 /**
  * @~Chinese
@@ -2439,7 +2439,7 @@
  * @~English
  * @brief Blown Bottle
  */
-#define BANK_127_BLOWN_BOTTLE 110
+#define BANK_127_BLOWN_BOTTLE (110)
 
 /**
  * @~Chinese
@@ -2449,7 +2449,7 @@
  * @~English
  * @brief Pan Flute 3
  */
-#define BANK_127_PAN_FLUTE_3 111
+#define BANK_127_PAN_FLUTE_3 (111)
 
 /**
  * @~Chinese
@@ -2459,7 +2459,7 @@
  * @~English
  * @brief Timpani
  */
-#define BANK_127_TIMPANI 112
+#define BANK_127_TIMPANI (112)
 
 /**
  * @~Chinese
@@ -2469,7 +2469,7 @@
  * @~English
  * @brief Melo Tom 1
  */
-#define BANK_127_MELO_TOM_1 113
+#define BANK_127_MELO_TOM_1 (113)
 
 /**
  * @~Chinese
@@ -2479,7 +2479,7 @@
  * @~English
  * @brief Melo Tom 2
  */
-#define BANK_127_MELO_TOM_2 114
+#define BANK_127_MELO_TOM_2 (114)
 
 /**
  * @~Chinese
@@ -2489,7 +2489,7 @@
  * @~English
  * @brief Synth Drum 1
  */
-#define BANK_127_SYNTH_DRUM_1 115
+#define BANK_127_SYNTH_DRUM_1 (115)
 
 /**
  * @~Chinese
@@ -2499,7 +2499,7 @@
  * @~English
  * @brief Synth Drum 2
  */
-#define BANK_127_SYNTH_DRUM_2 116
+#define BANK_127_SYNTH_DRUM_2 (116)
 
 /**
  * @~Chinese
@@ -2509,7 +2509,7 @@
  * @~English
  * @brief Taiko 1
  */
-#define BANK_127_TAIKO_1 117
+#define BANK_127_TAIKO_1 (117)
 
 /**
  * @~Chinese
@@ -2519,7 +2519,7 @@
  * @~English
  * @brief Taiko 2
  */
-#define BANK_127_TAIKO_2 118
+#define BANK_127_TAIKO_2 (118)
 
 /**
  * @~Chinese
@@ -2529,7 +2529,7 @@
  * @~English
  * @brief Reverse Cymbal
  */
-#define BANK_127_REVERSE_CYMBAL 119
+#define BANK_127_REVERSE_CYMBAL (119)
 
 /**
  * @~Chinese
@@ -2539,7 +2539,7 @@
  * @~English
  * @brief Castanets
  */
-#define BANK_127_CASTANETS 120
+#define BANK_127_CASTANETS (120)
 
 /**
  * @~Chinese
@@ -2549,7 +2549,7 @@
  * @~English
  * @brief Tinkle Bell 3
  */
-#define BANK_127_TINKLE_BELL_3 121
+#define BANK_127_TINKLE_BELL_3 (121)
 
 /**
  * @~Chinese
@@ -2559,7 +2559,7 @@
  * @~English
  * @brief Orchestra Hit
  */
-#define BANK_127_ORCHESTRA_HIT 122
+#define BANK_127_ORCHESTRA_HIT (122)
 
 /**
  * @~Chinese
@@ -2569,7 +2569,7 @@
  * @~English
  * @brief Telephone
  */
-#define BANK_127_TELEPHONE 123
+#define BANK_127_TELEPHONE (123)
 
 /**
  * @~Chinese
@@ -2579,7 +2579,7 @@
  * @~English
  * @brief Bird
  */
-#define BANK_127_BIRD 124
+#define BANK_127_BIRD (124)
 
 /**
  * @~Chinese
@@ -2589,7 +2589,7 @@
  * @~English
  * @brief Helicopter
  */
-#define BANK_127_HELICOPTER 125
+#define BANK_127_HELICOPTER (125)
 
 /**
  * @~Chinese
@@ -2599,7 +2599,7 @@
  * @~English
  * @brief Bowed Glass 2
  */
-#define BANK_127_BOWED_GLASS_2 126
+#define BANK_127_BOWED_GLASS_2 (126)
 
 /**
  * @~Chinese
@@ -2609,6 +2609,6 @@
  * @~English
  * @brief Ice Rain 2
  */
-#define BANK_127_ICE_RAIN_2 127
+#define BANK_127_ICE_RAIN_2 (127)
 
 #endif

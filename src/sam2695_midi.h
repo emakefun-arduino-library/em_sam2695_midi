@@ -349,7 +349,7 @@ class Sam2695Midi {
    * @brief Constructor.
    * @param data tx_pin SAM2695 MIDI signal pin.
    */
-  Sam2695Midi(uint8_t tx_pin);
+  Sam2695Midi(const uint8_t tx_pin);
 
   /**
    * @~Chinese
@@ -550,7 +550,7 @@ class Sam2695Midi {
    * @param channel Designated channel (0-15).
    * @param equalizer_parameter Equalizer parameters structure.
    */
-  void SetEqualizer(const uint8_t channel, const EqualizerParameter equalizer_parameter);
+  void SetEqualizer(const uint8_t channel, const EqualizerParameter& equalizer_parameter);
 
   /**
    * @~Chinese
@@ -634,7 +634,7 @@ class Sam2695Midi {
    * @param scale_tuning_parameter Set the 12 scale tuning parameters(C, C#, D, D#, E, F, F#, G, G#, A, A#, B) for the specified channel (independent
    * pitch offset for each semitone).
    */
-  void SetScaleTuning(const uint8_t channel, const ScaleTuningParameter scale_tuning_parameter);
+  void SetScaleTuning(const uint8_t channel, const ScaleTuningParameter& scale_tuning_parameter);
 
   /**
    * @~Chinese
@@ -647,7 +647,7 @@ class Sam2695Midi {
    * @param channel Designated channel (0-15).
    * @param modulation_wheel_parameter Modulation wheel parameters structure.
    */
-  void SetModulationWheel(const uint8_t channel, const ModulationWheelParameter modulation_wheel_parameter);
+  void SetModulationWheel(const uint8_t channel, const ModulationWheelParameter& modulation_wheel_parameter);
 
   /**
    * @~Chinese
@@ -660,9 +660,13 @@ class Sam2695Midi {
   void AllDrums();
 
  private:
+  Sam2695Midi(const Sam2695Midi&) = delete;
+
+  Sam2695Midi& operator=(const Sam2695Midi&) = delete;
+
   void Write(const uint8_t data);
 
-  void Write(const uint8_t *buffer, const size_t size);
+  void Write(const uint8_t* buffer, const size_t size);
 
   void SendNrpnOrRpnParameter(const uint8_t channel,
                               const uint8_t most_significant_byte_controller,
@@ -674,9 +678,9 @@ class Sam2695Midi {
   void NullNrpnOrRpn(const uint8_t channel, const uint8_t most_significant_byte_controller, const uint8_t least_significant_byte_controller);
 
 #if defined(ESP32)
-  HardwareSerial hardware_serial{2};
+  HardwareSerial hardware_serial_{2};
 #else
-  SoftwareSerial software_serial;
+  SoftwareSerial software_serial_;
 #endif
 };
 }  // namespace em

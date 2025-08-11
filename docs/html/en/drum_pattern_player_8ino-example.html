@@ -117,17 +117,21 @@ $(function(){initNavTree('drum_pattern_player_8ino-example.html',''); initResiza
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="sam2695__midi_8h.html">sam2695_midi.h</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define SAM2695_MIDI_PIN 4</span></div>
-<div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>{</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t kSam2695MidiPin = 4;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kChannel = 9;</div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kChannelVolume = 100;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kReverberationVolume = 127;</div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kReverberationDelayFeedback = 100;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kTempoRandomRange = 5;</div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kTempoRandomOffset = 2;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kMinTempo = 40;</div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kMaxTempo = 250;</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">constexpr</span> uint8_t kTickSize = 15;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Every array cell is the velocity of the note played</span></div>
@@ -146,7 +150,7 @@ $(function(){initNavTree('drum_pattern_player_8ino-example.html',''); initResiza
 <div class="line"> </div>
 <div class="line">uint16_t g_tempo = 120;</div>
 <div class="line"> </div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="classem_1_1_sam2695_midi.html">em::Sam2695Midi</a> g_sam2695_midi(SAM2695_MIDI_PIN);</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="classem_1_1_sam2695_midi.html">em::Sam2695Midi</a> g_sam2695_midi(kSam2695MidiPin);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> PlayDrumNote(<span class="keyword">const</span> uint8_t midi_note, <span class="keyword">const</span> uint8_t note_velocity) {</div>
 <div class="line">  <span class="keywordflow">if</span> (note_velocity &gt; 0) {</div>

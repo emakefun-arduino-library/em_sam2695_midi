@@ -6,37 +6,37 @@ namespace em {
 
 #if defined(ESP32)
 Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) {
-  hardware_serial.begin(31250, SERIAL_8N1, -1, tx_pin);
+  hardware_serial_.begin(31250, SERIAL_8N1, -1, tx_pin);
 }
 
 void Sam2695Midi::Write(const uint8_t data) {
-  hardware_serial.write(data);
+  hardware_serial_.write(data);
 }
 
-void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
+void Sam2695Midi::Write(const uint8_t* buffer, const size_t size) {
   if (buffer == nullptr || size == 0) {
     printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
     return;
   }
-  hardware_serial.write(buffer, size);
+  hardware_serial_.write(buffer, size);
 }
 
 #else
-Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) : software_serial(-1, tx_pin) {
-  software_serial.begin(31250);
+Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) : software_serial_(-1, tx_pin) {
+  software_serial_.begin(31250);
 }
 
 void Sam2695Midi::Write(const uint8_t data) {
-  software_serial.write(data);
+  software_serial_.write(data);
 }
 
-void Sam2695Midi::Write(const uint8_t *buffer, const size_t size) {
+void Sam2695Midi::Write(const uint8_t* buffer, const size_t size) {
   if (buffer == nullptr || size == 0) {
     printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
     return;
   }
 
-  software_serial.write(buffer, size);
+  software_serial_.write(buffer, size);
 }
 
 #endif
@@ -137,7 +137,7 @@ void Sam2695Midi::SetPanPosition(const uint8_t channel, const uint8_t pan_positi
   Write(command, sizeof(command) / sizeof(command[0]));
 }
 
-void Sam2695Midi::SetEqualizer(const uint8_t channel, const EqualizerParameter equalizer_parameter) {
+void Sam2695Midi::SetEqualizer(const uint8_t channel, const EqualizerParameter& equalizer_parameter) {
   SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x00, equalizer_parameter.low_frequency_gain);
   SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x01, equalizer_parameter.medium_low_frequency_gain);
   SendNrpnOrRpnParameter(channel, 0x63, 0x37, 0x62, 0x02, equalizer_parameter.medium_high_frequency_gain);
@@ -180,7 +180,7 @@ void Sam2695Midi::SetEnvelope(const uint8_t channel, const uint8_t attack_time, 
   NullNrpnOrRpn(channel, 0x63, 0x62);
 }
 
-void Sam2695Midi::SetScaleTuning(const uint8_t channel, const ScaleTuningParameter scale_tuning_parameter) {
+void Sam2695Midi::SetScaleTuning(const uint8_t channel, const ScaleTuningParameter& scale_tuning_parameter) {
   const uint8_t command[] = {0xF0,
                              0x41,
                              0x10,
@@ -206,7 +206,7 @@ void Sam2695Midi::SetScaleTuning(const uint8_t channel, const ScaleTuningParamet
   Write(command, sizeof(command) / sizeof(command[0]));
 }
 
-void Sam2695Midi::SetModulationWheel(const uint8_t channel, const ModulationWheelParameter modulation_wheel_parameter) {
+void Sam2695Midi::SetModulationWheel(const uint8_t channel, const ModulationWheelParameter& modulation_wheel_parameter) {
   uint8_t command[] = {
       0xF0, 0x41, 0x10, 0x42, 0x12, 0x40, 0x20 | (channel & 0x0F), 0x00, modulation_wheel_parameter.high_pitch_volume & 0x7F, 0x00, 0xF7};
   Write(command, sizeof(command) / sizeof(command[0]));
