@@ -52,8 +52,8 @@ void Sam2695Midi::NoteOff(const uint8_t channel, const uint8_t midi_note) {
 }
 
 void Sam2695Midi::SetChannelTimbre(const uint8_t channel, const uint8_t bank, const uint8_t timbre) {
-  if (bank != MIDI_BANK_0 && bank != MIDI_BANK_127) {
-    printf("Error: bank parameter error, can only be MIDI_BANK_0 or MIDI_BANK_127.\n");
+  if (bank != EM_SAM2695_MIDI_TIMBRE_BANK_0 && bank != EM_SAM2695_MIDI_TIMBRE_BANK_127_ALTO_SAX) {
+    printf("Error: bank parameter error, can only be EM_SAM2695_MIDI_TIMBRE_BANK_0 or EM_SAM2695_MIDI_TIMBRE_BANK_127.\n");
     return;
   }
 

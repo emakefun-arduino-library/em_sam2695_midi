@@ -30,7 +30,7 @@
  * @~English
  * @brief Room reverberation type 1
  */
-#define REVERBERATION_ROOM_1 (0)
+#define EM_SAM2695_MIDI_REVERBERATION_ROOM_1 (0)
 
 /**
  * @~Chinese
@@ -40,7 +40,7 @@
  * @~English
  * @brief Room reverberation type 2
  */
-#define REVERBERATION_ROOM_2 (1)
+#define EM_SAM2695_MIDI_REVERBERATION_ROOM_2 (1)
 
 /**
  * @~Chinese
@@ -50,7 +50,7 @@
  * @~English
  * @brief Room reverberation type 3
  */
-#define REVERBERATION_ROOM_3 (2)
+#define EM_SAM2695_MIDI_REVERBERATION_ROOM_3 (2)
 
 /**
  * @~Chinese
@@ -60,7 +60,7 @@
  * @~English
  * @brief Hall reverberation type 1
  */
-#define REVERBERATION_HALL_1 (3)
+#define EM_SAM2695_MIDI_REVERBERATION_HALL_1 (3)
 
 /**
  * @~Chinese
@@ -70,7 +70,7 @@
  * @~English
  * @brief Hall reverberation type 2
  */
-#define REVERBERATION_HALL_2 (4)
+#define EM_SAM2695_MIDI_REVERBERATION_HALL_2 (4)
 
 /**
  * @~Chinese
@@ -80,7 +80,7 @@
  * @~English
  * @brief Plate reverberation effect
  */
-#define REVERBERATION_PLATE (5)
+#define EM_SAM2695_MIDI_REVERBERATION_PLATE (5)
 
 /**
  * @~Chinese
@@ -90,7 +90,7 @@
  * @~English
  * @brief Delay reverberation effect
  */
-#define REVERBERATION_DELAY (6)
+#define EM_SAM2695_MIDI_REVERBERATION_DELAY (6)
 
 /**
  * @~Chinese
@@ -100,7 +100,7 @@
  * @~English
  * @brief Panning delay reverberation effect.
  */
-#define REVERBERATION_PAN_DELAY (7)
+#define EM_SAM2695_MIDI_REVERBERATION_PAN_DELAY (7)
 
 /**
  * @~Chinese
@@ -119,7 +119,7 @@
  * @~English
  * @brief Chorus effect type 1
  */
-#define CHORUS_1 (0)
+#define EM_SAM2695_MIDI_CHORUS_1 (0)
 
 /**
  * @~Chinese
@@ -129,7 +129,7 @@
  * @~English
  * @brief Chorus effect type 2
  */
-#define CHORUS_2 (1)
+#define EM_SAM2695_MIDI_CHORUS_2 (1)
 
 /**
  * @~Chinese
@@ -139,7 +139,7 @@
  * @~English
  * @brief Chorus effect type 3
  */
-#define CHORUS_3 (2)
+#define EM_SAM2695_MIDI_CHORUS_3 (2)
 
 /**
  * @~Chinese
@@ -149,7 +149,7 @@
  * @~English
  * @brief Chorus effect type 4
  */
-#define CHORUS_4 (3)
+#define EM_SAM2695_MIDI_CHORUS_4 (3)
 
 /**
  * @~Chinese
@@ -159,7 +159,7 @@
  * @~English
  * @brief Feedback chorus effect
  */
-#define CHORUS_FEEDBACK (4)
+#define EM_SAM2695_MIDI_CHORUS_FEEDBACK (4)
 
 /**
  * @~Chinese
@@ -169,7 +169,7 @@
  * @~English
  * @brief Flanger-style chorus effect
  */
-#define CHORUS_FLANGER (5)
+#define EM_SAM2695_MIDI_CHORUS_FLANGER (5)
 
 /**
  * @~Chinese
@@ -179,7 +179,7 @@
  * @~English
  * @brief Short delay chorus effect
  */
-#define CHORUS_SHORT_DELAY (6)
+#define EM_SAM2695_MIDI_CHORUS_SHORT_DELAY (6)
 
 /**
  * @~Chinese
@@ -189,6 +189,6 @@
  * @~English
  * @brief Feedback delay chorus effect
  */
-#define CHORUS_FEEDBACK_DELAY (7)
+#define EM_SAM2695_MIDI_CHORUS_FEEDBACK_DELAY (7)
 
 #endif

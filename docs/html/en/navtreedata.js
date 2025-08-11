@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "SAM2695 MIDI Arduino Lib", "index.html", [
+  [ "EM SAM2695 MIDI Arduino Lib", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -43,7 +43,7 @@ var NAVTREE =
     ] ],
     [ "Examples", "examples.html", "examples" ],
     [ "Downloads", "usergroup0.html", [
-      [ "SAM2695_MIDI_v1.0.0.zip: https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", "^https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", null ]
+      [ "EM_SAM2695_MIDI_v1.0.0.zip: https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", "^https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", null ]
     ] ]
   ] ]
 ];
@@ -51,8 +51,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"sam2695__midi__percussion__note_8h.html#a70e5c242d906c2600dc848bc3cc365b7",
-"sam2695__midi__timbre_8h.html#ab7d0e376ef6b79b052b74bf324e71278"
+"sam2695__midi__percussion__note_8h.html#a8a6861f840a125a1a06caf58f7f7a269",
+"sam2695__midi__timbre_8h.html#ab7fb69f2dc3a92851831cf0c0b64a771"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

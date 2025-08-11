@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SAM2695 MIDI Arduino Lib: em::Sam2695Midi Class Reference</title>
+<title>EM SAM2695 MIDI Arduino Lib: em::Sam2695Midi Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SAM2695 MIDI Arduino Lib<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">EM SAM2695 MIDI Arduino Lib<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -472,7 +472,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channels (0-15), where channel 9 is a dedicated drum group channel. </td></tr>
     <tr><td class="paramname">bank</td><td>Selection of timbre library, with parameter values of MIDI_BANK_0 or MIDI_BANK_127. </td></tr>
-    <tr><td class="paramname">timbre</td><td>Timbre number (0-127), please refer to the macro in reference <a class="el" href="sam2695__midi__timbre_8h.html" title="Define channel timbre library constants and timbre constants.">sam2695_midi_timbre.h</a> (e.g. BANK_0_GRAND_PIANO); Among them, for the timbre of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a> . </td></tr>
+    <tr><td class="paramname">timbre</td><td>Timbre number (0-127), please refer to the macro in reference <a class="el" href="sam2695__midi__timbre_8h.html" title="Define channel timbre library constants and timbre constants.">sam2695_midi_timbre.h</a> (e.g. EM_SAM2695_MIDI_TIMBRE_BANK_0_GRAND_PIANO); Among them, for the timbre of channel 9, please refer to <a class="el" href="sam2695__midi__percussion__note_8h.html" title="Define the percussion timbre and note constants for channel 9.">sam2695_midi_percussion_note.h</a> . </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,7 +551,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channel (0-15). </td></tr>
-    <tr><td class="paramname">chorus_effect_type</td><td>chorus effect type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html" title="Define constants for reverberation effect types and chorus effect types.">sam2695_midi_chorus_reverberation.h</a> (e.g., CHORUS_1). </td></tr>
+    <tr><td class="paramname">chorus_effect_type</td><td>chorus effect type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html" title="Define constants for reverberation effect types and chorus effect types.">sam2695_midi_chorus_reverberation.h</a> (e.g., EM_SAM2695_MIDI_CHORUS_1). </td></tr>
     <tr><td class="paramname">chorus_effect_volume</td><td>chorus effect sending volume (0-127), 0: none, 127: maximum sending volume. </td></tr>
     <tr><td class="paramname">chorus_effect_feedback</td><td>Effect feedback amount (0-127, 0 means not set). </td></tr>
     <tr><td class="paramname">chorus_delay_time</td><td>chorus delay time (0-127, 0 indicates not set), unit: ms. </td></tr>
@@ -736,7 +736,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>Designated channel (0-15). </td></tr>
-    <tr><td class="paramname">reverberation_type</td><td>Reverberation type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html" title="Define constants for reverberation effect types and chorus effect types.">sam2695_midi_chorus_reverberation.h</a> (e.g., REVERBERATION_ROOM_1). </td></tr>
+    <tr><td class="paramname">reverberation_type</td><td>Reverberation type, refer to macros in <a class="el" href="sam2695__midi__chorus__reverberation_8h.html" title="Define constants for reverberation effect types and chorus effect types.">sam2695_midi_chorus_reverberation.h</a> (e.g., EM_SAM2695_MIDI_REVERBERATION_ROOM_1). </td></tr>
     <tr><td class="paramname">reverberation_volume</td><td>Reverberation transmission amount (0-127), 0: no reverberation, 127: maximum reverberation amount. </td></tr>
     <tr><td class="paramname">delay_feedback</td><td>Delayed feedback quantity (0-127), 0: no feedback, 127: maximum feedback. </td></tr>
   </table>

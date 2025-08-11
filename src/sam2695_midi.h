@@ -391,7 +391,7 @@ class Sam2695Midi {
    * @param channel 指定通道（0-15），其中通道9是专用鼓组通道。
    * @param bank 音色库选择，参数值为MIDI_bank_0或MIDI_bank_127。
    * @param timbre
-   * 音色编号（0-127），请查阅参考sam2695_midi_timbre.h中的宏（例如BANK_0_GRAND_PIANO）;其中，通道9的音色请查阅参考sam2695_midi_percussion_note.h。
+   * 音色编号（0-127），请查阅参考sam2695_midi_timbre.h中的宏（例如EM_SAM2695_MIDI_TIMBRE_BANK_0_GRAND_PIANO）;其中，通道9的音色请查阅参考sam2695_midi_percussion_note.h。
    */
   /**
    * @~English
@@ -399,8 +399,8 @@ class Sam2695Midi {
    * found in reference sam2695_midi_percussion_note.h .
    * @param channel Designated channels (0-15), where channel 9 is a dedicated drum group channel.
    * @param bank Selection of timbre library, with parameter values of MIDI_BANK_0 or MIDI_BANK_127.
-   * @param timbre Timbre number (0-127), please refer to the macro in reference sam2695_midi_timbre.h (e.g. BANK_0_GRAND_PIANO); Among them, for the
-   * timbre of channel 9, please refer to sam2695_midi_percussion_note.h .
+   * @param timbre Timbre number (0-127), please refer to the macro in reference sam2695_midi_timbre.h (e.g.
+   * EM_SAM2695_MIDI_TIMBRE_BANK_0_GRAND_PIANO); Among them, for the timbre of channel 9, please refer to sam2695_midi_percussion_note.h .
    */
   void SetChannelTimbre(const uint8_t channel, const uint8_t bank, const uint8_t timbre);
 
@@ -485,7 +485,7 @@ class Sam2695Midi {
    * @~Chinese
    * @brief 将混响效果应用于指定通道。
    * @param channel 指定通道（0-15）。
-   * @param reverberation_type 混响类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，REVERBERATION_ROOM_1）。
+   * @param reverberation_type 混响类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，EM_SAM2695_MIDI_REVERBERATION_ROOM_1）。
    * @param reverberation_volume 混响量（0-127），0：无混响，127：最大混响量。
    * @param delay_feedback 延迟反馈量（0-127），0：无反馈，127：最大反馈。
    */
@@ -493,7 +493,8 @@ class Sam2695Midi {
    * @~English
    * @brief Apply reverberation effect to the specified channel.
    * @param channel Designated channel (0-15).
-   * @param reverberation_type Reverberation type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g., REVERBERATION_ROOM_1).
+   * @param reverberation_type Reverberation type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g.,
+   * EM_SAM2695_MIDI_REVERBERATION_ROOM_1).
    * @param reverberation_volume Reverberation transmission amount (0-127), 0: no reverberation, 127: maximum reverberation amount.
    * @param delay_feedback Delayed feedback quantity (0-127), 0: no feedback, 127: maximum feedback.
    */
@@ -503,7 +504,7 @@ class Sam2695Midi {
    * @~Chinese
    * @brief 将合唱效果应用于指定通道。
    * @param channel 指定通道（0-15）。
-   * @param chorus_effect_type 合唱效果类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，CHORUS_1）。
+   * @param chorus_effect_type 合唱效果类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，EM_SAM2695_MIDI_CHORUS_1）。
    * @param chorus_effect_volume 合唱效果量（0-127），0：无，127：最大发送音量。
    * @param chorus_effect_feedback 效果反馈量（0-127，0表示未设置）。
    * @param chorus_delay_time 合唱延迟时间（0-127，0表示未设置），单位:ms。
@@ -512,7 +513,7 @@ class Sam2695Midi {
    * @~English
    * @brief Apply a chorus effect to a specified channel.
    * @param channel Designated channel (0-15).
-   * @param chorus_effect_type chorus effect type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g., CHORUS_1).
+   * @param chorus_effect_type chorus effect type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g., EM_SAM2695_MIDI_CHORUS_1).
    * @param chorus_effect_volume chorus effect sending volume (0-127), 0: none, 127: maximum sending volume.
    * @param chorus_effect_feedback Effect feedback amount (0-127, 0 means not set).
    * @param chorus_delay_time chorus delay time (0-127, 0 indicates not set), unit: ms.

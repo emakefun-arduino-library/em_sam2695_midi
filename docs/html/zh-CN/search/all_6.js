@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kversionmajor_0',['kVersionMajor',['../sam2695__midi__lib_8h.html#a0c959c394cfbc4dc50b5d5c27efe93e2',1,'em::sam2695_midi_lib']]],
-  ['kversionminor_1',['kVersionMinor',['../sam2695__midi__lib_8h.html#a82c5e324ef07b33ac72e08b3c178ffeb',1,'em::sam2695_midi_lib']]],
-  ['kversionpatch_2',['kVersionPatch',['../sam2695__midi__lib_8h.html#afe9680fdd61953e08ea116636ff4fc02',1,'em::sam2695_midi_lib']]]
+  ['low_5ffrequency_0',['low_frequency',['../structem_1_1_equalizer_parameter.html#a85a3d025136096dfcadd32c74a28ca5b',1,'em::EqualizerParameter']]],
+  ['low_5ffrequency_5fgain_1',['low_frequency_gain',['../structem_1_1_equalizer_parameter.html#aed3d31f58e44a9382cf82bc2c3e47c74',1,'em::EqualizerParameter']]],
+  ['low_5ffrequency_5foscillator_5frate_2',['low_frequency_oscillator_rate',['../structem_1_1_modulation_wheel_parameter.html#a9c5f5eec35c7c5e655db030788940cae',1,'em::ModulationWheelParameter']]]
 ];

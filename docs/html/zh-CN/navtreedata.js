@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "SAM2695 MIDI Arduino 库", "index.html", [
+  [ "EM SAM2695 MIDI Arduino 库", "index.html", [
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -43,7 +43,7 @@ var NAVTREE =
     ] ],
     [ "示例", "examples.html", "examples" ],
     [ "下载", "usergroup0.html", [
-      [ "SAM2695_MIDI_v1.0.0.zip: https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", "^https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", null ]
+      [ "EM_SAM2695_MIDI_v1.0.0.zip: https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", "^https://gh-proxy.com/https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip", null ]
     ] ]
   ] ]
 ];
@@ -51,8 +51,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"sam2695__midi__percussion__note_8h.html#a70e5c242d906c2600dc848bc3cc365b7",
-"sam2695__midi__timbre_8h.html#ab7d0e376ef6b79b052b74bf324e71278"
+"sam2695__midi__percussion__note_8h.html#a8a6861f840a125a1a06caf58f7f7a269",
+"sam2695__midi__timbre_8h.html#ab7fb69f2dc3a92851831cf0c0b64a771"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

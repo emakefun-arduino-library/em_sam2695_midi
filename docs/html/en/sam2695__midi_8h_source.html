@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SAM2695 MIDI Arduino Lib: src/sam2695_midi.h Source File</title>
+<title>EM SAM2695 MIDI Arduino Lib: src/sam2695_midi.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SAM2695 MIDI Arduino Lib<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">EM SAM2695 MIDI Arduino Lib<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -499,7 +499,7 @@ $(function(){initNavTree('sam2695__midi_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="comment">   * @param channel 指定通道（0-15），其中通道9是专用鼓组通道。</span></div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="comment">   * @param bank 音色库选择，参数值为MIDI_bank_0或MIDI_bank_127。</span></div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment">   * @param timbre</span></div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment">   * 音色编号（0-127），请查阅参考sam2695_midi_timbre.h中的宏（例如BANK_0_GRAND_PIANO）;其中，通道9的音色请查阅参考sam2695_midi_percussion_note.h。</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment">   * 音色编号（0-127），请查阅参考sam2695_midi_timbre.h中的宏（例如EM_SAM2695_MIDI_TIMBRE_BANK_0_GRAND_PIANO）;其中，通道9的音色请查阅参考sam2695_midi_percussion_note.h。</span></div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="comment">   */</span><span class="comment"></span></div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment">   * @~English</span></div>
@@ -507,8 +507,8 @@ $(function(){initNavTree('sam2695__midi_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">   * found in reference sam2695_midi_percussion_note.h .</span></div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">   * @param channel Designated channels (0-15), where channel 9 is a dedicated drum group channel.</span></div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">   * @param bank Selection of timbre library, with parameter values of MIDI_BANK_0 or MIDI_BANK_127.</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">   * @param timbre Timbre number (0-127), please refer to the macro in reference sam2695_midi_timbre.h (e.g. BANK_0_GRAND_PIANO); Among them, for the</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">   * timbre of channel 9, please refer to sam2695_midi_percussion_note.h .</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">   * @param timbre Timbre number (0-127), please refer to the macro in reference sam2695_midi_timbre.h (e.g.</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">   * EM_SAM2695_MIDI_TIMBRE_BANK_0_GRAND_PIANO); Among them, for the timbre of channel 9, please refer to sam2695_midi_percussion_note.h .</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#aaeed6c73ecd88278f19a0b8cf0057596">SetChannelTimbre</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t bank, <span class="keyword">const</span> uint8_t timbre);</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment"></span> </div>
@@ -593,7 +593,7 @@ $(function(){initNavTree('sam2695__midi_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span><span class="comment">   * @~Chinese</span></div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span><span class="comment">   * @brief 将混响效果应用于指定通道。</span></div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span><span class="comment">   * @param reverberation_type 混响类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，REVERBERATION_ROOM_1）。</span></div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span><span class="comment">   * @param reverberation_type 混响类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，EM_SAM2695_MIDI_REVERBERATION_ROOM_1）。</span></div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><span class="comment">   * @param reverberation_volume 混响量（0-127），0：无混响，127：最大混响量。</span></div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span><span class="comment">   * @param delay_feedback 延迟反馈量（0-127），0：无反馈，127：最大反馈。</span></div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span><span class="comment">   */</span><span class="comment"></span></div>
@@ -601,199 +601,200 @@ $(function(){initNavTree('sam2695__midi_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="comment">   * @~English</span></div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="comment">   * @brief Apply reverberation effect to the specified channel.</span></div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="comment">   * @param reverberation_type Reverberation type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g., REVERBERATION_ROOM_1).</span></div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="comment">   * @param reverberation_volume Reverberation transmission amount (0-127), 0: no reverberation, 127: maximum reverberation amount.</span></div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="comment">   * @param delay_feedback Delayed feedback quantity (0-127), 0: no feedback, 127: maximum feedback.</span></div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a90d662d8580021f6838aef1759473179">SetReverberation</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t reverberation_type, <span class="keyword">const</span> uint8_t reverberation_volume, <span class="keyword">const</span> uint8_t delay_feedback);</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="comment"></span> </div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="comment">   * @brief 将合唱效果应用于指定通道。</span></div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="comment">   * @param chorus_effect_type 合唱效果类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，CHORUS_1）。</span></div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="comment">   * @param chorus_effect_volume 合唱效果量（0-127），0：无，127：最大发送音量。</span></div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="comment">   * @param chorus_effect_feedback 效果反馈量（0-127，0表示未设置）。</span></div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="comment">   * @param chorus_delay_time 合唱延迟时间（0-127，0表示未设置），单位:ms。</span></div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="comment">   * @brief Apply a chorus effect to a specified channel.</span></div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="comment">   * @param chorus_effect_type chorus effect type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g., CHORUS_1).</span></div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="comment">   * @param chorus_effect_volume chorus effect sending volume (0-127), 0: none, 127: maximum sending volume.</span></div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="comment">   * @param chorus_effect_feedback Effect feedback amount (0-127, 0 means not set).</span></div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span><span class="comment">   * @param chorus_delay_time chorus delay time (0-127, 0 indicates not set), unit: ms.</span></div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#afe5ab5dc882b81f6f034d82f62e52682">SetChorus</a>(<span class="keyword">const</span> uint8_t channel,</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>                 <span class="keyword">const</span> uint8_t chorus_effect_type,</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                 <span class="keyword">const</span> uint8_t chorus_effect_volume,</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                 <span class="keyword">const</span> uint8_t chorus_effect_feedback,</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                 <span class="keyword">const</span> uint8_t chorus_delay_time);</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="comment"></span> </div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment">   * @brief 设置声相位置。</span></div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment">   * @param pan_position_value 声相位置值（0-127），0：最左侧（完全左侧通道），64：中心位置（左右平衡通道），127：最右侧（完全右侧通道）。</span></div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="comment">   * @brief Set the pan position.</span></div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="comment">   * @param pan_position_value pan position value (0-127), 0: far left (completely left channel), 64: center position (balanced left and right</span></div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="comment">   * channel),127: far right (completely right channel).</span></div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a3cffc5ed3f6f06a846cf14ab50b2e1aa">SetPanPosition</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t pan_position_value);</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="comment"></span> </div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="comment">   * @brief 设置四段均衡器。</span></div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="comment">   * @param equalizer_parameter 均衡器参数结构体。</span></div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="comment">   * @brief Set up a four segment equalizer.</span></div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="comment">   * @param equalizer_parameter Equalizer parameters structure.</span></div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a94dc96563b25451345ae2d7481a7c80c">SetEqualizer</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> <a class="code hl_struct" href="structem_1_1_equalizer_parameter.html">EqualizerParameter</a>&amp; equalizer_parameter);</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="comment"></span> </div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="comment">   * @brief 定调（粗调/细调）。</span></div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="comment">   * @param fine_tuning 微调值（0-127），影响音调的细微变化。</span></div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span><span class="comment">   * @param coarse_tuning 粗调值（0-127），影响音高的八度变化。</span></div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="comment">   * @brief Set tone (coarse/fine).</span></div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="comment">   * @param fine_tuning Fine tuning value (0-127), affecting subtle changes in pitch.</span></div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="comment">   * @param coarse_tuning Coarse tuning values (0-127), affect the octave variation of pitch.</span></div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a2866ea55e93aceba73b4b7f0e729a072">SetTuning</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t fine_tuning, <span class="keyword">const</span> uint8_t coarse_tuning);</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="comment"></span> </div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="comment">   * @brief 设置颤音参数。</span></div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="comment">   * @param vibrato_rate 振动频率（0-127）-控制振动的速度。</span></div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="comment">   * @param vibrato_depth 振动深度（0-127）-控制振动振幅。</span></div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="comment">   * @param vibrato_delay_modify 振动延迟修改（0-127）-控制振动开始前的延迟时间。</span></div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="comment">   * @brief Set vibrato parameters.</span></div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="comment">   * @param vibrato_rate Vibrato rate (0-127) - controls the speed of vibrato oscillation.</span></div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="comment">   * @param vibrato_depth Vibrato depth (0-127) - controls the amplitude of vibrato oscillation.</span></div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="comment">   * @param vibrato_delay_modify Vibrato Delay Modification (0-127) - Control the delay time before the start of vibrato.</span></div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a8df9edcf5703a880ffc08921c04a1c79">SetVibrato</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t vibrato_rate, <span class="keyword">const</span> uint8_t vibrato_depth, <span class="keyword">const</span> uint8_t vibrato_delay_modify);</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment"></span> </div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment">   * @brief 设置时变滤波器（TVF）。</span></div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment">   * @param cutoff 截止频率值（0-127）-控制滤波器通过的频率范围。</span></div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment">   * @param resonance 共鸣强度/共鸣值（0-127）-在截止频率附近控制滤波器的增益。</span></div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">   * @brief Set Time Varying Filter (TVF).</span></div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment">   * @param cutoff Cut off frequency value (0-127) - controls the frequency range that the filter passes through.</span></div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">   * @param resonance Resonance peak/resonance value (0-127) - Control the gain of the filter near the cutoff frequency.</span></div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#adb8f47a79e6b67ce875efe62ab9a9918">SetTimeVaryingFilter</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t cutoff, <span class="keyword">const</span> uint8_t resonance);</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment"></span> </div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">   * @brief 设置包络参数。</span></div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment">   * @param attack_time 触发时间（0-127）-控制声音从零开始达到最大振幅的时间，单位:ms。</span></div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">   * @param attenuation_time 衰减时间（0-127）-控制声音从最大振幅衰减到保持水平的时间，单位:ms。</span></div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">   * @param release_time 释放时间（0-127）-控制钞票释放后音量衰减到零所需的时间，单位:ms。</span></div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">   * @brief Set envelope parameters.</span></div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">   * @param attack_time Attack time (0-127) - controls the time for the sound to reach its maximum amplitude from zero, unit: ms.</span></div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment">   * @param attenuation_time Attenuation time (0-127) - controls the time for sound to decay from maximum amplitude to maintain a level, unit: ms.</span></div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment">   * @param release_time Release time (0-127) - controls the time it takes for the volume to decay to zero after the note is released, unit: ms.</span></div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a5cc3c4e45b8ef8132b5aad038216e51f">SetEnvelope</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t attack_time, <span class="keyword">const</span> uint8_t attenuation_time, <span class="keyword">const</span> uint8_t release_time);</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="comment"></span> </div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="comment">   * @brief 为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。</span></div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment">   * @param scale_tuning_parameter</span></div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment">   * 为指定通道设置12个音符调谐参数（C、C#、D、D#、E、F、F#、G、G#、A、A#、B），（每个半音的独立间距偏移）。</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="comment">   * @brief Set the 12 scale tuning parameters for the specified MIDI channel (independent pitch offset for each semitone).</span></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="comment">   * @param scale_tuning_parameter Set the 12 scale tuning parameters(C, C#, D, D#, E, F, F#, G, G#, A, A#, B) for the specified channel (independent</span></div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="comment">   * pitch offset for each semitone).</span></div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#afd4feeb2d567994df0118ba214e60248">SetScaleTuning</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> <a class="code hl_struct" href="structem_1_1_scale_tuning_parameter.html">ScaleTuningParameter</a>&amp; scale_tuning_parameter);</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="comment"></span> </div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="comment">   * @brief 设置调制轮参数，配置调制轮声音的多种控制效果。</span></div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="comment">   * @param modulation_wheel_parameter 调制轮参数结构体。</span><span class="comment"></span></div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="comment">   * @brief Set modulation wheel parameters and configure multiple control effects for modulation wheel sound.</span></div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="comment">   * @param modulation_wheel_parameter Modulation wheel parameters structure.</span></div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#aef2d05cd3872938e61659b78bdef3eb4">SetModulationWheel</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> <a class="code hl_struct" href="structem_1_1_modulation_wheel_parameter.html">ModulationWheelParameter</a>&amp; modulation_wheel_parameter);</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="comment"></span> </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span><span class="comment">   * @~Chinese</span></div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="comment">   * @brief 激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。</span></div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="comment">   */</span><span class="comment"></span></div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="comment">   * @~English</span></div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="comment">   * @brief Activate all drum channels and set all 16 MIDI channels (0-15) as drum channels.</span></div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a73e9b7babecc310502612017d6d97d0f">AllDrums</a>();</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>  <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>(<span class="keyword">const</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span> </div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  <span class="keywordtype">void</span> Write(<span class="keyword">const</span> uint8_t data);</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>  <span class="keywordtype">void</span> Write(<span class="keyword">const</span> uint8_t* buffer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>  <span class="keywordtype">void</span> SendNrpnOrRpnParameter(<span class="keyword">const</span> uint8_t channel,</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>                              <span class="keyword">const</span> uint8_t most_significant_byte_controller,</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>                              <span class="keyword">const</span> uint8_t most_significant_byte,</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                              <span class="keyword">const</span> uint8_t least_significant_byte_controller,</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                              <span class="keyword">const</span> uint8_t least_significant_byte,</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>                              <span class="keyword">const</span> uint8_t value);</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>  <span class="keywordtype">void</span> NullNrpnOrRpn(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t most_significant_byte_controller, <span class="keyword">const</span> uint8_t least_significant_byte_controller);</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="preprocessor">#if defined(ESP32)</span></div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  HardwareSerial hardware_serial_{2};</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  SoftwareSerial software_serial_;</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>};</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="comment">   * @param reverberation_type Reverberation type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g.,</span></div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="comment">   * EM_SAM2695_MIDI_REVERBERATION_ROOM_1).</span></div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="comment">   * @param reverberation_volume Reverberation transmission amount (0-127), 0: no reverberation, 127: maximum reverberation amount.</span></div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="comment">   * @param delay_feedback Delayed feedback quantity (0-127), 0: no feedback, 127: maximum feedback.</span></div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a90d662d8580021f6838aef1759473179">SetReverberation</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t reverberation_type, <span class="keyword">const</span> uint8_t reverberation_volume, <span class="keyword">const</span> uint8_t delay_feedback);</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="comment"></span> </div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="comment">   * @brief 将合唱效果应用于指定通道。</span></div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="comment">   * @param chorus_effect_type 合唱效果类型，请参考sam2695_midi_chorus_reverberation.h中的宏（例如，EM_SAM2695_MIDI_CHORUS_1）。</span></div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="comment">   * @param chorus_effect_volume 合唱效果量（0-127），0：无，127：最大发送音量。</span></div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="comment">   * @param chorus_effect_feedback 效果反馈量（0-127，0表示未设置）。</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment">   * @param chorus_delay_time 合唱延迟时间（0-127，0表示未设置），单位:ms。</span></div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="comment">   * @brief Apply a chorus effect to a specified channel.</span></div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="comment">   * @param chorus_effect_type chorus effect type, refer to macros in sam2695_midi_chorus_reverberation.h (e.g., EM_SAM2695_MIDI_CHORUS_1).</span></div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="comment">   * @param chorus_effect_volume chorus effect sending volume (0-127), 0: none, 127: maximum sending volume.</span></div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span><span class="comment">   * @param chorus_effect_feedback Effect feedback amount (0-127, 0 means not set).</span></div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span><span class="comment">   * @param chorus_delay_time chorus delay time (0-127, 0 indicates not set), unit: ms.</span></div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#afe5ab5dc882b81f6f034d82f62e52682">SetChorus</a>(<span class="keyword">const</span> uint8_t channel,</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                 <span class="keyword">const</span> uint8_t chorus_effect_type,</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                 <span class="keyword">const</span> uint8_t chorus_effect_volume,</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                 <span class="keyword">const</span> uint8_t chorus_effect_feedback,</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                 <span class="keyword">const</span> uint8_t chorus_delay_time);</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="comment"></span> </div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="comment">   * @brief 设置声相位置。</span></div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment">   * @param pan_position_value 声相位置值（0-127），0：最左侧（完全左侧通道），64：中心位置（左右平衡通道），127：最右侧（完全右侧通道）。</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="comment">   * @brief Set the pan position.</span></div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="comment">   * @param pan_position_value pan position value (0-127), 0: far left (completely left channel), 64: center position (balanced left and right</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="comment">   * channel),127: far right (completely right channel).</span></div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a3cffc5ed3f6f06a846cf14ab50b2e1aa">SetPanPosition</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t pan_position_value);</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="comment"></span> </div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="comment">   * @brief 设置四段均衡器。</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="comment">   * @param equalizer_parameter 均衡器参数结构体。</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="comment">   * @brief Set up a four segment equalizer.</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="comment">   * @param equalizer_parameter Equalizer parameters structure.</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a94dc96563b25451345ae2d7481a7c80c">SetEqualizer</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> <a class="code hl_struct" href="structem_1_1_equalizer_parameter.html">EqualizerParameter</a>&amp; equalizer_parameter);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="comment"></span> </div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="comment">   * @brief 定调（粗调/细调）。</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span><span class="comment">   * @param fine_tuning 微调值（0-127），影响音调的细微变化。</span></div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="comment">   * @param coarse_tuning 粗调值（0-127），影响音高的八度变化。</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="comment">   * @brief Set tone (coarse/fine).</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="comment">   * @param fine_tuning Fine tuning value (0-127), affecting subtle changes in pitch.</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="comment">   * @param coarse_tuning Coarse tuning values (0-127), affect the octave variation of pitch.</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a2866ea55e93aceba73b4b7f0e729a072">SetTuning</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t fine_tuning, <span class="keyword">const</span> uint8_t coarse_tuning);</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="comment"></span> </div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="comment">   * @brief 设置颤音参数。</span></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="comment">   * @param vibrato_rate 振动频率（0-127）-控制振动的速度。</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="comment">   * @param vibrato_depth 振动深度（0-127）-控制振动振幅。</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="comment">   * @param vibrato_delay_modify 振动延迟修改（0-127）-控制振动开始前的延迟时间。</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="comment">   * @brief Set vibrato parameters.</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="comment">   * @param vibrato_rate Vibrato rate (0-127) - controls the speed of vibrato oscillation.</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="comment">   * @param vibrato_depth Vibrato depth (0-127) - controls the amplitude of vibrato oscillation.</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="comment">   * @param vibrato_delay_modify Vibrato Delay Modification (0-127) - Control the delay time before the start of vibrato.</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a8df9edcf5703a880ffc08921c04a1c79">SetVibrato</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t vibrato_rate, <span class="keyword">const</span> uint8_t vibrato_depth, <span class="keyword">const</span> uint8_t vibrato_delay_modify);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment"></span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">   * @brief 设置时变滤波器（TVF）。</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment">   * @param cutoff 截止频率值（0-127）-控制滤波器通过的频率范围。</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment">   * @param resonance 共鸣强度/共鸣值（0-127）-在截止频率附近控制滤波器的增益。</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">   * @brief Set Time Varying Filter (TVF).</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">   * @param cutoff Cut off frequency value (0-127) - controls the frequency range that the filter passes through.</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">   * @param resonance Resonance peak/resonance value (0-127) - Control the gain of the filter near the cutoff frequency.</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#adb8f47a79e6b67ce875efe62ab9a9918">SetTimeVaryingFilter</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t cutoff, <span class="keyword">const</span> uint8_t resonance);</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment"></span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">   * @brief 设置包络参数。</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">   * @param attack_time 触发时间（0-127）-控制声音从零开始达到最大振幅的时间，单位:ms。</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">   * @param attenuation_time 衰减时间（0-127）-控制声音从最大振幅衰减到保持水平的时间，单位:ms。</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">   * @param release_time 释放时间（0-127）-控制钞票释放后音量衰减到零所需的时间，单位:ms。</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">   * @brief Set envelope parameters.</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment">   * @param attack_time Attack time (0-127) - controls the time for the sound to reach its maximum amplitude from zero, unit: ms.</span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment">   * @param attenuation_time Attenuation time (0-127) - controls the time for sound to decay from maximum amplitude to maintain a level, unit: ms.</span></div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">   * @param release_time Release time (0-127) - controls the time it takes for the volume to decay to zero after the note is released, unit: ms.</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a5cc3c4e45b8ef8132b5aad038216e51f">SetEnvelope</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t attack_time, <span class="keyword">const</span> uint8_t attenuation_time, <span class="keyword">const</span> uint8_t release_time);</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="comment"></span> </div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="comment">   * @brief 为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment">   * @param scale_tuning_parameter</span></div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="comment">   * 为指定通道设置12个音符调谐参数（C、C#、D、D#、E、F、F#、G、G#、A、A#、B），（每个半音的独立间距偏移）。</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="comment">   * @brief Set the 12 scale tuning parameters for the specified MIDI channel (independent pitch offset for each semitone).</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="comment">   * @param scale_tuning_parameter Set the 12 scale tuning parameters(C, C#, D, D#, E, F, F#, G, G#, A, A#, B) for the specified channel (independent</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="comment">   * pitch offset for each semitone).</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#afd4feeb2d567994df0118ba214e60248">SetScaleTuning</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> <a class="code hl_struct" href="structem_1_1_scale_tuning_parameter.html">ScaleTuningParameter</a>&amp; scale_tuning_parameter);</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="comment"></span> </div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="comment">   * @brief 设置调制轮参数，配置调制轮声音的多种控制效果。</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="comment">   * @param channel 指定通道（0-15）。</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="comment">   * @param modulation_wheel_parameter 调制轮参数结构体。</span><span class="comment"></span></div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="comment">   * @brief Set modulation wheel parameters and configure multiple control effects for modulation wheel sound.</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="comment">   * @param channel Designated channel (0-15).</span></div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="comment">   * @param modulation_wheel_parameter Modulation wheel parameters structure.</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#aef2d05cd3872938e61659b78bdef3eb4">SetModulationWheel</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> <a class="code hl_struct" href="structem_1_1_modulation_wheel_parameter.html">ModulationWheelParameter</a>&amp; modulation_wheel_parameter);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="comment"></span> </div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="comment">   * @~Chinese</span></div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="comment">   * @brief 激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><span class="comment">   */</span><span class="comment"></span></div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="comment">   * @~English</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="comment">   * @brief Activate all drum channels and set all 16 MIDI channels (0-15) as drum channels.</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a73e9b7babecc310502612017d6d97d0f">AllDrums</a>();</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>  <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>(<span class="keyword">const</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  <span class="keywordtype">void</span> Write(<span class="keyword">const</span> uint8_t data);</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  <span class="keywordtype">void</span> Write(<span class="keyword">const</span> uint8_t* buffer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  <span class="keywordtype">void</span> SendNrpnOrRpnParameter(<span class="keyword">const</span> uint8_t channel,</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>                              <span class="keyword">const</span> uint8_t most_significant_byte_controller,</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                              <span class="keyword">const</span> uint8_t most_significant_byte,</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                              <span class="keyword">const</span> uint8_t least_significant_byte_controller,</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>                              <span class="keyword">const</span> uint8_t least_significant_byte,</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                              <span class="keyword">const</span> uint8_t value);</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  <span class="keywordtype">void</span> NullNrpnOrRpn(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t most_significant_byte_controller, <span class="keyword">const</span> uint8_t least_significant_byte_controller);</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="preprocessor">#if defined(ESP32)</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  HardwareSerial hardware_serial_{2};</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  SoftwareSerial software_serial_;</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>};</div>
 </div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>}  <span class="comment">// namespace em</span></div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>}  <span class="comment">// namespace em</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassem_1_1_sam2695_midi_html_a03540eebeee02d50f0f12a7b94a5ae16"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#a03540eebeee02d50f0f12a7b94a5ae16">em::Sam2695Midi::NoteOn</a></div><div class="ttdeci">void NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity)</div><div class="ttdoc">Generate the given MIDI note on the designated channel (0-15).</div><div class="ttdef"><b>Definition</b> <a href="sam2695__midi_8cpp_source.html#l00044">sam2695_midi.cpp:44</a></div></div>
 <div class="ttc" id="aclassem_1_1_sam2695_midi_html_a083d5e34f135eab1762c512a242207df"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df">em::Sam2695Midi::Sam2695Midi</a></div><div class="ttdeci">Sam2695Midi(const uint8_t tx_pin)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="sam2695__midi_8cpp_source.html#l00008">sam2695_midi.cpp:8</a></div></div>
 <div class="ttc" id="aclassem_1_1_sam2695_midi_html_a1396dac5852abbe8821b14a2e8be97af"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#a1396dac5852abbe8821b14a2e8be97af">em::Sam2695Midi::ChannelAllNotesOff</a></div><div class="ttdeci">void ChannelAllNotesOff(const uint8_t channel)</div><div class="ttdoc">Send a noteOff() for each note on the specified channel.</div><div class="ttdef"><b>Definition</b> <a href="sam2695__midi_8cpp_source.html#l00086">sam2695_midi.cpp:86</a></div></div>

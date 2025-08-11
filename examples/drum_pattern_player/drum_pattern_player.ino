@@ -60,8 +60,8 @@ void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
 
 void setup() {
   g_sam2695_midi.MidiReset();
-  g_sam2695_midi.SetChannelTimbre(kChannel, MIDI_BANK_0, PERCUSSION_TIMBRE_1);
-  g_sam2695_midi.SetReverberation(kChannel, REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
+  g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1);
+  g_sam2695_midi.SetReverberation(kChannel, EM_SAM2695_MIDI_REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
   g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);
 }
 
@@ -69,11 +69,11 @@ void loop() {
   for (uint8_t tick_no = 0; tick_no < kTickSize; tick_no++) {
     g_tempo = g_tempo + (random(kTempoRandomRange) - kTempoRandomOffset);
     g_tempo = constrain(g_tempo, kMinTempo, kMaxTempo);
-    PlayDrumNote(TIMBRE_1_NOTE_C_2_KICK_DRUM_1, kBassDrumTick[tick_no]);
-    PlayDrumNote(TIMBRE_1_NOTE_D_2_SNARE_DRUM_1, kSnareDrumTick[tick_no]);
-    PlayDrumNote(TIMBRE_1_NOTE_F_SHARP_2_CLOSED_HI_HAT, kHiHatCloseTick[tick_no]);
-    PlayDrumNote(TIMBRE_1_NOTE_A_SHARP_2_OPEN_HI_HAT, kHiHatOpenTick[tick_no]);
-    PlayDrumNote(TIMBRE_1_NOTE_G_SHARP_2_PEDAL_HI_HAT, kHiHatPedalTick[tick_no]);
+    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_C_2_KICK_DRUM_1, kBassDrumTick[tick_no]);
+    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_D_2_SNARE_DRUM_1, kSnareDrumTick[tick_no]);
+    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_F_SHARP_2_CLOSED_HI_HAT, kHiHatCloseTick[tick_no]);
+    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_A_SHARP_2_OPEN_HI_HAT, kHiHatOpenTick[tick_no]);
+    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_G_SHARP_2_PEDAL_HI_HAT, kHiHatPedalTick[tick_no]);
     delay(g_tempo);
   }
 }

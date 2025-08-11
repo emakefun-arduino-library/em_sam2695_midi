@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SAM2695 MIDI Arduino 库: src/sam2695_midi.cpp 源文件</title>
+<title>EM SAM2695 MIDI Arduino 库: src/sam2695_midi.cpp 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SAM2695 MIDI Arduino 库<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">EM SAM2695 MIDI Arduino 库<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -160,8 +160,8 @@ $(function(){initNavTree('sam2695__midi_8cpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classem_1_1_sam2695_midi.html#aaeed6c73ecd88278f19a0b8cf0057596">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classem_1_1_sam2695_midi.html#aaeed6c73ecd88278f19a0b8cf0057596">Sam2695Midi::SetChannelTimbre</a>(<span class="keyword">const</span> uint8_t channel, <span class="keyword">const</span> uint8_t bank, <span class="keyword">const</span> uint8_t timbre) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">if</span> (bank != <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a45d4063c2fd331ce37c72d8d605230bf">MIDI_BANK_0</a> &amp;&amp; bank != <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a4d6d3484190e6a24cf200e9b522491e0">MIDI_BANK_127</a>) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    printf(<span class="stringliteral">&quot;Error: bank parameter error, can only be MIDI_BANK_0 or MIDI_BANK_127.\n&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">if</span> (bank != <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a5bd9added95e7e7fe04b0df5df44a568">EM_SAM2695_MIDI_TIMBRE_BANK_0</a> &amp;&amp; bank != <a class="code hl_define" href="sam2695__midi__timbre_8h.html#a231644a2bc4d7b961c1f6e430e0be09b">EM_SAM2695_MIDI_TIMBRE_BANK_127_ALTO_SAX</a>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    printf(<span class="stringliteral">&quot;Error: bank parameter error, can only be EM_SAM2695_MIDI_TIMBRE_BANK_0 or EM_SAM2695_MIDI_TIMBRE_BANK_127.\n&quot;</span>);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
@@ -436,8 +436,8 @@ $(function(){initNavTree('sam2695__midi_8cpp_source.html',''); initResizable(tru
 <div class="ttc" id="aclassem_1_1_sam2695_midi_html_afd4feeb2d567994df0118ba214e60248"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#afd4feeb2d567994df0118ba214e60248">em::Sam2695Midi::SetScaleTuning</a></div><div class="ttdeci">void SetScaleTuning(const uint8_t channel, const ScaleTuningParameter &amp;scale_tuning_parameter)</div><div class="ttdoc">为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。</div><div class="ttdef"><b>定义</b> <a href="#l00183">sam2695_midi.cpp:183</a></div></div>
 <div class="ttc" id="aclassem_1_1_sam2695_midi_html_afe5ab5dc882b81f6f034d82f62e52682"><div class="ttname"><a href="classem_1_1_sam2695_midi.html#afe5ab5dc882b81f6f034d82f62e52682">em::Sam2695Midi::SetChorus</a></div><div class="ttdeci">void SetChorus(const uint8_t channel, const uint8_t chorus_effect_type, const uint8_t chorus_effect_volume, const uint8_t chorus_effect_feedback, const uint8_t chorus_delay_time)</div><div class="ttdoc">将合唱效果应用于指定通道。</div><div class="ttdef"><b>定义</b> <a href="#l00116">sam2695_midi.cpp:116</a></div></div>
 <div class="ttc" id="asam2695__midi_8h_html"><div class="ttname"><a href="sam2695__midi_8h.html">sam2695_midi.h</a></div></div>
-<div class="ttc" id="asam2695__midi__timbre_8h_html_a45d4063c2fd331ce37c72d8d605230bf"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a45d4063c2fd331ce37c72d8d605230bf">MIDI_BANK_0</a></div><div class="ttdeci">#define MIDI_BANK_0</div><div class="ttdoc">标准GM音色库</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l00023">sam2695_midi_timbre.h:23</a></div></div>
-<div class="ttc" id="asam2695__midi__timbre_8h_html_a4d6d3484190e6a24cf200e9b522491e0"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a4d6d3484190e6a24cf200e9b522491e0">MIDI_BANK_127</a></div><div class="ttdeci">#define MIDI_BANK_127</div><div class="ttdoc">扩展音色库</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l00033">sam2695_midi_timbre.h:33</a></div></div>
+<div class="ttc" id="asam2695__midi__timbre_8h_html_a231644a2bc4d7b961c1f6e430e0be09b"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a231644a2bc4d7b961c1f6e430e0be09b">EM_SAM2695_MIDI_TIMBRE_BANK_127_ALTO_SAX</a></div><div class="ttdeci">#define EM_SAM2695_MIDI_TIMBRE_BANK_127_ALTO_SAX</div><div class="ttdoc">中音萨克斯</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l02131">sam2695_midi_timbre.h:2131</a></div></div>
+<div class="ttc" id="asam2695__midi__timbre_8h_html_a5bd9added95e7e7fe04b0df5df44a568"><div class="ttname"><a href="sam2695__midi__timbre_8h.html#a5bd9added95e7e7fe04b0df5df44a568">EM_SAM2695_MIDI_TIMBRE_BANK_0</a></div><div class="ttdeci">#define EM_SAM2695_MIDI_TIMBRE_BANK_0</div><div class="ttdoc">标准GM音色库</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi__timbre_8h_source.html#l00023">sam2695_midi_timbre.h:23</a></div></div>
 <div class="ttc" id="astructem_1_1_equalizer_parameter_html"><div class="ttname"><a href="structem_1_1_equalizer_parameter.html">em::EqualizerParameter</a></div><div class="ttdoc">均衡器参数结构体。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8h_source.html#l00033">sam2695_midi.h:33</a></div></div>
 <div class="ttc" id="astructem_1_1_equalizer_parameter_html_a594957983aba6a7eb84c922a5d7ecb3b"><div class="ttname"><a href="structem_1_1_equalizer_parameter.html#a594957983aba6a7eb84c922a5d7ecb3b">em::EqualizerParameter::medium_high_frequency</a></div><div class="ttdeci">uint8_t medium_high_frequency</div><div class="ttdoc">中高频中心频率值（0-127）。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8h_source.html#l00102">sam2695_midi.h:102</a></div></div>
 <div class="ttc" id="astructem_1_1_equalizer_parameter_html_a5c7b8ce669ac6a057897e9dcc63b1192"><div class="ttname"><a href="structem_1_1_equalizer_parameter.html#a5c7b8ce669ac6a057897e9dcc63b1192">em::EqualizerParameter::medium_low_frequency</a></div><div class="ttdeci">uint8_t medium_low_frequency</div><div class="ttdoc">中低频中心频率值（0-127）。</div><div class="ttdef"><b>定义</b> <a href="sam2695__midi_8h_source.html#l00092">sam2695_midi.h:92</a></div></div>
