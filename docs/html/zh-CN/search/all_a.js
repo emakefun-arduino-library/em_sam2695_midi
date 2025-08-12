@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['sam2695_20midi_20arduino_20库_0',['EM SAM2695 MIDI Arduino 库',['../index.html',1,'']]],
+  ['sam2695_5fmidi_2eh_1',['sam2695_midi.h',['../sam2695__midi_8h.html',1,'']]],
+  ['sam2695_5fmidi_5fchorus_5freverberation_2eh_2',['sam2695_midi_chorus_reverberation.h',['../sam2695__midi__chorus__reverberation_8h.html',1,'']]],
+  ['sam2695_5fmidi_5flib_2eh_3',['sam2695_midi_lib.h',['../sam2695__midi__lib_8h.html',1,'']]],
+  ['sam2695_5fmidi_5fnote_2eh_4',['sam2695_midi_note.h',['../sam2695__midi__note_8h.html',1,'']]],
+  ['sam2695_5fmidi_5fpercussion_5fnote_2eh_5',['sam2695_midi_percussion_note.h',['../sam2695__midi__percussion__note_8h.html',1,'']]],
+  ['sam2695_5fmidi_5ftimbre_2eh_6',['sam2695_midi_timbre.h',['../sam2695__midi__timbre_8h.html',1,'']]],
+  ['sam2695midi_7',['Sam2695Midi',['../classem_1_1_sam2695_midi.html',1,'em::Sam2695Midi'],['../classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df',1,'em::Sam2695Midi::Sam2695Midi()']]],
+  ['scaletuningparameter_8',['ScaleTuningParameter',['../structem_1_1_scale_tuning_parameter.html',1,'em']]],
+  ['setallchannelvolume_9',['SetAllChannelVolume',['../classem_1_1_sam2695_midi.html#ae7eb3a279c81bf9671c6abdd14c0ceb2',1,'em::Sam2695Midi']]],
+  ['setchanneltimbre_10',['SetChannelTimbre',['../classem_1_1_sam2695_midi.html#aaeed6c73ecd88278f19a0b8cf0057596',1,'em::Sam2695Midi']]],
+  ['setchannelvolume_11',['SetChannelVolume',['../classem_1_1_sam2695_midi.html#a4e961cd224538c5c0290752e94a418ea',1,'em::Sam2695Midi']]],
+  ['setchorus_12',['SetChorus',['../classem_1_1_sam2695_midi.html#afe5ab5dc882b81f6f034d82f62e52682',1,'em::Sam2695Midi']]],
+  ['setenvelope_13',['SetEnvelope',['../classem_1_1_sam2695_midi.html#a5cc3c4e45b8ef8132b5aad038216e51f',1,'em::Sam2695Midi']]],
+  ['setequalizer_14',['SetEqualizer',['../classem_1_1_sam2695_midi.html#a94dc96563b25451345ae2d7481a7c80c',1,'em::Sam2695Midi']]],
+  ['setmodulationwheel_15',['SetModulationWheel',['../classem_1_1_sam2695_midi.html#aef2d05cd3872938e61659b78bdef3eb4',1,'em::Sam2695Midi']]],
+  ['setpanposition_16',['SetPanPosition',['../classem_1_1_sam2695_midi.html#a3cffc5ed3f6f06a846cf14ab50b2e1aa',1,'em::Sam2695Midi']]],
+  ['setreverberation_17',['SetReverberation',['../classem_1_1_sam2695_midi.html#a90d662d8580021f6838aef1759473179',1,'em::Sam2695Midi']]],
+  ['setscaletuning_18',['SetScaleTuning',['../classem_1_1_sam2695_midi.html#afd4feeb2d567994df0118ba214e60248',1,'em::Sam2695Midi']]],
+  ['settimevaryingfilter_19',['SetTimeVaryingFilter',['../classem_1_1_sam2695_midi.html#adb8f47a79e6b67ce875efe62ab9a9918',1,'em::Sam2695Midi']]],
+  ['settuning_20',['SetTuning',['../classem_1_1_sam2695_midi.html#a2866ea55e93aceba73b4b7f0e729a072',1,'em::Sam2695Midi']]],
+  ['setvibrato_21',['SetVibrato',['../classem_1_1_sam2695_midi.html#a8df9edcf5703a880ffc08921c04a1c79',1,'em::Sam2695Midi']]]
+];

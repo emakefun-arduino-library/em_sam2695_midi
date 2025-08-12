@@ -1,0 +1,84 @@
+name: Arduino ESP32 Build
+
+on:
+  push:
+    branches: ["main", "v*"]
+  pull_request:
+    branches: ["main", "v*"]
+
+jobs:
+  get_lib_info:
+    runs-on: ubuntu-latest
+
+    outputs:
+      lib_dir_name: ${{steps.get_lib_dir_name.outputs.lib_dir_name}}
+      examples: ${{steps.get_examples.outputs.examples}}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Checkout Arduino Lib Parser
+        uses: actions/checkout@v4
+        with:
+          repository: emakefun-arduino-library/arduino_lib_parser
+          path: arduino_lib_parser
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.8
+      - name: get lib dir name
+        id: get_lib_dir_name
+        run: |
+          LIB_DIR_NAME=$(python arduino_lib_parser/get_lib_dir_name.py .)
+          echo "lib_dir_name=${LIB_DIR_NAME}"
+          echo "lib_dir_name=${LIB_DIR_NAME}" >> "$GITHUB_OUTPUT"
+      - name: get examples
+        id: get_examples
+        run: |
+          EXAMPLES=$(python arduino_lib_parser/get_examples.py .)
+          echo "examples=${EXAMPLES}"
+          echo "examples=${EXAMPLES}" >> "$GITHUB_OUTPUT"
+
+  build:
+    runs-on: ubuntu-latest
+    needs: get_lib_info
+    env:
+      LIB_DIR_NAME: ${{needs.get_lib_info.outputs.lib_dir_name}}
+      ARDUINO_CLI_DIR: ${{github.workspace}}/arduino_cli
+      ARDUINO_CLI_CONFIG_DIR: ${{github.workspace}}/arduino_cli_config
+      ARDUINO_USER_DIR: ${{github.workspace}}/arduino_user
+    strategy:
+      matrix:
+        example: ${{fromJSON(needs.get_lib_info.outputs.examples)}}
+        fqbn: ["esp32:esp32:esp32", "esp32:esp32:esp32s3"]
+
+    steps:
+      - name: download arduino cli
+        run: curl -L -o arduino-cli.tar.gz https://github.com/arduino/arduino-cli/releases/download/v1.1.1/arduino-cli_1.1.1_Linux_64bit.tar.gz
+      - name: install arduino cli
+        run: |
+          mkdir -p ${ARDUINO_CLI_DIR}
+          tar -zxvf arduino-cli.tar.gz -C ${ARDUINO_CLI_DIR}
+      - name: test arduino cli
+        run: ${ARDUINO_CLI_DIR}/arduino-cli -v
+      - name: setup arduino-cli
+        run: |
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} config init
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} config set directories.user ${ARDUINO_USER_DIR}
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} config set library.enable_unsafe_install true
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} config dump
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} core install esp32:esp32
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: ${{github.event.repository.name}}
+      - name: Zip
+        run: |
+          zip -r ${{github.event.repository.name}}.zip ${{github.event.repository.name}}
+      - name: Arduino lib install
+        run: |
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} lib install --zip-path ${{github.event.repository.name}}.zip
+      - name: Compile
+        run: |
+          echo "compile ${ARDUINO_USER_DIR}/libraries/${LIB_DIR_NAME}/examples/${{matrix.example}}/${{matrix.example}}.ino"
+          ${ARDUINO_CLI_DIR}/arduino-cli --config-dir ${ARDUINO_CLI_CONFIG_DIR} compile --fqbn ${{matrix.fqbn}} "${ARDUINO_USER_DIR}/libraries/${LIB_DIR_NAME}/examples/${{matrix.example}}/${{matrix.example}}.ino" --log --clean -v
