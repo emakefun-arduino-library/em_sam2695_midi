@@ -8,17 +8,12 @@
  * @file sam2695_midi.h
  */
 #include <Arduino.h>
+#include <Stream.h>
 
 #include "sam2695_midi_chorus_reverberation.h"
 #include "sam2695_midi_note.h"
 #include "sam2695_midi_percussion_note.h"
 #include "sam2695_midi_timbre.h"
-
-#if defined(ESP32)
-#include <HardwareSerial.h>
-#else
-#include <SoftwareSerial.h>
-#endif
 
 namespace em {
 
@@ -342,14 +337,14 @@ class Sam2695Midi {
   /**
    * @~Chinese
    * @brief 构造函数。
-   * @param tx_pin SAM2695 MIDI信号引脚。
+   * @param stream stream 用于 MIDI 通信的数据流引用。
    */
   /**
    * @~English
    * @brief Constructor.
-   * @param data tx_pin SAM2695 MIDI signal pin.
+   * @param stream A data stream reference used for MIDI communication.
    */
-  Sam2695Midi(const uint8_t tx_pin);
+  Sam2695Midi(Stream& stream);
 
   /**
    * @~Chinese
@@ -642,6 +637,7 @@ class Sam2695Midi {
    * @brief 设置调制轮参数，配置调制轮声音的多种控制效果。
    * @param channel 指定通道（0-15）。
    * @param modulation_wheel_parameter 调制轮参数结构体。
+   */
   /**
    * @~English
    * @brief Set modulation wheel parameters and configure multiple control effects for modulation wheel sound.
@@ -678,11 +674,7 @@ class Sam2695Midi {
 
   void NullNrpnOrRpn(const uint8_t channel, const uint8_t most_significant_byte_controller, const uint8_t least_significant_byte_controller);
 
-#if defined(ESP32)
-  HardwareSerial hardware_serial_{2};
-#else
-  SoftwareSerial software_serial_;
-#endif
+  Stream& stream_;
 };
 }  // namespace em
 #endif

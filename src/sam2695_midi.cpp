@@ -1,45 +1,9 @@
-#pragma once
-
 #include "sam2695_midi.h"
 
 namespace em {
 
-#if defined(ESP32)
-Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) {
-  hardware_serial_.begin(31250, SERIAL_8N1, -1, tx_pin);
+Sam2695Midi::Sam2695Midi(Stream& stream) : stream_(stream) {
 }
-
-void Sam2695Midi::Write(const uint8_t data) {
-  hardware_serial_.write(data);
-}
-
-void Sam2695Midi::Write(const uint8_t* buffer, const size_t size) {
-  if (buffer == nullptr || size == 0) {
-    printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
-    return;
-  }
-  hardware_serial_.write(buffer, size);
-}
-
-#else
-Sam2695Midi::Sam2695Midi(const uint8_t tx_pin) : software_serial_(-1, tx_pin) {
-  software_serial_.begin(31250);
-}
-
-void Sam2695Midi::Write(const uint8_t data) {
-  software_serial_.write(data);
-}
-
-void Sam2695Midi::Write(const uint8_t* buffer, const size_t size) {
-  if (buffer == nullptr || size == 0) {
-    printf("Error: buffer pointer is nullptr or zero-size buffer.\n");
-    return;
-  }
-
-  software_serial_.write(buffer, size);
-}
-
-#endif
 
 void Sam2695Midi::NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity) {
   const uint8_t command[] = {0x90 | (channel & 0x0F), midi_note & 0x7F, note_velocity & 0x7F};
@@ -242,6 +206,18 @@ void Sam2695Midi::AllDrums() {
     command[6] = 0x10 | (i & 0x0F);
     Write(command, sizeof(command) / sizeof(command[0]));
   }
+}
+
+void Sam2695Midi::Write(const uint8_t data) {
+  stream_.write(data);
+}
+
+void Sam2695Midi::Write(const uint8_t* buffer, const size_t size) {
+  if (!buffer || size == 0) {
+    printf("Error: Invalid buffer\n");
+    return;
+  }
+  stream_.write(buffer, size);
 }
 
 void Sam2695Midi::SendNrpnOrRpnParameter(const uint8_t channel,

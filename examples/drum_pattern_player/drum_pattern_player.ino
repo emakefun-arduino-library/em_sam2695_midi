@@ -15,8 +15,13 @@
 
 #include "sam2695_midi.h"
 
+#if defined(ESP32)
+#include <HardwareSerial.h>
+#else
+#include <SoftwareSerial.h>
+#endif
+
 namespace {
-constexpr uint8_t kSam2695MidiPin = 4;
 
 constexpr uint8_t kChannel = 9;
 constexpr uint8_t kChannelVolume = 100;
@@ -28,9 +33,27 @@ constexpr uint8_t kTempoRandomRange = 5;
 constexpr uint8_t kTempoRandomOffset = 2;
 
 constexpr uint8_t kMinTempo = 40;
-constexpr uint8_t kMaxTempo = 250;
+constexpr uint16_t kMaxTempo = 250;
 
 constexpr uint8_t kTickSize = 15;
+
+#if defined(ESP32)
+constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
+HardwareSerial midi_serial(2);
+
+void InitMidiSerial() {
+  midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
+}
+#else
+constexpr uint8_t kSam2695MidiPin = 4;
+SoftwareSerial midi_serial(-1, kSam2695MidiPin);
+
+void InitMidiSerial() {
+  midi_serial.begin(31250);
+}
+#endif
+
+em::Sam2695Midi g_sam2695_midi(midi_serial);
 
 // Every array cell is the velocity of the note played
 // Tick         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
@@ -48,8 +71,6 @@ static_assert(sizeof(kHiHatPedalTick) / sizeof(kHiHatPedalTick[0]) == kTickSize,
 
 uint16_t g_tempo = 120;
 
-em::Sam2695Midi g_sam2695_midi(kSam2695MidiPin);
-
 void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
   if (note_velocity > 0) {
     g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
@@ -59,6 +80,8 @@ void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
 }  // namespace
 
 void setup() {
+  InitMidiSerial();
+
   g_sam2695_midi.MidiReset();
   g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1);
   g_sam2695_midi.SetReverberation(kChannel, EM_SAM2695_MIDI_REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
