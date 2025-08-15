@@ -363,7 +363,7 @@ class Sam2695Midi {
    * @param note_velocity Note velocity (0-127), controls the volume and tone brightness of notes, on a keyboard this corresponds to how hard the
    * key,0: silent (equivalent to noteOff), 1-126: from weak to strong, 127: maximum strength.
    */
-  void NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity);
+  void NoteOn(const uint8_t channel, const uint8_t midi_note, const uint8_t z);
 
   /**
    * @~Chinese

@@ -36,21 +36,16 @@ constexpr uint16_t kDottedQuarterNoteDuration = 450;
 constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
 constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
 
-HardwareSerial midi_serial(kUartPort);
+HardwareSerial g_midi_serial(kUartPort);
 
-void InitMidiSerial() {
-  midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
-}
 #else
 constexpr uint8_t kSam2695MidiPin = 4;
-SoftwareSerial midi_serial(-1, kSam2695MidiPin);
 
-void InitMidiSerial() {
-  midi_serial.begin(31250);
-}
+SoftwareSerial g_midi_serial(-1, kSam2695MidiPin);
+
 #endif
 
-em::Sam2695Midi g_sam2695_midi(midi_serial);
+em::Sam2695Midi g_sam2695_midi(g_midi_serial);
 
 void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t note_velocity = 90) {
   g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
@@ -61,7 +56,11 @@ void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t no
 }  // namespace
 
 void setup() {
-  InitMidiSerial();
+#if defined(ESP32)
+  g_midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
+#else
+  g_midi_serial.begin(31250);
+#endif
 
   g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_TIMBRE_BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);
   g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);

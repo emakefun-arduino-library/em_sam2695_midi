@@ -41,21 +41,16 @@ constexpr uint8_t kTickSize = 15;
 constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
 constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
 
-HardwareSerial midi_serial(kUartPort);
+HardwareSerial g_midi_serial(kUartPort);
 
-void InitMidiSerial() {
-  midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
-}
 #else
 constexpr uint8_t kSam2695MidiPin = 4;
-SoftwareSerial midi_serial(-1, kSam2695MidiPin);
 
-void InitMidiSerial() {
-  midi_serial.begin(31250);
-}
+SoftwareSerial g_midi_serial(-1, kSam2695MidiPin);
+
 #endif
 
-em::Sam2695Midi g_sam2695_midi(midi_serial);
+em::Sam2695Midi g_sam2695_midi(g_midi_serial);
 
 // Every array cell is the velocity of the note played
 // Tick         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
@@ -82,7 +77,11 @@ void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
 }  // namespace
 
 void setup() {
-  InitMidiSerial();
+#if defined(ESP32)
+  g_midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
+#else
+  g_midi_serial.begin(31250);
+#endif
 
   g_sam2695_midi.MidiReset();
   g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1);

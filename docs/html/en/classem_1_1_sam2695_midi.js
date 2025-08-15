@@ -5,7 +5,7 @@ var classem_1_1_sam2695_midi =
     [ "ChannelAllNotesOff", "classem_1_1_sam2695_midi.html#a1396dac5852abbe8821b14a2e8be97af", null ],
     [ "MidiReset", "classem_1_1_sam2695_midi.html#ab3f5ef62dac53b40c0fc28de23be1048", null ],
     [ "NoteOff", "classem_1_1_sam2695_midi.html#aa91a8c548c8bfb2300d800991fb4b66e", null ],
-    [ "NoteOn", "classem_1_1_sam2695_midi.html#a03540eebeee02d50f0f12a7b94a5ae16", null ],
+    [ "NoteOn", "classem_1_1_sam2695_midi.html#aee5fde1138af6c30237cca4092e1dd47", null ],
     [ "PitchBend", "classem_1_1_sam2695_midi.html#aa1be45ffd473116681d2b77ac659853d", null ],
     [ "PitchBendRange", "classem_1_1_sam2695_midi.html#a77bdf5d4fea260adba35fea197cbfbbb", null ],
     [ "SetAllChannelVolume", "classem_1_1_sam2695_midi.html#ae7eb3a279c81bf9671c6abdd14c0ceb2", null ],
