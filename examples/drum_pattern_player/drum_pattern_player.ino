@@ -33,13 +33,15 @@ constexpr uint8_t kTempoRandomRange = 5;
 constexpr uint8_t kTempoRandomOffset = 2;
 
 constexpr uint8_t kMinTempo = 40;
-constexpr uint16_t kMaxTempo = 250;
+constexpr uint8_t kMaxTempo = 250;
 
 constexpr uint8_t kTickSize = 15;
 
 #if defined(ESP32)
 constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
-HardwareSerial midi_serial(2);
+constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
+
+HardwareSerial midi_serial(kUartPort);
 
 void InitMidiSerial() {
   midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);

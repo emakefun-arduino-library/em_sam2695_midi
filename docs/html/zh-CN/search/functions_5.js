@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sam2695midi_0',['Sam2695Midi',['../classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df',1,'em::Sam2695Midi']]],
+  ['sam2695midi_0',['Sam2695Midi',['../classem_1_1_sam2695_midi.html#ae535041cfdb29f635f6d9f0cbec0bba4',1,'em::Sam2695Midi']]],
   ['setallchannelvolume_1',['SetAllChannelVolume',['../classem_1_1_sam2695_midi.html#ae7eb3a279c81bf9671c6abdd14c0ceb2',1,'em::Sam2695Midi']]],
   ['setchanneltimbre_2',['SetChannelTimbre',['../classem_1_1_sam2695_midi.html#aaeed6c73ecd88278f19a0b8cf0057596',1,'em::Sam2695Midi']]],
   ['setchannelvolume_3',['SetChannelVolume',['../classem_1_1_sam2695_midi.html#a4e961cd224538c5c0290752e94a418ea',1,'em::Sam2695Midi']]],

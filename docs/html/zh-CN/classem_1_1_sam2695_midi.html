@@ -110,9 +110,9 @@ $(function(){initNavTree('classem_1_1_sam2695_midi.html',''); initResizable(true
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a083d5e34f135eab1762c512a242207df" id="r_a083d5e34f135eab1762c512a242207df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a083d5e34f135eab1762c512a242207df">Sam2695Midi</a> (const uint8_t tx_pin)</td></tr>
-<tr class="memdesc:a083d5e34f135eab1762c512a242207df"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。  <br /></td></tr>
-<tr class="separator:a083d5e34f135eab1762c512a242207df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae535041cfdb29f635f6d9f0cbec0bba4" id="r_ae535041cfdb29f635f6d9f0cbec0bba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae535041cfdb29f635f6d9f0cbec0bba4">Sam2695Midi</a> (Stream &amp;stream)</td></tr>
+<tr class="memdesc:ae535041cfdb29f635f6d9f0cbec0bba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。  <br /></td></tr>
+<tr class="separator:ae535041cfdb29f635f6d9f0cbec0bba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03540eebeee02d50f0f12a7b94a5ae16" id="r_a03540eebeee02d50f0f12a7b94a5ae16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03540eebeee02d50f0f12a7b94a5ae16">NoteOn</a> (const uint8_t channel, const uint8_t midi_note, const uint8_t note_velocity)</td></tr>
 <tr class="memdesc:a03540eebeee02d50f0f12a7b94a5ae16"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定通道（0-15）上发出给定的MIDI音符。  <br /></td></tr>
 <tr class="separator:a03540eebeee02d50f0f12a7b94a5ae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,10 +179,10 @@ Public 成员函数</h2></td></tr>
 <dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#_a0">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#_a0">play_music.ino</a>.</dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a> 第 <a class="el" href="sam2695__midi_8h_source.html#l00340">340</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8h_source.html">sam2695_midi.h</a> 第 <a class="el" href="sam2695__midi_8h_source.html#l00335">335</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a083d5e34f135eab1762c512a242207df" name="a083d5e34f135eab1762c512a242207df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a083d5e34f135eab1762c512a242207df">&#9670;&#160;</a></span>Sam2695Midi()</h2>
+<a id="ae535041cfdb29f635f6d9f0cbec0bba4" name="ae535041cfdb29f635f6d9f0cbec0bba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae535041cfdb29f635f6d9f0cbec0bba4">&#9670;&#160;</a></span>Sam2695Midi()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +190,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">em::Sam2695Midi::Sam2695Midi </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>tx_pin</em></span></td><td>)</td>
+          <td class="paramtype">Stream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -199,12 +199,12 @@ Public 成员函数</h2></td></tr>
 <p>构造函数。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tx_pin</td><td>SAM2695 MIDI信号引脚。 </td></tr>
+    <tr><td class="paramname">stream</td><td>stream 用于 MIDI 通信的数据流引用。 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00008">8</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00005">5</a> 行定义.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Public 成员函数</h2></td></tr>
 
 <p>激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。 </p>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00239">239</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00203">203</a> 行定义.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00086">86</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00050">50</a> 行定义.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Public 成员函数</h2></td></tr>
 
 <p>MIDI系统重置发送MIDI系统重置命令（0xFF），将所有连接的MIDI设备重置为初始状态。 </p>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00082">82</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00046">46</a> 行定义.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Public 成员函数</h2></td></tr>
 <dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a2">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#a2">play_music.ino</a>.</dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00049">49</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00013">13</a> 行定义.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Public 成员函数</h2></td></tr>
 <dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a1">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#a1">play_music.ino</a>.</dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00044">44</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00008">8</a> 行定义.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00067">67</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00031">31</a> 行定义.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00076">76</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00040">40</a> 行定义.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00096">96</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00060">60</a> 行定义.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00054">54</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00018">18</a> 行定义.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00091">91</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00055">55</a> 行定义.</p>
 
 </div>
 </div>
@@ -559,7 +559,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00116">116</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00080">80</a> 行定义.</p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00175">175</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00139">139</a> 行定义.</p>
 
 </div>
 </div>
@@ -635,7 +635,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00140">140</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00104">104</a> 行定义.</p>
 
 </div>
 </div>
@@ -662,12 +662,12 @@ Public 成员函数</h2></td></tr>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
-    <tr><td class="paramname">modulation_wheel_parameter</td><td>调制轮参数结构体。 /** </td></tr>
+    <tr><td class="paramname">modulation_wheel_parameter</td><td>调制轮参数结构体。 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00209">209</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00173">173</a> 行定义.</p>
 
 </div>
 </div>
@@ -699,7 +699,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00135">135</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00099">99</a> 行定义.</p>
 
 </div>
 </div>
@@ -743,7 +743,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00101">101</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00065">65</a> 行定义.</p>
 
 </div>
 </div>
@@ -775,7 +775,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00183">183</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00147">147</a> 行定义.</p>
 
 </div>
 </div>
@@ -813,7 +813,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00168">168</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00132">132</a> 行定义.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00153">153</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00117">117</a> 行定义.</p>
 
 </div>
 </div>
@@ -895,7 +895,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00160">160</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="sam2695__midi_8cpp_source.html">sam2695_midi.cpp</a> 第 <a class="el" href="sam2695__midi_8cpp_source.html#l00124">124</a> 行定义.</p>
 
 </div>
 </div>

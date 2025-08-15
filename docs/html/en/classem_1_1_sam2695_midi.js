@@ -1,6 +1,6 @@
 var classem_1_1_sam2695_midi =
 [
-    [ "Sam2695Midi", "classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df", null ],
+    [ "Sam2695Midi", "classem_1_1_sam2695_midi.html#ae535041cfdb29f635f6d9f0cbec0bba4", null ],
     [ "AllDrums", "classem_1_1_sam2695_midi.html#a73e9b7babecc310502612017d6d97d0f", null ],
     [ "ChannelAllNotesOff", "classem_1_1_sam2695_midi.html#a1396dac5852abbe8821b14a2e8be97af", null ],
     [ "MidiReset", "classem_1_1_sam2695_midi.html#ab3f5ef62dac53b40c0fc28de23be1048", null ],

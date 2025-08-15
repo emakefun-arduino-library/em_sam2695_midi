@@ -34,7 +34,9 @@ constexpr uint16_t kDottedQuarterNoteDuration = 450;
 
 #if defined(ESP32)
 constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
-HardwareSerial midi_serial(2);
+constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
+
+HardwareSerial midi_serial(kUartPort);
 
 void InitMidiSerial() {
   midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
