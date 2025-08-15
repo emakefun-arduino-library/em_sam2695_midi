@@ -15,9 +15,13 @@
 
 #include "sam2695_midi.h"
 
-namespace {
-constexpr uint8_t kSam2695MidiPin = 4;
+#if defined(ESP32)
+#include <HardwareSerial.h>
+#else
+#include <SoftwareSerial.h>
+#endif
 
+namespace {
 constexpr uint8_t kChannel = 0;
 constexpr uint8_t kChannelVolume = 110;
 
@@ -28,7 +32,20 @@ constexpr uint16_t kQuarterNoteDuration = 300;
 constexpr uint16_t kEighthNoteDuration = 150;
 constexpr uint16_t kDottedQuarterNoteDuration = 450;
 
-em::Sam2695Midi g_sam2695_midi(kSam2695MidiPin);
+#if defined(ESP32)
+constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
+constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
+
+HardwareSerial g_midi_serial(kUartPort);
+
+#else
+constexpr uint8_t kSam2695MidiPin = 4;
+
+SoftwareSerial g_midi_serial(-1, kSam2695MidiPin);
+
+#endif
+
+em::Sam2695Midi g_sam2695_midi(g_midi_serial);
 
 void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t note_velocity = 90) {
   g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
@@ -39,6 +56,12 @@ void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t no
 }  // namespace
 
 void setup() {
+#if defined(ESP32)
+  g_midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
+#else
+  g_midi_serial.begin(31250);
+#endif
+
   g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_TIMBRE_BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);
   g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);
   g_sam2695_midi.SetReverberation(kChannel, EM_SAM2695_MIDI_REVERBERATION_ROOM_2, kReverberationVolume, kReverberationDelayFeedback);

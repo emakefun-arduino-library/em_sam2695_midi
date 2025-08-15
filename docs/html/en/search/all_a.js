@@ -7,7 +7,7 @@ var searchData=
   ['sam2695_5fmidi_5fnote_2eh_4',['sam2695_midi_note.h',['../sam2695__midi__note_8h.html',1,'']]],
   ['sam2695_5fmidi_5fpercussion_5fnote_2eh_5',['sam2695_midi_percussion_note.h',['../sam2695__midi__percussion__note_8h.html',1,'']]],
   ['sam2695_5fmidi_5ftimbre_2eh_6',['sam2695_midi_timbre.h',['../sam2695__midi__timbre_8h.html',1,'']]],
-  ['sam2695midi_7',['Sam2695Midi',['../classem_1_1_sam2695_midi.html',1,'em::Sam2695Midi'],['../classem_1_1_sam2695_midi.html#a083d5e34f135eab1762c512a242207df',1,'em::Sam2695Midi::Sam2695Midi()']]],
+  ['sam2695midi_7',['Sam2695Midi',['../classem_1_1_sam2695_midi.html',1,'em::Sam2695Midi'],['../classem_1_1_sam2695_midi.html#ae535041cfdb29f635f6d9f0cbec0bba4',1,'em::Sam2695Midi::Sam2695Midi()']]],
   ['scaletuningparameter_8',['ScaleTuningParameter',['../structem_1_1_scale_tuning_parameter.html',1,'em']]],
   ['setallchannelvolume_9',['SetAllChannelVolume',['../classem_1_1_sam2695_midi.html#ae7eb3a279c81bf9671c6abdd14c0ceb2',1,'em::Sam2695Midi']]],
   ['setchanneltimbre_10',['SetChannelTimbre',['../classem_1_1_sam2695_midi.html#aaeed6c73ecd88278f19a0b8cf0057596',1,'em::Sam2695Midi']]],
