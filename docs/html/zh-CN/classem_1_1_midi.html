@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EM MIDI Arduino 库: em::Midi类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EM MIDI Arduino 库<span id="projectnumber">&#160;1.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classem_1_1_midi.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classem_1_1_midi-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">em::Midi类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Midi是一个用于MIDI模块的驱动类，用于合成音乐。  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="midi_8h_source.html">midi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac65ccaa423a847cb3635c80d234906cf" id="r_ac65ccaa423a847cb3635c80d234906cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac65ccaa423a847cb3635c80d234906cf">Midi</a> (Stream &amp;stream)</td></tr>
+<tr class="memdesc:ac65ccaa423a847cb3635c80d234906cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。  <br /></td></tr>
+<tr class="separator:ac65ccaa423a847cb3635c80d234906cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab430b2f2dbeb64c5e8b4e8e7250e78f6" id="r_ab430b2f2dbeb64c5e8b4e8e7250e78f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab430b2f2dbeb64c5e8b4e8e7250e78f6">NoteOn</a> (const uint8_t channel, const uint8_t midi_note, const uint8_t z)</td></tr>
+<tr class="memdesc:ab430b2f2dbeb64c5e8b4e8e7250e78f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定通道（0-15）上发出给定的MIDI音符。  <br /></td></tr>
+<tr class="separator:ab430b2f2dbeb64c5e8b4e8e7250e78f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814412ae079163badd458002f441862c" id="r_a814412ae079163badd458002f441862c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814412ae079163badd458002f441862c">NoteOff</a> (const uint8_t channel, const uint8_t midi_note)</td></tr>
+<tr class="memdesc:a814412ae079163badd458002f441862c"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭指定通道中的音符，该通道之前使用noteOn（）命令以给定的音高打开。  <br /></td></tr>
+<tr class="separator:a814412ae079163badd458002f441862c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2789239b6da46462263bd376f1598995" id="r_a2789239b6da46462263bd376f1598995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2789239b6da46462263bd376f1598995">SetChannelTimbre</a> (const uint8_t channel, const uint8_t bank, const uint8_t timbre)</td></tr>
+<tr class="memdesc:a2789239b6da46462263bd376f1598995"><td class="mdescLeft">&#160;</td><td class="mdescRight">更改指定通道的音色。其中通道9是一个专用的鼓组通道，通道9的音色和音符请查阅参考midi_percussion_note.h。  <br /></td></tr>
+<tr class="separator:a2789239b6da46462263bd376f1598995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87b89928dcf603be8b18971c28ff7c8" id="r_ad87b89928dcf603be8b18971c28ff7c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad87b89928dcf603be8b18971c28ff7c8">PitchBend</a> (const uint8_t channel, uint16_t pitch_bend_value)</td></tr>
+<tr class="memdesc:ad87b89928dcf603be8b18971c28ff7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">向上或向下弯曲音高，默认摆动+/-1半音。  <br /></td></tr>
+<tr class="separator:ad87b89928dcf603be8b18971c28ff7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6862c168b57ccbce7f8c17eb46cf65ec" id="r_a6862c168b57ccbce7f8c17eb46cf65ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6862c168b57ccbce7f8c17eb46cf65ec">PitchBendRange</a> (const uint8_t channel, const uint8_t pitch_bend_range_value)</td></tr>
+<tr class="memdesc:a6862c168b57ccbce7f8c17eb46cf65ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置弯音范围（灵敏度）。  <br /></td></tr>
+<tr class="separator:a6862c168b57ccbce7f8c17eb46cf65ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad789b8792f0a5c4f924c1ec2945f2e91" id="r_ad789b8792f0a5c4f924c1ec2945f2e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad789b8792f0a5c4f924c1ec2945f2e91">MidiReset</a> ()</td></tr>
+<tr class="memdesc:ad789b8792f0a5c4f924c1ec2945f2e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI系统重置发送MIDI系统重置命令（0xFF），将所有连接的MIDI设备重置为初始状态。  <br /></td></tr>
+<tr class="separator:ad789b8792f0a5c4f924c1ec2945f2e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5513605d3931359e10ca8546f660f9" id="r_a7b5513605d3931359e10ca8546f660f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b5513605d3931359e10ca8546f660f9">ChannelAllNotesOff</a> (const uint8_t channel)</td></tr>
+<tr class="memdesc:a7b5513605d3931359e10ca8546f660f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定通道上为每个音符发送一个noteOff（）。  <br /></td></tr>
+<tr class="separator:a7b5513605d3931359e10ca8546f660f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3255ff207615d3e534578b21e2b18519" id="r_a3255ff207615d3e534578b21e2b18519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3255ff207615d3e534578b21e2b18519">SetChannelVolume</a> (const uint8_t channel, const uint8_t volume)</td></tr>
+<tr class="memdesc:a3255ff207615d3e534578b21e2b18519"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置特定通道音量。  <br /></td></tr>
+<tr class="separator:a3255ff207615d3e534578b21e2b18519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3959309080757a03a8a576402aa802" id="r_a8c3959309080757a03a8a576402aa802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c3959309080757a03a8a576402aa802">SetAllChannelVolume</a> (const uint8_t volume)</td></tr>
+<tr class="memdesc:a8c3959309080757a03a8a576402aa802"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置所有通道的音量。  <br /></td></tr>
+<tr class="separator:a8c3959309080757a03a8a576402aa802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fccc1da4418e1cd23a7937f651dfd4" id="r_a96fccc1da4418e1cd23a7937f651dfd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96fccc1da4418e1cd23a7937f651dfd4">SetReverberation</a> (const uint8_t channel, const uint8_t reverberation_type, const uint8_t reverberation_volume, const uint8_t delay_feedback)</td></tr>
+<tr class="memdesc:a96fccc1da4418e1cd23a7937f651dfd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将混响效果应用于指定通道。  <br /></td></tr>
+<tr class="separator:a96fccc1da4418e1cd23a7937f651dfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c33199eec542a5402c01157176f114" id="r_a68c33199eec542a5402c01157176f114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68c33199eec542a5402c01157176f114">SetChorus</a> (const uint8_t channel, const uint8_t chorus_effect_type, const uint8_t chorus_effect_volume, const uint8_t chorus_effect_feedback, const uint8_t chorus_delay_time)</td></tr>
+<tr class="memdesc:a68c33199eec542a5402c01157176f114"><td class="mdescLeft">&#160;</td><td class="mdescRight">将合唱效果应用于指定通道。  <br /></td></tr>
+<tr class="separator:a68c33199eec542a5402c01157176f114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc20c8594d22508880190c5c3853502" id="r_a5dc20c8594d22508880190c5c3853502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dc20c8594d22508880190c5c3853502">SetPanPosition</a> (const uint8_t channel, const uint8_t pan_position_value)</td></tr>
+<tr class="memdesc:a5dc20c8594d22508880190c5c3853502"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置声相位置。  <br /></td></tr>
+<tr class="separator:a5dc20c8594d22508880190c5c3853502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8cc82753ecbf4e22cf9bbbb279852c" id="r_a2f8cc82753ecbf4e22cf9bbbb279852c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f8cc82753ecbf4e22cf9bbbb279852c">SetEqualizer</a> (const uint8_t channel, const <a class="el" href="structem_1_1_equalizer_parameter.html">EqualizerParameter</a> &amp;equalizer_parameter)</td></tr>
+<tr class="memdesc:a2f8cc82753ecbf4e22cf9bbbb279852c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置四段均衡器。  <br /></td></tr>
+<tr class="separator:a2f8cc82753ecbf4e22cf9bbbb279852c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff6f96ca0a1b88f7f294b0fb4c7b091" id="r_adff6f96ca0a1b88f7f294b0fb4c7b091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adff6f96ca0a1b88f7f294b0fb4c7b091">SetTuning</a> (const uint8_t channel, const uint8_t fine_tuning, const uint8_t coarse_tuning)</td></tr>
+<tr class="memdesc:adff6f96ca0a1b88f7f294b0fb4c7b091"><td class="mdescLeft">&#160;</td><td class="mdescRight">定调（粗调/细调）。  <br /></td></tr>
+<tr class="separator:adff6f96ca0a1b88f7f294b0fb4c7b091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ec66a9fca5beb4a3d4e579ee683e1e" id="r_ae7ec66a9fca5beb4a3d4e579ee683e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7ec66a9fca5beb4a3d4e579ee683e1e">SetVibrato</a> (const uint8_t channel, const uint8_t vibrato_rate, const uint8_t vibrato_depth, const uint8_t vibrato_delay_modify)</td></tr>
+<tr class="memdesc:ae7ec66a9fca5beb4a3d4e579ee683e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置颤音参数。  <br /></td></tr>
+<tr class="separator:ae7ec66a9fca5beb4a3d4e579ee683e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fc308594e26f4179ce9a327dcbf719" id="r_a07fc308594e26f4179ce9a327dcbf719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07fc308594e26f4179ce9a327dcbf719">SetTimeVaryingFilter</a> (const uint8_t channel, const uint8_t cutoff, const uint8_t resonance)</td></tr>
+<tr class="memdesc:a07fc308594e26f4179ce9a327dcbf719"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置时变滤波器（TVF）。  <br /></td></tr>
+<tr class="separator:a07fc308594e26f4179ce9a327dcbf719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600e8fdb9e9a250c8a205d2f360ed5dd" id="r_a600e8fdb9e9a250c8a205d2f360ed5dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a600e8fdb9e9a250c8a205d2f360ed5dd">SetEnvelope</a> (const uint8_t channel, const uint8_t attack_time, const uint8_t attenuation_time, const uint8_t release_time)</td></tr>
+<tr class="memdesc:a600e8fdb9e9a250c8a205d2f360ed5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置包络参数。  <br /></td></tr>
+<tr class="separator:a600e8fdb9e9a250c8a205d2f360ed5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4363690bfba30274335b64e9d266b529" id="r_a4363690bfba30274335b64e9d266b529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4363690bfba30274335b64e9d266b529">SetScaleTuning</a> (const uint8_t channel, const <a class="el" href="structem_1_1_scale_tuning_parameter.html">ScaleTuningParameter</a> &amp;scale_tuning_parameter)</td></tr>
+<tr class="memdesc:a4363690bfba30274335b64e9d266b529"><td class="mdescLeft">&#160;</td><td class="mdescRight">为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。  <br /></td></tr>
+<tr class="separator:a4363690bfba30274335b64e9d266b529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64da599af0048833dcdb99b0b7d29b95" id="r_a64da599af0048833dcdb99b0b7d29b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64da599af0048833dcdb99b0b7d29b95">SetModulationWheel</a> (const uint8_t channel, const <a class="el" href="structem_1_1_modulation_wheel_parameter.html">ModulationWheelParameter</a> &amp;modulation_wheel_parameter)</td></tr>
+<tr class="memdesc:a64da599af0048833dcdb99b0b7d29b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置调制轮参数，配置调制轮声音的多种控制效果。  <br /></td></tr>
+<tr class="separator:a64da599af0048833dcdb99b0b7d29b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5157fc906ace0851862f486dca2b3ce5" id="r_a5157fc906ace0851862f486dca2b3ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5157fc906ace0851862f486dca2b3ce5">AllDrums</a> ()</td></tr>
+<tr class="memdesc:a5157fc906ace0851862f486dca2b3ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。  <br /></td></tr>
+<tr class="separator:a5157fc906ace0851862f486dca2b3ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Midi是一个用于MIDI模块的驱动类，用于合成音乐。 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#_a0">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#_a0">play_music.ino</a>.</dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8h_source.html">midi.h</a> 第 <a class="el" href="midi_8h_source.html#l00335">335</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac65ccaa423a847cb3635c80d234906cf" name="ac65ccaa423a847cb3635c80d234906cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65ccaa423a847cb3635c80d234906cf">&#9670;&#160;</a></span>Midi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">em::Midi::Midi </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>stream 用于 MIDI 通信的数据流引用。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5157fc906ace0851862f486dca2b3ce5" name="a5157fc906ace0851862f486dca2b3ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5157fc906ace0851862f486dca2b3ce5">&#9670;&#160;</a></span>AllDrums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::AllDrums </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>激活所有鼓通道，并将所有16个MIDI通道（0-15）设置为鼓通道。 </p>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00203">203</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7b5513605d3931359e10ca8546f660f9" name="a7b5513605d3931359e10ca8546f660f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5513605d3931359e10ca8546f660f9">&#9670;&#160;</a></span>ChannelAllNotesOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::ChannelAllNotesOff </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定通道上为每个音符发送一个noteOff（）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad789b8792f0a5c4f924c1ec2945f2e91" name="ad789b8792f0a5c4f924c1ec2945f2e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad789b8792f0a5c4f924c1ec2945f2e91">&#9670;&#160;</a></span>MidiReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::MidiReset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MIDI系统重置发送MIDI系统重置命令（0xFF），将所有连接的MIDI设备重置为初始状态。 </p>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a814412ae079163badd458002f441862c" name="a814412ae079163badd458002f441862c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814412ae079163badd458002f441862c">&#9670;&#160;</a></span>NoteOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::NoteOff </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>midi_note</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭指定通道中的音符，该通道之前使用noteOn（）命令以给定的音高打开。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">midi_note</td><td>MIDI 音符（0-127），请查阅参考midi_note.h；其中，通道9的音符请查阅参考midi_percussion_note.h。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a2">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#a2">play_music.ino</a>.</dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab430b2f2dbeb64c5e8b4e8e7250e78f6" name="ab430b2f2dbeb64c5e8b4e8e7250e78f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab430b2f2dbeb64c5e8b4e8e7250e78f6">&#9670;&#160;</a></span>NoteOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::NoteOn </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>midi_note</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定通道（0-15）上发出给定的MIDI音符。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">midi_note</td><td>MIDI 音符（0-127），请查阅参考midi_note.h；其中，通道9的音符请查阅参考midi_percussion_note.h。 </td></tr>
+    <tr><td class="paramname">note_velocity</td><td>音符力度（0-127），控制音符的音量和音调亮度，在键盘上，这对应于按键的力度，0：无声（相当于noteOff），1-126：从弱到强，127：最大强度. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="drum_pattern_player_8ino-example.html#a1">drum_pattern_player.ino</a> , 以及 <a class="el" href="play_music_8ino-example.html#a1">play_music.ino</a>.</dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00008">8</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad87b89928dcf603be8b18971c28ff7c8" name="ad87b89928dcf603be8b18971c28ff7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87b89928dcf603be8b18971c28ff7c8">&#9670;&#160;</a></span>PitchBend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::PitchBend </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>pitch_bend_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向上或向下弯曲音高，默认摆动+/-1半音。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">pitch_bend_value</td><td>弯音值（0-1023），0：最大向下弯曲，512：中心位置（无弯曲），1023：最大向上弯曲。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6862c168b57ccbce7f8c17eb46cf65ec" name="a6862c168b57ccbce7f8c17eb46cf65ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6862c168b57ccbce7f8c17eb46cf65ec">&#9670;&#160;</a></span>PitchBendRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::PitchBendRange </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>pitch_bend_range_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置弯音范围（灵敏度）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">pitch_bend_range_value</td><td>弯音范围值（半音数，0-127），典型值：1-24（半音），默认值：2（±2半音）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8c3959309080757a03a8a576402aa802" name="a8c3959309080757a03a8a576402aa802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3959309080757a03a8a576402aa802">&#9670;&#160;</a></span>SetAllChannelVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetAllChannelVolume </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置所有通道的音量。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音量级别（0-127），0：静音，127：最大音量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2789239b6da46462263bd376f1598995" name="a2789239b6da46462263bd376f1598995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2789239b6da46462263bd376f1598995">&#9670;&#160;</a></span>SetChannelTimbre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetChannelTimbre </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>bank</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>timbre</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更改指定通道的音色。其中通道9是一个专用的鼓组通道，通道9的音色和音符请查阅参考midi_percussion_note.h。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15），其中通道9是专用鼓组通道。 </td></tr>
+    <tr><td class="paramname">bank</td><td>音色库选择，参数值为MIDI_bank_0或MIDI_bank_127。 </td></tr>
+    <tr><td class="paramname">timbre</td><td>音色编号（0-127），请查阅参考midi_timbre.h中的宏（例如EM_MIDI_TIMBRE_BANK_0_GRAND_PIANO）;其中，通道9的音色请查阅参考midi_percussion_note.h。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3255ff207615d3e534578b21e2b18519" name="a3255ff207615d3e534578b21e2b18519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3255ff207615d3e534578b21e2b18519">&#9670;&#160;</a></span>SetChannelVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetChannelVolume </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置特定通道音量。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">volume</td><td>音量级别（0-127），0：静音，127：最大音量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a68c33199eec542a5402c01157176f114" name="a68c33199eec542a5402c01157176f114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c33199eec542a5402c01157176f114">&#9670;&#160;</a></span>SetChorus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetChorus </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_effect_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_effect_volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_effect_feedback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>chorus_delay_time</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将合唱效果应用于指定通道。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">chorus_effect_type</td><td>合唱效果类型，请参考midi_chorus_reverberation.h中的宏（例如，EM_MIDI_CHORUS_1）。 </td></tr>
+    <tr><td class="paramname">chorus_effect_volume</td><td>合唱效果量（0-127），0：无，127：最大发送音量。 </td></tr>
+    <tr><td class="paramname">chorus_effect_feedback</td><td>效果反馈量（0-127，0表示未设置）。 </td></tr>
+    <tr><td class="paramname">chorus_delay_time</td><td>合唱延迟时间（0-127，0表示未设置），单位:ms。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a600e8fdb9e9a250c8a205d2f360ed5dd" name="a600e8fdb9e9a250c8a205d2f360ed5dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600e8fdb9e9a250c8a205d2f360ed5dd">&#9670;&#160;</a></span>SetEnvelope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetEnvelope </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>attack_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>attenuation_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>release_time</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置包络参数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">attack_time</td><td>触发时间（0-127）-控制声音从零开始达到最大振幅的时间，单位:ms。 </td></tr>
+    <tr><td class="paramname">attenuation_time</td><td>衰减时间（0-127）-控制声音从最大振幅衰减到保持水平的时间，单位:ms。 </td></tr>
+    <tr><td class="paramname">release_time</td><td>释放时间（0-127）-控制钞票释放后音量衰减到零所需的时间，单位:ms。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2f8cc82753ecbf4e22cf9bbbb279852c" name="a2f8cc82753ecbf4e22cf9bbbb279852c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8cc82753ecbf4e22cf9bbbb279852c">&#9670;&#160;</a></span>SetEqualizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetEqualizer </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structem_1_1_equalizer_parameter.html">EqualizerParameter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>equalizer_parameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置四段均衡器。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">equalizer_parameter</td><td>均衡器参数结构体。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a64da599af0048833dcdb99b0b7d29b95" name="a64da599af0048833dcdb99b0b7d29b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64da599af0048833dcdb99b0b7d29b95">&#9670;&#160;</a></span>SetModulationWheel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetModulationWheel </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structem_1_1_modulation_wheel_parameter.html">ModulationWheelParameter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>modulation_wheel_parameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置调制轮参数，配置调制轮声音的多种控制效果。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">modulation_wheel_parameter</td><td>调制轮参数结构体。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5dc20c8594d22508880190c5c3853502" name="a5dc20c8594d22508880190c5c3853502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc20c8594d22508880190c5c3853502">&#9670;&#160;</a></span>SetPanPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetPanPosition </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>pan_position_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置声相位置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">pan_position_value</td><td>声相位置值（0-127），0：最左侧（完全左侧通道），64：中心位置（左右平衡通道），127：最右侧（完全右侧通道）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a96fccc1da4418e1cd23a7937f651dfd4" name="a96fccc1da4418e1cd23a7937f651dfd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96fccc1da4418e1cd23a7937f651dfd4">&#9670;&#160;</a></span>SetReverberation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetReverberation </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>reverberation_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>reverberation_volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>delay_feedback</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将混响效果应用于指定通道。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">reverberation_type</td><td>混响类型，请参考midi_chorus_reverberation.h中的宏（例如，EM_MIDI_REVERBERATION_ROOM_1）。 </td></tr>
+    <tr><td class="paramname">reverberation_volume</td><td>混响量（0-127），0：无混响，127：最大混响量。 </td></tr>
+    <tr><td class="paramname">delay_feedback</td><td>延迟反馈量（0-127），0：无反馈，127：最大反馈。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4363690bfba30274335b64e9d266b529" name="a4363690bfba30274335b64e9d266b529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4363690bfba30274335b64e9d266b529">&#9670;&#160;</a></span>SetScaleTuning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetScaleTuning </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structem_1_1_scale_tuning_parameter.html">ScaleTuningParameter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scale_tuning_parameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>为指定的MIDI通道设置12个音阶调谐参数（每个半音独立的音高偏移）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">scale_tuning_parameter</td><td>为指定通道设置12个音符调谐参数（C、C#、D、D#、E、F、F#、G、G#、A、A#、B），（每个半音的独立间距偏移）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00147">147</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a07fc308594e26f4179ce9a327dcbf719" name="a07fc308594e26f4179ce9a327dcbf719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fc308594e26f4179ce9a327dcbf719">&#9670;&#160;</a></span>SetTimeVaryingFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetTimeVaryingFilter </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>cutoff</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>resonance</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置时变滤波器（TVF）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">cutoff</td><td>截止频率值（0-127）-控制滤波器通过的频率范围。 </td></tr>
+    <tr><td class="paramname">resonance</td><td>共鸣强度/共鸣值（0-127）-在截止频率附近控制滤波器的增益。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00132">132</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adff6f96ca0a1b88f7f294b0fb4c7b091" name="adff6f96ca0a1b88f7f294b0fb4c7b091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff6f96ca0a1b88f7f294b0fb4c7b091">&#9670;&#160;</a></span>SetTuning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetTuning </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>fine_tuning</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>coarse_tuning</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定调（粗调/细调）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">fine_tuning</td><td>微调值（0-127），影响音调的细微变化。 </td></tr>
+    <tr><td class="paramname">coarse_tuning</td><td>粗调值（0-127），影响音高的八度变化。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae7ec66a9fca5beb4a3d4e579ee683e1e" name="ae7ec66a9fca5beb4a3d4e579ee683e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ec66a9fca5beb4a3d4e579ee683e1e">&#9670;&#160;</a></span>SetVibrato()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::Midi::SetVibrato </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>vibrato_rate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>vibrato_depth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>vibrato_delay_modify</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置颤音参数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>指定通道（0-15）。 </td></tr>
+    <tr><td class="paramname">vibrato_rate</td><td>振动频率（0-127）-控制振动的速度。 </td></tr>
+    <tr><td class="paramname">vibrato_depth</td><td>振动深度（0-127）-控制振动振幅。 </td></tr>
+    <tr><td class="paramname">vibrato_delay_modify</td><td>振动延迟修改（0-127）-控制振动开始前的延迟时间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="midi_8cpp_source.html">midi.cpp</a> 第 <a class="el" href="midi_8cpp_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>src/<a class="el" href="midi_8h_source.html">midi.h</a></li>
+<li>src/<a class="el" href="midi_8cpp_source.html">midi.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>em</b></li><li class="navelem"><a class="el" href="classem_1_1_midi.html">Midi</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
+  </ul>
+</div>
+</body>
+</html>

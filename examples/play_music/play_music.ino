@@ -13,7 +13,7 @@
  * Play music using the BANK_0_ACOUSTIC_GUITAR-STEEL_STRING tone.
  */
 
-#include "sam2695_midi.h"
+#include "midi.h"
 
 #if defined(ESP32)
 #include <HardwareSerial.h>
@@ -33,72 +33,72 @@ constexpr uint16_t kEighthNoteDuration = 150;
 constexpr uint16_t kDottedQuarterNoteDuration = 450;
 
 #if defined(ESP32)
-constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
+constexpr gpio_num_t kMidiPin = GPIO_NUM_17;
 constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
 
 HardwareSerial g_midi_serial(kUartPort);
 
 #else
-constexpr uint8_t kSam2695MidiPin = 4;
+constexpr uint8_t kMidiPin = 4;
 
-SoftwareSerial g_midi_serial(-1, kSam2695MidiPin);
+SoftwareSerial g_midi_serial(-1, kMidiPin);
 
 #endif
 
-em::Sam2695Midi g_sam2695_midi(g_midi_serial);
+em::Midi g_midi(g_midi_serial);
 
 void PlayNote(const uint8_t midi_note, const uint16_t duration, const uint8_t note_velocity = 90) {
-  g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
+  g_midi.NoteOn(kChannel, midi_note, note_velocity);
   delay(duration);
-  g_sam2695_midi.NoteOff(kChannel, midi_note);
+  g_midi.NoteOff(kChannel, midi_note);
   delay(30);
 }
 }  // namespace
 
 void setup() {
 #if defined(ESP32)
-  g_midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
+  g_midi_serial.begin(31250, SERIAL_8N1, -1, kMidiPin);
 #else
   g_midi_serial.begin(31250);
 #endif
 
-  g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_TIMBRE_BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);
-  g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);
-  g_sam2695_midi.SetReverberation(kChannel, EM_SAM2695_MIDI_REVERBERATION_ROOM_2, kReverberationVolume, kReverberationDelayFeedback);
+  g_midi.SetChannelTimbre(kChannel, EM_MIDI_TIMBRE_BANK_0, EM_MIDI_TIMBRE_BANK_0_ACOUSTIC_GUITAR_STEEL_STRING);
+  g_midi.SetChannelVolume(kChannel, kChannelVolume);
+  g_midi.SetReverberation(kChannel, EM_MIDI_REVERBERATION_ROOM_2, kReverberationVolume, kReverberationDelayFeedback);
 }
 
 void loop() {
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_A_4, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_C_5, kDottedQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_B_4, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_A_4, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_C_5, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_B_4, kDottedQuarterNoteDuration);
   delay(kQuarterNoteDuration);
 
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_A_4, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_D_5, kDottedQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_C_5, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_A_4, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_D_5, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_C_5, kDottedQuarterNoteDuration);
   delay(kQuarterNoteDuration);
 
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_4, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_G_5, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_E_5, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_C_5, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_B_4, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_A_4, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_4, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_G_5, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_E_5, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_C_5, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_B_4, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_A_4, kDottedQuarterNoteDuration);
   delay(kQuarterNoteDuration);
 
-  PlayNote(EM_SAM2695_MIDI_NOTE_F_5, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_F_5, kEighthNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_E_5, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_C_5, kQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_D_5, kDottedQuarterNoteDuration);
-  PlayNote(EM_SAM2695_MIDI_NOTE_C_5, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_F_5, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_F_5, kEighthNoteDuration);
+  PlayNote(EM_MIDI_NOTE_E_5, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_C_5, kQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_D_5, kDottedQuarterNoteDuration);
+  PlayNote(EM_MIDI_NOTE_C_5, kDottedQuarterNoteDuration);
 
   delay(5000);
 }

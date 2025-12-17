@@ -1,0 +1,2834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EM MIDI Arduino 库: src/midi_note.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EM MIDI Arduino 库<span id="projectnumber">&#160;1.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('midi__note_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle"><div class="title">midi_note.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MIDI 音符编号定义 (0-127)，包含从 C-1 (0) 到 G9 (127) 的所有 MIDI 音符编号。  
+<a href="#details">更多...</a></p>
+
+<p><a href="midi__note_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aeeec79ad2ab70ca475db7008c1e8d366" id="r_aeeec79ad2ab70ca475db7008c1e8d366"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeec79ad2ab70ca475db7008c1e8d366">_EM_MIDI_NOTE_H_</a></td></tr>
+<tr class="separator:aeeec79ad2ab70ca475db7008c1e8d366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdc83619556fcbafd55633f7d6124f4" id="r_aafdc83619556fcbafd55633f7d6124f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafdc83619556fcbafd55633f7d6124f4">EM_MIDI_NOTE_C_M1</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:aafdc83619556fcbafd55633f7d6124f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">C-1 (八度-1的C音)  <br /></td></tr>
+<tr class="separator:aafdc83619556fcbafd55633f7d6124f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5144081dd9a9e79f54558452b038e68d" id="r_a5144081dd9a9e79f54558452b038e68d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5144081dd9a9e79f54558452b038e68d">EM_MIDI_NOTE_C_SHARP_M1</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memdesc:a5144081dd9a9e79f54558452b038e68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#-1 (八度-1的升C音)  <br /></td></tr>
+<tr class="separator:a5144081dd9a9e79f54558452b038e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea61e553e8ea36f265501836e3686629" id="r_aea61e553e8ea36f265501836e3686629"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea61e553e8ea36f265501836e3686629">EM_MIDI_NOTE_D_M1</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="memdesc:aea61e553e8ea36f265501836e3686629"><td class="mdescLeft">&#160;</td><td class="mdescRight">D-1 (八度-1的D音)  <br /></td></tr>
+<tr class="separator:aea61e553e8ea36f265501836e3686629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1705da57d6f76f2a5e3fafb617bd0aab" id="r_a1705da57d6f76f2a5e3fafb617bd0aab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1705da57d6f76f2a5e3fafb617bd0aab">EM_MIDI_NOTE_D_SHARP_M1</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="memdesc:a1705da57d6f76f2a5e3fafb617bd0aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#-1 (八度-1的升D音)  <br /></td></tr>
+<tr class="separator:a1705da57d6f76f2a5e3fafb617bd0aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f19303aa1c2c9e9888c9b8127995418" id="r_a3f19303aa1c2c9e9888c9b8127995418"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f19303aa1c2c9e9888c9b8127995418">EM_MIDI_NOTE_E_M1</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="memdesc:a3f19303aa1c2c9e9888c9b8127995418"><td class="mdescLeft">&#160;</td><td class="mdescRight">E-1 (八度-1的E音)  <br /></td></tr>
+<tr class="separator:a3f19303aa1c2c9e9888c9b8127995418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fdb4fe15d921a480b14bc09617dfad" id="r_a72fdb4fe15d921a480b14bc09617dfad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72fdb4fe15d921a480b14bc09617dfad">EM_MIDI_NOTE_F_M1</a>&#160;&#160;&#160;(5)</td></tr>
+<tr class="memdesc:a72fdb4fe15d921a480b14bc09617dfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">F-1 (八度-1的F音)  <br /></td></tr>
+<tr class="separator:a72fdb4fe15d921a480b14bc09617dfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4945b3f8e54c7ae3cbcdf79c7dbde4" id="r_a2f4945b3f8e54c7ae3cbcdf79c7dbde4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f4945b3f8e54c7ae3cbcdf79c7dbde4">EM_MIDI_NOTE_F_SHARP_M1</a>&#160;&#160;&#160;(6)</td></tr>
+<tr class="memdesc:a2f4945b3f8e54c7ae3cbcdf79c7dbde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#-1 (八度-1的升F音)  <br /></td></tr>
+<tr class="separator:a2f4945b3f8e54c7ae3cbcdf79c7dbde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbb9ec79dd68a36b41b55a94976aff0" id="r_a0dbb9ec79dd68a36b41b55a94976aff0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbb9ec79dd68a36b41b55a94976aff0">EM_MIDI_NOTE_G_M1</a>&#160;&#160;&#160;(7)</td></tr>
+<tr class="memdesc:a0dbb9ec79dd68a36b41b55a94976aff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">G-1 (八度-1的G音)  <br /></td></tr>
+<tr class="separator:a0dbb9ec79dd68a36b41b55a94976aff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e5cadc6df247583de22d86247f31a1" id="r_a27e5cadc6df247583de22d86247f31a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27e5cadc6df247583de22d86247f31a1">EM_MIDI_NOTE_G_SHARP_M1</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="memdesc:a27e5cadc6df247583de22d86247f31a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#-1 (八度-1的升G音)  <br /></td></tr>
+<tr class="separator:a27e5cadc6df247583de22d86247f31a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a18c9ef912a3565ef9a6de49d21350" id="r_af7a18c9ef912a3565ef9a6de49d21350"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7a18c9ef912a3565ef9a6de49d21350">EM_MIDI_NOTE_A_M1</a>&#160;&#160;&#160;(9)</td></tr>
+<tr class="memdesc:af7a18c9ef912a3565ef9a6de49d21350"><td class="mdescLeft">&#160;</td><td class="mdescRight">A-1 (八度-1的A音)  <br /></td></tr>
+<tr class="separator:af7a18c9ef912a3565ef9a6de49d21350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9228a20532b1636abadbdf06761e5e77" id="r_a9228a20532b1636abadbdf06761e5e77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9228a20532b1636abadbdf06761e5e77">EM_MIDI_NOTE_A_SHARP_M1</a>&#160;&#160;&#160;(10)</td></tr>
+<tr class="memdesc:a9228a20532b1636abadbdf06761e5e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#-1 (八度-1的升A音)  <br /></td></tr>
+<tr class="separator:a9228a20532b1636abadbdf06761e5e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878f3f3f6def1cd2e5fd79f8a1a35815" id="r_a878f3f3f6def1cd2e5fd79f8a1a35815"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a878f3f3f6def1cd2e5fd79f8a1a35815">EM_MIDI_NOTE_B_M1</a>&#160;&#160;&#160;(11)</td></tr>
+<tr class="memdesc:a878f3f3f6def1cd2e5fd79f8a1a35815"><td class="mdescLeft">&#160;</td><td class="mdescRight">B-1 (八度-1的B音)  <br /></td></tr>
+<tr class="separator:a878f3f3f6def1cd2e5fd79f8a1a35815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdec31a9e4716b23f119d1c0bc4500c" id="r_a5cdec31a9e4716b23f119d1c0bc4500c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cdec31a9e4716b23f119d1c0bc4500c">EM_MIDI_NOTE_C_0</a>&#160;&#160;&#160;(12)</td></tr>
+<tr class="memdesc:a5cdec31a9e4716b23f119d1c0bc4500c"><td class="mdescLeft">&#160;</td><td class="mdescRight">C0 (八度0的C音)  <br /></td></tr>
+<tr class="separator:a5cdec31a9e4716b23f119d1c0bc4500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa535252c5a7cd41b6dc0d6751d4120eb" id="r_aa535252c5a7cd41b6dc0d6751d4120eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa535252c5a7cd41b6dc0d6751d4120eb">EM_MIDI_NOTE_C_SHARP_0</a>&#160;&#160;&#160;(13)</td></tr>
+<tr class="memdesc:aa535252c5a7cd41b6dc0d6751d4120eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#0 (八度0的升C音)  <br /></td></tr>
+<tr class="separator:aa535252c5a7cd41b6dc0d6751d4120eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298e41e43c1eeff556ffe2cc39f5ae89" id="r_a298e41e43c1eeff556ffe2cc39f5ae89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298e41e43c1eeff556ffe2cc39f5ae89">EM_MIDI_NOTE_D_0</a>&#160;&#160;&#160;(14)</td></tr>
+<tr class="memdesc:a298e41e43c1eeff556ffe2cc39f5ae89"><td class="mdescLeft">&#160;</td><td class="mdescRight">D0 (八度0的D音)  <br /></td></tr>
+<tr class="separator:a298e41e43c1eeff556ffe2cc39f5ae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437047e077c54db777c06055f2c33381" id="r_a437047e077c54db777c06055f2c33381"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a437047e077c54db777c06055f2c33381">EM_MIDI_NOTE_D_SHARP_0</a>&#160;&#160;&#160;(15)</td></tr>
+<tr class="memdesc:a437047e077c54db777c06055f2c33381"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#0 (八度0的升D音)  <br /></td></tr>
+<tr class="separator:a437047e077c54db777c06055f2c33381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6b38d24e1e562e3e81caf566acf267" id="r_adc6b38d24e1e562e3e81caf566acf267"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc6b38d24e1e562e3e81caf566acf267">EM_MIDI_NOTE_E_0</a>&#160;&#160;&#160;(16)</td></tr>
+<tr class="memdesc:adc6b38d24e1e562e3e81caf566acf267"><td class="mdescLeft">&#160;</td><td class="mdescRight">E0 (八度0的E音)  <br /></td></tr>
+<tr class="separator:adc6b38d24e1e562e3e81caf566acf267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa629c2c2f279d4deaa505b5d5b4972cc" id="r_aa629c2c2f279d4deaa505b5d5b4972cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa629c2c2f279d4deaa505b5d5b4972cc">EM_MIDI_NOTE_F_0</a>&#160;&#160;&#160;(17)</td></tr>
+<tr class="memdesc:aa629c2c2f279d4deaa505b5d5b4972cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">F0 (八度0的F音)  <br /></td></tr>
+<tr class="separator:aa629c2c2f279d4deaa505b5d5b4972cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae022e0714d9a45d25f71f82b63b0b6" id="r_aaae022e0714d9a45d25f71f82b63b0b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaae022e0714d9a45d25f71f82b63b0b6">EM_MIDI_NOTE_F_SHARP_0</a>&#160;&#160;&#160;(18)</td></tr>
+<tr class="memdesc:aaae022e0714d9a45d25f71f82b63b0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#0 (八度0的升F音)  <br /></td></tr>
+<tr class="separator:aaae022e0714d9a45d25f71f82b63b0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa433038de76c1a0afe1e8c37fb9db754" id="r_aa433038de76c1a0afe1e8c37fb9db754"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa433038de76c1a0afe1e8c37fb9db754">EM_MIDI_NOTE_G_0</a>&#160;&#160;&#160;(19)</td></tr>
+<tr class="memdesc:aa433038de76c1a0afe1e8c37fb9db754"><td class="mdescLeft">&#160;</td><td class="mdescRight">G0 (八度0的G音)  <br /></td></tr>
+<tr class="separator:aa433038de76c1a0afe1e8c37fb9db754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9002211091c21d0f2cac2209ae8ffce1" id="r_a9002211091c21d0f2cac2209ae8ffce1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9002211091c21d0f2cac2209ae8ffce1">EM_MIDI_NOTE_G_SHARP_0</a>&#160;&#160;&#160;(20)</td></tr>
+<tr class="memdesc:a9002211091c21d0f2cac2209ae8ffce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#0 (八度0的升G音)  <br /></td></tr>
+<tr class="separator:a9002211091c21d0f2cac2209ae8ffce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902472527711cec32dc0de49475a4b15" id="r_a902472527711cec32dc0de49475a4b15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a902472527711cec32dc0de49475a4b15">EM_MIDI_NOTE_A_0</a>&#160;&#160;&#160;(21)</td></tr>
+<tr class="memdesc:a902472527711cec32dc0de49475a4b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">A0 (八度0的A音)  <br /></td></tr>
+<tr class="separator:a902472527711cec32dc0de49475a4b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25514601e50ddc0a9367f7bc6c1a7c3d" id="r_a25514601e50ddc0a9367f7bc6c1a7c3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25514601e50ddc0a9367f7bc6c1a7c3d">EM_MIDI_NOTE_A_SHARP_0</a>&#160;&#160;&#160;(22)</td></tr>
+<tr class="memdesc:a25514601e50ddc0a9367f7bc6c1a7c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#0 (八度0的升A音)  <br /></td></tr>
+<tr class="separator:a25514601e50ddc0a9367f7bc6c1a7c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a80c70eb990306496d3905e1708c2a" id="r_af6a80c70eb990306496d3905e1708c2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a80c70eb990306496d3905e1708c2a">EM_MIDI_NOTE_B_0</a>&#160;&#160;&#160;(23)</td></tr>
+<tr class="memdesc:af6a80c70eb990306496d3905e1708c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">B0 (八度0的B音)  <br /></td></tr>
+<tr class="separator:af6a80c70eb990306496d3905e1708c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bfe65c26d03b983aef8e0280399300" id="r_a48bfe65c26d03b983aef8e0280399300"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48bfe65c26d03b983aef8e0280399300">EM_MIDI_NOTE_C_1</a>&#160;&#160;&#160;(24)</td></tr>
+<tr class="memdesc:a48bfe65c26d03b983aef8e0280399300"><td class="mdescLeft">&#160;</td><td class="mdescRight">C1 (八度1的C音)  <br /></td></tr>
+<tr class="separator:a48bfe65c26d03b983aef8e0280399300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41741d8eba5a688b42180637ff3ac69d" id="r_a41741d8eba5a688b42180637ff3ac69d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41741d8eba5a688b42180637ff3ac69d">EM_MIDI_NOTE_C_SHARP_1</a>&#160;&#160;&#160;(25)</td></tr>
+<tr class="memdesc:a41741d8eba5a688b42180637ff3ac69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#1 (八度1的升C音)  <br /></td></tr>
+<tr class="separator:a41741d8eba5a688b42180637ff3ac69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a69e0be86f0dacbd8990efdcbf32b52" id="r_a9a69e0be86f0dacbd8990efdcbf32b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a69e0be86f0dacbd8990efdcbf32b52">EM_MIDI_NOTE_D_1</a>&#160;&#160;&#160;(26)</td></tr>
+<tr class="memdesc:a9a69e0be86f0dacbd8990efdcbf32b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">D1 (八度1的D音)  <br /></td></tr>
+<tr class="separator:a9a69e0be86f0dacbd8990efdcbf32b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902d9471420fa5cfb4b7892b50b01e97" id="r_a902d9471420fa5cfb4b7892b50b01e97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a902d9471420fa5cfb4b7892b50b01e97">EM_MIDI_NOTE_D_SHARP_1</a>&#160;&#160;&#160;(27)</td></tr>
+<tr class="memdesc:a902d9471420fa5cfb4b7892b50b01e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#1 (八度1的升D音)  <br /></td></tr>
+<tr class="separator:a902d9471420fa5cfb4b7892b50b01e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ac7dbd3d377679ad8b0a649676e6d0" id="r_a02ac7dbd3d377679ad8b0a649676e6d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02ac7dbd3d377679ad8b0a649676e6d0">EM_MIDI_NOTE_E_1</a>&#160;&#160;&#160;(28)</td></tr>
+<tr class="memdesc:a02ac7dbd3d377679ad8b0a649676e6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">E1 (八度1的E音)  <br /></td></tr>
+<tr class="separator:a02ac7dbd3d377679ad8b0a649676e6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c92306f8e526b671a0a7dbb0c9364c1" id="r_a6c92306f8e526b671a0a7dbb0c9364c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c92306f8e526b671a0a7dbb0c9364c1">EM_MIDI_NOTE_F_1</a>&#160;&#160;&#160;(29)</td></tr>
+<tr class="memdesc:a6c92306f8e526b671a0a7dbb0c9364c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">F1 (八度1的F音)  <br /></td></tr>
+<tr class="separator:a6c92306f8e526b671a0a7dbb0c9364c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f0a5bbf194f1b99be97b51cea9b4e5" id="r_a06f0a5bbf194f1b99be97b51cea9b4e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06f0a5bbf194f1b99be97b51cea9b4e5">EM_MIDI_NOTE_F_SHARP_1</a>&#160;&#160;&#160;(30)</td></tr>
+<tr class="memdesc:a06f0a5bbf194f1b99be97b51cea9b4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#1 (八度1的升F音)  <br /></td></tr>
+<tr class="separator:a06f0a5bbf194f1b99be97b51cea9b4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66762a7b09dfdde30cf6382bf0a25e02" id="r_a66762a7b09dfdde30cf6382bf0a25e02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66762a7b09dfdde30cf6382bf0a25e02">EM_MIDI_NOTE_G_1</a>&#160;&#160;&#160;(31)</td></tr>
+<tr class="memdesc:a66762a7b09dfdde30cf6382bf0a25e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">G1 (八度1的G音)  <br /></td></tr>
+<tr class="separator:a66762a7b09dfdde30cf6382bf0a25e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3db65ed19f9b068e72ffa500b94937" id="r_abd3db65ed19f9b068e72ffa500b94937"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd3db65ed19f9b068e72ffa500b94937">EM_MIDI_NOTE_G_SHARP_1</a>&#160;&#160;&#160;(32)</td></tr>
+<tr class="memdesc:abd3db65ed19f9b068e72ffa500b94937"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#1 (八度1的升G音)  <br /></td></tr>
+<tr class="separator:abd3db65ed19f9b068e72ffa500b94937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81c797a66505131b6049c654d00659d" id="r_aa81c797a66505131b6049c654d00659d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa81c797a66505131b6049c654d00659d">EM_MIDI_NOTE_A_1</a>&#160;&#160;&#160;(33)</td></tr>
+<tr class="memdesc:aa81c797a66505131b6049c654d00659d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A1 (八度1的A音)  <br /></td></tr>
+<tr class="separator:aa81c797a66505131b6049c654d00659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1b1f9daf66f00ef2e9e315bf383d7e" id="r_a6d1b1f9daf66f00ef2e9e315bf383d7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d1b1f9daf66f00ef2e9e315bf383d7e">EM_MIDI_NOTE_A_SHARP_1</a>&#160;&#160;&#160;(34)</td></tr>
+<tr class="memdesc:a6d1b1f9daf66f00ef2e9e315bf383d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#1 (八度1的升A音)  <br /></td></tr>
+<tr class="separator:a6d1b1f9daf66f00ef2e9e315bf383d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d92c8329e839f509f0c7da2839dc68" id="r_a18d92c8329e839f509f0c7da2839dc68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18d92c8329e839f509f0c7da2839dc68">EM_MIDI_NOTE_B_1</a>&#160;&#160;&#160;(35)</td></tr>
+<tr class="memdesc:a18d92c8329e839f509f0c7da2839dc68"><td class="mdescLeft">&#160;</td><td class="mdescRight">B1 (八度1的B音)  <br /></td></tr>
+<tr class="separator:a18d92c8329e839f509f0c7da2839dc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33e9dccae5fe0d9238dba9d266c9b2e" id="r_ae33e9dccae5fe0d9238dba9d266c9b2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33e9dccae5fe0d9238dba9d266c9b2e">EM_MIDI_NOTE_C_2</a>&#160;&#160;&#160;(36)</td></tr>
+<tr class="memdesc:ae33e9dccae5fe0d9238dba9d266c9b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">C2 (八度2的C音)  <br /></td></tr>
+<tr class="separator:ae33e9dccae5fe0d9238dba9d266c9b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6544c4e1190b0df550ce36ad6d2b11bc" id="r_a6544c4e1190b0df550ce36ad6d2b11bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6544c4e1190b0df550ce36ad6d2b11bc">EM_MIDI_NOTE_C_SHARP_2</a>&#160;&#160;&#160;(37)</td></tr>
+<tr class="memdesc:a6544c4e1190b0df550ce36ad6d2b11bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#2 (八度2的升C音)  <br /></td></tr>
+<tr class="separator:a6544c4e1190b0df550ce36ad6d2b11bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0718738f4d0e63984475ac0825b29665" id="r_a0718738f4d0e63984475ac0825b29665"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0718738f4d0e63984475ac0825b29665">EM_MIDI_NOTE_D_2</a>&#160;&#160;&#160;(38)</td></tr>
+<tr class="memdesc:a0718738f4d0e63984475ac0825b29665"><td class="mdescLeft">&#160;</td><td class="mdescRight">D2 (八度2的D音)  <br /></td></tr>
+<tr class="separator:a0718738f4d0e63984475ac0825b29665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3161746d65e67e70347d429962d9269" id="r_ad3161746d65e67e70347d429962d9269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3161746d65e67e70347d429962d9269">EM_MIDI_NOTE_D_SHARP_2</a>&#160;&#160;&#160;(39)</td></tr>
+<tr class="memdesc:ad3161746d65e67e70347d429962d9269"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#2 (八度2的升D音)  <br /></td></tr>
+<tr class="separator:ad3161746d65e67e70347d429962d9269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee72d4f2b1fc95d5b37f729fca380ac7" id="r_aee72d4f2b1fc95d5b37f729fca380ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee72d4f2b1fc95d5b37f729fca380ac7">EM_MIDI_NOTE_E_2</a>&#160;&#160;&#160;(40)</td></tr>
+<tr class="memdesc:aee72d4f2b1fc95d5b37f729fca380ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">E2 (八度2的E音)  <br /></td></tr>
+<tr class="separator:aee72d4f2b1fc95d5b37f729fca380ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3c83b1958d968e9555f699c9993de9" id="r_a2a3c83b1958d968e9555f699c9993de9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a3c83b1958d968e9555f699c9993de9">EM_MIDI_NOTE_F_2</a>&#160;&#160;&#160;(41)</td></tr>
+<tr class="memdesc:a2a3c83b1958d968e9555f699c9993de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">F2 (八度2的F音)  <br /></td></tr>
+<tr class="separator:a2a3c83b1958d968e9555f699c9993de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bb3ef4ab0d8e80472d5b82ca658177" id="r_ac3bb3ef4ab0d8e80472d5b82ca658177"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bb3ef4ab0d8e80472d5b82ca658177">EM_MIDI_NOTE_F_SHARP_2</a>&#160;&#160;&#160;(42)</td></tr>
+<tr class="memdesc:ac3bb3ef4ab0d8e80472d5b82ca658177"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#2 (八度2的升F音)  <br /></td></tr>
+<tr class="separator:ac3bb3ef4ab0d8e80472d5b82ca658177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc18f336971a87575f7e3da5a2ff23c" id="r_a4fc18f336971a87575f7e3da5a2ff23c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc18f336971a87575f7e3da5a2ff23c">EM_MIDI_NOTE_G_2</a>&#160;&#160;&#160;(43)</td></tr>
+<tr class="memdesc:a4fc18f336971a87575f7e3da5a2ff23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">G2 (八度2的G音)  <br /></td></tr>
+<tr class="separator:a4fc18f336971a87575f7e3da5a2ff23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b5a8c3d3d5de6acb78af0f4e11510d" id="r_ac3b5a8c3d3d5de6acb78af0f4e11510d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3b5a8c3d3d5de6acb78af0f4e11510d">EM_MIDI_NOTE_G_SHARP_2</a>&#160;&#160;&#160;(44)</td></tr>
+<tr class="memdesc:ac3b5a8c3d3d5de6acb78af0f4e11510d"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#2 (八度2的升G音)  <br /></td></tr>
+<tr class="separator:ac3b5a8c3d3d5de6acb78af0f4e11510d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddbdefc921059ba34c2af4dc2d979f2" id="r_a8ddbdefc921059ba34c2af4dc2d979f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ddbdefc921059ba34c2af4dc2d979f2">EM_MIDI_NOTE_A_2</a>&#160;&#160;&#160;(45)</td></tr>
+<tr class="memdesc:a8ddbdefc921059ba34c2af4dc2d979f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A2 (八度2的A音)  <br /></td></tr>
+<tr class="separator:a8ddbdefc921059ba34c2af4dc2d979f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a797f4af676320ac3f3572655770c3" id="r_a49a797f4af676320ac3f3572655770c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a797f4af676320ac3f3572655770c3">EM_MIDI_NOTE_A_SHARP_2</a>&#160;&#160;&#160;(46)</td></tr>
+<tr class="memdesc:a49a797f4af676320ac3f3572655770c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#2 (八度2的升A音)  <br /></td></tr>
+<tr class="separator:a49a797f4af676320ac3f3572655770c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a740e33002b9e2709231a851eff6f08" id="r_a6a740e33002b9e2709231a851eff6f08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a740e33002b9e2709231a851eff6f08">EM_MIDI_NOTE_B_2</a>&#160;&#160;&#160;(47)</td></tr>
+<tr class="memdesc:a6a740e33002b9e2709231a851eff6f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">B2 (八度2的B音)  <br /></td></tr>
+<tr class="separator:a6a740e33002b9e2709231a851eff6f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3a59943b26af5553c004f618866acd" id="r_afa3a59943b26af5553c004f618866acd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa3a59943b26af5553c004f618866acd">EM_MIDI_NOTE_C_3</a>&#160;&#160;&#160;(48)</td></tr>
+<tr class="memdesc:afa3a59943b26af5553c004f618866acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">C3 (八度3的C音)  <br /></td></tr>
+<tr class="separator:afa3a59943b26af5553c004f618866acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa991bc4ab1ba43a11042d71976a1eeba" id="r_aa991bc4ab1ba43a11042d71976a1eeba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa991bc4ab1ba43a11042d71976a1eeba">EM_MIDI_NOTE_C_SHARP_3</a>&#160;&#160;&#160;(49)</td></tr>
+<tr class="memdesc:aa991bc4ab1ba43a11042d71976a1eeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#3 (八度3的升C音)  <br /></td></tr>
+<tr class="separator:aa991bc4ab1ba43a11042d71976a1eeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2ec6a1d25d0bdc41551834b280d83f" id="r_a2b2ec6a1d25d0bdc41551834b280d83f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b2ec6a1d25d0bdc41551834b280d83f">EM_MIDI_NOTE_D_3</a>&#160;&#160;&#160;(50)</td></tr>
+<tr class="memdesc:a2b2ec6a1d25d0bdc41551834b280d83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">D3 (八度3的D音)  <br /></td></tr>
+<tr class="separator:a2b2ec6a1d25d0bdc41551834b280d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cc20ea87821a181fe4bf7647eb486f" id="r_a12cc20ea87821a181fe4bf7647eb486f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12cc20ea87821a181fe4bf7647eb486f">EM_MIDI_NOTE_D_SHARP_3</a>&#160;&#160;&#160;(51)</td></tr>
+<tr class="memdesc:a12cc20ea87821a181fe4bf7647eb486f"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#3 (八度3的升D音)  <br /></td></tr>
+<tr class="separator:a12cc20ea87821a181fe4bf7647eb486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbda3fb32f653daa354f6a72cefecef" id="r_a0dbda3fb32f653daa354f6a72cefecef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbda3fb32f653daa354f6a72cefecef">EM_MIDI_NOTE_E_3</a>&#160;&#160;&#160;(52)</td></tr>
+<tr class="memdesc:a0dbda3fb32f653daa354f6a72cefecef"><td class="mdescLeft">&#160;</td><td class="mdescRight">E3 (八度3的E音)  <br /></td></tr>
+<tr class="separator:a0dbda3fb32f653daa354f6a72cefecef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b98af2f8ffddcf24cd9567afc29213" id="r_a59b98af2f8ffddcf24cd9567afc29213"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b98af2f8ffddcf24cd9567afc29213">EM_MIDI_NOTE_F_3</a>&#160;&#160;&#160;(53)</td></tr>
+<tr class="memdesc:a59b98af2f8ffddcf24cd9567afc29213"><td class="mdescLeft">&#160;</td><td class="mdescRight">F3 (八度3的F音)  <br /></td></tr>
+<tr class="separator:a59b98af2f8ffddcf24cd9567afc29213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59eac05632f732d367a8af8f841adc88" id="r_a59eac05632f732d367a8af8f841adc88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59eac05632f732d367a8af8f841adc88">EM_MIDI_NOTE_F_SHARP_3</a>&#160;&#160;&#160;(54)</td></tr>
+<tr class="memdesc:a59eac05632f732d367a8af8f841adc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#3 (八度3的升F音)  <br /></td></tr>
+<tr class="separator:a59eac05632f732d367a8af8f841adc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729902191af1d5fd49fadfb35c749bb8" id="r_a729902191af1d5fd49fadfb35c749bb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a729902191af1d5fd49fadfb35c749bb8">EM_MIDI_NOTE_G_3</a>&#160;&#160;&#160;(55)</td></tr>
+<tr class="memdesc:a729902191af1d5fd49fadfb35c749bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">G3 (八度3的G音)  <br /></td></tr>
+<tr class="separator:a729902191af1d5fd49fadfb35c749bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1943080ba6bce06ceec2dcb34e5dd9b1" id="r_a1943080ba6bce06ceec2dcb34e5dd9b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1943080ba6bce06ceec2dcb34e5dd9b1">EM_MIDI_NOTE_G_SHARP_3</a>&#160;&#160;&#160;(56)</td></tr>
+<tr class="memdesc:a1943080ba6bce06ceec2dcb34e5dd9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#3 (八度3的升G音)  <br /></td></tr>
+<tr class="separator:a1943080ba6bce06ceec2dcb34e5dd9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52b7eb8f4a2077d0308940a32d5a7b7" id="r_aa52b7eb8f4a2077d0308940a32d5a7b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52b7eb8f4a2077d0308940a32d5a7b7">EM_MIDI_NOTE_A_3</a>&#160;&#160;&#160;(57)</td></tr>
+<tr class="memdesc:aa52b7eb8f4a2077d0308940a32d5a7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A3 (八度3的A音)  <br /></td></tr>
+<tr class="separator:aa52b7eb8f4a2077d0308940a32d5a7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77299162075c626fce369a0e7cadcb54" id="r_a77299162075c626fce369a0e7cadcb54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77299162075c626fce369a0e7cadcb54">EM_MIDI_NOTE_A_SHARP_3</a>&#160;&#160;&#160;(58)</td></tr>
+<tr class="memdesc:a77299162075c626fce369a0e7cadcb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#3 (八度3的升A音)  <br /></td></tr>
+<tr class="separator:a77299162075c626fce369a0e7cadcb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11aa12dc4ef34bb7f370bb20aa8e5bf" id="r_ae11aa12dc4ef34bb7f370bb20aa8e5bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11aa12dc4ef34bb7f370bb20aa8e5bf">EM_MIDI_NOTE_B_3</a>&#160;&#160;&#160;(59)</td></tr>
+<tr class="memdesc:ae11aa12dc4ef34bb7f370bb20aa8e5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">B3 (八度3的B音)  <br /></td></tr>
+<tr class="separator:ae11aa12dc4ef34bb7f370bb20aa8e5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7539a039d06045fd07469a7aee4b4ee" id="r_aa7539a039d06045fd07469a7aee4b4ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7539a039d06045fd07469a7aee4b4ee">EM_MIDI_NOTE_C_4</a>&#160;&#160;&#160;(60)</td></tr>
+<tr class="memdesc:aa7539a039d06045fd07469a7aee4b4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">C4 (八度4的C音，中央C)  <br /></td></tr>
+<tr class="separator:aa7539a039d06045fd07469a7aee4b4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be9c157c8e6114c64536aff59d280c9" id="r_a1be9c157c8e6114c64536aff59d280c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1be9c157c8e6114c64536aff59d280c9">EM_MIDI_NOTE_C_SHARP_4</a>&#160;&#160;&#160;(61)</td></tr>
+<tr class="memdesc:a1be9c157c8e6114c64536aff59d280c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#4 (八度4的升C音)  <br /></td></tr>
+<tr class="separator:a1be9c157c8e6114c64536aff59d280c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740a117255a6f9ad40be124d24b51cc5" id="r_a740a117255a6f9ad40be124d24b51cc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a740a117255a6f9ad40be124d24b51cc5">EM_MIDI_NOTE_D_4</a>&#160;&#160;&#160;(62)</td></tr>
+<tr class="memdesc:a740a117255a6f9ad40be124d24b51cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">D4 (八度4的D音)  <br /></td></tr>
+<tr class="separator:a740a117255a6f9ad40be124d24b51cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd7e9ad3b93a2602fc3ecb59dd41980" id="r_a5fd7e9ad3b93a2602fc3ecb59dd41980"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fd7e9ad3b93a2602fc3ecb59dd41980">EM_MIDI_NOTE_D_SHARP_4</a>&#160;&#160;&#160;(63)</td></tr>
+<tr class="memdesc:a5fd7e9ad3b93a2602fc3ecb59dd41980"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#4 (八度4的升D音)  <br /></td></tr>
+<tr class="separator:a5fd7e9ad3b93a2602fc3ecb59dd41980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b67241ffcf83907d6c43e4a1215a2d" id="r_ac8b67241ffcf83907d6c43e4a1215a2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8b67241ffcf83907d6c43e4a1215a2d">EM_MIDI_NOTE_E_4</a>&#160;&#160;&#160;(64)</td></tr>
+<tr class="memdesc:ac8b67241ffcf83907d6c43e4a1215a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">E4 (八度4的E音)  <br /></td></tr>
+<tr class="separator:ac8b67241ffcf83907d6c43e4a1215a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4be0c70c76e518d5c322775a9c168d" id="r_adf4be0c70c76e518d5c322775a9c168d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf4be0c70c76e518d5c322775a9c168d">EM_MIDI_NOTE_F_4</a>&#160;&#160;&#160;(65)</td></tr>
+<tr class="memdesc:adf4be0c70c76e518d5c322775a9c168d"><td class="mdescLeft">&#160;</td><td class="mdescRight">F4 (八度4的F音)  <br /></td></tr>
+<tr class="separator:adf4be0c70c76e518d5c322775a9c168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec99b07093045e0ee6a89853fdc1475" id="r_a7ec99b07093045e0ee6a89853fdc1475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ec99b07093045e0ee6a89853fdc1475">EM_MIDI_NOTE_F_SHARP_4</a>&#160;&#160;&#160;(66)</td></tr>
+<tr class="memdesc:a7ec99b07093045e0ee6a89853fdc1475"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#4 (八度4的升F音)  <br /></td></tr>
+<tr class="separator:a7ec99b07093045e0ee6a89853fdc1475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee14bc3741be7ad4449c412acaad200a" id="r_aee14bc3741be7ad4449c412acaad200a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee14bc3741be7ad4449c412acaad200a">EM_MIDI_NOTE_G_4</a>&#160;&#160;&#160;(67)</td></tr>
+<tr class="memdesc:aee14bc3741be7ad4449c412acaad200a"><td class="mdescLeft">&#160;</td><td class="mdescRight">G4 (八度4的G音)  <br /></td></tr>
+<tr class="separator:aee14bc3741be7ad4449c412acaad200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9550fcf1176a65dbe8423ee76e0a19aa" id="r_a9550fcf1176a65dbe8423ee76e0a19aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9550fcf1176a65dbe8423ee76e0a19aa">EM_MIDI_NOTE_G_SHARP_4</a>&#160;&#160;&#160;(68)</td></tr>
+<tr class="memdesc:a9550fcf1176a65dbe8423ee76e0a19aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#4 (八度4的升G音)  <br /></td></tr>
+<tr class="separator:a9550fcf1176a65dbe8423ee76e0a19aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806a3904d4bd30e97099bb4c07ab5104" id="r_a806a3904d4bd30e97099bb4c07ab5104"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a806a3904d4bd30e97099bb4c07ab5104">EM_MIDI_NOTE_A_4</a>&#160;&#160;&#160;(69)</td></tr>
+<tr class="memdesc:a806a3904d4bd30e97099bb4c07ab5104"><td class="mdescLeft">&#160;</td><td class="mdescRight">A4 (八度4的A音，标准音高440Hz)  <br /></td></tr>
+<tr class="separator:a806a3904d4bd30e97099bb4c07ab5104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae212a80a0d6a37027c833fe09716a5a1" id="r_ae212a80a0d6a37027c833fe09716a5a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae212a80a0d6a37027c833fe09716a5a1">EM_MIDI_NOTE_A_SHARP_4</a>&#160;&#160;&#160;(70)</td></tr>
+<tr class="memdesc:ae212a80a0d6a37027c833fe09716a5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#4 (八度4的升A音)  <br /></td></tr>
+<tr class="separator:ae212a80a0d6a37027c833fe09716a5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d3328e29515017859194532abf8f04b" id="r_a6d3328e29515017859194532abf8f04b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d3328e29515017859194532abf8f04b">EM_MIDI_NOTE_B_4</a>&#160;&#160;&#160;(71)</td></tr>
+<tr class="memdesc:a6d3328e29515017859194532abf8f04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">B4 (八度4的B音)  <br /></td></tr>
+<tr class="separator:a6d3328e29515017859194532abf8f04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44ea4b32ed7bb565f97c9849444e842" id="r_af44ea4b32ed7bb565f97c9849444e842"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af44ea4b32ed7bb565f97c9849444e842">EM_MIDI_NOTE_C_5</a>&#160;&#160;&#160;(72)</td></tr>
+<tr class="memdesc:af44ea4b32ed7bb565f97c9849444e842"><td class="mdescLeft">&#160;</td><td class="mdescRight">C5 (八度5的C音)  <br /></td></tr>
+<tr class="separator:af44ea4b32ed7bb565f97c9849444e842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2573da6543167d87372e1af44bab9a" id="r_a8b2573da6543167d87372e1af44bab9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b2573da6543167d87372e1af44bab9a">EM_MIDI_NOTE_C_SHARP_5</a>&#160;&#160;&#160;(73)</td></tr>
+<tr class="memdesc:a8b2573da6543167d87372e1af44bab9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#5 (八度5的升C音)  <br /></td></tr>
+<tr class="separator:a8b2573da6543167d87372e1af44bab9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7ae8e3d782d13b050f06e070594e02" id="r_ade7ae8e3d782d13b050f06e070594e02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade7ae8e3d782d13b050f06e070594e02">EM_MIDI_NOTE_D_5</a>&#160;&#160;&#160;(74)</td></tr>
+<tr class="memdesc:ade7ae8e3d782d13b050f06e070594e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">D5 (八度5的D音)  <br /></td></tr>
+<tr class="separator:ade7ae8e3d782d13b050f06e070594e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc" id="r_ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc">EM_MIDI_NOTE_D_SHARP_5</a>&#160;&#160;&#160;(75)</td></tr>
+<tr class="memdesc:ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#5 (八度5的升D音)  <br /></td></tr>
+<tr class="separator:ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316bc8778e8cfb4ef0115838c46a8858" id="r_a316bc8778e8cfb4ef0115838c46a8858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a316bc8778e8cfb4ef0115838c46a8858">EM_MIDI_NOTE_E_5</a>&#160;&#160;&#160;(76)</td></tr>
+<tr class="memdesc:a316bc8778e8cfb4ef0115838c46a8858"><td class="mdescLeft">&#160;</td><td class="mdescRight">E5 (八度5的E音)  <br /></td></tr>
+<tr class="separator:a316bc8778e8cfb4ef0115838c46a8858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1992b88a936113eac2a2e5dbbe4d5e23" id="r_a1992b88a936113eac2a2e5dbbe4d5e23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1992b88a936113eac2a2e5dbbe4d5e23">EM_MIDI_NOTE_F_5</a>&#160;&#160;&#160;(77)</td></tr>
+<tr class="memdesc:a1992b88a936113eac2a2e5dbbe4d5e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">F5 (八度5的F音)  <br /></td></tr>
+<tr class="separator:a1992b88a936113eac2a2e5dbbe4d5e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d2e050b46887d559783ba9d9439e62" id="r_af1d2e050b46887d559783ba9d9439e62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1d2e050b46887d559783ba9d9439e62">EM_MIDI_NOTE_F_SHARP_5</a>&#160;&#160;&#160;(78)</td></tr>
+<tr class="memdesc:af1d2e050b46887d559783ba9d9439e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#5 (八度5的升F音)  <br /></td></tr>
+<tr class="separator:af1d2e050b46887d559783ba9d9439e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316adf02ef0f248f569ac9e604ec4639" id="r_a316adf02ef0f248f569ac9e604ec4639"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a316adf02ef0f248f569ac9e604ec4639">EM_MIDI_NOTE_G_5</a>&#160;&#160;&#160;(79)</td></tr>
+<tr class="memdesc:a316adf02ef0f248f569ac9e604ec4639"><td class="mdescLeft">&#160;</td><td class="mdescRight">G5 (八度5的G音)  <br /></td></tr>
+<tr class="separator:a316adf02ef0f248f569ac9e604ec4639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1214c2411e81d2763b6d40fc0a49b59c" id="r_a1214c2411e81d2763b6d40fc0a49b59c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1214c2411e81d2763b6d40fc0a49b59c">EM_MIDI_NOTE_G_SHARP_5</a>&#160;&#160;&#160;(80)</td></tr>
+<tr class="memdesc:a1214c2411e81d2763b6d40fc0a49b59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#5 (八度5的升G音)  <br /></td></tr>
+<tr class="separator:a1214c2411e81d2763b6d40fc0a49b59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af330e89d36f4c8d33373f81ebc1eec09" id="r_af330e89d36f4c8d33373f81ebc1eec09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af330e89d36f4c8d33373f81ebc1eec09">EM_MIDI_NOTE_A_5</a>&#160;&#160;&#160;(81)</td></tr>
+<tr class="memdesc:af330e89d36f4c8d33373f81ebc1eec09"><td class="mdescLeft">&#160;</td><td class="mdescRight">A5 (八度5的A音)  <br /></td></tr>
+<tr class="separator:af330e89d36f4c8d33373f81ebc1eec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd90460ccde1ee109096c2aeb4cff75" id="r_aadd90460ccde1ee109096c2aeb4cff75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadd90460ccde1ee109096c2aeb4cff75">EM_MIDI_NOTE_A_SHARP_5</a>&#160;&#160;&#160;(82)</td></tr>
+<tr class="memdesc:aadd90460ccde1ee109096c2aeb4cff75"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#5 (八度5的升A音)  <br /></td></tr>
+<tr class="separator:aadd90460ccde1ee109096c2aeb4cff75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b37aca5e48bf2084a34bc4269c0e574" id="r_a6b37aca5e48bf2084a34bc4269c0e574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b37aca5e48bf2084a34bc4269c0e574">EM_MIDI_NOTE_B_5</a>&#160;&#160;&#160;(83)</td></tr>
+<tr class="memdesc:a6b37aca5e48bf2084a34bc4269c0e574"><td class="mdescLeft">&#160;</td><td class="mdescRight">B5 (八度5的B音)  <br /></td></tr>
+<tr class="separator:a6b37aca5e48bf2084a34bc4269c0e574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59703d3efcbc13ce4342068be2d4644" id="r_af59703d3efcbc13ce4342068be2d4644"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af59703d3efcbc13ce4342068be2d4644">EM_MIDI_NOTE_C_6</a>&#160;&#160;&#160;(84)</td></tr>
+<tr class="memdesc:af59703d3efcbc13ce4342068be2d4644"><td class="mdescLeft">&#160;</td><td class="mdescRight">C6 (八度6的C音)  <br /></td></tr>
+<tr class="separator:af59703d3efcbc13ce4342068be2d4644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825b7018d9d3477a4696a7f7d837a276" id="r_a825b7018d9d3477a4696a7f7d837a276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a825b7018d9d3477a4696a7f7d837a276">EM_MIDI_NOTE_C_SHARP_6</a>&#160;&#160;&#160;(85)</td></tr>
+<tr class="memdesc:a825b7018d9d3477a4696a7f7d837a276"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#6 (八度6的升C音)  <br /></td></tr>
+<tr class="separator:a825b7018d9d3477a4696a7f7d837a276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f55dfad1a14239a8607eff0323f7ec" id="r_a73f55dfad1a14239a8607eff0323f7ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73f55dfad1a14239a8607eff0323f7ec">EM_MIDI_NOTE_D_6</a>&#160;&#160;&#160;(86)</td></tr>
+<tr class="memdesc:a73f55dfad1a14239a8607eff0323f7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">D6 (八度6的D音)  <br /></td></tr>
+<tr class="separator:a73f55dfad1a14239a8607eff0323f7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a516707cbcf3d15359bd72f90d9c65" id="r_a13a516707cbcf3d15359bd72f90d9c65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13a516707cbcf3d15359bd72f90d9c65">EM_MIDI_NOTE_D_SHARP_6</a>&#160;&#160;&#160;(87)</td></tr>
+<tr class="memdesc:a13a516707cbcf3d15359bd72f90d9c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#6 (八度6的升D音)  <br /></td></tr>
+<tr class="separator:a13a516707cbcf3d15359bd72f90d9c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af022b3b86ade958d1a5004dba7b29dc9" id="r_af022b3b86ade958d1a5004dba7b29dc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af022b3b86ade958d1a5004dba7b29dc9">EM_MIDI_NOTE_E_6</a>&#160;&#160;&#160;(88)</td></tr>
+<tr class="memdesc:af022b3b86ade958d1a5004dba7b29dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">E6 (八度6的E音)  <br /></td></tr>
+<tr class="separator:af022b3b86ade958d1a5004dba7b29dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea9750d8af047291564af921307b1ac" id="r_aaea9750d8af047291564af921307b1ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaea9750d8af047291564af921307b1ac">EM_MIDI_NOTE_F_6</a>&#160;&#160;&#160;(89)</td></tr>
+<tr class="memdesc:aaea9750d8af047291564af921307b1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">F6 (八度6的F音)  <br /></td></tr>
+<tr class="separator:aaea9750d8af047291564af921307b1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c41b65a846e54f986f500f458abce6e" id="r_a4c41b65a846e54f986f500f458abce6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c41b65a846e54f986f500f458abce6e">EM_MIDI_NOTE_F_SHARP_6</a>&#160;&#160;&#160;(90)</td></tr>
+<tr class="memdesc:a4c41b65a846e54f986f500f458abce6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#6 (八度6的升F音)  <br /></td></tr>
+<tr class="separator:a4c41b65a846e54f986f500f458abce6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590de09fed4bcd3c25594ba9e94b328d" id="r_a590de09fed4bcd3c25594ba9e94b328d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a590de09fed4bcd3c25594ba9e94b328d">EM_MIDI_NOTE_G_6</a>&#160;&#160;&#160;(91)</td></tr>
+<tr class="memdesc:a590de09fed4bcd3c25594ba9e94b328d"><td class="mdescLeft">&#160;</td><td class="mdescRight">G6 (八度6的G音)  <br /></td></tr>
+<tr class="separator:a590de09fed4bcd3c25594ba9e94b328d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324b3f9019a045fad41e8ce5c8d3e04a" id="r_a324b3f9019a045fad41e8ce5c8d3e04a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a324b3f9019a045fad41e8ce5c8d3e04a">EM_MIDI_NOTE_G_SHARP_6</a>&#160;&#160;&#160;(92)</td></tr>
+<tr class="memdesc:a324b3f9019a045fad41e8ce5c8d3e04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#6 (八度6的升G音)  <br /></td></tr>
+<tr class="separator:a324b3f9019a045fad41e8ce5c8d3e04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f85ef9c265c024ca0d1dc3df8a5413e" id="r_a1f85ef9c265c024ca0d1dc3df8a5413e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f85ef9c265c024ca0d1dc3df8a5413e">EM_MIDI_NOTE_A_6</a>&#160;&#160;&#160;(93)</td></tr>
+<tr class="memdesc:a1f85ef9c265c024ca0d1dc3df8a5413e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A6 (八度6的A音)  <br /></td></tr>
+<tr class="separator:a1f85ef9c265c024ca0d1dc3df8a5413e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3844ab0a5298f77fb89ea6db412037a9" id="r_a3844ab0a5298f77fb89ea6db412037a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3844ab0a5298f77fb89ea6db412037a9">EM_MIDI_NOTE_A_SHARP_6</a>&#160;&#160;&#160;(94)</td></tr>
+<tr class="memdesc:a3844ab0a5298f77fb89ea6db412037a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#6 (八度6的升A音)  <br /></td></tr>
+<tr class="separator:a3844ab0a5298f77fb89ea6db412037a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e53964a3270ade087e2481e2785169" id="r_ae4e53964a3270ade087e2481e2785169"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e53964a3270ade087e2481e2785169">EM_MIDI_NOTE_B_6</a>&#160;&#160;&#160;(95)</td></tr>
+<tr class="memdesc:ae4e53964a3270ade087e2481e2785169"><td class="mdescLeft">&#160;</td><td class="mdescRight">B6 (八度6的B音)  <br /></td></tr>
+<tr class="separator:ae4e53964a3270ade087e2481e2785169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a707b7ababae59272e41eb6a75a521" id="r_a82a707b7ababae59272e41eb6a75a521"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82a707b7ababae59272e41eb6a75a521">EM_MIDI_NOTE_C_7</a>&#160;&#160;&#160;(96)</td></tr>
+<tr class="memdesc:a82a707b7ababae59272e41eb6a75a521"><td class="mdescLeft">&#160;</td><td class="mdescRight">C7 (八度7的C音)  <br /></td></tr>
+<tr class="separator:a82a707b7ababae59272e41eb6a75a521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25526e116035513e02b4e4da42503503" id="r_a25526e116035513e02b4e4da42503503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25526e116035513e02b4e4da42503503">EM_MIDI_NOTE_C_SHARP_7</a>&#160;&#160;&#160;(97)</td></tr>
+<tr class="memdesc:a25526e116035513e02b4e4da42503503"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#7 (八度7的升C音)  <br /></td></tr>
+<tr class="separator:a25526e116035513e02b4e4da42503503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb002227c347f6cc7302ea1e05f032a8" id="r_adb002227c347f6cc7302ea1e05f032a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb002227c347f6cc7302ea1e05f032a8">EM_MIDI_NOTE_D_7</a>&#160;&#160;&#160;(98)</td></tr>
+<tr class="memdesc:adb002227c347f6cc7302ea1e05f032a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">D7 (八度7的D音)  <br /></td></tr>
+<tr class="separator:adb002227c347f6cc7302ea1e05f032a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f301a2d2c8ddf49dbc6af7d1549d718" id="r_a3f301a2d2c8ddf49dbc6af7d1549d718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f301a2d2c8ddf49dbc6af7d1549d718">EM_MIDI_NOTE_D_SHARP_7</a>&#160;&#160;&#160;(99)</td></tr>
+<tr class="memdesc:a3f301a2d2c8ddf49dbc6af7d1549d718"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#7 (八度7的升D音)  <br /></td></tr>
+<tr class="separator:a3f301a2d2c8ddf49dbc6af7d1549d718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ebeae16c7f0c730c095e4891c75d77" id="r_a92ebeae16c7f0c730c095e4891c75d77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ebeae16c7f0c730c095e4891c75d77">EM_MIDI_NOTE_E_7</a>&#160;&#160;&#160;(100)</td></tr>
+<tr class="memdesc:a92ebeae16c7f0c730c095e4891c75d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">E7 (八度7的E音)  <br /></td></tr>
+<tr class="separator:a92ebeae16c7f0c730c095e4891c75d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae971288f65c260aa5410744f7529d767" id="r_ae971288f65c260aa5410744f7529d767"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae971288f65c260aa5410744f7529d767">EM_MIDI_NOTE_F_7</a>&#160;&#160;&#160;(101)</td></tr>
+<tr class="memdesc:ae971288f65c260aa5410744f7529d767"><td class="mdescLeft">&#160;</td><td class="mdescRight">F7 (八度7的F音)  <br /></td></tr>
+<tr class="separator:ae971288f65c260aa5410744f7529d767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32614da590e7cb4fe878557f67a6d92" id="r_ad32614da590e7cb4fe878557f67a6d92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad32614da590e7cb4fe878557f67a6d92">EM_MIDI_NOTE_F_SHARP_7</a>&#160;&#160;&#160;(102)</td></tr>
+<tr class="memdesc:ad32614da590e7cb4fe878557f67a6d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#7 (八度7的升F音)  <br /></td></tr>
+<tr class="separator:ad32614da590e7cb4fe878557f67a6d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652a98df1a29f0e2f02261d8d3b5ac40" id="r_a652a98df1a29f0e2f02261d8d3b5ac40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a652a98df1a29f0e2f02261d8d3b5ac40">EM_MIDI_NOTE_G_7</a>&#160;&#160;&#160;(103)</td></tr>
+<tr class="memdesc:a652a98df1a29f0e2f02261d8d3b5ac40"><td class="mdescLeft">&#160;</td><td class="mdescRight">G7 (八度7的G音)  <br /></td></tr>
+<tr class="separator:a652a98df1a29f0e2f02261d8d3b5ac40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9575b3364ef19d6c7daa9cd867e962c9" id="r_a9575b3364ef19d6c7daa9cd867e962c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9575b3364ef19d6c7daa9cd867e962c9">EM_MIDI_NOTE_G_SHARP_7</a>&#160;&#160;&#160;(104)</td></tr>
+<tr class="memdesc:a9575b3364ef19d6c7daa9cd867e962c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#7 (八度7的升G音)  <br /></td></tr>
+<tr class="separator:a9575b3364ef19d6c7daa9cd867e962c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22124bce5d262ab70b5b611206e512a0" id="r_a22124bce5d262ab70b5b611206e512a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22124bce5d262ab70b5b611206e512a0">EM_MIDI_NOTE_A_7</a>&#160;&#160;&#160;(105)</td></tr>
+<tr class="memdesc:a22124bce5d262ab70b5b611206e512a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A7 (八度7的A音)  <br /></td></tr>
+<tr class="separator:a22124bce5d262ab70b5b611206e512a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2075ea8453deb55a4cb8053d84b2cd3c" id="r_a2075ea8453deb55a4cb8053d84b2cd3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2075ea8453deb55a4cb8053d84b2cd3c">EM_MIDI_NOTE_A_SHARP_7</a>&#160;&#160;&#160;(106)</td></tr>
+<tr class="memdesc:a2075ea8453deb55a4cb8053d84b2cd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#7 (八度7的升A音)  <br /></td></tr>
+<tr class="separator:a2075ea8453deb55a4cb8053d84b2cd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bfb290cb4662f333aacddeab92fc04" id="r_a42bfb290cb4662f333aacddeab92fc04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42bfb290cb4662f333aacddeab92fc04">EM_MIDI_NOTE_B_7</a>&#160;&#160;&#160;(107)</td></tr>
+<tr class="memdesc:a42bfb290cb4662f333aacddeab92fc04"><td class="mdescLeft">&#160;</td><td class="mdescRight">B7 (八度7的B音)  <br /></td></tr>
+<tr class="separator:a42bfb290cb4662f333aacddeab92fc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fce1b201fb150c6ae59f0be31f057fa" id="r_a4fce1b201fb150c6ae59f0be31f057fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fce1b201fb150c6ae59f0be31f057fa">EM_MIDI_NOTE_C_8</a>&#160;&#160;&#160;(108)</td></tr>
+<tr class="memdesc:a4fce1b201fb150c6ae59f0be31f057fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">C8 (八度8的C音)  <br /></td></tr>
+<tr class="separator:a4fce1b201fb150c6ae59f0be31f057fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4ec38184e14e1e97b22e6d472ca489" id="r_a6b4ec38184e14e1e97b22e6d472ca489"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b4ec38184e14e1e97b22e6d472ca489">EM_MIDI_NOTE_C_SHARP_8</a>&#160;&#160;&#160;(109)</td></tr>
+<tr class="memdesc:a6b4ec38184e14e1e97b22e6d472ca489"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#8 (八度8的升C音)  <br /></td></tr>
+<tr class="separator:a6b4ec38184e14e1e97b22e6d472ca489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d054e76cdcda5c52da2be873fb6b00" id="r_a56d054e76cdcda5c52da2be873fb6b00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56d054e76cdcda5c52da2be873fb6b00">EM_MIDI_NOTE_D_8</a>&#160;&#160;&#160;(110)</td></tr>
+<tr class="memdesc:a56d054e76cdcda5c52da2be873fb6b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">D8 (八度8的D音)  <br /></td></tr>
+<tr class="separator:a56d054e76cdcda5c52da2be873fb6b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951de6eb180ae3dd866fbd4e8d1fe546" id="r_a951de6eb180ae3dd866fbd4e8d1fe546"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a951de6eb180ae3dd866fbd4e8d1fe546">EM_MIDI_NOTE_D_SHARP_8</a>&#160;&#160;&#160;(111)</td></tr>
+<tr class="memdesc:a951de6eb180ae3dd866fbd4e8d1fe546"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#8 (八度8的升D音)  <br /></td></tr>
+<tr class="separator:a951de6eb180ae3dd866fbd4e8d1fe546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7894ba896cd30c03555d3f5ec86fac8" id="r_ad7894ba896cd30c03555d3f5ec86fac8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7894ba896cd30c03555d3f5ec86fac8">EM_MIDI_NOTE_E_8</a>&#160;&#160;&#160;(112)</td></tr>
+<tr class="memdesc:ad7894ba896cd30c03555d3f5ec86fac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">E8 (八度8的E音)  <br /></td></tr>
+<tr class="separator:ad7894ba896cd30c03555d3f5ec86fac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f88b36c7ccbb59c9f5c97d63345958" id="r_ae9f88b36c7ccbb59c9f5c97d63345958"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9f88b36c7ccbb59c9f5c97d63345958">EM_MIDI_NOTE_F_8</a>&#160;&#160;&#160;(113)</td></tr>
+<tr class="memdesc:ae9f88b36c7ccbb59c9f5c97d63345958"><td class="mdescLeft">&#160;</td><td class="mdescRight">F8 (八度8的F音)  <br /></td></tr>
+<tr class="separator:ae9f88b36c7ccbb59c9f5c97d63345958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea8d25d1a9cb10e8bd3124cb2c254bd" id="r_a9ea8d25d1a9cb10e8bd3124cb2c254bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ea8d25d1a9cb10e8bd3124cb2c254bd">EM_MIDI_NOTE_F_SHARP_8</a>&#160;&#160;&#160;(114)</td></tr>
+<tr class="memdesc:a9ea8d25d1a9cb10e8bd3124cb2c254bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#8 (八度8的升F音)  <br /></td></tr>
+<tr class="separator:a9ea8d25d1a9cb10e8bd3124cb2c254bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01be54b5436399e4f08cb168580602ef" id="r_a01be54b5436399e4f08cb168580602ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01be54b5436399e4f08cb168580602ef">EM_MIDI_NOTE_G_8</a>&#160;&#160;&#160;(115)</td></tr>
+<tr class="memdesc:a01be54b5436399e4f08cb168580602ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">G8 (八度8的G音)  <br /></td></tr>
+<tr class="separator:a01be54b5436399e4f08cb168580602ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa260a176fe3e23e3028ff80f200be91d" id="r_aa260a176fe3e23e3028ff80f200be91d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa260a176fe3e23e3028ff80f200be91d">EM_MIDI_NOTE_G_SHARP_8</a>&#160;&#160;&#160;(116)</td></tr>
+<tr class="memdesc:aa260a176fe3e23e3028ff80f200be91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">G#8 (八度8的升G音)  <br /></td></tr>
+<tr class="separator:aa260a176fe3e23e3028ff80f200be91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178f4fa18907d22a1b440d8b05060e85" id="r_a178f4fa18907d22a1b440d8b05060e85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a178f4fa18907d22a1b440d8b05060e85">EM_MIDI_NOTE_A_8</a>&#160;&#160;&#160;(117)</td></tr>
+<tr class="memdesc:a178f4fa18907d22a1b440d8b05060e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">A8 (八度8的A音)  <br /></td></tr>
+<tr class="separator:a178f4fa18907d22a1b440d8b05060e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fae10b5830109a08faa9e8b0b46ac2" id="r_af1fae10b5830109a08faa9e8b0b46ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1fae10b5830109a08faa9e8b0b46ac2">EM_MIDI_NOTE_A_SHARP_8</a>&#160;&#160;&#160;(118)</td></tr>
+<tr class="memdesc:af1fae10b5830109a08faa9e8b0b46ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A#8 (八度8的升A音)  <br /></td></tr>
+<tr class="separator:af1fae10b5830109a08faa9e8b0b46ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e7e08f3b9dea2654450df5b4b06dae" id="r_ac0e7e08f3b9dea2654450df5b4b06dae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e7e08f3b9dea2654450df5b4b06dae">EM_MIDI_NOTE_B_8</a>&#160;&#160;&#160;(119)</td></tr>
+<tr class="memdesc:ac0e7e08f3b9dea2654450df5b4b06dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">B8 (八度8的B音)  <br /></td></tr>
+<tr class="separator:ac0e7e08f3b9dea2654450df5b4b06dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b81dbdfb7f15674db3f0da6c1485ed6" id="r_a5b81dbdfb7f15674db3f0da6c1485ed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b81dbdfb7f15674db3f0da6c1485ed6">EM_MIDI_NOTE_C_9</a>&#160;&#160;&#160;(120)</td></tr>
+<tr class="memdesc:a5b81dbdfb7f15674db3f0da6c1485ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">C9 (八度9的C音)  <br /></td></tr>
+<tr class="separator:a5b81dbdfb7f15674db3f0da6c1485ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585832d0bd0d8134706fdbb904f103c8" id="r_a585832d0bd0d8134706fdbb904f103c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a585832d0bd0d8134706fdbb904f103c8">EM_MIDI_NOTE_C_SHARP_9</a>&#160;&#160;&#160;(121)</td></tr>
+<tr class="memdesc:a585832d0bd0d8134706fdbb904f103c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">C#9 (八度9的升C音)  <br /></td></tr>
+<tr class="separator:a585832d0bd0d8134706fdbb904f103c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa79927c81e74530cd731818fca08791" id="r_aaa79927c81e74530cd731818fca08791"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa79927c81e74530cd731818fca08791">EM_MIDI_NOTE_D_9</a>&#160;&#160;&#160;(122)</td></tr>
+<tr class="memdesc:aaa79927c81e74530cd731818fca08791"><td class="mdescLeft">&#160;</td><td class="mdescRight">D9 (八度9的D音)  <br /></td></tr>
+<tr class="separator:aaa79927c81e74530cd731818fca08791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51baa60e49e59f69e2c8d01b5a3478c" id="r_ae51baa60e49e59f69e2c8d01b5a3478c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51baa60e49e59f69e2c8d01b5a3478c">EM_MIDI_NOTE_D_SHARP_9</a>&#160;&#160;&#160;(123)</td></tr>
+<tr class="memdesc:ae51baa60e49e59f69e2c8d01b5a3478c"><td class="mdescLeft">&#160;</td><td class="mdescRight">D#9 (八度9的升D音)  <br /></td></tr>
+<tr class="separator:ae51baa60e49e59f69e2c8d01b5a3478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac000108433dc088e31528b87b538499f" id="r_ac000108433dc088e31528b87b538499f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac000108433dc088e31528b87b538499f">EM_MIDI_NOTE_E_9</a>&#160;&#160;&#160;(124)</td></tr>
+<tr class="memdesc:ac000108433dc088e31528b87b538499f"><td class="mdescLeft">&#160;</td><td class="mdescRight">E9 (八度9的E音)  <br /></td></tr>
+<tr class="separator:ac000108433dc088e31528b87b538499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab433de6dec05414747f25283979fa5f6" id="r_ab433de6dec05414747f25283979fa5f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab433de6dec05414747f25283979fa5f6">EM_MIDI_NOTE_F_9</a>&#160;&#160;&#160;(125)</td></tr>
+<tr class="memdesc:ab433de6dec05414747f25283979fa5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">F9 (八度9的F音)  <br /></td></tr>
+<tr class="separator:ab433de6dec05414747f25283979fa5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a473664dc9df170ede251b475529148" id="r_a5a473664dc9df170ede251b475529148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a473664dc9df170ede251b475529148">EM_MIDI_NOTE_F_SHARP_9</a>&#160;&#160;&#160;(126)</td></tr>
+<tr class="memdesc:a5a473664dc9df170ede251b475529148"><td class="mdescLeft">&#160;</td><td class="mdescRight">F#9 (八度9的升F音)  <br /></td></tr>
+<tr class="separator:a5a473664dc9df170ede251b475529148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9529395a6a4f1e63b0dc289cba5386ae" id="r_a9529395a6a4f1e63b0dc289cba5386ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9529395a6a4f1e63b0dc289cba5386ae">EM_MIDI_NOTE_G_9</a>&#160;&#160;&#160;(127)</td></tr>
+<tr class="memdesc:a9529395a6a4f1e63b0dc289cba5386ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">G9 (八度9的G音，MIDI最高音)  <br /></td></tr>
+<tr class="separator:a9529395a6a4f1e63b0dc289cba5386ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>MIDI 音符编号定义 (0-127)，包含从 C-1 (0) 到 G9 (127) 的所有 MIDI 音符编号。 </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aeeec79ad2ab70ca475db7008c1e8d366" name="aeeec79ad2ab70ca475db7008c1e8d366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeec79ad2ab70ca475db7008c1e8d366">&#9670;&#160;</a></span>_EM_MIDI_NOTE_H_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _EM_MIDI_NOTE_H_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00004">4</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a902472527711cec32dc0de49475a4b15" name="a902472527711cec32dc0de49475a4b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a902472527711cec32dc0de49475a4b15">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_0&#160;&#160;&#160;(21)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A0 (八度0的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00234">234</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa81c797a66505131b6049c654d00659d" name="aa81c797a66505131b6049c654d00659d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81c797a66505131b6049c654d00659d">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_1&#160;&#160;&#160;(33)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A1 (八度1的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00354">354</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ddbdefc921059ba34c2af4dc2d979f2" name="a8ddbdefc921059ba34c2af4dc2d979f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ddbdefc921059ba34c2af4dc2d979f2">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_2&#160;&#160;&#160;(45)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A2 (八度2的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00474">474</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa52b7eb8f4a2077d0308940a32d5a7b7" name="aa52b7eb8f4a2077d0308940a32d5a7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52b7eb8f4a2077d0308940a32d5a7b7">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_3&#160;&#160;&#160;(57)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A3 (八度3的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00594">594</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a806a3904d4bd30e97099bb4c07ab5104" name="a806a3904d4bd30e97099bb4c07ab5104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806a3904d4bd30e97099bb4c07ab5104">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_4&#160;&#160;&#160;(69)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A4 (八度4的A音，标准音高440Hz) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00714">714</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af330e89d36f4c8d33373f81ebc1eec09" name="af330e89d36f4c8d33373f81ebc1eec09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af330e89d36f4c8d33373f81ebc1eec09">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_5&#160;&#160;&#160;(81)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A5 (八度5的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00834">834</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1f85ef9c265c024ca0d1dc3df8a5413e" name="a1f85ef9c265c024ca0d1dc3df8a5413e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f85ef9c265c024ca0d1dc3df8a5413e">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_6&#160;&#160;&#160;(93)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A6 (八度6的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00954">954</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a22124bce5d262ab70b5b611206e512a0" name="a22124bce5d262ab70b5b611206e512a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22124bce5d262ab70b5b611206e512a0">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_7&#160;&#160;&#160;(105)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A7 (八度7的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01074">1074</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a178f4fa18907d22a1b440d8b05060e85" name="a178f4fa18907d22a1b440d8b05060e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178f4fa18907d22a1b440d8b05060e85">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_8&#160;&#160;&#160;(117)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A8 (八度8的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01194">1194</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af7a18c9ef912a3565ef9a6de49d21350" name="af7a18c9ef912a3565ef9a6de49d21350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a18c9ef912a3565ef9a6de49d21350">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_M1&#160;&#160;&#160;(9)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A-1 (八度-1的A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25514601e50ddc0a9367f7bc6c1a7c3d" name="a25514601e50ddc0a9367f7bc6c1a7c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25514601e50ddc0a9367f7bc6c1a7c3d">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_0&#160;&#160;&#160;(22)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#0 (八度0的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00244">244</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6d1b1f9daf66f00ef2e9e315bf383d7e" name="a6d1b1f9daf66f00ef2e9e315bf383d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d1b1f9daf66f00ef2e9e315bf383d7e">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_1&#160;&#160;&#160;(34)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#1 (八度1的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00364">364</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a49a797f4af676320ac3f3572655770c3" name="a49a797f4af676320ac3f3572655770c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a797f4af676320ac3f3572655770c3">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_2&#160;&#160;&#160;(46)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#2 (八度2的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00484">484</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a77299162075c626fce369a0e7cadcb54" name="a77299162075c626fce369a0e7cadcb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77299162075c626fce369a0e7cadcb54">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_3&#160;&#160;&#160;(58)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#3 (八度3的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00604">604</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae212a80a0d6a37027c833fe09716a5a1" name="ae212a80a0d6a37027c833fe09716a5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae212a80a0d6a37027c833fe09716a5a1">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_4&#160;&#160;&#160;(70)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#4 (八度4的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00724">724</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aadd90460ccde1ee109096c2aeb4cff75" name="aadd90460ccde1ee109096c2aeb4cff75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd90460ccde1ee109096c2aeb4cff75">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_5&#160;&#160;&#160;(82)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#5 (八度5的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00844">844</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3844ab0a5298f77fb89ea6db412037a9" name="a3844ab0a5298f77fb89ea6db412037a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3844ab0a5298f77fb89ea6db412037a9">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_6&#160;&#160;&#160;(94)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#6 (八度6的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00964">964</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2075ea8453deb55a4cb8053d84b2cd3c" name="a2075ea8453deb55a4cb8053d84b2cd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2075ea8453deb55a4cb8053d84b2cd3c">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_7&#160;&#160;&#160;(106)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#7 (八度7的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01084">1084</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1fae10b5830109a08faa9e8b0b46ac2" name="af1fae10b5830109a08faa9e8b0b46ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1fae10b5830109a08faa9e8b0b46ac2">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_8&#160;&#160;&#160;(118)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#8 (八度8的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01204">1204</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9228a20532b1636abadbdf06761e5e77" name="a9228a20532b1636abadbdf06761e5e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9228a20532b1636abadbdf06761e5e77">&#9670;&#160;</a></span>EM_MIDI_NOTE_A_SHARP_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_A_SHARP_M1&#160;&#160;&#160;(10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A#-1 (八度-1的升A音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af6a80c70eb990306496d3905e1708c2a" name="af6a80c70eb990306496d3905e1708c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a80c70eb990306496d3905e1708c2a">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_0&#160;&#160;&#160;(23)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B0 (八度0的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00254">254</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18d92c8329e839f509f0c7da2839dc68" name="a18d92c8329e839f509f0c7da2839dc68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d92c8329e839f509f0c7da2839dc68">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_1&#160;&#160;&#160;(35)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B1 (八度1的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00374">374</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6a740e33002b9e2709231a851eff6f08" name="a6a740e33002b9e2709231a851eff6f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a740e33002b9e2709231a851eff6f08">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_2&#160;&#160;&#160;(47)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B2 (八度2的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00494">494</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae11aa12dc4ef34bb7f370bb20aa8e5bf" name="ae11aa12dc4ef34bb7f370bb20aa8e5bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11aa12dc4ef34bb7f370bb20aa8e5bf">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_3&#160;&#160;&#160;(59)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B3 (八度3的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00614">614</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6d3328e29515017859194532abf8f04b" name="a6d3328e29515017859194532abf8f04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3328e29515017859194532abf8f04b">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_4&#160;&#160;&#160;(71)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B4 (八度4的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00734">734</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6b37aca5e48bf2084a34bc4269c0e574" name="a6b37aca5e48bf2084a34bc4269c0e574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b37aca5e48bf2084a34bc4269c0e574">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_5&#160;&#160;&#160;(83)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B5 (八度5的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00854">854</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae4e53964a3270ade087e2481e2785169" name="ae4e53964a3270ade087e2481e2785169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e53964a3270ade087e2481e2785169">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_6&#160;&#160;&#160;(95)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B6 (八度6的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00974">974</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a42bfb290cb4662f333aacddeab92fc04" name="a42bfb290cb4662f333aacddeab92fc04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42bfb290cb4662f333aacddeab92fc04">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_7&#160;&#160;&#160;(107)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B7 (八度7的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01094">1094</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac0e7e08f3b9dea2654450df5b4b06dae" name="ac0e7e08f3b9dea2654450df5b4b06dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e7e08f3b9dea2654450df5b4b06dae">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_8&#160;&#160;&#160;(119)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B8 (八度8的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01214">1214</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a878f3f3f6def1cd2e5fd79f8a1a35815" name="a878f3f3f6def1cd2e5fd79f8a1a35815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878f3f3f6def1cd2e5fd79f8a1a35815">&#9670;&#160;</a></span>EM_MIDI_NOTE_B_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_B_M1&#160;&#160;&#160;(11)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B-1 (八度-1的B音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5cdec31a9e4716b23f119d1c0bc4500c" name="a5cdec31a9e4716b23f119d1c0bc4500c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cdec31a9e4716b23f119d1c0bc4500c">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_0&#160;&#160;&#160;(12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C0 (八度0的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48bfe65c26d03b983aef8e0280399300" name="a48bfe65c26d03b983aef8e0280399300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bfe65c26d03b983aef8e0280399300">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_1&#160;&#160;&#160;(24)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C1 (八度1的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00264">264</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae33e9dccae5fe0d9238dba9d266c9b2e" name="ae33e9dccae5fe0d9238dba9d266c9b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33e9dccae5fe0d9238dba9d266c9b2e">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_2&#160;&#160;&#160;(36)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C2 (八度2的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00384">384</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afa3a59943b26af5553c004f618866acd" name="afa3a59943b26af5553c004f618866acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3a59943b26af5553c004f618866acd">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_3&#160;&#160;&#160;(48)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C3 (八度3的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00504">504</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa7539a039d06045fd07469a7aee4b4ee" name="aa7539a039d06045fd07469a7aee4b4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7539a039d06045fd07469a7aee4b4ee">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_4&#160;&#160;&#160;(60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C4 (八度4的C音，中央C) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00624">624</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af44ea4b32ed7bb565f97c9849444e842" name="af44ea4b32ed7bb565f97c9849444e842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44ea4b32ed7bb565f97c9849444e842">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_5&#160;&#160;&#160;(72)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C5 (八度5的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00744">744</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af59703d3efcbc13ce4342068be2d4644" name="af59703d3efcbc13ce4342068be2d4644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59703d3efcbc13ce4342068be2d4644">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_6&#160;&#160;&#160;(84)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C6 (八度6的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00864">864</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a82a707b7ababae59272e41eb6a75a521" name="a82a707b7ababae59272e41eb6a75a521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a707b7ababae59272e41eb6a75a521">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_7&#160;&#160;&#160;(96)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C7 (八度7的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00984">984</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4fce1b201fb150c6ae59f0be31f057fa" name="a4fce1b201fb150c6ae59f0be31f057fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fce1b201fb150c6ae59f0be31f057fa">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_8&#160;&#160;&#160;(108)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C8 (八度8的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01104">1104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5b81dbdfb7f15674db3f0da6c1485ed6" name="a5b81dbdfb7f15674db3f0da6c1485ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b81dbdfb7f15674db3f0da6c1485ed6">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_9&#160;&#160;&#160;(120)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C9 (八度9的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01224">1224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aafdc83619556fcbafd55633f7d6124f4" name="aafdc83619556fcbafd55633f7d6124f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafdc83619556fcbafd55633f7d6124f4">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_M1&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C-1 (八度-1的C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa535252c5a7cd41b6dc0d6751d4120eb" name="aa535252c5a7cd41b6dc0d6751d4120eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa535252c5a7cd41b6dc0d6751d4120eb">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_0&#160;&#160;&#160;(13)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#0 (八度0的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00154">154</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a41741d8eba5a688b42180637ff3ac69d" name="a41741d8eba5a688b42180637ff3ac69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41741d8eba5a688b42180637ff3ac69d">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_1&#160;&#160;&#160;(25)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#1 (八度1的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00274">274</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6544c4e1190b0df550ce36ad6d2b11bc" name="a6544c4e1190b0df550ce36ad6d2b11bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6544c4e1190b0df550ce36ad6d2b11bc">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_2&#160;&#160;&#160;(37)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#2 (八度2的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00394">394</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa991bc4ab1ba43a11042d71976a1eeba" name="aa991bc4ab1ba43a11042d71976a1eeba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa991bc4ab1ba43a11042d71976a1eeba">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_3&#160;&#160;&#160;(49)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#3 (八度3的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00514">514</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1be9c157c8e6114c64536aff59d280c9" name="a1be9c157c8e6114c64536aff59d280c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be9c157c8e6114c64536aff59d280c9">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_4&#160;&#160;&#160;(61)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#4 (八度4的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00634">634</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b2573da6543167d87372e1af44bab9a" name="a8b2573da6543167d87372e1af44bab9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2573da6543167d87372e1af44bab9a">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_5&#160;&#160;&#160;(73)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#5 (八度5的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00754">754</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a825b7018d9d3477a4696a7f7d837a276" name="a825b7018d9d3477a4696a7f7d837a276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825b7018d9d3477a4696a7f7d837a276">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_6&#160;&#160;&#160;(85)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#6 (八度6的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00874">874</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25526e116035513e02b4e4da42503503" name="a25526e116035513e02b4e4da42503503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25526e116035513e02b4e4da42503503">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_7&#160;&#160;&#160;(97)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#7 (八度7的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00994">994</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6b4ec38184e14e1e97b22e6d472ca489" name="a6b4ec38184e14e1e97b22e6d472ca489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4ec38184e14e1e97b22e6d472ca489">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_8&#160;&#160;&#160;(109)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#8 (八度8的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01114">1114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a585832d0bd0d8134706fdbb904f103c8" name="a585832d0bd0d8134706fdbb904f103c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585832d0bd0d8134706fdbb904f103c8">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_9&#160;&#160;&#160;(121)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#9 (八度9的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01234">1234</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5144081dd9a9e79f54558452b038e68d" name="a5144081dd9a9e79f54558452b038e68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5144081dd9a9e79f54558452b038e68d">&#9670;&#160;</a></span>EM_MIDI_NOTE_C_SHARP_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_C_SHARP_M1&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C#-1 (八度-1的升C音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a298e41e43c1eeff556ffe2cc39f5ae89" name="a298e41e43c1eeff556ffe2cc39f5ae89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298e41e43c1eeff556ffe2cc39f5ae89">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_0&#160;&#160;&#160;(14)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D0 (八度0的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00164">164</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9a69e0be86f0dacbd8990efdcbf32b52" name="a9a69e0be86f0dacbd8990efdcbf32b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a69e0be86f0dacbd8990efdcbf32b52">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_1&#160;&#160;&#160;(26)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D1 (八度1的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00284">284</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0718738f4d0e63984475ac0825b29665" name="a0718738f4d0e63984475ac0825b29665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0718738f4d0e63984475ac0825b29665">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_2&#160;&#160;&#160;(38)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D2 (八度2的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00404">404</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b2ec6a1d25d0bdc41551834b280d83f" name="a2b2ec6a1d25d0bdc41551834b280d83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2ec6a1d25d0bdc41551834b280d83f">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_3&#160;&#160;&#160;(50)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D3 (八度3的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00524">524</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a740a117255a6f9ad40be124d24b51cc5" name="a740a117255a6f9ad40be124d24b51cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740a117255a6f9ad40be124d24b51cc5">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_4&#160;&#160;&#160;(62)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D4 (八度4的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00644">644</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ade7ae8e3d782d13b050f06e070594e02" name="ade7ae8e3d782d13b050f06e070594e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7ae8e3d782d13b050f06e070594e02">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_5&#160;&#160;&#160;(74)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D5 (八度5的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00764">764</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a73f55dfad1a14239a8607eff0323f7ec" name="a73f55dfad1a14239a8607eff0323f7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f55dfad1a14239a8607eff0323f7ec">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_6&#160;&#160;&#160;(86)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D6 (八度6的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00884">884</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adb002227c347f6cc7302ea1e05f032a8" name="adb002227c347f6cc7302ea1e05f032a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb002227c347f6cc7302ea1e05f032a8">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_7&#160;&#160;&#160;(98)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D7 (八度7的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01004">1004</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a56d054e76cdcda5c52da2be873fb6b00" name="a56d054e76cdcda5c52da2be873fb6b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d054e76cdcda5c52da2be873fb6b00">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_8&#160;&#160;&#160;(110)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D8 (八度8的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01124">1124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaa79927c81e74530cd731818fca08791" name="aaa79927c81e74530cd731818fca08791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa79927c81e74530cd731818fca08791">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_9&#160;&#160;&#160;(122)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D9 (八度9的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01244">1244</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aea61e553e8ea36f265501836e3686629" name="aea61e553e8ea36f265501836e3686629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea61e553e8ea36f265501836e3686629">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_M1&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D-1 (八度-1的D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a437047e077c54db777c06055f2c33381" name="a437047e077c54db777c06055f2c33381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437047e077c54db777c06055f2c33381">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_0&#160;&#160;&#160;(15)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#0 (八度0的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a902d9471420fa5cfb4b7892b50b01e97" name="a902d9471420fa5cfb4b7892b50b01e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a902d9471420fa5cfb4b7892b50b01e97">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_1&#160;&#160;&#160;(27)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#1 (八度1的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00294">294</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad3161746d65e67e70347d429962d9269" name="ad3161746d65e67e70347d429962d9269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3161746d65e67e70347d429962d9269">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_2&#160;&#160;&#160;(39)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#2 (八度2的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00414">414</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a12cc20ea87821a181fe4bf7647eb486f" name="a12cc20ea87821a181fe4bf7647eb486f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cc20ea87821a181fe4bf7647eb486f">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_3&#160;&#160;&#160;(51)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#3 (八度3的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00534">534</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5fd7e9ad3b93a2602fc3ecb59dd41980" name="a5fd7e9ad3b93a2602fc3ecb59dd41980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd7e9ad3b93a2602fc3ecb59dd41980">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_4&#160;&#160;&#160;(63)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#4 (八度4的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00654">654</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc" name="ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fbbb1b6c4fa70ab4e13e0b92a1b6bc">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_5&#160;&#160;&#160;(75)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#5 (八度5的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00774">774</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a13a516707cbcf3d15359bd72f90d9c65" name="a13a516707cbcf3d15359bd72f90d9c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a516707cbcf3d15359bd72f90d9c65">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_6&#160;&#160;&#160;(87)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#6 (八度6的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00894">894</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f301a2d2c8ddf49dbc6af7d1549d718" name="a3f301a2d2c8ddf49dbc6af7d1549d718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f301a2d2c8ddf49dbc6af7d1549d718">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_7&#160;&#160;&#160;(99)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#7 (八度7的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01014">1014</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a951de6eb180ae3dd866fbd4e8d1fe546" name="a951de6eb180ae3dd866fbd4e8d1fe546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951de6eb180ae3dd866fbd4e8d1fe546">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_8&#160;&#160;&#160;(111)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#8 (八度8的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01134">1134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae51baa60e49e59f69e2c8d01b5a3478c" name="ae51baa60e49e59f69e2c8d01b5a3478c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51baa60e49e59f69e2c8d01b5a3478c">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_9&#160;&#160;&#160;(123)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#9 (八度9的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01254">1254</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1705da57d6f76f2a5e3fafb617bd0aab" name="a1705da57d6f76f2a5e3fafb617bd0aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1705da57d6f76f2a5e3fafb617bd0aab">&#9670;&#160;</a></span>EM_MIDI_NOTE_D_SHARP_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_D_SHARP_M1&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D#-1 (八度-1的升D音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adc6b38d24e1e562e3e81caf566acf267" name="adc6b38d24e1e562e3e81caf566acf267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6b38d24e1e562e3e81caf566acf267">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_0&#160;&#160;&#160;(16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E0 (八度0的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00184">184</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02ac7dbd3d377679ad8b0a649676e6d0" name="a02ac7dbd3d377679ad8b0a649676e6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ac7dbd3d377679ad8b0a649676e6d0">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_1&#160;&#160;&#160;(28)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E1 (八度1的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00304">304</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aee72d4f2b1fc95d5b37f729fca380ac7" name="aee72d4f2b1fc95d5b37f729fca380ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee72d4f2b1fc95d5b37f729fca380ac7">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_2&#160;&#160;&#160;(40)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E2 (八度2的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00424">424</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0dbda3fb32f653daa354f6a72cefecef" name="a0dbda3fb32f653daa354f6a72cefecef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbda3fb32f653daa354f6a72cefecef">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_3&#160;&#160;&#160;(52)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E3 (八度3的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00544">544</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac8b67241ffcf83907d6c43e4a1215a2d" name="ac8b67241ffcf83907d6c43e4a1215a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b67241ffcf83907d6c43e4a1215a2d">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_4&#160;&#160;&#160;(64)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E4 (八度4的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00664">664</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a316bc8778e8cfb4ef0115838c46a8858" name="a316bc8778e8cfb4ef0115838c46a8858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316bc8778e8cfb4ef0115838c46a8858">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_5&#160;&#160;&#160;(76)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E5 (八度5的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00784">784</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af022b3b86ade958d1a5004dba7b29dc9" name="af022b3b86ade958d1a5004dba7b29dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af022b3b86ade958d1a5004dba7b29dc9">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_6&#160;&#160;&#160;(88)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E6 (八度6的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00904">904</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a92ebeae16c7f0c730c095e4891c75d77" name="a92ebeae16c7f0c730c095e4891c75d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ebeae16c7f0c730c095e4891c75d77">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_7&#160;&#160;&#160;(100)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E7 (八度7的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01024">1024</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7894ba896cd30c03555d3f5ec86fac8" name="ad7894ba896cd30c03555d3f5ec86fac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7894ba896cd30c03555d3f5ec86fac8">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_8&#160;&#160;&#160;(112)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E8 (八度8的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01144">1144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac000108433dc088e31528b87b538499f" name="ac000108433dc088e31528b87b538499f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac000108433dc088e31528b87b538499f">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_9&#160;&#160;&#160;(124)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E9 (八度9的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01264">1264</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f19303aa1c2c9e9888c9b8127995418" name="a3f19303aa1c2c9e9888c9b8127995418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f19303aa1c2c9e9888c9b8127995418">&#9670;&#160;</a></span>EM_MIDI_NOTE_E_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_E_M1&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E-1 (八度-1的E音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa629c2c2f279d4deaa505b5d5b4972cc" name="aa629c2c2f279d4deaa505b5d5b4972cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa629c2c2f279d4deaa505b5d5b4972cc">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_0&#160;&#160;&#160;(17)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F0 (八度0的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00194">194</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c92306f8e526b671a0a7dbb0c9364c1" name="a6c92306f8e526b671a0a7dbb0c9364c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c92306f8e526b671a0a7dbb0c9364c1">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_1&#160;&#160;&#160;(29)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F1 (八度1的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00314">314</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2a3c83b1958d968e9555f699c9993de9" name="a2a3c83b1958d968e9555f699c9993de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3c83b1958d968e9555f699c9993de9">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_2&#160;&#160;&#160;(41)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F2 (八度2的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00434">434</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a59b98af2f8ffddcf24cd9567afc29213" name="a59b98af2f8ffddcf24cd9567afc29213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b98af2f8ffddcf24cd9567afc29213">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_3&#160;&#160;&#160;(53)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F3 (八度3的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00554">554</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adf4be0c70c76e518d5c322775a9c168d" name="adf4be0c70c76e518d5c322775a9c168d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4be0c70c76e518d5c322775a9c168d">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_4&#160;&#160;&#160;(65)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F4 (八度4的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00674">674</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1992b88a936113eac2a2e5dbbe4d5e23" name="a1992b88a936113eac2a2e5dbbe4d5e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1992b88a936113eac2a2e5dbbe4d5e23">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_5&#160;&#160;&#160;(77)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F5 (八度5的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00794">794</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaea9750d8af047291564af921307b1ac" name="aaea9750d8af047291564af921307b1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea9750d8af047291564af921307b1ac">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_6&#160;&#160;&#160;(89)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F6 (八度6的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00914">914</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae971288f65c260aa5410744f7529d767" name="ae971288f65c260aa5410744f7529d767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae971288f65c260aa5410744f7529d767">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_7&#160;&#160;&#160;(101)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F7 (八度7的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01034">1034</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9f88b36c7ccbb59c9f5c97d63345958" name="ae9f88b36c7ccbb59c9f5c97d63345958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f88b36c7ccbb59c9f5c97d63345958">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_8&#160;&#160;&#160;(113)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F8 (八度8的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01154">1154</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab433de6dec05414747f25283979fa5f6" name="ab433de6dec05414747f25283979fa5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab433de6dec05414747f25283979fa5f6">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_9&#160;&#160;&#160;(125)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F9 (八度9的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01274">1274</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a72fdb4fe15d921a480b14bc09617dfad" name="a72fdb4fe15d921a480b14bc09617dfad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fdb4fe15d921a480b14bc09617dfad">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_M1&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F-1 (八度-1的F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00074">74</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaae022e0714d9a45d25f71f82b63b0b6" name="aaae022e0714d9a45d25f71f82b63b0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae022e0714d9a45d25f71f82b63b0b6">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_0&#160;&#160;&#160;(18)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#0 (八度0的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00204">204</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a06f0a5bbf194f1b99be97b51cea9b4e5" name="a06f0a5bbf194f1b99be97b51cea9b4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f0a5bbf194f1b99be97b51cea9b4e5">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_1&#160;&#160;&#160;(30)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#1 (八度1的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00324">324</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3bb3ef4ab0d8e80472d5b82ca658177" name="ac3bb3ef4ab0d8e80472d5b82ca658177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bb3ef4ab0d8e80472d5b82ca658177">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_2&#160;&#160;&#160;(42)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#2 (八度2的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00444">444</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a59eac05632f732d367a8af8f841adc88" name="a59eac05632f732d367a8af8f841adc88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59eac05632f732d367a8af8f841adc88">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_3&#160;&#160;&#160;(54)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#3 (八度3的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00564">564</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7ec99b07093045e0ee6a89853fdc1475" name="a7ec99b07093045e0ee6a89853fdc1475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec99b07093045e0ee6a89853fdc1475">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_4&#160;&#160;&#160;(66)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#4 (八度4的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00684">684</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1d2e050b46887d559783ba9d9439e62" name="af1d2e050b46887d559783ba9d9439e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d2e050b46887d559783ba9d9439e62">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_5&#160;&#160;&#160;(78)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#5 (八度5的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00804">804</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c41b65a846e54f986f500f458abce6e" name="a4c41b65a846e54f986f500f458abce6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c41b65a846e54f986f500f458abce6e">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_6&#160;&#160;&#160;(90)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#6 (八度6的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00924">924</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad32614da590e7cb4fe878557f67a6d92" name="ad32614da590e7cb4fe878557f67a6d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32614da590e7cb4fe878557f67a6d92">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_7&#160;&#160;&#160;(102)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#7 (八度7的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01044">1044</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9ea8d25d1a9cb10e8bd3124cb2c254bd" name="a9ea8d25d1a9cb10e8bd3124cb2c254bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea8d25d1a9cb10e8bd3124cb2c254bd">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_8&#160;&#160;&#160;(114)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#8 (八度8的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01164">1164</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5a473664dc9df170ede251b475529148" name="a5a473664dc9df170ede251b475529148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a473664dc9df170ede251b475529148">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_9&#160;&#160;&#160;(126)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#9 (八度9的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01284">1284</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2f4945b3f8e54c7ae3cbcdf79c7dbde4" name="a2f4945b3f8e54c7ae3cbcdf79c7dbde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4945b3f8e54c7ae3cbcdf79c7dbde4">&#9670;&#160;</a></span>EM_MIDI_NOTE_F_SHARP_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_F_SHARP_M1&#160;&#160;&#160;(6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F#-1 (八度-1的升F音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa433038de76c1a0afe1e8c37fb9db754" name="aa433038de76c1a0afe1e8c37fb9db754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa433038de76c1a0afe1e8c37fb9db754">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_0&#160;&#160;&#160;(19)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G0 (八度0的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00214">214</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a66762a7b09dfdde30cf6382bf0a25e02" name="a66762a7b09dfdde30cf6382bf0a25e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66762a7b09dfdde30cf6382bf0a25e02">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_1&#160;&#160;&#160;(31)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G1 (八度1的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00334">334</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4fc18f336971a87575f7e3da5a2ff23c" name="a4fc18f336971a87575f7e3da5a2ff23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc18f336971a87575f7e3da5a2ff23c">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_2&#160;&#160;&#160;(43)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G2 (八度2的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00454">454</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a729902191af1d5fd49fadfb35c749bb8" name="a729902191af1d5fd49fadfb35c749bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729902191af1d5fd49fadfb35c749bb8">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_3&#160;&#160;&#160;(55)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G3 (八度3的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00574">574</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aee14bc3741be7ad4449c412acaad200a" name="aee14bc3741be7ad4449c412acaad200a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee14bc3741be7ad4449c412acaad200a">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_4&#160;&#160;&#160;(67)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G4 (八度4的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00694">694</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a316adf02ef0f248f569ac9e604ec4639" name="a316adf02ef0f248f569ac9e604ec4639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316adf02ef0f248f569ac9e604ec4639">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_5&#160;&#160;&#160;(79)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G5 (八度5的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00814">814</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a590de09fed4bcd3c25594ba9e94b328d" name="a590de09fed4bcd3c25594ba9e94b328d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590de09fed4bcd3c25594ba9e94b328d">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_6&#160;&#160;&#160;(91)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G6 (八度6的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00934">934</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a652a98df1a29f0e2f02261d8d3b5ac40" name="a652a98df1a29f0e2f02261d8d3b5ac40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a652a98df1a29f0e2f02261d8d3b5ac40">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_7&#160;&#160;&#160;(103)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G7 (八度7的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01054">1054</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a01be54b5436399e4f08cb168580602ef" name="a01be54b5436399e4f08cb168580602ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01be54b5436399e4f08cb168580602ef">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_8&#160;&#160;&#160;(115)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G8 (八度8的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01174">1174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9529395a6a4f1e63b0dc289cba5386ae" name="a9529395a6a4f1e63b0dc289cba5386ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9529395a6a4f1e63b0dc289cba5386ae">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_9&#160;&#160;&#160;(127)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G9 (八度9的G音，MIDI最高音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01294">1294</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0dbb9ec79dd68a36b41b55a94976aff0" name="a0dbb9ec79dd68a36b41b55a94976aff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbb9ec79dd68a36b41b55a94976aff0">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_M1&#160;&#160;&#160;(7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G-1 (八度-1的G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9002211091c21d0f2cac2209ae8ffce1" name="a9002211091c21d0f2cac2209ae8ffce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9002211091c21d0f2cac2209ae8ffce1">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_0&#160;&#160;&#160;(20)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#0 (八度0的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abd3db65ed19f9b068e72ffa500b94937" name="abd3db65ed19f9b068e72ffa500b94937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3db65ed19f9b068e72ffa500b94937">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_1&#160;&#160;&#160;(32)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#1 (八度1的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00344">344</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3b5a8c3d3d5de6acb78af0f4e11510d" name="ac3b5a8c3d3d5de6acb78af0f4e11510d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b5a8c3d3d5de6acb78af0f4e11510d">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_2&#160;&#160;&#160;(44)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#2 (八度2的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00464">464</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1943080ba6bce06ceec2dcb34e5dd9b1" name="a1943080ba6bce06ceec2dcb34e5dd9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1943080ba6bce06ceec2dcb34e5dd9b1">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_3&#160;&#160;&#160;(56)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#3 (八度3的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00584">584</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9550fcf1176a65dbe8423ee76e0a19aa" name="a9550fcf1176a65dbe8423ee76e0a19aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9550fcf1176a65dbe8423ee76e0a19aa">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_4&#160;&#160;&#160;(68)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#4 (八度4的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00704">704</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1214c2411e81d2763b6d40fc0a49b59c" name="a1214c2411e81d2763b6d40fc0a49b59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1214c2411e81d2763b6d40fc0a49b59c">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_5&#160;&#160;&#160;(80)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#5 (八度5的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00824">824</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a324b3f9019a045fad41e8ce5c8d3e04a" name="a324b3f9019a045fad41e8ce5c8d3e04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324b3f9019a045fad41e8ce5c8d3e04a">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_6&#160;&#160;&#160;(92)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#6 (八度6的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00944">944</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9575b3364ef19d6c7daa9cd867e962c9" name="a9575b3364ef19d6c7daa9cd867e962c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9575b3364ef19d6c7daa9cd867e962c9">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_7&#160;&#160;&#160;(104)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#7 (八度7的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01064">1064</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa260a176fe3e23e3028ff80f200be91d" name="aa260a176fe3e23e3028ff80f200be91d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa260a176fe3e23e3028ff80f200be91d">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_8&#160;&#160;&#160;(116)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#8 (八度8的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l01184">1184</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a27e5cadc6df247583de22d86247f31a1" name="a27e5cadc6df247583de22d86247f31a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e5cadc6df247583de22d86247f31a1">&#9670;&#160;</a></span>EM_MIDI_NOTE_G_SHARP_M1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EM_MIDI_NOTE_G_SHARP_M1&#160;&#160;&#160;(8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>G#-1 (八度-1的升G音) </p>
+
+<p class="definition">在文件 <a class="el" href="midi__note_8h_source.html">midi_note.h</a> 第 <a class="el" href="midi__note_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="midi__note_8h.html">midi_note.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
+  </ul>
+</div>
+</body>
+</html>
