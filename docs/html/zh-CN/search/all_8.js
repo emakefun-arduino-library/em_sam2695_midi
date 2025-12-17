@@ -12,6 +12,6 @@ var searchData=
   ['note_5ff_5fsharp_9',['note_f_sharp',['../structem_1_1_scale_tuning_parameter.html#a5ecea6bdaae376b74732eed6694dfcdc',1,'em::ScaleTuningParameter']]],
   ['note_5fg_10',['note_g',['../structem_1_1_scale_tuning_parameter.html#a9660b1e165a2546f75b560e7afd064be',1,'em::ScaleTuningParameter']]],
   ['note_5fg_5fsharp_11',['note_g_sharp',['../structem_1_1_scale_tuning_parameter.html#ae1c6753f6e7e582f61165b4f122484c1',1,'em::ScaleTuningParameter']]],
-  ['noteoff_12',['NoteOff',['../classem_1_1_sam2695_midi.html#aa91a8c548c8bfb2300d800991fb4b66e',1,'em::Sam2695Midi']]],
-  ['noteon_13',['NoteOn',['../classem_1_1_sam2695_midi.html#aee5fde1138af6c30237cca4092e1dd47',1,'em::Sam2695Midi']]]
+  ['noteoff_12',['NoteOff',['../classem_1_1_midi.html#a814412ae079163badd458002f441862c',1,'em::Midi']]],
+  ['noteon_13',['NoteOn',['../classem_1_1_midi.html#ab430b2f2dbeb64c5e8b4e8e7250e78f6',1,'em::Midi']]]
 ];

@@ -13,7 +13,7 @@
  * Drum pattern player.
  */
 
-#include "sam2695_midi.h"
+#include "midi.h"
 
 #if defined(ESP32)
 #include <HardwareSerial.h>
@@ -38,19 +38,19 @@ constexpr uint8_t kMaxTempo = 250;
 constexpr uint8_t kTickSize = 15;
 
 #if defined(ESP32)
-constexpr gpio_num_t kSam2695MidiPin = GPIO_NUM_17;
+constexpr gpio_num_t kMidiPin = GPIO_NUM_17;
 constexpr uart_port_t kUartPort = UART_NUM_2;  // Using UART2
 
 HardwareSerial g_midi_serial(kUartPort);
 
 #else
-constexpr uint8_t kSam2695MidiPin = 4;
+constexpr uint8_t kMidiPin = 4;
 
-SoftwareSerial g_midi_serial(-1, kSam2695MidiPin);
+SoftwareSerial g_midi_serial(-1, kMidiPin);
 
 #endif
 
-em::Sam2695Midi g_sam2695_midi(g_midi_serial);
+em::Midi g_midi(g_midi_serial);
 
 // Every array cell is the velocity of the note played
 // Tick         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
@@ -70,34 +70,34 @@ uint16_t g_tempo = 120;
 
 void PlayDrumNote(const uint8_t midi_note, const uint8_t note_velocity) {
   if (note_velocity > 0) {
-    g_sam2695_midi.NoteOn(kChannel, midi_note, note_velocity);
-    g_sam2695_midi.NoteOff(kChannel, midi_note);
+    g_midi.NoteOn(kChannel, midi_note, note_velocity);
+    g_midi.NoteOff(kChannel, midi_note);
   }
 }
 }  // namespace
 
 void setup() {
 #if defined(ESP32)
-  g_midi_serial.begin(31250, SERIAL_8N1, -1, kSam2695MidiPin);
+  g_midi_serial.begin(31250, SERIAL_8N1, -1, kMidiPin);
 #else
   g_midi_serial.begin(31250);
 #endif
 
-  g_sam2695_midi.MidiReset();
-  g_sam2695_midi.SetChannelTimbre(kChannel, EM_SAM2695_MIDI_TIMBRE_BANK_0, EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1);
-  g_sam2695_midi.SetReverberation(kChannel, EM_SAM2695_MIDI_REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
-  g_sam2695_midi.SetChannelVolume(kChannel, kChannelVolume);
+  g_midi.MidiReset();
+  g_midi.SetChannelTimbre(kChannel, EM_MIDI_TIMBRE_BANK_0, EM_MIDI_PERCUSSION_TIMBRE_1);
+  g_midi.SetReverberation(kChannel, EM_MIDI_REVERBERATION_PLATE, kReverberationVolume, kReverberationDelayFeedback);
+  g_midi.SetChannelVolume(kChannel, kChannelVolume);
 }
 
 void loop() {
   for (uint8_t tick_no = 0; tick_no < kTickSize; tick_no++) {
     g_tempo = g_tempo + (random(kTempoRandomRange) - kTempoRandomOffset);
     g_tempo = constrain(g_tempo, kMinTempo, kMaxTempo);
-    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_C_2_KICK_DRUM_1, kBassDrumTick[tick_no]);
-    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_D_2_SNARE_DRUM_1, kSnareDrumTick[tick_no]);
-    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_F_SHARP_2_CLOSED_HI_HAT, kHiHatCloseTick[tick_no]);
-    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_A_SHARP_2_OPEN_HI_HAT, kHiHatOpenTick[tick_no]);
-    PlayDrumNote(EM_SAM2695_MIDI_PERCUSSION_TIMBRE_1_NOTE_G_SHARP_2_PEDAL_HI_HAT, kHiHatPedalTick[tick_no]);
+    PlayDrumNote(EM_MIDI_PERCUSSION_TIMBRE_1_NOTE_C_2_KICK_DRUM_1, kBassDrumTick[tick_no]);
+    PlayDrumNote(EM_MIDI_PERCUSSION_TIMBRE_1_NOTE_D_2_SNARE_DRUM_1, kSnareDrumTick[tick_no]);
+    PlayDrumNote(EM_MIDI_PERCUSSION_TIMBRE_1_NOTE_F_SHARP_2_CLOSED_HI_HAT, kHiHatCloseTick[tick_no]);
+    PlayDrumNote(EM_MIDI_PERCUSSION_TIMBRE_1_NOTE_A_SHARP_2_OPEN_HI_HAT, kHiHatOpenTick[tick_no]);
+    PlayDrumNote(EM_MIDI_PERCUSSION_TIMBRE_1_NOTE_G_SHARP_2_PEDAL_HI_HAT, kHiHatPedalTick[tick_no]);
     delay(g_tempo);
   }
 }

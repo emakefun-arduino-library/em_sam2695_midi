@@ -49,4 +49,4 @@ var menudata={children:[
 {text:"e",url:"globals_defs.html#index_e"}]}]}]},
 {text:"Examples",url:"examples.html"},
 {text:"Downloads",url:"usergroup0.html",children:[
-{text:"EM_SAM2695_MIDI_v1.0.0.zip: https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip",url:"^https://github.com/emakefun-arduino-library/em_sam2695_midi/archive/refs/tags/v1.0.0.zip"}]}]}
+{text:"EM_MIDI_v1.0.1.zip: https://github.com/emakefun-arduino-library/em_midi/archive/refs/tags/v1.0.1.zip",url:"^https://github.com/emakefun-arduino-library/em_midi/archive/refs/tags/v1.0.1.zip"}]}]}

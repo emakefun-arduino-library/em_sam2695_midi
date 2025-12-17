@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kversionmajor_0',['kVersionMajor',['../sam2695__midi__lib_8h.html#a0c959c394cfbc4dc50b5d5c27efe93e2',1,'em::sam2695_midi_lib']]],
-  ['kversionminor_1',['kVersionMinor',['../sam2695__midi__lib_8h.html#a82c5e324ef07b33ac72e08b3c178ffeb',1,'em::sam2695_midi_lib']]],
-  ['kversionpatch_2',['kVersionPatch',['../sam2695__midi__lib_8h.html#afe9680fdd61953e08ea116636ff4fc02',1,'em::sam2695_midi_lib']]]
+  ['kversionmajor_0',['kVersionMajor',['../midi__lib_8h.html#a80740714a0bc95aeb00ce6cf042ed465',1,'em::midi_lib']]],
+  ['kversionminor_1',['kVersionMinor',['../midi__lib_8h.html#a8136326de63446668232187600ca173b',1,'em::midi_lib']]],
+  ['kversionpatch_2',['kVersionPatch',['../midi__lib_8h.html#a8c55db09edf9e644405506870f05b93c',1,'em::midi_lib']]]
 ];
